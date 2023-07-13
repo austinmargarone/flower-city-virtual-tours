@@ -1,8 +1,9 @@
-import Image from 'next/image'
+
 
 export default function Home() {
   return (
-    <main>
-    </main>
-  )
+    <div className="m-auto flex w-60 flex-col justify-items-center gap-4">
+
+    </div>
+  );
 }
