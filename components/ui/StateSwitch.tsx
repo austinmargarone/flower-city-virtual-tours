@@ -3,8 +3,8 @@
 
 import { Switch } from "@/components/ui/switch"
 import { useSelector, useDispatch } from "react-redux";
-import { setLight, setDark } from "@/app/context/feature/theme/themeSlice";
-import { RootState } from "@/app/context/feature/store";
+import { setLight, setDark } from "@/redux/feature/theme/themeSlice";
+import { RootState } from "@/redux/feature/store";
 import { useEffect } from "react";
 
 
@@ -29,7 +29,7 @@ export default function StateSwitch() {
 
     return (
         <>
-            <div className="flex h-screen items-center justify-center">
+            <div className="h-screen">
                 <Switch onCheckedChange={swap}>test</Switch>
             </div>
         </>
