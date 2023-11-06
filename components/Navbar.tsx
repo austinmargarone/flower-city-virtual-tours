@@ -7,7 +7,7 @@ import Theme from "./Theme";
 const Navbar = () => {
   return (
     <header>
-      <nav className="justify-between flex items-center fixed z-50 w-full gap-5 p-6 sm:px-12 bg-grey dark:bg-black">
+      <nav className="justify-between flex items-center fixed z-50 w-full gap-5 p-6 sm:px-12 bg-grey bg-light-blue dark:bg-dark-midnight">
         <Link href="/">
           <Image
             src="/companyLogo.png"
