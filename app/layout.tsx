@@ -18,9 +18,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Flower City Virtual Tours",
+  title: "Custom Web Devleopment",
   description:
-    "A company specializing in modern web development, photgraphy and Matterport virtual tours.",
+    "We build custom websites that improve your SEO, empower online growth, and prioritize user experience. Get started today!",
+  keywords: ["web development", "web design", "SEO", "user experience, NextJS"],
   icons: {
     icon: "",
   },
