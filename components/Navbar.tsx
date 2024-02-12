@@ -9,13 +9,18 @@ const Navbar = () => {
     <header>
       <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-grey bg-light-blue dark:bg-dark-midnight">
         <Link href="/">
-          <Image
-            src="/companyLogo.png"
-            width={400}
-            height={100}
-            alt="Flower City Virtual Tours LLC"
-            className="w-[250px] sm:w-[250px] md:w-[325px] lg-w[400px]"
-          />
+          <div className="flex flex-col">
+            <div className="text-white">
+              Web Devlopment<span> by</span>
+            </div>
+            <Image
+              src="/companyLogo.png"
+              width={400}
+              height={100}
+              alt="Flower City Virtual Tours LLC"
+              className="w-[125px] sm:w-[200px] md:w-[200px] lg-w[300px]"
+            />
+          </div>
         </Link>
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex">
