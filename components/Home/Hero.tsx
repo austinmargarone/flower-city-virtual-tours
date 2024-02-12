@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -18,7 +19,6 @@ const Hero = () => {
     "Improve your SEO ",
     "empower online growth ",
     "prioritize user experience ",
-    "use modern web technologies ",
   ];
   const [quoteIndex, setQuoteIndex] = useState(0);
 
@@ -59,13 +59,16 @@ const Hero = () => {
     <section
       className="mx-auto flex justify-center items-center h-screen w-screen"
       style={{
-        backgroundImage: "url('/background1.jpg')",
+        backgroundImage: "url('/background3.jpg')",
         backgroundSize: "cover",
       }}
     >
       <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left">
         <h1 className="hero-heading">We build custom websites that</h1>
         <p className="hero-paragraph">{text}</p>
+        <Link href="/contact">
+          <button className="hero-button">Get started</button>
+        </Link>
       </div>
     </section>
   );

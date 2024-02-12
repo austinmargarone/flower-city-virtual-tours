@@ -24,8 +24,42 @@
     height: 3.5rem; /* Adjust the height to match the heading */
     white-space: nowrap; /* Prevent text wrapping */
   }
+
+  .hero-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #B49167;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; 
+    overflow: hidden; 
+  }
   
+  .hero-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); 
+    transition: width 0.6s ease-in-out;
+  }
   
+  .hero-button:hover::before {
+    width: 100%; 
+  }
   
   
   @media (max-width: 768px) {
