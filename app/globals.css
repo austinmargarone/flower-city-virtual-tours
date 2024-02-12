@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
  
+
+.hero-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+  
+  .hero-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 3.5rem; /* Adjust the height to match the heading */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .hero-heading {
+      font-size: 2.5rem;
+    }
+    
+    .hero-paragraph {
+      font-size: 1rem;
+    }
+  }
+  
