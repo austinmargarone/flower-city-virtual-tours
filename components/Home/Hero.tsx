@@ -18,6 +18,7 @@ const Hero = () => {
     "Improve your SEO ",
     "empower online growth ",
     "prioritize user experience ",
+    "use modern web technologies ",
   ];
   const [quoteIndex, setQuoteIndex] = useState(0);
 
@@ -47,10 +48,7 @@ const Hero = () => {
           return quotes[quoteIndex].slice(0, currentIndex--);
         } else {
           clearInterval(deletingInterval);
-          setTimeout(
-            () => setQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length),
-            500,
-          );
+          setQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
           return prevText;
         }
       });
@@ -61,13 +59,11 @@ const Hero = () => {
     <section
       className="mx-auto flex justify-center items-center h-screen w-screen"
       style={{
-        backgroundImage: "url('/background3.jpg')",
+        backgroundImage: "url('/background1.jpg')",
         backgroundSize: "cover",
       }}
     >
       <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left">
-        {" "}
-        {/* Center text on mobile, left-align on larger screens */}
         <h1 className="hero-heading">We build custom websites that</h1>
         <p className="hero-paragraph">{text}</p>
       </div>
