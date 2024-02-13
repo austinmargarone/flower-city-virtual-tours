@@ -5,9 +5,14 @@ const About = () => {
     <article className="flex justify-center flex-col min-w-[300px]">
       <div>
         <h1 className="h1 flex justify-center">About</h1>
-        <p className="p flex justify-center">
-          We use modern tech stacks to deliver industry leading products to our
-          customers.
+        <p className="p flex justify-center min-w-[300px] max-w-[850px] mx-auto">
+          Our company thrives on the forefront of technology, employing
+          state-of-the-art tech stacks to craft dynamic digital solutions that
+          propel businesses forward. With an unwavering focus on innovation, we
+          continuously push the boundaries of possibility, delivering
+          industry-leading products that resonate with our clients and their
+          customers alike. Partner with us to experience the pinnacle of web
+          development excellence.
         </p>
       </div>
     </article>
