@@ -2,6 +2,7 @@
 
 import About from "@/components/about/About";
 import Developer from "@/components/about/Developer";
+import Tech from "@/components/about/Tech";
 
 import { Metadata } from "next";
 
@@ -27,8 +28,11 @@ export default function Page() {
       <div>
         <About />
       </div>
-      <div>
+      <div className="my-[1.5rem]">
         <Developer />
+      </div>
+      <div>
+        <Tech />
       </div>
     </main>
   );
