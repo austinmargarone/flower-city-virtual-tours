@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link href="/">
           <div className="flex flex-col">
             <div className="text-white">
-              Web Devlopment<span> by</span>
+              Web Development<span> by</span>
             </div>
             <Image
               src="/companyLogo.png"
@@ -23,19 +23,18 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
-          <div className="hidden lg:flex">
-            <ul className="flex gap-[1rem] text-white font-bold">
+          <div className="hidden lg:flex items-center">
+            <ul className="flex gap-[1rem] text-white font-bold items-center">
               <Link href="/about">
                 <li>About</li>
               </Link>
-              <Link href="/results">
-                <li>Our Results</li>
-              </Link>
-              <Link href="/pricing">
-                <li>Pricing</li>
-              </Link>
               <Link href="/contact">
                 <li>Contact</li>
+              </Link>
+              <Link href="/build">
+                <button className="navbar-button items-center flex">
+                  <li>Build</li>
+                </button>
               </Link>
             </ul>
           </div>
