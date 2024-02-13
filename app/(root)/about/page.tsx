@@ -1,5 +1,8 @@
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
 
+import About from "@/components/about/About";
+import Developer from "@/components/about/Developer";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,12 +23,13 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mx-auto px-[1.25rem]">
-      <h1>About</h1>
-      <p>
-        We use modern tech stacks to deliver industry leading producsts to our
-        customers.
-      </p>
-    </div>
+    <main className="mx-auto flex flex-col justify-center px-[1.25rem] sm:px-[2.5rem] py-[1.25rem] sm:py-[2.5rem]">
+      <div>
+        <About />
+      </div>
+      <div>
+        <Developer />
+      </div>
+    </main>
   );
 }
