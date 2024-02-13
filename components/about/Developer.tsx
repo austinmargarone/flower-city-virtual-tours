@@ -20,9 +20,7 @@ const Developer = () => {
         </div>
         <div className="flex justify-center mt-[1.25rem]">
           <Link href="https://austinmargarone.com/" target="_blank">
-            <button className="herobuttonmobile sm:hero-button shadow-lg">
-              Austin Margarone
-            </button>
+            <button className="hero-button shadow-lg">Austin Margarone</button>
           </Link>
         </div>
       </div>
