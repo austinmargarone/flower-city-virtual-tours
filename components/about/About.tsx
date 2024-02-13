@@ -4,8 +4,8 @@ const About = () => {
   return (
     <article className="flex justify-center flex-col min-w-[300px]">
       <div>
-        <h1 className="h1 flex justify-center">About</h1>
-        <p className="p flex justify-center min-w-[300px] max-w-[850px] mx-auto">
+        <h1 className="sm:h1 h1mobile flex justify-center">About</h1>
+        <p className="pmobile sm:p flex justify-center min-w-[300px] max-w-[850px] mx-auto">
           Our company thrives on the forefront of technology, employing
           state-of-the-art tech stacks to craft dynamic digital solutions that
           propel businesses forward. With an unwavering focus on innovation, we

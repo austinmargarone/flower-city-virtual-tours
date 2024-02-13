@@ -3,6 +3,7 @@
 @tailwind utilities;
  
 
+
 .hero-heading {
     font-family: 'Arial', sans-serif;
     font-size: 3rem;
@@ -24,6 +25,7 @@
     height: 3.5rem; /* Adjust the height to match the heading */
     white-space: nowrap; /* Prevent text wrapping */
   }
+
 
   .hero-button {
     font-family: 'Arial', sans-serif;
@@ -113,10 +115,30 @@
       padding: 6px 12px;
     }
   }
+
+  .h1mobile {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
   
   .h1 {
     font-family: 'Arial', sans-serif;
     font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
+  .h2mobile {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
@@ -134,6 +156,16 @@
     margin-bottom: 5px;
   }
 
+  .h3mobile {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
   .h3 {
     font-family: 'Arial', sans-serif;
     font-size: 1.25rem;
@@ -144,6 +176,16 @@
     margin-bottom: 5px;
   } 
   
+  .pmobile {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
   .p {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
@@ -153,3 +195,18 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
   }
+  
+
+
+/* Tech Scroll */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: hidden; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}

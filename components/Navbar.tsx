@@ -25,6 +25,9 @@ const Navbar = () => {
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-[1rem] text-white font-bold items-center">
+              <Link href="/">
+                <li>Home</li>
+              </Link>
               <Link href="/about">
                 <li>About</li>
               </Link>
