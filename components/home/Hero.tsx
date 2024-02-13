@@ -67,7 +67,7 @@ const Hero = () => {
         <h1 className="hero-heading">We build custom websites that</h1>
         <p className="hero-paragraph">{text}</p>
         <Link href="/build">
-          <button className="hero-button">Get started</button>
+          <button className="hero-button shadow-lg">Get started</button>
         </Link>
       </div>
     </section>

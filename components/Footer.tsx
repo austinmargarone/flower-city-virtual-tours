@@ -18,8 +18,8 @@ const Footer = () => {
         </Link>
         <div className="flex items-center gap-[1.2rem] md:mt-[.33rem]">
           <Link href={"/contact"}>
-            <button className="text-white bg-light-tan w-[10rem] p-[.25rem] rounded-[.17rem]">
-              Contact Us
+            <button className="text-white shadow-lg bg-light-tan w-[10rem] p-[.25rem] rounded-[.17rem]">
+              Contact
             </button>
           </Link>
           <CopyNumber />
