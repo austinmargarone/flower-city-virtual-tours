@@ -1,13 +1,31 @@
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
 
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Flower City Virtual Tours',
-  description: 'About our Matterport 3D Virtual Tours and Web Applications developed with React and Next.js.',
-  keywords: ['Virtual', 'Tours', 'Matterport', '3D', 'Web', 'Development', 'Next.js', 'React', 'JavaScript'],
-}
+  title: "About | Web Development",
+  description:
+    "Our websites are built with modern tech stacks and designed to be fast, secure, and SEO-friendly. We specialize in Next.js, React, and Tailwind CSS.",
+  keywords: [
+    "Web Development",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+    "MongoDB",
+    "GraphQL",
+  ],
+};
 
 export default function Page() {
-    return <h1>Hello, About Page!</h1>
-  }
+  return (
+    <div className="mx-auto px-[1.25rem]">
+      <h1>About</h1>
+      <p>
+        We use modern tech stacks to deliver industry leading producsts to our
+        customers.
+      </p>
+    </div>
+  );
+}

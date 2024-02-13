@@ -66,7 +66,7 @@ const Hero = () => {
       <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left">
         <h1 className="hero-heading">We build custom websites that</h1>
         <p className="hero-paragraph">{text}</p>
-        <Link href="/contact">
+        <Link href="/build">
           <button className="hero-button">Get started</button>
         </Link>
       </div>
