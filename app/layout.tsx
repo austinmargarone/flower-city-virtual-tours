@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Custom Web Devleopment",
+  title: "Custom Websites",
   description:
     "We build custom websites that improve your SEO, empower online growth, and prioritize user experience. Get started today!",
   keywords: ["web development", "web design", "SEO", "user experience, NextJS"],
