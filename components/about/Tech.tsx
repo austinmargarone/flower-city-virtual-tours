@@ -21,10 +21,10 @@ import {
 
 const Tech = () => {
   return (
-    <section className="">
-      <div className="">
-        <h2 className="">My Skills</h2>
-        <div className="">
+    <section>
+      <div className="flex justify-center flex-col gap-[1rem]">
+        <h2 className="h2">Our Main Tech Stack</h2>
+        <div className="flex gap-[.75rem] justify-center">
           <SkillTile StackImage={JS} />
           <SkillTile StackImage={ReactIcon} />
           <SkillTile StackImage={ReduxIcon} />
