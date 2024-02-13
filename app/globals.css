@@ -72,6 +72,10 @@
     .hero-paragraph {
       font-size: 1rem;
     }
+    .hero-button {
+      font-size: 1rem;
+      padding: 6px 12px;
+    }
   }
 
   .navbar-button {
