@@ -1,25 +1,49 @@
 import React from "react";
-import Image from "next/image";
+import SkillTile from "./SkillTile";
+import {
+  CSSIcon,
+  ExpressIcon,
+  GitHubIcon,
+  GitIcon,
+  HTMLIcon,
+  JS,
+  MaterialIcon,
+  MongodbIcon,
+  MotionIcon,
+  NextIcon,
+  NodeIcon,
+  ReactIcon,
+  ReduxIcon,
+  SassIcon,
+  TSIcon,
+  TailwindIcon,
+} from "../svg";
 
 const Tech = () => {
-  const techStacks = [
-    { name: "React", image: "/react-logo.png" },
-    { name: "Next.js", image: "/nextjs-logo.png" },
-    // Add more tech stacks as needed
-  ];
-
   return (
-    <article className="flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-6">Our Tech Stack</h2>
-      <div className="grid grid-cols-3 gap-4">
-        {techStacks.map((tech, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <Image src={tech.image} alt={tech.name} width={100} height={100} />
-            <p className="mt-2 text-lg font-semibold">{tech.name}</p>
-          </div>
-        ))}
+    <section className="">
+      <div className="">
+        <h2 className="">My Skills</h2>
+        <div className="">
+          <SkillTile StackImage={JS} />
+          <SkillTile StackImage={ReactIcon} />
+          <SkillTile StackImage={ReduxIcon} />
+          <SkillTile StackImage={NextIcon} />
+          <SkillTile StackImage={TSIcon} />
+          <SkillTile StackImage={HTMLIcon} />
+          <SkillTile StackImage={CSSIcon} />
+          <SkillTile StackImage={SassIcon} />
+          <SkillTile StackImage={MaterialIcon} />
+          <SkillTile StackImage={TailwindIcon} />
+          <SkillTile StackImage={MotionIcon} />
+          <SkillTile StackImage={GitIcon} />
+          <SkillTile StackImage={GitHubIcon} />
+          <SkillTile StackImage={NodeIcon} />
+          <SkillTile StackImage={ExpressIcon} />
+          <SkillTile StackImage={MongodbIcon} />
+        </div>
       </div>
-    </article>
+    </section>
   );
 };
 

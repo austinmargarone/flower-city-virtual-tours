@@ -1,5 +1,3 @@
-// `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
-
 import About from "@/components/about/About";
 import Developer from "@/components/about/Developer";
 import Tech from "@/components/about/Tech";
