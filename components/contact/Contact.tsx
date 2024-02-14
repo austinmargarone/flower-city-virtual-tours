@@ -31,55 +31,74 @@ const Contact = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex flex-col mb-[1rem]">
+      <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
           <label htmlFor="name" className="label">
             Name
           </label>
-          <input type="text" id="name" {...register("name")} />
+          <input
+            type="text"
+            id="name"
+            {...register("name")}
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+          />
         </div>
-        <div className="ml-[80px] text-[#D2042D]">
+        <div className="ml-[80px] text-[#B49167]">
           {errors.name && <span>{errors.name.message}</span>}
         </div>
       </div>
-      <div className="flex flex-col mb-[1rem]">
+      <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
-          {" "}
           <label htmlFor="phone" className="label">
             Number
           </label>
-          <input type="text" id="phone" {...register("phone")} />
+          <input
+            type="text"
+            id="phone"
+            {...register("phone")}
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+          />
         </div>
-        <div className="ml-[80px] text-[#D2042D]">
+        <div className="ml-[80px] text-[#B49167]">
           {errors.phone && <span>{errors.phone.message}</span>}
         </div>
       </div>
-      <div className="flex flex-col mb-[1rem]">
+      <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
           <label htmlFor="email" className="label">
             Email
           </label>
-          <input type="email" id="email" {...register("email")} />
+          <input
+            type="email"
+            id="email"
+            {...register("email")}
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+          />
         </div>
-        <div className="ml-[80px] text-[#D2042D]">
+        <div className="ml-[80px] text-[#B49167]">
           {errors.email && <span>{errors.email.message}</span>}
         </div>
       </div>
-      <div className="flex flex-col mb-[1rem]">
+      <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
-          {" "}
           <label htmlFor="message" className="label">
             Message
           </label>
-          <textarea id="message" {...register("message")} />
+          <textarea
+            id="message"
+            {...register("message")}
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+          />
         </div>
-        <div className="ml-[80px] text-[#D2042D]">
+        <div className="ml-[80px] text-[#B49167]">
           {errors.message && <span>{errors.message.message}</span>}{" "}
         </div>
       </div>
-      <button type="submit" className="contactbutton" disabled={isSubmitting}>
-        Submit
-      </button>
+      <div className="mx-auto flex justify-center">
+        <button type="submit" className="contactbutton" disabled={isSubmitting}>
+          Submit
+        </button>
+      </div>
     </form>
   );
 };

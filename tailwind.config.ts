@@ -38,8 +38,8 @@ module.exports = {
         // Josefin Sans Need this font
       },
       screens: {
-        xs: "480px",
-        ss: "620px",
+        xs: "400px",
+        ss: "580px",
         sm: "768px",
         md: "1024px",
         lg: "1200px",

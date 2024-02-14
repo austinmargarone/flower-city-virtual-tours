@@ -11,9 +11,11 @@ export default function Page() {
         backgroundSize: "cover",
       }}
     >
-      <h1 className="h1">Contact Us</h1>
-      <div className="flex justify-center py-[1.25rem] sm:py-[2.5rem]">
-        <Contact />
+      <div className="dark:bg-[#0D101E] bg-[#343A63] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-black dark:border-[#B49167] shadow-lg border-[1.5px] rounded-lg">
+        <h1 className="h1">Contact Us</h1>
+        <div className="flex justify-center py-[1.25rem] sm:py-[2.5rem]">
+          <Contact />
+        </div>
       </div>
     </section>
   );

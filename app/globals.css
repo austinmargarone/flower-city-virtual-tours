@@ -220,7 +220,11 @@
 
 .label {
   display: inline-block;
-  width: 75px; 
+  color: #B49167;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 77px; 
   text-align: left; 
   vertical-align: top;
   margin-bottom: 12px;
@@ -228,6 +232,7 @@
 
 .contactbutton {
   font-family: 'Arial', sans-serif;
+  width: 100%;
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
@@ -245,4 +250,19 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   position: relative; 
   overflow: hidden; 
+}
+
+.contactbutton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 0.6s ease-in-out;
+}
+
+.contactbutton:hover::before {
+  width: 100%;
 }
