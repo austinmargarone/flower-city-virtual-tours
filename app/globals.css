@@ -230,6 +230,17 @@
   margin-bottom: 12px;
 }
 
+.toplabel {
+  display: inline-block;
+  color: #B49167;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center; 
+  vertical-align: top;
+  margin-bottom: 12px;
+}
+
 .contactbutton {
   font-family: 'Arial', sans-serif;
   width: 100%;

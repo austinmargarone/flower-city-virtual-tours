@@ -9,3 +9,17 @@ export interface FormData {
   email: string;
   message: string;
 }
+
+
+type OptionType = { value: string; label: string };
+export interface WebsiteForm {
+  // Website Info
+  websiteType: OptionType;
+
+
+  // Contact Info
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+}
