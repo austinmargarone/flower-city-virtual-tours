@@ -22,7 +22,13 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="mx-auto flex flex-col justify-center px-[1.25rem] sm:px-[2.5rem] py-[1.25rem] sm:py-[2.5rem]">
+    <section
+      className="mx-auto flex flex-col justify-center px-[1.25rem] sm:px-[2.5rem] py-[1.25rem] sm:py-[2.5rem]"
+      style={{
+        backgroundImage: "url('/background3.jpg')",
+        backgroundSize: "cover",
+      }}
+    >
       <div>
         <About />
       </div>
@@ -32,6 +38,6 @@ export default function Page() {
       <div className="mb-[1.25rem]">
         <Tech />
       </div>
-    </main>
+    </section>
   );
 }
