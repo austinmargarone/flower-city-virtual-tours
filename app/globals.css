@@ -214,3 +214,35 @@
 .scroll-container::-webkit-scrollbar {
   display: none; 
 }
+
+
+/* Contact Form */
+
+.label {
+  display: inline-block;
+  width: 75px; 
+  text-align: left; 
+  vertical-align: top;
+  margin-bottom: 12px;
+}
+
+.contactbutton {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #B49167;
+  border: none;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 6px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative; 
+  overflow: hidden; 
+}

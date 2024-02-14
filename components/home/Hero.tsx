@@ -59,7 +59,7 @@ const Hero = () => {
     <section
       className="mx-auto flex justify-center items-center h-screen w-screen"
       style={{
-        backgroundImage: "url('/background3.jpg')",
+        backgroundImage: "url('/background1.jpg')",
         backgroundSize: "cover",
       }}
     >
