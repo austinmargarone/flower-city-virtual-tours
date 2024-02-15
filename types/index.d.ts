@@ -16,7 +16,7 @@ export type OptionType = { value: string; label: string };
 export interface WebsiteForm {
   // Website Info
   websiteType: OptionType;
-
+  pages: string;
   // Contact Info
   name: string;
   phone: string;

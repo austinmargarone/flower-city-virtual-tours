@@ -11,6 +11,7 @@ import { OptionType } from "@/types";
 const schema = z.object({
   // Website Info
   websiteType: z.string().nonempty("Website Type is required"),
+  pages: z.string().nonempty("Number of Pages is required"),
   // Contact Info
   name: z.string().nonempty("Name is required"),
   phone: z.string().nonempty("Phone Number is required"),
@@ -87,6 +88,37 @@ const Build = () => {
               )}
             />
           </div>
+          <div className="text-[#B49167]">
+            {typeof errors.websiteType?.message === "string" && (
+              <span>{errors.websiteType.message}</span>
+            )}
+          </div>
+        </div>
+        {/* Number of Pages */}
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex flex-col">
+            <label htmlFor="name" className="toplabel">
+              Number of Pages
+            </label>
+            <Controller
+              name="pages"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  id="pages"
+                  className="w-full h-[2rem] pl-[.25rem]"
+                />
+              )}
+            />
+          </div>
+          <div className="text-[#B49167]">
+            {typeof errors.pages?.message === "string" && (
+              <span>{errors.pages.message}</span>
+            )}
+          </div>
         </div>
         <div>
           <Controller
@@ -97,7 +129,7 @@ const Build = () => {
           />
         </div>
       </section>
-      {/* Number of Pages */}
+      {/* Contact Info */}
       <h2 className="h2 mb-[5.75rem]">Contact Info</h2>
       <section>
         <div className="flex flex-col mb-[1.5rem]">
@@ -114,7 +146,7 @@ const Build = () => {
                   {...field}
                   type="text"
                   id="name"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
                 />
               )}
             />
@@ -122,7 +154,7 @@ const Build = () => {
           <div className="ml-[80px] text-[#B49167]">
             {typeof errors.name?.message === "string" && (
               <span>{errors.name.message}</span>
-            )}{" "}
+            )}
           </div>
         </div>
         <div className="flex flex-col mb-[1.5rem]">
@@ -139,7 +171,7 @@ const Build = () => {
                   {...field}
                   type="text"
                   id="phone"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
                 />
               )}
             />
@@ -164,7 +196,7 @@ const Build = () => {
                   {...field}
                   type="email"
                   id="email"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
                 />
               )}
             />
@@ -188,7 +220,7 @@ const Build = () => {
                 <textarea
                   {...field}
                   id="message"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
                 />
               )}
             />
