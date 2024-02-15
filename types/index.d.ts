@@ -11,11 +11,11 @@ export interface FormData {
 }
 
 
-type OptionType = { value: string; label: string };
+export type OptionType = { value: string; label: string };
+
 export interface WebsiteForm {
   // Website Info
   websiteType: OptionType;
-
 
   // Contact Info
   name: string;
