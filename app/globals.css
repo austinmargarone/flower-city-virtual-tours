@@ -226,8 +226,7 @@
   font-weight: bold;
   width: 77px; 
   text-align: left; 
-  vertical-align: top;
-  margin-bottom: 12px;
+  vertical-align: center;
 }
 
 .toplabel {
@@ -276,4 +275,13 @@
 
 .contactbutton:hover::before {
   width: 100%;
+}
+
+/* Build */
+.sliderlabel {
+  display: inline-block;
+  color: #B49167;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
 }

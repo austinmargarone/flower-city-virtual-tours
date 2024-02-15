@@ -6,6 +6,8 @@ import Select from "react-select";
 import { useState } from "react";
 import Switch from "@mui/material/Switch";
 import { OptionType } from "@/types";
+import * as React from "react";
+import { alpha, styled } from "@mui/material/styles";
 
 // Define your Zod schema for form validation
 const schema = z.object({
@@ -49,6 +51,19 @@ const Build = () => {
   };
 
   // Test
+  const TanSwitch = styled(Switch)(({ theme }) => ({
+    "& .MuiSwitch-switchBase.Mui-checked": {
+      color: ["#C3A785"],
+      "&:hover": {
+        backgroundColor: alpha("#C3A785", theme.palette.action.hoverOpacity),
+      },
+    },
+    "& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track": {
+      backgroundColor: ["#C3A785"],
+    },
+  }));
+
+  const label = { inputProps: { "aria-label": "Color switch demo" } };
 
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 
@@ -60,7 +75,7 @@ const Build = () => {
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex flex-col">
             <label htmlFor="websiteType" className="toplabel">
-              Type of website
+              Type of Website
             </label>
             <Controller
               name="websiteType"
@@ -109,7 +124,7 @@ const Build = () => {
                   {...field}
                   type="text"
                   id="pages"
-                  className="w-full h-[2rem] pl-[.25rem]"
+                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
                 />
               )}
             />
@@ -120,13 +135,33 @@ const Build = () => {
             )}
           </div>
         </div>
-        <div>
-          <Controller
-            name="notifications"
-            control={control}
-            defaultValue={false}
-            render={({ field }) => <Switch {...field} />}
-          />
+        {/* Content Management */}
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex">
+            <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
+              Content Managment
+            </label>
+            <Controller
+              name="cms"
+              control={control}
+              defaultValue={false}
+              render={({ field }) => <TanSwitch {...label} defaultChecked />}
+            />
+          </div>
+        </div>
+        {/* Content Management */}
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex">
+            <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
+              Content Managment
+            </label>
+            <Controller
+              name="cms"
+              control={control}
+              defaultValue={false}
+              render={({ field }) => <TanSwitch {...label} defaultChecked />}
+            />
+          </div>
         </div>
       </section>
       {/* Contact Info */}
@@ -134,7 +169,7 @@ const Build = () => {
       <section>
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="name" className="label">
+            <label htmlFor="name" className="label flex my-auto">
               Name
             </label>
             <Controller
@@ -146,7 +181,7 @@ const Build = () => {
                   {...field}
                   type="text"
                   id="name"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded-sm"
                 />
               )}
             />
@@ -159,7 +194,7 @@ const Build = () => {
         </div>
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="phone" className="label">
+            <label htmlFor="phone" className="label flex my-auto">
               Number
             </label>
             <Controller
@@ -171,7 +206,7 @@ const Build = () => {
                   {...field}
                   type="text"
                   id="phone"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded-sm"
                 />
               )}
             />
@@ -184,7 +219,7 @@ const Build = () => {
         </div>
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="email" className="label">
+            <label htmlFor="email" className="label flex my-auto">
               Email
             </label>
             <Controller
@@ -196,7 +231,7 @@ const Build = () => {
                   {...field}
                   type="email"
                   id="email"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded-sm"
                 />
               )}
             />
@@ -209,7 +244,7 @@ const Build = () => {
         </div>
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="message" className="label">
+            <label htmlFor="message" className="label flex my-auto">
               Message
             </label>
             <Controller
@@ -220,7 +255,7 @@ const Build = () => {
                 <textarea
                   {...field}
                   id="message"
-                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2rem]"
+                  className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded-sm"
                 />
               )}
             />
