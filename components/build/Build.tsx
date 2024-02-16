@@ -148,6 +148,7 @@ const Build = () => {
             )}
           </div>
         </div>
+
         {/* Content Management */}
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
@@ -193,6 +194,48 @@ const Build = () => {
             />
           </div>
         </div>
+        {/* Budget Range */}
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex flex-col">
+            <label htmlFor="budget" className="toplabel">
+              Budget Range
+            </label>
+            <Controller
+              name="budget"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  id="budget"
+                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                />
+              )}
+            />
+          </div>
+        </div>
+        {/* Timeline */}
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex flex-col">
+            <label htmlFor="timeline" className="toplabel">
+              Timeline
+            </label>
+            <Controller
+              name="timeline"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  id="timeline"
+                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                />
+              )}
+            />
+          </div>
+        </div>
       </section>
       {/* Advanced fields */}
       <section>
@@ -210,48 +253,6 @@ const Build = () => {
 
         {showAdditionalFields && (
           <>
-            {/* Budget Range */}
-            <div className="flex flex-col mb-[1.5rem]">
-              <div className="flex flex-col">
-                <label htmlFor="budget" className="toplabel">
-                  Budget Range
-                </label>
-                <Controller
-                  name="budget"
-                  control={control}
-                  defaultValue=""
-                  render={({ field }) => (
-                    <input
-                      {...field}
-                      type="text"
-                      id="budget"
-                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                    />
-                  )}
-                />
-              </div>
-            </div>
-            {/* Timeline */}
-            <div className="flex flex-col mb-[1.5rem]">
-              <div className="flex flex-col">
-                <label htmlFor="timeline" className="toplabel">
-                  Timeline
-                </label>
-                <Controller
-                  name="timeline"
-                  control={control}
-                  defaultValue=""
-                  render={({ field }) => (
-                    <input
-                      {...field}
-                      type="text"
-                      id="timeline"
-                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                    />
-                  )}
-                />
-              </div>
-            </div>
             {/* Design Style */}
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex flex-col">
