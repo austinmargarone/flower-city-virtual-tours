@@ -145,21 +145,37 @@ const Build = () => {
               name="cms"
               control={control}
               defaultValue={false}
-              render={({ field }) => <TanSwitch {...label} defaultChecked />}
+              render={({ field }) => <TanSwitch {...label} />}
             />
           </div>
         </div>
         {/* Content Management */}
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
-              Content Managment
+            <label
+              htmlFor="Authentication"
+              className="sliderlabel my-auto w-[180px]"
+            >
+              Authentication
             </label>
             <Controller
-              name="cms"
+              name="Authentication"
               control={control}
               defaultValue={false}
-              render={({ field }) => <TanSwitch {...label} defaultChecked />}
+              render={({ field }) => <TanSwitch {...label} />}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex">
+            <label htmlFor="Theme" className="sliderlabel my-auto w-[180px]">
+              Dark & Light Theme
+            </label>
+            <Controller
+              name="Theme"
+              control={control}
+              defaultValue={false}
+              render={({ field }) => <TanSwitch {...label} />}
             />
           </div>
         </div>
