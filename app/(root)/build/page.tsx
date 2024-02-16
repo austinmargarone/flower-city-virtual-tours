@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <section
-      className="mx-auto flex flex-col justify-center items-center h-screen w-screen"
+      className="mx-auto flex flex-col justify-center items-center w-screen py-[2rem]"
       style={{
         backgroundImage: "url('/background4.jpg')",
         backgroundSize: "cover",
