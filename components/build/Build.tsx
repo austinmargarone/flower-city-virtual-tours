@@ -55,7 +55,7 @@ const Build = () => {
   });
 
   const onSubmit = (data: any) => {
-    // Submit logic here (e.g., send data to backend)
+    // Submit logic here send data to backend
     console.log(data);
     // Reset the form after successful submission
     reset();
@@ -76,6 +76,9 @@ const Build = () => {
   const label = { inputProps: { "aria-label": "Color switch demo" } };
 
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+
+  // Open additional feilds
+  const [showAdditionalFields, setShowAdditionalFields] = useState(false);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -190,6 +193,109 @@ const Build = () => {
             />
           </div>
         </div>
+      </section>
+      {/* Advanced fields */}
+      <section>
+        <button
+          className="h2 mb-[5.75rem] flex justify-center mx-auto"
+          onClick={(event) => {
+            event.preventDefault(); // Prevent default form submission behavior
+            setShowAdditionalFields(!showAdditionalFields);
+          }}
+        >
+          {showAdditionalFields
+            ? "Close Advanced Fields"
+            : "Open Advanced Fields"}
+        </button>
+
+        {showAdditionalFields && (
+          <>
+            {/* Budget Range */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex flex-col">
+                <label htmlFor="budget" className="toplabel">
+                  Budget Range
+                </label>
+                <Controller
+                  name="budget"
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      id="budget"
+                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                    />
+                  )}
+                />
+              </div>
+            </div>
+            {/* Timeline */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex flex-col">
+                <label htmlFor="timeline" className="toplabel">
+                  Timeline
+                </label>
+                <Controller
+                  name="timeline"
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      id="timeline"
+                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                    />
+                  )}
+                />
+              </div>
+            </div>
+            {/* Design Style */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex flex-col">
+                <label htmlFor="designStyle" className="toplabel">
+                  Design Style
+                </label>
+                <Controller
+                  name="designStyle"
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      id="designStyle"
+                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                    />
+                  )}
+                />
+              </div>
+            </div>
+            {/* Design Style */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex flex-col">
+                <label htmlFor="specialfeatures" className="toplabel">
+                  Special Features
+                </label>
+                <Controller
+                  name="specialfeatures"
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      id="specialfeatures"
+                      className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
+                    />
+                  )}
+                />
+              </div>
+            </div>
+          </>
+        )}
       </section>
       {/* Contact Info */}
       <h2 className="h2 mb-[5.75rem]">Contact Info</h2>
@@ -319,96 +425,7 @@ const Build = () => {
           </div>
         </div>
       </section>
-      {/* Additional fields */}
-      <h2 className="h2 mb-[5.75rem]">Additional Info</h2>
-      <section>
-        {/* Budget Range */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex flex-col">
-            <label htmlFor="budget" className="toplabel">
-              Budget Range
-            </label>
-            <Controller
-              name="budget"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <input
-                  {...field}
-                  type="text"
-                  id="budget"
-                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                />
-              )}
-            />
-          </div>
-        </div>
-        {/* Timeline */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex flex-col">
-            <label htmlFor="timeline" className="toplabel">
-              Timeline
-            </label>
-            <Controller
-              name="timeline"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <input
-                  {...field}
-                  type="text"
-                  id="timeline"
-                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                />
-              )}
-            />
-          </div>
-        </div>
-        {/* Design Style */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex flex-col">
-            <label htmlFor="designStyle" className="toplabel">
-              Design Style
-            </label>
-            <Controller
-              name="designStyle"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <input
-                  {...field}
-                  type="text"
-                  id="designStyle"
-                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                />
-              )}
-            />
-          </div>
-        </div>
-        {/* Design Style */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex flex-col">
-            <label htmlFor="specialfeatures" className="toplabel">
-              Special Features
-            </label>
-            <Controller
-              name="specialfeatures"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <input
-                  {...field}
-                  type="text"
-                  id="specialfeatures"
-                  className="w-full h-[2.25rem] rounded-sm pl-[.25rem]"
-                />
-              )}
-            />
-          </div>
-        </div>
 
-        {/* Add other additional fields similarly */}
-      </section>
       <div className="mx-auto flex justify-center">
         <button type="submit" className="contactbutton" disabled={isSubmitting}>
           Submit
