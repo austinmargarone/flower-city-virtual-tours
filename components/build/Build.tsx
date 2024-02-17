@@ -13,22 +13,22 @@ const schema = z.object({
   // Website Info
   websiteType: z.string().nonempty("Website Type is required"),
   pages: z.string().nonempty("Number of Pages is required"),
+  budget: z.string().optional(),
+  timeline: z.string().optional(),
   // Contact Info
   name: z.string().nonempty("Name is required"),
+  company: z.string(),
   phone: z.string().nonempty("Phone Number is required"),
   email: z.string().email("Invalid email").nonempty("Email is required"),
   message: z.string().nonempty("Message is required"),
   // Additional fields
-  budget: z.string().optional(),
-  timeline: z.string().optional(),
-  // Addedd
+  paymentProcessing: z.string().optional(),
   designStyle: z.string().optional(),
   specialFeatures: z.string().optional(),
   targetAudience: z.string().optional(),
   competitorWebsites: z.string().optional(),
   seoRequirements: z.string().optional(),
   maintenanceSupport: z.string().optional(),
-  contentCreation: z.string().optional(),
   legalCompliance: z.string().optional(),
 });
 
@@ -320,7 +320,7 @@ const Build = () => {
               )}
             />
           </div>
-          <div className="ml-[80px] text-[#B49167]">
+          <div className="ml-[90px] text-[#B49167]">
             {typeof errors.name?.message === "string" && (
               <span>{errors.name.message}</span>
             )}
@@ -328,26 +328,26 @@ const Build = () => {
         </div>
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
-            <label htmlFor="Company" className="label flex my-auto">
+            <label htmlFor="company" className="label flex my-auto">
               Company
             </label>
             <Controller
-              name="name"
+              name="company"
               control={control}
               defaultValue=""
               render={({ field }) => (
                 <input
                   {...field}
                   type="text"
-                  id="Company"
+                  id="company"
                   className="w-[11rem] xs:w-[14rem] ss:w-[17rem] sm:w-[19rem] md:w-[21.5rem] lg:w-[24rem] pl-[.25rem] h-[2.25rem] rounded-sm"
                 />
               )}
             />
           </div>
-          <div className="ml-[80px] text-[#B49167]">
-            {typeof errors.Company?.message === "string" && (
-              <span>{errors.Company.message}</span>
+          <div className="ml-[90px] text-[#B49167]">
+            {typeof errors.company?.message === "string" && (
+              <span>{errors.company.message}</span>
             )}
           </div>
         </div>
@@ -370,7 +370,7 @@ const Build = () => {
               )}
             />
           </div>
-          <div className="ml-[80px] text-[#B49167]">
+          <div className="ml-[90px] text-[#B49167]">
             {typeof errors.phone?.message === "string" && (
               <span>{errors.phone.message}</span>
             )}
@@ -395,7 +395,7 @@ const Build = () => {
               )}
             />
           </div>
-          <div className="ml-[80px] text-[#B49167]">
+          <div className="ml-[90px] text-[#B49167]">
             {typeof errors.email?.message === "string" && (
               <span>{errors.email.message}</span>
             )}
@@ -419,7 +419,7 @@ const Build = () => {
               )}
             />
           </div>
-          <div className="ml-[80px] text-[#B49167]">
+          <div className="ml-[90px] text-[#B49167]">
             {typeof errors.message?.message === "string" && (
               <span>{errors.message.message}</span>
             )}{" "}
