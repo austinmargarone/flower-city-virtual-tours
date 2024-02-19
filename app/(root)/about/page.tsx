@@ -32,12 +32,6 @@ export default function Page() {
       <div>
         <About />
       </div>
-      <div className="my-[1.5rem]">
-        <Developer />
-      </div>
-      <div className="mb-[1.25rem]">
-        <Tech />
-      </div>
     </section>
   );
 }

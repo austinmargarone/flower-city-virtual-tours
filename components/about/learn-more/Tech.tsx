@@ -18,7 +18,7 @@ import {
   SassIcon,
   TSIcon,
   TailwindIcon,
-} from "../svg";
+} from "../../svg";
 
 const Tech = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
