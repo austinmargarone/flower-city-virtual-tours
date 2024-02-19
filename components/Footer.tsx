@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="lg:flex flex-col lg:w-[60%] hidden">
         <div className="">
           <ul className="flex gap-[1rem] text-white font-bold">
-            <Link href="/Home">
+            <Link href="/">
               <li>Home</li>
             </Link>
             <Link href="/build">
