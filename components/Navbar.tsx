@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 const Navbar = () => {
   return (
     <header>
-      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight">
+      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight border-b-[#B49167] border-b shadow-lg">
         <Link href="/">
           <div className="flex flex-col">
             <div className="text-white">

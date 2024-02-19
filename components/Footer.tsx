@@ -5,31 +5,35 @@ import CopyNumber from "./CopyNumber";
 
 const Footer = () => {
   return (
-    <div className="lg:items-center flex flex-col lg:flex-row py-[2.5rem] gap-[1rem] border-t-[1.5px] border-t-[#B49167] bg-dark-midnight px-[3rem]">
-      <div className="flex flex-col gap-[.63rem] lg:w-[40%] xl:pl-[3.6rem] mx-auto">
+    <div className="lg:items-center flex flex-col lg:flex-row py-[1.5rem] lg:py-[2.5rem] gap-[1rem] border-t-[1.5px] border-t-[#B49167] bg-dark-midnight lg:px-[3rem] shadow-lg">
+      <div className="flex flex-col gap-[.63rem] xl:pl-[3.6rem] mx-auto">
         <Link href="https://flowercityvirtualtours.com" target="_blank">
           <Image
             src="/companyLogo.png"
             width={400}
             height={100}
             alt="Flower City Virtual Tours LLC"
-            className="w-[150px] sm:w-[250px] md:w-[275px] lg-w[300px]"
+            className="w-[250px] md:w-[275px] lg:w-[300px] mx-auto"
           />
         </Link>
-        <div className="flex items-center gap-[1.2rem] md:mt-[.33rem]">
-          <Link href={"/contact"}>
-            <button className="text-white shadow-lg bg-light-tan w-[10rem] p-[.25rem] rounded-[.17rem]">
-              Contact
-            </button>
-          </Link>
-          <CopyNumber />
+        <div className="flex items-center gap-[1.2rem] md:mt-[.33rem] w-full">
+          <div className="w-[45%]">
+            <Link href={"/contact"}>
+              <button className="text-white shadow-lg bg-light-tan w-full p-[.25rem] rounded-[.17rem]">
+                Contact
+              </button>
+            </Link>
+          </div>
+          <div className="w-[55%]">
+            <CopyNumber />
+          </div>
         </div>
       </div>
-      <div className="sm:flex flex-col lg:w-[60%] hidden">
+      <div className="lg:flex flex-col lg:w-[60%] hidden">
         <div className="">
           <ul className="flex gap-[1rem] text-white font-bold">
-            <Link href="/request-appointment">
-              <li>Request Appointment</li>
+            <Link href="/build">
+              <li>Request A Build</li>
             </Link>
             <Link href="/privacy-policy">
               <li>Privacy Policy</li>

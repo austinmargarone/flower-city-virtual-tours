@@ -7,7 +7,7 @@ const CopyNumber = () => {
   }
   return (
     <>
-      <button onClick={() => copyText("5855015690")}>
+      <button onClick={() => copyText("5855015690")} className="w-full">
         <p className="text-white">C: (585) 501-5690</p>
       </button>
     </>
