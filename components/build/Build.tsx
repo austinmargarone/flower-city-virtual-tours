@@ -17,19 +17,19 @@ const schema = z.object({
   timeline: z.string().optional(),
   // Contact Info
   name: z.string().nonempty("Name is required"),
-  company: z.string(),
+  company: z.string().optional(),
   phone: z.string().nonempty("Phone Number is required"),
   email: z.string().email("Invalid email").nonempty("Email is required"),
   message: z.string().nonempty("Message is required"),
   // Additional fields
-  paymentProcessing: z.string().optional(),
   designStyle: z.string().optional(),
   specialFeatures: z.string().optional(),
-  targetAudience: z.string().optional(),
-  competitorWebsites: z.string().optional(),
-  seoRequirements: z.string().optional(),
-  maintenanceSupport: z.string().optional(),
-  legalCompliance: z.string().optional(),
+  seo: z.boolean().optional(),
+  cms: z.boolean().optional(),
+  authentication: z.boolean().optional(),
+  theme: z.boolean().optional(),
+  payment: z.boolean().optional(),
+  appointment: z.boolean().optional(),
 });
 
 const options = [
@@ -148,52 +148,6 @@ const Build = () => {
             )}
           </div>
         </div>
-
-        {/* Content Management */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex">
-            <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
-              Content Management
-            </label>
-            <Controller
-              name="cms"
-              control={control}
-              defaultValue={false}
-              render={({ field }) => <TanSwitch {...label} />}
-            />
-          </div>
-        </div>
-        {/* Authentication */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex">
-            <label
-              htmlFor="Authentication"
-              className="sliderlabel my-auto w-[180px]"
-            >
-              Authentication
-            </label>
-            <Controller
-              name="Authentication"
-              control={control}
-              defaultValue={false}
-              render={({ field }) => <TanSwitch {...label} />}
-            />
-          </div>
-        </div>
-        {/* Dark & Light Theme */}
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex">
-            <label htmlFor="Theme" className="sliderlabel my-auto w-[180px]">
-              Dark & Light Theme
-            </label>
-            <Controller
-              name="Theme"
-              control={control}
-              defaultValue={false}
-              render={({ field }) => <TanSwitch {...label} />}
-            />
-          </div>
-        </div>
         {/* Budget Range */}
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex flex-col">
@@ -240,19 +194,113 @@ const Build = () => {
       {/* Advanced fields */}
       <section>
         <button
-          className="h2 mb-[5.75rem] flex justify-center mx-auto"
+          className="text-[#B49167] underline flex justify-center mx-auto border border-[#B49167] px-[1rem] py-[.5rem] rounded-md mb-[1.5rem]"
           onClick={(event) => {
-            event.preventDefault(); // Prevent default form submission behavior
+            event.preventDefault();
             setShowAdditionalFields(!showAdditionalFields);
           }}
         >
           {showAdditionalFields
-            ? "Close Advanced Fields"
-            : "Open Advanced Fields"}
+            ? "Close Additional Fields"
+            : "Open Additional Fields"}
         </button>
 
         {showAdditionalFields && (
           <>
+            {/* Content Management */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
+                  Content Management
+                </label>
+                <Controller
+                  name="cms"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
+            {/* SEO */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label htmlFor="Seo" className="sliderlabel my-auto w-[180px]">
+                  SEO
+                </label>
+                <Controller
+                  name="Seo"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
+            {/* Authentication */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label
+                  htmlFor="Authentication"
+                  className="sliderlabel my-auto w-[180px]"
+                >
+                  Authentication
+                </label>
+                <Controller
+                  name="Authentication"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
+            {/* Dark & Light Theme */}
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label
+                  htmlFor="Theme"
+                  className="sliderlabel my-auto w-[180px]"
+                >
+                  Dark & Light Theme
+                </label>
+                <Controller
+                  name="Theme"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label
+                  htmlFor="Payment"
+                  className="sliderlabel my-auto w-[180px]"
+                >
+                  Payment Processing
+                </label>
+                <Controller
+                  name="Payment"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col mb-[1.5rem]">
+              <div className="flex">
+                <label
+                  htmlFor="Appointment"
+                  className="sliderlabel my-auto w-[180px]"
+                >
+                  Appointment Booking
+                </label>
+                <Controller
+                  name="Appointment"
+                  control={control}
+                  defaultValue={false}
+                  render={({ field }) => <TanSwitch {...label} />}
+                />
+              </div>
+            </div>
             {/* Design Style */}
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex flex-col">
