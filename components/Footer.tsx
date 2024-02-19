@@ -32,17 +32,17 @@ const Footer = () => {
       <div className="lg:flex flex-col lg:w-[60%] hidden">
         <div className="">
           <ul className="flex gap-[1rem] text-white font-bold">
+            <Link href="/Home">
+              <li>Home</li>
+            </Link>
             <Link href="/build">
               <li>Request A Build</li>
             </Link>
-            <Link href="/privacy-policy">
-              <li>Privacy Policy</li>
+            <Link href="/about">
+              <li>About</li>
             </Link>
-            <Link href="/terms-and-coditions">
-              <li>Terms & Conditions </li>
-            </Link>
-            <Link href="/site-map">
-              <li>Site Map</li>
+            <Link href="/contact">
+              <li>Contact</li>
             </Link>
           </ul>
         </div>
