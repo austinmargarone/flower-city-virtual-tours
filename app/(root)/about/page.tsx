@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <section
-      className="mx-auto flex h-screen flex-col justify-center"
+      className="mx-auto flex h-screen flex-col justify-center p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem]"
       style={{
         backgroundImage: "url('/background3.jpg')",
         backgroundSize: "cover",
