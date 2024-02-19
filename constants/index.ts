@@ -16,16 +16,12 @@ export const menuLinks: MenuLink[] = [
     label: "About",
   },
   {
-    route: "/results",
-    label: "Our Results",
-  },
-  {
-    route: "/pricing",
-    label: "Pricing",
-  },
-  {
     route: "/contact",
     label: "Contact",
+  },
+  {
+    route: "/build",
+    label: "Build",
   },
 
 ];

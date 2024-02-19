@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 const NavContent = () => {
   const pathname = usePathname();
   return (
-    <section className="flex h-full flex-col gap-6 pt-16">
+    <section className="flex h-full flex-col gap-6 pt-16 bg-[#0D101E]">
       {menuLinks.map((item) => {
         const isActive =
           (pathname.includes(item.route) && item.route.length > 1) ||
@@ -27,9 +27,9 @@ const NavContent = () => {
               href={item.route}
               className={`${
                 isActive
-                  ? "primary-gradient text-light-900 rounded-lg"
-                  : "text-dark300_light900"
-              } gap-4 flex items-center justify-start bg-transparent p-4`}
+                  ? "primary-gradient text-white rounded-lg bg-[#B49167]"
+                  : "text-white"
+              } gap-4 flex items-center justify-start bg-[#0D101E] p-4`}
             >
               <p className={`${isActive ? "base-bold" : "base-medium"}`}>
                 {item.label}
@@ -54,10 +54,7 @@ const MobileNav = () => {
           className="invert-colors lg:hidden"
         />
       </SheetTrigger>
-      <SheetContent
-        side="right"
-        className="background-light900_dark200 border-none"
-      >
+      <SheetContent side="right" className="bg-[#0D101E] border-[#B49167]">
         <Link href="/" className="flex items-center gap-1">
           <Image
             src="/companyLogo.png"
@@ -72,17 +69,17 @@ const MobileNav = () => {
             <NavContent />
           </SheetClose>
           <SignedOut>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4 mt-[1.5rem]">
               <SheetClose asChild>
                 <Link href="/sign-in">
-                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
-                    <span className="primary-text-gradient">Log In</span>
+                  <Button className=" bg-[#B49167] small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
+                    <span className="text-white">Log In</span>
                   </Button>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href="/sign-up">
-                  <Button className="small-medium light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-dark400_light900">
+                  <Button className="bg-[#B49167] small-medium light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-white">
                     Sign Up
                   </Button>
                 </Link>
