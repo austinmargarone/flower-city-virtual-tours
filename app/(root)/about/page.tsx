@@ -1,6 +1,4 @@
 import About from "@/components/about/About";
-import Developer from "@/components/about/Developer";
-import Tech from "@/components/about/Tech";
 
 import { Metadata } from "next";
 
