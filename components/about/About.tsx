@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -5,7 +6,7 @@ const About = () => {
     <article className="flex justify-center flex-col min-w-[300px]">
       <div>
         <h1 className="sm:h1 h1mobile flex justify-center">About</h1>
-        <p className="pmobile sm:p flex justify-center min-w-[300px] max-w-[850px] mx-auto">
+        <p className="p flex justify-center min-w-[300px] max-w-[850px] mx-auto">
           Our company thrives on the forefront of technology, employing
           state-of-the-art tech stacks to craft dynamic digital solutions that
           propel businesses forward. With an unwavering focus on innovation, we
@@ -14,6 +15,13 @@ const About = () => {
           customers alike. Partner with us to experience the pinnacle of web
           development excellence.
         </p>
+        <div className="flex justify-center mt-[1.25rem]">
+          <Link href="/build">
+            <button className="hero-button shadow-lg flex mx-auto">
+              Get started
+            </button>
+          </Link>
+        </div>
       </div>
     </article>
   );
