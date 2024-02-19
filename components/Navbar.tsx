@@ -2,12 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
-import Theme from "./Theme";
 
 const Navbar = () => {
   return (
     <header>
-      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-grey bg-light-blue dark:bg-dark-midnight">
+      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight">
         <Link href="/">
           <div className="flex flex-col">
             <div className="text-white">
@@ -41,7 +40,6 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <Theme />
           <SignedIn>
             <UserButton
               afterSignOutUrl="/"

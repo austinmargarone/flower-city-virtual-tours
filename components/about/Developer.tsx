@@ -5,7 +5,7 @@ import React from "react";
 const Developer = () => {
   return (
     <section>
-      <div className="min-w-[300px] max-w-[400px] mx-auto py-[1.5rem] bg-[#343A63] dark:bg-[#0D101E] rounded-md shadow-lg">
+      <div className="min-w-[300px] max-w-[400px] mx-auto py-[1.5rem] bg-[#0D101E] rounded-md shadow-lg">
         <h2 className="sm:h2 h2mobile flex justify-center">
           Full-Stack Developer
         </h2>
