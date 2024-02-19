@@ -462,7 +462,7 @@ const Build = () => {
                 <textarea
                   {...field}
                   id="message"
-                  className="w-[11rem] xs:w-[14rem] ss:w-[17rem] sm:w-[19rem] md:w-[21.5rem] lg:w-[24rem] pl-[.25rem] h-[2.25rem] rounded-sm"
+                  className="w-[11rem] xs:w-[14rem] ss:w-[17rem] sm:w-[19rem] md:w-[21.5rem] lg:w-[24rem] pl-[.25rem] rounded-sm"
                 />
               )}
             />

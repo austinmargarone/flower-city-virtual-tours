@@ -40,7 +40,7 @@ const Contact = () => {
             type="text"
             id="name"
             {...register("name")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -56,7 +56,7 @@ const Contact = () => {
             type="text"
             id="phone"
             {...register("phone")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -72,7 +72,7 @@ const Contact = () => {
             type="email"
             id="email"
             {...register("email")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -87,7 +87,7 @@ const Contact = () => {
           <textarea
             id="message"
             {...register("message")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] "
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
