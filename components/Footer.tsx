@@ -17,14 +17,14 @@ const Footer = () => {
           />
         </Link>
         <div className="flex items-center gap-[1.2rem] md:mt-[.33rem] w-full">
-          <div className="w-[45%]">
+          <div className="w-[45%] button-container">
             <Link href={"/contact"}>
               <button className="text-white shadow-lg bg-light-tan w-full p-[.25rem] rounded-[.17rem]">
                 Contact
               </button>
             </Link>
           </div>
-          <div className="w-[55%]">
+          <div className="w-[55%] button-container">
             <CopyNumber />
           </div>
         </div>
