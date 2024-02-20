@@ -4,7 +4,7 @@ export interface MenuLink {
 }
 
 export interface FormData {
-  name: string;
+  contactname: string;
   phone: string;
   email: string;
   message: string;

@@ -3,10 +3,11 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormData } from "@/types";
+import emailjs from "emailjs-com";
 
 // Define your Zod schema for form validation
 const schema = z.object({
-  name: z.string().nonempty("Name is required"),
+  contactname: z.string().nonempty("Name is required"),
   phone: z.string().nonempty("Phone Number is required"),
   email: z.string().email("Invalid email").nonempty("Email is required"),
   message: z.string().nonempty("Message is required"),
@@ -22,29 +23,51 @@ const Contact = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => {
-    // Submit logic here (e.g., send data to backend)
-    console.log(data);
-    // Reset the form after successful submission
-    reset();
+  const onSubmit = async (data: FormData) => {
+    try {
+      // Zod validation succeeded, proceed with your logic
+      console.log(data);
+
+      // Send email using emailjs
+      const templateParams = {
+        contactname: data.contactname,
+        phone: data.phone,
+        email: data.email,
+        message: data.message,
+      };
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_PUBLIC_ID,
+      );
+
+      // Reset the form after successful submission
+      reset();
+
+      console.log("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
-          <label htmlFor="name" className="label">
+          <label htmlFor="contactname" className="label">
             Name
           </label>
           <input
             type="text"
             id="name"
-            {...register("name")}
+            {...register("contactname")}
             className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
-          {errors.name && <span>{errors.name.message}</span>}
+          {errors.contactname && <span>{errors.contactname.message}</span>}
         </div>
       </div>
       <div className="flex flex-col mb-[1.5rem]">
