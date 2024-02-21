@@ -12,7 +12,10 @@ import emailjs from "emailjs-com";
 // Define your Zod schema for form validation
 const schema = z.object({
   // Website Info
-  websiteType: z.string().nonempty("Website Type is required"),
+  websiteType: z.object({
+    value: z.string(),
+    label: z.string(),
+  }),
   pages: z.string().nonempty("Number of Pages is required"),
   budget: z.string().optional(),
   timeline: z.string().optional(),
@@ -62,23 +65,23 @@ const Build = () => {
 
       // Send email using emailjs
       const templateParams = {
+        name: data.name,
         websiteType: data.websiteType,
         pages: data.pages,
         budget: data.budget,
         timeline: data.timeline,
-        name: data.name,
+        designStyle: data.designStyle,
+        specialFeatures: data.specialFeatures,
+        seo: data.seo ? "Yes" : "No",
+        cms: data.cms ? "Yes" : "No",
+        authentication: data.authentication ? "Yes" : "No",
+        theme: data.theme ? "Yes" : "No",
+        payment: data.payment ? "Yes" : "No",
+        appointment: data.appointment ? "Yes" : "No",
+        message: data.message,
         company: data.company,
         phone: data.phone,
         email: data.email,
-        message: data.message,
-        designStyle: data.designStyle,
-        specialFeatures: data.specialFeatures,
-        seo: data.seo,
-        cms: data.cms,
-        authentication: data.authentication,
-        theme: data.theme,
-        payment: data.payment,
-        appointment: data.appointment,
       };
 
       await emailjs.send(
@@ -134,12 +137,12 @@ const Build = () => {
                   {...field}
                   options={options}
                   value={selectedOption}
-                  onChange={(value: OptionType | null) => {
-                    setSelectedOption(value);
-                    field.onChange(value ? value.value : null);
+                  onChange={(selectedOption: OptionType | null) => {
+                    setSelectedOption(selectedOption);
+                    field.onChange(selectedOption); // Pass the selectedOption object directly
                   }}
                   getOptionLabel={(option: OptionType) => option.label}
-                  getOptionValue={(option: OptionType) => option.value}
+                  getOptionValue={(option: OptionType) => option.value} // Return the value property of OptionType
                   styles={{
                     option: (provided, state) => ({
                       ...provided,
