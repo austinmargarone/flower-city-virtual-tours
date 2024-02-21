@@ -14,7 +14,18 @@ export interface FormData {
 export type OptionType = { value: string; label: string };
 
 export interface WebsiteForm {
-  // Website Info
+  timeline: string;
+  company?: string;
+  designStyle?: string;
+  specialFeatures?: string;
+  seo?: boolean;
+  cms?: boolean;
+  authentication?: boolean;
+  theme?: boolean;
+  payment?: boolean;
+  appointment?: boolean;
+  budget?: string;
+  timeline?: string;
   websiteType: OptionType;
   pages: string;
   // Contact Info
@@ -22,4 +33,5 @@ export interface WebsiteForm {
   phone: string;
   email: string;
   message: string;
+
 }

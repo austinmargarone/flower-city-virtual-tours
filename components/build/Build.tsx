@@ -6,7 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Select from "react-select";
 import Switch from "@mui/material/Switch";
 import { alpha, styled } from "@mui/material/styles";
-import { OptionType } from "@/types";
+import { OptionType, WebsiteForm } from "@/types";
+import emailjs from "emailjs-com";
 
 // Define your Zod schema for form validation
 const schema = z.object({
@@ -50,15 +51,50 @@ const Build = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm({
+  } = useForm<WebsiteForm>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: any) => {
-    // Submit logic here send data to backend
-    console.log(data);
-    // Reset the form after successful submission
-    reset();
+  const onSubmit = async (data: WebsiteForm) => {
+    try {
+      // Zod validation succeeded, proceed with your logic
+      console.log(data);
+
+      // Send email using emailjs
+      const templateParams = {
+        websiteType: data.websiteType,
+        pages: data.pages,
+        budget: data.budget,
+        timeline: data.timeline,
+        name: data.name,
+        company: data.company,
+        phone: data.phone,
+        email: data.email,
+        message: data.message,
+        designStyle: data.designStyle,
+        specialFeatures: data.specialFeatures,
+        seo: data.seo,
+        cms: data.cms,
+        authentication: data.authentication,
+        theme: data.theme,
+        payment: data.payment,
+        appointment: data.appointment,
+      };
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID_BUILD!,
+        templateParams,
+        process.env.NEXT_PUBLIC_PUBLIC_ID,
+      );
+
+      // Reset the form after successful submission
+      reset();
+
+      console.log("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   const TanSwitch = styled(Switch)(({ theme }) => ({
@@ -93,7 +129,6 @@ const Build = () => {
             <Controller
               name="websiteType"
               control={control}
-              defaultValue=""
               render={({ field }) => (
                 <Select
                   {...field}
@@ -228,7 +263,7 @@ const Build = () => {
                   SEO
                 </label>
                 <Controller
-                  name="Seo"
+                  name="seo"
                   control={control}
                   defaultValue={false}
                   render={({ field }) => <TanSwitch {...label} />}
@@ -245,7 +280,7 @@ const Build = () => {
                   Authentication
                 </label>
                 <Controller
-                  name="Authentication"
+                  name="authentication"
                   control={control}
                   defaultValue={false}
                   render={({ field }) => <TanSwitch {...label} />}
@@ -262,7 +297,7 @@ const Build = () => {
                   Dark & Light Theme
                 </label>
                 <Controller
-                  name="Theme"
+                  name="theme"
                   control={control}
                   defaultValue={false}
                   render={({ field }) => <TanSwitch {...label} />}
@@ -278,7 +313,7 @@ const Build = () => {
                   Payment Processing
                 </label>
                 <Controller
-                  name="Payment"
+                  name="payment"
                   control={control}
                   defaultValue={false}
                   render={({ field }) => <TanSwitch {...label} />}
@@ -294,7 +329,7 @@ const Build = () => {
                   Appointment Booking
                 </label>
                 <Controller
-                  name="Appointment"
+                  name="appointment"
                   control={control}
                   defaultValue={false}
                   render={({ field }) => <TanSwitch {...label} />}
@@ -329,7 +364,7 @@ const Build = () => {
                   Special Features
                 </label>
                 <Controller
-                  name="specialfeatures"
+                  name="specialFeatures"
                   control={control}
                   defaultValue=""
                   render={({ field }) => (
@@ -470,7 +505,7 @@ const Build = () => {
           <div className="ml-[90px] text-[#B49167]">
             {typeof errors.message?.message === "string" && (
               <span>{errors.message.message}</span>
-            )}{" "}
+            )}
           </div>
         </div>
       </section>
