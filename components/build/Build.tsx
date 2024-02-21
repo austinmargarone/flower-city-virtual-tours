@@ -254,10 +254,11 @@ const Build = () => {
                 <Controller
                   name="cms"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
@@ -273,10 +274,11 @@ const Build = () => {
                 <Controller
                   name="seo"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
@@ -295,10 +297,11 @@ const Build = () => {
                 <Controller
                   name="authentication"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
@@ -317,10 +320,11 @@ const Build = () => {
                 <Controller
                   name="theme"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
@@ -338,10 +342,11 @@ const Build = () => {
                 <Controller
                   name="payment"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
@@ -359,10 +364,11 @@ const Build = () => {
                 <Controller
                   name="appointment"
                   control={control}
+                  defaultValue={false} // Ensure a default value is provided
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value}
+                      checked={field.value} // Set checked prop to field value
                       onChange={(e) => field.onChange(e.target.checked)}
                     />
                   )}
