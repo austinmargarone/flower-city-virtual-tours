@@ -254,8 +254,13 @@ const Build = () => {
                 <Controller
                   name="cms"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
@@ -268,8 +273,13 @@ const Build = () => {
                 <Controller
                   name="seo"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
@@ -285,8 +295,13 @@ const Build = () => {
                 <Controller
                   name="authentication"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
@@ -302,8 +317,13 @@ const Build = () => {
                 <Controller
                   name="theme"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
@@ -318,8 +338,13 @@ const Build = () => {
                 <Controller
                   name="payment"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
@@ -334,8 +359,13 @@ const Build = () => {
                 <Controller
                   name="appointment"
                   control={control}
-                  defaultValue={false}
-                  render={({ field }) => <TanSwitch {...label} />}
+                  render={({ field }) => (
+                    <TanSwitch
+                      {...label}
+                      checked={field.value}
+                      onChange={(e) => field.onChange(e.target.checked)}
+                    />
+                  )}
                 />
               </div>
             </div>
