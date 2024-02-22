@@ -8,6 +8,7 @@ import Switch from "@mui/material/Switch";
 import { alpha, styled } from "@mui/material/styles";
 import { OptionType, WebsiteForm } from "@/types";
 import emailjs from "emailjs-com";
+import NoSsr from "@mui/material/NoSsr";
 
 // Define your Zod schema for form validation
 const schema = z.object({
@@ -124,42 +125,46 @@ const Build = () => {
       <h2 className="h2 mb-[5.75rem]">Website Info</h2>
       {/* Type of website */}
       <section>
-        <div className="flex flex-col mb-[1.5rem]">
-          <div className="flex flex-col">
-            <label htmlFor="websiteType" className="toplabel">
-              Type of Website
-            </label>
-            <Controller
-              name="websiteType"
-              control={control}
-              render={({ field }) => (
-                <Select
-                  {...field}
-                  options={options}
-                  value={selectedOption}
-                  onChange={(selectedOption: OptionType | null) => {
-                    setSelectedOption(selectedOption);
-                    field.onChange(selectedOption); // Pass the selectedOption object directly
-                  }}
-                  getOptionLabel={(option: OptionType) => option.label}
-                  getOptionValue={(option: OptionType) => option.value} // Return the value property of OptionType
-                  styles={{
-                    option: (provided, state) => ({
-                      ...provided,
-                      backgroundColor: state.isSelected ? "tan" : "white",
-                      color: state.isSelected ? "white" : "black",
-                    }),
-                  }}
-                />
+        <NoSsr>
+          <div className="flex flex-col mb-[1.5rem]">
+            <div className="flex flex-col">
+              <label htmlFor="websiteType" className="toplabel">
+                Type of Website
+              </label>
+              <Controller
+                name="websiteType"
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    {...field}
+                    options={options}
+                    value={selectedOption}
+                    onChange={(selectedOption: OptionType | null) => {
+                      setSelectedOption(selectedOption);
+                      field.onChange(selectedOption?.value || null);
+                    }}
+                    getOptionLabel={(option: OptionType) => option.label}
+                    getOptionValue={(option: OptionType) => option.value}
+                    id="websiteTypeSelect"
+                    styles={{
+                      option: (provided, state) => ({
+                        ...provided,
+                        backgroundColor: state.isSelected ? "tan" : "white",
+                        color: state.isSelected ? "white" : "black",
+                      }),
+                    }}
+                  />
+                )}
+              />
+            </div>
+            <div className="text-[#B49167]">
+              {typeof errors.websiteType?.message === "string" && (
+                <span>{errors.websiteType.message}</span>
               )}
-            />
+            </div>
           </div>
-          <div className="text-[#B49167]">
-            {typeof errors.websiteType?.message === "string" && (
-              <span>{errors.websiteType.message}</span>
-            )}
-          </div>
-        </div>
+        </NoSsr>
+
         {/* Number of Pages */}
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex flex-col">
@@ -248,18 +253,19 @@ const Build = () => {
             {/* Content Management */}
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
-                <label htmlFor="CMS" className="sliderlabel my-auto w-[180px]">
+                <label htmlFor="cms" className="sliderlabel my-auto w-[180px]">
                   Content Management
                 </label>
                 <Controller
                   name="cms"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="cms"
                     />
                   )}
                 />
@@ -268,18 +274,19 @@ const Build = () => {
             {/* SEO */}
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
-                <label htmlFor="Seo" className="sliderlabel my-auto w-[180px]">
+                <label htmlFor="seo" className="sliderlabel my-auto w-[180px]">
                   SEO
                 </label>
                 <Controller
                   name="seo"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="seo"
                     />
                   )}
                 />
@@ -289,7 +296,7 @@ const Build = () => {
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
                 <label
-                  htmlFor="Authentication"
+                  htmlFor="authentication"
                   className="sliderlabel my-auto w-[180px]"
                 >
                   Authentication
@@ -297,12 +304,13 @@ const Build = () => {
                 <Controller
                   name="authentication"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="authentication"
                     />
                   )}
                 />
@@ -312,7 +320,7 @@ const Build = () => {
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
                 <label
-                  htmlFor="Theme"
+                  htmlFor="theme"
                   className="sliderlabel my-auto w-[180px]"
                 >
                   Dark & Light Theme
@@ -320,12 +328,13 @@ const Build = () => {
                 <Controller
                   name="theme"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="theme"
                     />
                   )}
                 />
@@ -334,7 +343,7 @@ const Build = () => {
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
                 <label
-                  htmlFor="Payment"
+                  htmlFor="payment"
                   className="sliderlabel my-auto w-[180px]"
                 >
                   Payment Processing
@@ -342,12 +351,13 @@ const Build = () => {
                 <Controller
                   name="payment"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="payment"
                     />
                   )}
                 />
@@ -356,7 +366,7 @@ const Build = () => {
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex">
                 <label
-                  htmlFor="Appointment"
+                  htmlFor="appointment"
                   className="sliderlabel my-auto w-[180px]"
                 >
                   Appointment Booking
@@ -364,12 +374,13 @@ const Build = () => {
                 <Controller
                   name="appointment"
                   control={control}
-                  defaultValue={false} // Ensure a default value is provided
+                  defaultValue={false}
                   render={({ field }) => (
                     <TanSwitch
                       {...label}
-                      checked={field.value} // Set checked prop to field value
+                      checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}
+                      id="appointment"
                     />
                   )}
                 />
@@ -399,7 +410,7 @@ const Build = () => {
             {/* Design Style */}
             <div className="flex flex-col mb-[1.5rem]">
               <div className="flex flex-col">
-                <label htmlFor="specialfeatures" className="toplabel">
+                <label htmlFor="specialFeatures" className="toplabel">
                   Special Features
                 </label>
                 <Controller
