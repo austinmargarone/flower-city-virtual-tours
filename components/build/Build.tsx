@@ -8,7 +8,6 @@ import Switch from "@mui/material/Switch";
 import { alpha, styled } from "@mui/material/styles";
 import { OptionType, WebsiteForm } from "@/types";
 import emailjs from "emailjs-com";
-import NoSsr from "@mui/material/NoSsr";
 
 // Define your Zod schema for form validation
 const schema = z.object({
@@ -125,45 +124,43 @@ const Build = () => {
       <h2 className="h2 mb-[5.75rem]">Website Info</h2>
       {/* Type of website */}
       <section>
-        <NoSsr>
-          <div className="flex flex-col mb-[1.5rem]">
-            <div className="flex flex-col">
-              <label htmlFor="websiteType" className="toplabel">
-                Type of Website
-              </label>
-              <Controller
-                name="websiteType"
-                control={control}
-                render={({ field }) => (
-                  <Select
-                    {...field}
-                    options={options}
-                    value={selectedOption}
-                    onChange={(selectedOption: OptionType | null) => {
-                      setSelectedOption(selectedOption);
-                      field.onChange(selectedOption?.value || null);
-                    }}
-                    getOptionLabel={(option: OptionType) => option.label}
-                    getOptionValue={(option: OptionType) => option.value}
-                    id="websiteTypeSelect"
-                    styles={{
-                      option: (provided, state) => ({
-                        ...provided,
-                        backgroundColor: state.isSelected ? "tan" : "white",
-                        color: state.isSelected ? "white" : "black",
-                      }),
-                    }}
-                  />
-                )}
-              />
-            </div>
-            <div className="text-[#B49167]">
-              {typeof errors.websiteType?.message === "string" && (
-                <span>{errors.websiteType.message}</span>
+        <div className="flex flex-col mb-[1.5rem]">
+          <div className="flex flex-col">
+            <label htmlFor="websiteType" className="toplabel">
+              Type of Website
+            </label>
+            <Controller
+              name="websiteType"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  {...field}
+                  options={options}
+                  value={selectedOption}
+                  onChange={(selectedOption: OptionType | null) => {
+                    setSelectedOption(selectedOption);
+                    field.onChange(selectedOption || null);
+                  }}
+                  getOptionLabel={(option: OptionType) => option.label}
+                  getOptionValue={(option: OptionType) => option.value}
+                  id="websiteType"
+                  styles={{
+                    option: (provided, state) => ({
+                      ...provided,
+                      backgroundColor: state.isSelected ? "tan" : "white",
+                      color: state.isSelected ? "white" : "black",
+                    }),
+                  }}
+                />
               )}
-            </div>
+            />
           </div>
-        </NoSsr>
+          <div className="text-[#B49167]">
+            {typeof errors.websiteType?.message === "string" && (
+              <span>{errors.websiteType.message}</span>
+            )}
+          </div>
+        </div>
 
         {/* Number of Pages */}
         <div className="flex flex-col mb-[1.5rem]">
