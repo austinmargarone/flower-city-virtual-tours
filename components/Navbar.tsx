@@ -9,7 +9,15 @@ const Navbar = () => {
       <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight border-b-[#B49167] border-b shadow-lg">
         <Link href="/">
           <div className="flex flex-col">
-            <div className="text-white">
+            <div
+              className="
+              font-bold
+              text-white
+              text-md
+              md:text-xl
+              italic
+            "
+            >
               Web Development<span> by</span>
             </div>
             <Image
@@ -17,7 +25,7 @@ const Navbar = () => {
               width={400}
               height={100}
               alt="Flower City Virtual Tours LLC"
-              className="w-[125px] sm:w-[200px] md:w-[200px] lg-w[300px]"
+              className="w-[200px] md:w-[200px] lg-w[300px]"
             />
           </div>
         </Link>
