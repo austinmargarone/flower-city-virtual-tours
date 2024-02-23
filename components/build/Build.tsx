@@ -8,6 +8,8 @@ import Switch from "@mui/material/Switch";
 import { alpha, styled } from "@mui/material/styles";
 import { OptionType, WebsiteForm } from "@/types";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Define your Zod schema for form validation
 const schema = z.object({
@@ -101,6 +103,7 @@ const Build = () => {
 
       // Reset the form after successful submission
       reset();
+      notify();
 
       console.log("Email sent successfully");
     } catch (error) {
@@ -126,6 +129,23 @@ const Build = () => {
 
   // Open additional feilds
   const [showAdditionalFields, setShowAdditionalFields] = useState(false);
+
+  const notify = () =>
+    toast("Form submitted successfully!", {
+      position: "top-center",
+      autoClose: 4200,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      style: {
+        backgroundColor: "#0D101E",
+        color: "#B49167",
+        borderRadius: "10px",
+        border: "2px solid #B49167",
+      },
+    });
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -566,6 +586,8 @@ const Build = () => {
       </section>
 
       <div className="mx-auto flex justify-center">
+        <ToastContainer />
+
         <button type="submit" className="contactbutton" disabled={isSubmitting}>
           Submit
         </button>
