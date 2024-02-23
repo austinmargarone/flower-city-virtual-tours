@@ -32,7 +32,7 @@ const schema = z.object({
     .max(25)
     .email("Invalid email")
     .nonempty("Email is required"),
-  message: z.string().max(500).nonempty("Message is required"),
+  message: z.string().max(500).optional(),
   // Additional fields
   designStyle: z.string().max(80).optional(),
   specialFeatures: z.string().max(80).optional(),
@@ -135,7 +135,7 @@ const Build = () => {
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex flex-col">
             <label htmlFor="websiteType" className="toplabel">
-              Type of Website
+              Type of Website*
             </label>
             <Controller
               name="websiteType"
@@ -442,7 +442,7 @@ const Build = () => {
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
             <label htmlFor="name" className="label flex my-auto">
-              Name
+              Name*
             </label>
             <Controller
               name="name"
@@ -492,7 +492,7 @@ const Build = () => {
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
             <label htmlFor="phone" className="label flex my-auto">
-              Number
+              Number*
             </label>
             <Controller
               name="phone"
@@ -517,7 +517,7 @@ const Build = () => {
         <div className="flex flex-col mb-[1.5rem]">
           <div className="flex">
             <label htmlFor="email" className="label flex my-auto">
-              Email
+              Email*
             </label>
             <Controller
               name="email"

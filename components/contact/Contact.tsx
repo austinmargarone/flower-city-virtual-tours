@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 
 // Define your Zod schema for form validation
 const schema = z.object({
-  name: z.string().max(40).nonempty("Name is required"),
+  contactname: z.string().max(40).nonempty("Name is required"),
   phone: z
     .string()
     .min(10, "Must contain atleast 10 didgets")
@@ -18,7 +18,7 @@ const schema = z.object({
     .max(25)
     .email("Invalid email")
     .nonempty("Email is required"),
-  message: z.string().max(500).nonempty("Message is required"),
+  message: z.string().max(500).optional(),
 });
 
 const Contact = () => {
@@ -65,7 +65,7 @@ const Contact = () => {
       <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
           <label htmlFor="contactname" className="label">
-            Name
+            Name*
           </label>
           <input
             type="text"
@@ -81,7 +81,7 @@ const Contact = () => {
       <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
           <label htmlFor="phone" className="label">
-            Number
+            Number*
           </label>
           <input
             type="text"
@@ -97,7 +97,7 @@ const Contact = () => {
       <div className="flex flex-col mb-[1.5rem]">
         <div className="flex">
           <label htmlFor="email" className="label">
-            Email
+            Email*
           </label>
           <input
             type="email"
