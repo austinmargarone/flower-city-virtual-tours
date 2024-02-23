@@ -7,10 +7,18 @@ import emailjs from "emailjs-com";
 
 // Define your Zod schema for form validation
 const schema = z.object({
-  contactname: z.string().nonempty("Name is required"),
-  phone: z.string().nonempty("Phone Number is required"),
-  email: z.string().email("Invalid email").nonempty("Email is required"),
-  message: z.string().nonempty("Message is required"),
+  name: z.string().max(40).nonempty("Name is required"),
+  phone: z
+    .string()
+    .min(10, "Must contain atleast 10 didgets")
+    .max(20)
+    .nonempty("Phone Number is required"),
+  email: z
+    .string()
+    .max(25)
+    .email("Invalid email")
+    .nonempty("Email is required"),
+  message: z.string().max(500).nonempty("Message is required"),
 });
 
 const Contact = () => {
