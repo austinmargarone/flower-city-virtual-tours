@@ -16,23 +16,23 @@ const schema = z.object({
     value: z.string(),
     label: z.string(),
   }),
-  pages: z.string().max(25).optional(),
-  budget: z.string().max(25).optional(),
-  timeline: z.string().max(25).optional(),
+  pages: z.string().max(50).optional(),
+  budget: z.string().max(50).optional(),
+  timeline: z.string().max(50).optional(),
   // Contact Info
-  name: z.string().max(25).nonempty("Name is required"),
-  company: z.string().max(25).optional(),
+  name: z.string().max(40).nonempty("Name is required"),
+  company: z.string().max(40).optional(),
   phone: z
     .string()
-    .min(7, "Must contain atleast 7 didgets")
-    .max(15)
+    .min(10, "Must contain atleast 10 didgets")
+    .max(20)
     .nonempty("Phone Number is required"),
   email: z
     .string()
     .max(25)
     .email("Invalid email")
     .nonempty("Email is required"),
-  message: z.string().max(250).nonempty("Message is required"),
+  message: z.string().max(500).nonempty("Message is required"),
   // Additional fields
   designStyle: z.string().max(80).optional(),
   specialFeatures: z.string().max(80).optional(),
