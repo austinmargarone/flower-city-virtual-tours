@@ -8,8 +8,8 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
-import { SignedOut } from "@clerk/nextjs";
-import { Button } from "@/components/ui/button";
+// import { SignedOut } from "@clerk/nextjs";
+// import { Button } from "@/components/ui/button";
 import { menuLinks } from "@/constants";
 import { usePathname } from "next/navigation";
 
@@ -68,7 +68,7 @@ const MobileNav = () => {
           <SheetClose asChild>
             <NavContent />
           </SheetClose>
-          <SignedOut>
+          {/* <SignedOut>
             <div className="flex flex-col gap-4 mt-[1.5rem]">
               <SheetClose asChild>
                 <Link href="/sign-in">
@@ -85,7 +85,7 @@ const MobileNav = () => {
                 </Link>
               </SheetClose>
             </div>
-          </SignedOut>
+          </SignedOut> */}
         </div>
       </SheetContent>
     </Sheet>
