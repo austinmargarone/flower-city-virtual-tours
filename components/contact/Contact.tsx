@@ -63,7 +63,6 @@ const Contact = () => {
   };
 
   // Toast
-
   const notify = () =>
     toast("Form submitted successfully!", {
       position: "top-center",
