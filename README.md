@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![Preview Image](devpreview.png)
+![Preview Image](preview.png)
 
 ## Description
 
