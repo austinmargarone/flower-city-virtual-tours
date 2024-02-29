@@ -43,7 +43,7 @@ const Navbar = () => {
               </Link>
               <Link href="/build">
                 <button className="navbar-button items-center flex">
-                  <li>Build</li>
+                  <li>Request Quote</li>
                 </button>
               </Link>
             </ul>

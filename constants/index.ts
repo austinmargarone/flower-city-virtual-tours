@@ -16,7 +16,7 @@ export const menuLinks: MenuLink[] = [
   },
   {
     route: "/build",
-    label: "Build",
+    label: "Request Quote",
   },
 
 ];
