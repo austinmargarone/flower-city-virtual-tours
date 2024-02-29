@@ -8,6 +8,7 @@ const page = () => {
       style={{
         backgroundImage: "url('/background4.jpg')",
         backgroundSize: "cover",
+        backgroundAttachment: "fixed", // Add this line
       }}
     >
       <div className="bg-[#0D101E] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg">
