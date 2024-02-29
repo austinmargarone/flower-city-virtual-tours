@@ -57,10 +57,11 @@ const Hero = () => {
 
   return (
     <section
-      className="mx-auto flex justify-center items-center h-screen w-screen"
+      className="mx-auto flex justify-center items-center h-screen w-full"
       style={{
         backgroundImage: "url('/background1.jpg')",
         backgroundSize: "cover",
+        overflow: "hidden",
       }}
     >
       <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left flex-wrap">

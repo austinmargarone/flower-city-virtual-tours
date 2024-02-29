@@ -4,11 +4,14 @@ import { InlineWidget } from "react-calendly";
 
 const page = () => {
   return (
-    <div
-      className="w-full h-fit px-[1.25rem] xs:px-0"
-      style={{ overflow: "hidden" }}
-    >
-      <InlineWidget url="https://calendly.com/flowercityvirtualtours" />
+    <div className="w-full h-fit px-[1.25rem] sm:px-0 ">
+      <InlineWidget
+        url="https://calendly.com/flowercityvirtualtours"
+        styles={{
+          height: "1000px",
+          overflow: "hidden",
+        }}
+      />
     </div>
   );
 };

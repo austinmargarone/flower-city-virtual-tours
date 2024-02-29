@@ -11,7 +11,9 @@ const page = () => {
         overflow: "hidden",
       }}
     >
-      <Appointment />
+      <div className="flex h-full w-full pt-[1.25rem]">
+        <Appointment />
+      </div>
     </section>
   );
 };
