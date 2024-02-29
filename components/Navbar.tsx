@@ -38,8 +38,8 @@ const Navbar = () => {
               <Link href="/about">
                 <li>About</li>
               </Link>
-              <Link href="/contact">
-                <li>Contact</li>
+              <Link href="/calendly">
+                <li>Consultation</li>
               </Link>
               <Link href="/build">
                 <button className="navbar-button items-center flex">

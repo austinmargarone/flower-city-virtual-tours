@@ -38,6 +38,9 @@ const Footer = () => {
             <Link href="/build">
               <li>Request A Quote</li>
             </Link>
+            <Link href="/calendly">
+              <li>Consultation</li>
+            </Link>
             <Link href="/about">
               <li>About</li>
             </Link>
