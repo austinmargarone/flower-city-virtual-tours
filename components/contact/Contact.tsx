@@ -9,18 +9,18 @@ import "react-toastify/dist/ReactToastify.css";
 
 // Define your Zod schema for form validation
 const schema = z.object({
-  contactname: z.string().max(40).nonempty("Name is required"),
+  contactname: z.string().max(100).nonempty("Name is required"),
   phone: z
     .string()
     .min(10, "Must contain atleast 10 didgets")
-    .max(20)
+    .max(50)
     .nonempty("Phone Number is required"),
   email: z
     .string()
-    .max(25)
+    .max(120)
     .email("Invalid email")
     .nonempty("Email is required"),
-  message: z.string().max(500).optional(),
+  message: z.string().max(1000).optional(),
 });
 
 const Contact = () => {
