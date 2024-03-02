@@ -3,7 +3,7 @@ import Appointment from "@/components/calendar/Appointment";
 const page = () => {
   return (
     <section
-      className="mx-auto flex items-center h-screen w-full bg-cover bg-center overflow-hidden"
+      className="mx-auto flex items-center h-full w-full bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage: "url('/background3.jpg')",
         backgroundSize: "cover",
@@ -11,7 +11,7 @@ const page = () => {
         overflow: "hidden",
       }}
     >
-      <div className="flex h-full w-full pt-[1.25rem]">
+      <div className="flex h-full w-full py-[1.25rem] md:py-0">
         <Appointment />
       </div>
     </section>
