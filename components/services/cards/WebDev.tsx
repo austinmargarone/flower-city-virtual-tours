@@ -1,7 +1,7 @@
 import React from "react";
 
 const WebDev = () => {
-  return <div>WebDev</div>;
+  return <div className="bg-white h-full shadow-lg rounded-lg">WebDev</div>;
 };
 
 export default WebDev;
