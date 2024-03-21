@@ -14,6 +14,7 @@ export default function Home() {
         <Hero />
       </section>
       <section>
+        <h2 className="flex justify-center pt-[1rem]">Services</h2>
         <ServiceCards />
       </section>
       <section>
