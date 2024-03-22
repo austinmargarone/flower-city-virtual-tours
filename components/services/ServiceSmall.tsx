@@ -4,19 +4,19 @@ import SmallServiceCards from "./cards/SmallServiceCards";
 const ServiceCards = () => {
   const serviceData = [
     {
-      src: "./tech/css.svg",
+      src: "./assets/icons/window-code.svg",
       alt: "Image Alt Text 1",
       name: "Websites",
       description: "Project Description 1",
     },
     {
-      src: "./tech/css.svg",
+      src: "./assets/icons/layers.svg",
       alt: "Image Alt Text 2",
       name: "Web Applications",
       description: "Project Description 2",
     },
     {
-      src: "./tech/css.svg",
+      src: "./assets/icons/gallery.svg",
       alt: "Image Alt Text 3",
       name: "Media",
       description: "Project Description 3",
