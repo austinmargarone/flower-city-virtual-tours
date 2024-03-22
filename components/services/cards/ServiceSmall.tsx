@@ -7,7 +7,7 @@ const ServiceCards = () => {
       src: "./assets/icons/window-code.svg",
       alt: "Websites",
       name: "Websites",
-      description: "Custom Websites for your business",
+      description: "Custom Websites for business that are mobile responsive",
     },
     {
       src: "./assets/icons/layers.svg",
@@ -18,7 +18,7 @@ const ServiceCards = () => {
     {
       src: "./assets/icons/gallery.svg",
       alt: "Medias",
-      name: "Media",
+      name: "Media Solutions",
       description: "Commercial photography, virtual tours, and videoography",
     },
   ];

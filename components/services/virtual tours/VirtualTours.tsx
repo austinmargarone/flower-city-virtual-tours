@@ -28,10 +28,6 @@ const VirtualTours = () => {
       embed: "https://my.matterport.com/show/?m=WvpyR9oxStU",
     },
     {
-      // IronChiro
-      embed: "https://my.matterport.com/show/?m=KCEzCvbnQc2",
-    },
-    {
       // MCH
       embed: "https://my.matterport.com/show/?m=MRKsLeTQbbN",
     },
