@@ -4,7 +4,7 @@ import Hero from "@/components/home/Hero";
 import ContractDeveloper from "@/components/services/ContractDeveloper";
 import Media from "@/components/services/Media";
 import WebDeveloper from "@/components/services/WebDeveloper";
-import ServiceCards from "@/components/services/ServiceCards";
+import ServiceSmall from "@/components/services/ServiceSmall";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       </section>
       <section>
         <h2 className="flex justify-center pt-[1rem]">Services</h2>
-        <ServiceCards />
+        <ServiceSmall />
       </section>
       <section>
         <ContractDeveloper />
