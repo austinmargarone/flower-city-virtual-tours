@@ -5,21 +5,21 @@ const ServiceCards = () => {
   const serviceData = [
     {
       src: "./assets/icons/window-code.svg",
-      alt: "Image Alt Text 1",
+      alt: "Websites",
       name: "Websites",
-      description: "Project Description 1",
+      description: "Custom Websites for your business",
     },
     {
       src: "./assets/icons/layers.svg",
-      alt: "Image Alt Text 2",
+      alt: "Web Applications",
       name: "Web Applications",
-      description: "Project Description 2",
+      description: "Web Applications with databases, APIs, CMS and more",
     },
     {
       src: "./assets/icons/gallery.svg",
-      alt: "Image Alt Text 3",
+      alt: "Medias",
       name: "Media",
-      description: "Project Description 3",
+      description: "Commercial photography, virtual tours, and videoography",
     },
   ];
 

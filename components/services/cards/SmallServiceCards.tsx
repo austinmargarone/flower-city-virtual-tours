@@ -18,9 +18,11 @@ const SmallServiceCards: React.FC<Props> = ({ ServiceData }) => {
       <div className="flex items-center justify-center">
         <Image src={src} alt={alt} width={150} height={150} />
       </div>
-      <div className="">
+      <div className="flex flex-col">
         <h3 className="flex justify-center pt-[1.5rem]">{name}</h3>
-        <p className="flex justify-center mt-[.25rem]">{description}</p>
+        <p className="flex mt-[.25rem] text-center justify-center">
+          {description}
+        </p>
       </div>
     </div>
   );
