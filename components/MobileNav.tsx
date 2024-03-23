@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuLinks } from "@/constants";
 import { usePathname } from "next/navigation";
+import { Nav } from "./svg";
 
 const NavContent = () => {
   const pathname = usePathname();
@@ -70,10 +71,18 @@ const MobileNav = () => {
         </Link>
         <div className="mt-[2.5rem]">
           <button
-            className="gap-4 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4 text-white "
+            className="text-[#B49167] gap-2 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4"
             onClick={toggleServicesDropdown}
           >
             Services
+            <span>
+              <Nav
+                src={"./assets/icons/close.svg"}
+                alt={"Dropdown"}
+                width={15}
+                height={15}
+              />
+            </span>
           </button>
           {isServicesDropdownOpen && (
             <ul className="mt-2">
