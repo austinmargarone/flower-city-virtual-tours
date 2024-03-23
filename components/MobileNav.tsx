@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import { Nav } from "./svg";
+import { Hamburger, Nav } from "./svg";
 
 const NavContent = () => {
   const pathname = usePathname();
@@ -51,12 +51,12 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Image
+        <Hamburger
           src="/assets/icons/hamburger.svg"
           width={36}
           height={36}
           alt="Menu"
-          className="invert-colors lg:hidden"
+          className="cursor-pointer"
         />
       </SheetTrigger>
       <SheetContent side="right" className="bg-[#0D101E] border-[#B49167]">

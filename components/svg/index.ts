@@ -38,4 +38,6 @@ export { default as Code } from "./Code.svg";
 export { default as Layers } from "./layers.svg";
 export { default as Gallery } from "./gallery.svg";
 export { default as CodeWindow } from "./window-code.svg";
+export { default as Hamburger } from "./hamburger.svg";
+
 
