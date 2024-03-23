@@ -17,33 +17,34 @@ const Navbar = () => {
               md:text-xl
               italic
             "
-            >
-              Web Development<span> by</span>
-            </div>
+            ></div>
             <Image
               src="/companyLogo.png"
               width={400}
               height={100}
               alt="Flower City Virtual Tours LLC"
-              className="w-[200px] md:w-[200px] lg-w[300px]"
+              className="w-[200px] md:w-[250px] lg:w-[300px]"
             />
           </div>
         </Link>
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-[1rem] text-white font-bold items-center">
-              <Link href="/">
-                <li>Home</li>
+              <Link href="/services">
+                <li>Services</li>
+              </Link>
+              <Link href="/pricing">
+                <li>Pricing</li>
               </Link>
               <Link href="/about">
                 <li>About</li>
               </Link>
-              <Link href="/calendly">
-                <li>Consultation</li>
+              <Link href="/blog">
+                <li>Blog</li>
               </Link>
-              <Link href="/build">
+              <Link href="/calendly">
                 <button className="navbar-button items-center flex">
-                  <li>Request Quote</li>
+                  <li>Consultation</li>
                 </button>
               </Link>
             </ul>

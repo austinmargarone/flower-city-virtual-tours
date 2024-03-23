@@ -7,16 +7,28 @@ export const menuLinks: MenuLink[] = [
     label: "Home",
   },
   {
+    route: "/services",
+    label: "Services",
+  },
+  {
+    route: "/pricing",
+    label: "Pricing",
+  },
+  {
     route: "/about",
     label: "About",
   },
   {
-    route: "/calendly",
-    label: "Consultation",
+    route: "/blog",
+    label: "Blog",
   },
   {
-    route: "/build",
-    label: "Request Quote",
+    route: "/contact",
+    label: "Contact",
+  },
+  {
+    route: "/calendly",
+    label: "Consultation",
   },
 
 ];

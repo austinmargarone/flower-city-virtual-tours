@@ -112,7 +112,6 @@
     display: inline-block;
     cursor: pointer;
     border-radius: 5px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
