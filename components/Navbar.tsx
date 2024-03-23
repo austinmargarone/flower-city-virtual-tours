@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
+import { Nav } from "./svg";
 
 const Navbar = () => {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -43,7 +44,17 @@ const Navbar = () => {
                 onMouseEnter={toggleServicesDropdown}
                 onMouseLeave={toggleServicesDropdown}
               >
-                <span>Our Services</span>
+                <span className="flex items-center gap-1">
+                  Our Services
+                  <span>
+                    <Nav
+                      src={"./assets/icons/close.svg"}
+                      alt={"Dropdown"}
+                      width={15}
+                      height={15}
+                    />
+                  </span>
+                </span>
                 {isServicesDropdownOpen && (
                   <ul className="w-[12rem] absolute top-full left-0 bg-[#0D101E] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
                     <li>
