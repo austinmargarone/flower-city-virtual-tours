@@ -148,15 +148,32 @@
     cursor: pointer;
     font-size: 16px;
     align-items: start;
-    color: #B49167; /* Change the color as needed */
+    color: #B49167;
     transition: background-color 0.3s ease;
     border-radius: .25rem;
   }
   
   .dropdown-button:hover {
-    background-color: #B49167; /* Change the background color on hover as needed */
+    background-color: #B49167; 
     color: white;
   }
+
+
+.dropdown-item {
+  background-color: transparent;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #B49167;
+}
+
+
 
   .h1mobile {
     font-family: 'Arial', sans-serif;
