@@ -1,9 +1,17 @@
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+
   return (
     <header>
       <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight border-b-[#B49167] border-b shadow-lg">
@@ -30,9 +38,36 @@ const Navbar = () => {
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-[1rem] text-white font-bold items-center">
-              <Link href="/services">
-                <li>Services</li>
-              </Link>
+              <li
+                className="relative"
+                onMouseEnter={toggleServicesDropdown}
+                onMouseLeave={toggleServicesDropdown}
+              >
+                <span>Our Services</span>
+                {isServicesDropdownOpen && (
+                  <ul className="w-[12rem] absolute top-full left-0 bg-[#0D101E] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
+                    <li>
+                      <Link href="/services/web-development">
+                        <button className="dropdown-button">
+                          Web Development
+                        </button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/photography">
+                        <button className="dropdown-button">Photography</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/services/virtual-tours">
+                        <button className="dropdown-button">
+                          Virtual Tours
+                        </button>
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
               <Link href="/pricing">
                 <li>Pricing</li>
               </Link>
