@@ -48,20 +48,22 @@ const Navbar = () => {
                   <ul className="w-[12rem] absolute top-full left-0 bg-[#0D101E] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
                     <li>
                       <Link href="/services/web-development">
-                        <button className="dropdown-button">
+                        <button className="dropdown-button flex justify-start">
                           Web Development
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/photography">
-                        <button className="dropdown-button">Photography</button>
+                      <Link href="/services/virtual-tours">
+                        <button className="dropdown-button flex justify-start">
+                          Virtual Tours
+                        </button>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/virtual-tours">
-                        <button className="dropdown-button">
-                          Virtual Tours
+                      <Link href="/services/photography">
+                        <button className="dropdown-button flex justify-start">
+                          Photography
                         </button>
                       </Link>
                     </li>

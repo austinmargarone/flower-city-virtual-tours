@@ -3,6 +3,11 @@ export interface MenuLink {
   label: string;
 }
 
+export interface ServiceLink {
+  route: string;
+  label: string;
+}
+
 export interface FormData {
   contactname: string;
   phone: string;

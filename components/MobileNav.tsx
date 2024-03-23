@@ -49,74 +49,84 @@ const MobileNav = () => {
   };
 
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Hamburger
-          src="/assets/icons/hamburger.svg"
-          width={36}
-          height={36}
-          alt="Menu"
-          className="cursor-pointer"
-        />
-      </SheetTrigger>
-      <SheetContent side="right" className="bg-[#0D101E] border-[#B49167]">
-        <Link href="/" className="flex items-center gap-1">
-          <Image
-            src="/companyLogo.png"
-            width={400}
-            height={100}
-            alt="Flower City Virtual Tours LLC"
-            className="w-[250px]"
+    <div className="lg:hidden">
+      <Sheet>
+        <SheetTrigger asChild>
+          <Hamburger
+            src="/assets/icons/hamburger.svg"
+            width={36}
+            height={36}
+            alt="Menu"
+            className="cursor-pointer"
           />
-        </Link>
-        <div className="mt-[2.5rem]">
-          <button
-            className="text-[#B49167] gap-2 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4"
-            onClick={toggleServicesDropdown}
-          >
-            Services
-            <span>
-              <Nav
-                src={"./assets/icons/close.svg"}
-                alt={"Dropdown"}
-                width={15}
-                height={15}
-              />
-            </span>
-          </button>
-          {isServicesDropdownOpen && (
-            <ul className="mt-2">
-              <li>
-                <Link href="/services/web-development">
-                  <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
-                    Web Development
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/photography">
-                  <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
-                    Photography
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/virtual-tours">
-                  <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
-                    Virtual Tours
-                  </button>
-                </Link>
-              </li>
-            </ul>
-          )}
-        </div>
-        <div>
-          <SheetClose asChild>
-            <NavContent />
-          </SheetClose>
-        </div>
-      </SheetContent>
-    </Sheet>
+        </SheetTrigger>
+        <SheetContent side="right" className="bg-[#0D101E] border-[#B49167]">
+          <Link href="/" className="flex items-center gap-1">
+            <Image
+              src="/companyLogo.png"
+              width={400}
+              height={100}
+              alt="Flower City Virtual Tours LLC"
+              className="w-[250px]"
+            />
+          </Link>
+          <div className="mt-[2.5rem]">
+            <button
+              className="text-[#B49167] gap-2 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4"
+              onClick={toggleServicesDropdown}
+            >
+              Services
+              <span>
+                <Nav
+                  src={"./assets/icons/close.svg"}
+                  alt={"Dropdown"}
+                  width={15}
+                  height={15}
+                />
+              </span>
+            </button>
+            {isServicesDropdownOpen && (
+              <ul className="mt-2">
+                <li>
+                  <Link href="/services/web-development">
+                    <SheetClose asChild>
+                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                        Web Development
+                      </button>
+                    </SheetClose>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/services/virtual-tours">
+                    <SheetClose asChild>
+                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                        Virtual Tours
+                      </button>
+                    </SheetClose>
+                  </Link>
+                </li>
+                <li>
+                  <SheetClose asChild>
+                    <Link href="/services/photography">
+                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                        Photography
+                      </button>
+                    </Link>
+                  </SheetClose>
+                </li>
+              </ul>
+            )}
+          </div>
+
+          <div>
+            <SheetClose asChild>
+              <NavContent />
+            </SheetClose>
+          </div>
+        </SheetContent>
+      </Sheet>
+    </div>
   );
 };
 
