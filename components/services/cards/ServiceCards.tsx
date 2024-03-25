@@ -28,7 +28,7 @@ const ServiceCards = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row gap-[1.25rem] mx-auto justify-center items-center py-[1.25rem]">
+    <div className="flex flex-col md:flex-row gap-[1.25rem] mx-auto justify-center items-center py-[1.25rem] w-full">
       {serviceData.map((data, index) => (
         <SmallServiceCards key={index} ServiceData={data} />
       ))}

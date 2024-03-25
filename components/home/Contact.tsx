@@ -27,7 +27,7 @@ const ContactData = [
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-[1.25rem] mx-auto justify-center items-center py-[1.25rem]">
+    <div className="flex flex-col md:flex-row gap-[1.25rem] mx-auto justify-center items-center w-full">
       {ContactData.map((data, index) => (
         <ContactCard key={index} ContactData={data} />
       ))}

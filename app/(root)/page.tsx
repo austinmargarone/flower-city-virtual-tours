@@ -1,12 +1,12 @@
 // import { UserButton } from "@clerk/nextjs";
 
 import Hero from "@/components/home/Hero";
-import ServiceSmall from "@/components/services/cards/ServiceSmall";
 import VirtualTour from "@/components/home/VirtualTour";
 import HomeText from "../../components/home/HomeText";
 import Contact from "../../components/home/Contact";
 import WebDeveloper from "@/components/home/WebDeveloper";
 import Photography from "@/components/home/Photography";
+import ServiceCards from "@/components/services/cards/ServiceCards";
 
 export default function Home() {
   return (
@@ -15,28 +15,26 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <article className="px-[1rem]">
-        <section className="flex justify-center pt-[2.5rem]">
+      <article className="px-[1rem] flex flex-col gap-[1.25rem] lg:gap-[2.5rem]">
+        <div className="flex flex-col justify-center pt-[1.25rem] lg:pt-[2.5rem]">
           <HomeText />
-        </section>
-        <section>
-          <ServiceSmall />
-        </section>
-        <section>
+          <ServiceCards />
+        </div>
+        <div>
           <WebDeveloper />
-        </section>
-        <section>
+        </div>
+        <div>
           <VirtualTour />
-        </section>
-        <section>
+        </div>
+        <div>
           <Photography />
-        </section>
-        <section className="flex-col justify-center">
-          <h2 className="justify-center flex pt-[1rem] text-white">
+        </div>
+        <div className="flex-col justify-center pb-[1.25rem] lg:pb-[2.5rem]">
+          <h2 className="pb-[1.25rem] justify-center flex  text-white">
             Contact Us
           </h2>
           <Contact />
-        </section>
+        </div>
       </article>
     </div>
   );
