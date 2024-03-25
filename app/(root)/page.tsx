@@ -31,7 +31,10 @@ export default function Home() {
         <section>
           <Photography />
         </section>
-        <section>
+        <section className="flex-col justify-center">
+          <h2 className="justify-center flex pt-[1rem] text-white">
+            Contact Us
+          </h2>
           <Contact />
         </section>
       </article>

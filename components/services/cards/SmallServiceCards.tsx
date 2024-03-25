@@ -14,7 +14,7 @@ const SmallServiceCards: React.FC<Props> = ({ ServiceData }) => {
   const { src, alt, name, description } = ServiceData;
 
   return (
-    <div className="bg-gradient-to-r from-[#f9f9f9] to-[#445D6F] h-[18rem] shadow-lg rounded-lg flex flex-col w-full p-[1rem] hover:shadow-lg hover:shadow-[#0D101E] min-w-[18rem] max-w-[25rem] border border-[#f9f9f9]">
+    <div className="bg-indigo h-[18rem] shadow-lg rounded-lg flex flex-col w-full p-[1rem] hover:shadow-lg hover:shadow-[#0D101E] min-w-[18rem] max-w-[25rem] border border-tan text-white">
       <div className="flex items-center justify-center">
         <Image src={src} alt={alt} width={150} height={150} />
       </div>

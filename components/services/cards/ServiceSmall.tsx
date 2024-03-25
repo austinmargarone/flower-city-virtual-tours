@@ -13,7 +13,7 @@ const ServiceCards = () => {
       src: "./assets/icons/layers.svg",
       alt: "Virtual Tours",
       name: "Virtual Tours",
-      description: "We create digital twins of your business for online tours",
+      description: "We create digital twins of physical spaces",
     },
     {
       src: "./assets/icons/gallery.svg",
