@@ -6,19 +6,22 @@ const ServiceCards = () => {
     {
       src: "./assets/icons/window-code.svg",
       alt: "Web Development",
-      name: "Web Development",
+      title: "Web Development",
+      button: "/services/web-development",
       description: "Custom Websites for business that are mobile responsive",
     },
     {
       src: "./assets/icons/layers.svg",
       alt: "Virtual Tours",
-      name: "Virtual Tours",
+      title: "Virtual Tours",
+      button: "/services/virtual-tours",
       description: "We create digital twins of physical spaces",
     },
     {
       src: "./assets/icons/gallery.svg",
       alt: "Photography",
-      name: "Media Solutions",
+      title: "Photography",
+      button: "/services/photography",
       description:
         "Commercial photography, floor plans, drone and videoography",
     },
