@@ -17,21 +17,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: {
           blue: "#1F2340",
           midnight: "#0D101E",
           indigo: "#131721",
           charcoal: "#252A3F",
           tan: "#B49167",
-
-        },
-        light: {
-          blue: "#343A63",
           fadeblue: "#6A72A9",
           lightblue: "#D6D8E2",
           paleblue: "#A1A5C4",
-          tan: "#B49167",
-        },
       },
       fontFamily: {
         inter: ["var(--font-inter)"],

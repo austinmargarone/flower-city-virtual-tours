@@ -5,21 +5,22 @@ const ServiceCards = () => {
   const serviceData = [
     {
       src: "./assets/icons/window-code.svg",
-      alt: "Websites",
-      name: "Websites",
+      alt: "Web Development",
+      name: "Web Development",
       description: "Custom Websites for business that are mobile responsive",
     },
     {
       src: "./assets/icons/layers.svg",
-      alt: "Web Applications",
-      name: "Web Applications",
-      description: "Web Applications with databases, APIs, CMS and more",
+      alt: "Virtual Tours",
+      name: "Virtual Tours",
+      description: "We create digital twins of your business for online tours",
     },
     {
       src: "./assets/icons/gallery.svg",
-      alt: "Medias",
+      alt: "Photography",
       name: "Media Solutions",
-      description: "Commercial photography, virtual tours, and videoography",
+      description:
+        "Commercial photography, floor plans, drone and videoography",
     },
   ];
 
