@@ -1,11 +1,12 @@
 // import { UserButton } from "@clerk/nextjs";
 
 import Hero from "@/components/home/Hero";
-import ContractDeveloper from "@/components/services/ContractDeveloper";
-import Media from "@/components/services/Media";
-import WebDeveloper from "@/components/services/WebDeveloper";
 import ServiceSmall from "@/components/services/cards/ServiceSmall";
 import VirtualTour from "@/components/home/VirtualTour";
+import HomeText from "../../components/home/HomeText";
+import Contact from "../../components/home/Contact";
+import WebDeveloper from "@/components/home/WebDeveloper";
+import Photography from "@/components/home/Photography";
 
 export default function Home() {
   return (
@@ -14,22 +15,26 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section>
-        <h2 className="flex justify-center pt-[1rem]">Services</h2>
-        <ServiceSmall />
-      </section>
-      <section className="px-[1rem]">
-        <VirtualTour />
-      </section>
-      <section>
-        <ContractDeveloper />
-      </section>
-      <section>
-        <WebDeveloper />
-      </section>
-      <section>
-        <Media />
-      </section>
+      <article className="px-[1rem]">
+        <section className="flex justify-center pt-[2.5rem]">
+          <HomeText />
+        </section>
+        <section>
+          <ServiceSmall />
+        </section>
+        <section>
+          <WebDeveloper />
+        </section>
+        <section>
+          <VirtualTour />
+        </section>
+        <section>
+          <Photography />
+        </section>
+        <section>
+          <Contact />
+        </section>
+      </article>
     </div>
   );
 }
