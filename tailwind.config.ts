@@ -17,18 +17,18 @@ module.exports = {
     },
     extend: {
       colors: {
-          blue: "#1F2340",
-          midnight: "#0D101E",
-          indigo: "#131721",
-          charcoal: "#252A3F",
-          tan: "#B49167",
-          fadeblue: "#6A72A9",
-          lightblue: "#D6D8E2",
-          paleblue: "#A1A5C4",
+        blue: "#1F2340",
+        midnight: "#0D101E",
+        indigo: "#131721",
+        charcoal: "#252A3F",
+        tan: "#B49167",
+        fadeblue: "#6A72A9",
+        lightblue: "#D6D8E2",
+        paleblue: "#A1A5C4",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
-        // Josefin Sans Need this font
+        josefin: ["Josefin Sans", "Arial", "sans-serif"],
       },
       screens: {
         xs: "400px",

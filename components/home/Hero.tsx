@@ -65,7 +65,7 @@ const Hero = () => {
       }}
     >
       <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left flex-wrap">
-        <h1 className="hero-heading">We build custom websites that</h1>
+        <h1 className="hero-heading bold">We build custom websites that</h1>
         <p className="hero-paragraph">{text}</p>
         <Link href="/build">
           <button className="hero-button shadow-lg">Get started</button>
