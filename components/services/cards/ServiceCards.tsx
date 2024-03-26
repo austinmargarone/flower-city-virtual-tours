@@ -11,7 +11,7 @@ const ServiceCards = () => {
       description: "Custom Websites for business that are mobile responsive",
     },
     {
-      src: "./assets/icons/layers.svg",
+      src: "./assets/icons/cube-skeleton.svg",
       alt: "Virtual Tours",
       title: "Virtual Tours",
       button: "/services/virtual-tours",
