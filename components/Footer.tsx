@@ -49,9 +49,9 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-        <div className="h-0.5 border-b border-light-tan my-[.63rem]"></div>
+        <div className="h-0.5 border-b border-tan my-[.63rem]"></div>
         <div>
-          <p className="text-[#D3D3D3]">
+          <p className="text-tan">
             © Copyright Flower City Virtual Tours LLC, All rights reserved.
           </p>
         </div>
