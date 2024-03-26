@@ -30,7 +30,7 @@ export default function Home() {
           <Photography />
         </div>
         <div className="flex-col justify-center pb-[1.25rem] lg:pb-[2.5rem]">
-          <h2 className="pb-[1.25rem] justify-center flex  text-white">
+          <h2 className="h2 pb-[1.25rem] justify-center flex  text-white">
             Contact Us
           </h2>
           <Contact />

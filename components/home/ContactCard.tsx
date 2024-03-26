@@ -21,11 +21,13 @@ const ContactCard = ({ ContactData }: Props) => {
         <Image src={src} alt={alt} width={115} height={115} />
       </div>
       <div className="flex flex-col h-[50%]">
-        <h3 className="flex justify-center h-[25%]">{title}</h3>
-        <p className="flex text-center justify-center h-[50%]">{description}</p>
+        <h3 className="h3 flex justify-center h-[25%]">{title}</h3>
+        <p className="p flex text-center justify-center h-[50%]">
+          {description}
+        </p>
         <div className="w-full button-container h-[25%]">
           <Link href={button}>
-            <button className="button-container w-full bg-[#B49167] shadow-lg p-[.25rem] rounded-[.17rem] text-dark-midnight h-[2rem] hover:text-black hover:font-bold">
+            <button className="p button-container w-full bg-[#B49167] shadow-lg p-[.25rem] rounded-[.17rem] text-dark-midnight h-[2rem] hover:text-black hover:font-bold">
               {title}
             </button>
           </Link>

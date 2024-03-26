@@ -3,7 +3,7 @@ import React from "react";
 const VirtualTour = () => {
   return (
     <div className="w-full">
-      <h2 className=" justify-center flex py-[1rem] text-white">
+      <h2 className="h2 justify-center flex py-[1rem] text-white">
         Virtual Tours
       </h2>
 
