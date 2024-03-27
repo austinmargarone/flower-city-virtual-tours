@@ -4,21 +4,21 @@ import SmallServiceCards from "./SmallServiceCards";
 const ServiceCards = () => {
   const serviceData = [
     {
-      src: "./assets/icons/window-code.svg",
+      src: "./assets/icons/window-codeTan.svg",
       alt: "Web Development",
       title: "Web Development",
       button: "/services/web-development",
       description: "Custom Websites for business that are mobile responsive",
     },
     {
-      src: "./assets/icons/cube-skeleton.svg",
+      src: "./assets/icons/cube-skeletonTan.svg",
       alt: "Virtual Tours",
       title: "Virtual Tours",
       button: "/services/virtual-tours",
       description: "We create digital twins of physical spaces",
     },
     {
-      src: "./assets/icons/gallery.svg",
+      src: "./assets/icons/galleryTan.svg",
       alt: "Photography",
       title: "Photography",
       button: "/services/photography",
