@@ -39,5 +39,6 @@ export { default as Layers } from "./layers.svg";
 export { default as Gallery } from "./gallery.svg";
 export { default as CodeWindow } from "./window-code.svg";
 export { default as Hamburger } from "./hamburger.svg";
+export { default as Computer } from "./Computer.svg";
 
 
