@@ -8,14 +8,16 @@ const ServiceCards = () => {
       alt: "Web Development",
       title: "Web Development",
       button: "/services/web-development",
-      description: "Custom Websites for business that are mobile responsive",
+      description:
+        "We support small businesses with custom websites that are fast, secure, and mobile-friendly",
     },
     {
       src: "./assets/icons/cube-skeletonTan.svg",
       alt: "Virtual Tours",
       title: "Virtual Tours",
       button: "/services/virtual-tours",
-      description: "We create digital twins of physical spaces",
+      description:
+        "Our virtual tours are perfect to showcase your property online and in 3D",
     },
     {
       src: "./assets/icons/galleryTan.svg",
@@ -23,7 +25,7 @@ const ServiceCards = () => {
       title: "Photography",
       button: "/services/photography",
       description:
-        "Commercial photography, floor plans, drone and videoography",
+        "We offer professional photography services to help your property stand out online",
     },
   ];
 

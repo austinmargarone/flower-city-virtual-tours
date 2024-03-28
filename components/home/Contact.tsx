@@ -7,21 +7,24 @@ const ContactData = [
     alt: "Contact Form",
     title: "Contact Form",
     button: "/contact",
-    description: "Fill out our contact form to get in touch with us",
+    description:
+      "Our contact form can be filled out anytime for any questions you may have",
   },
   {
     src: "./assets/icons/PhoneTan.svg",
     alt: "Schedule Consultation",
     title: "Schedule Consultation",
     button: "/calendly",
-    description: "Schedule a consultation with us to discuss your project",
+    description:
+      "Schedule a consultation for a time that works best for you to discuss your project",
   },
   {
     src: "./assets/icons/QuoteTan.svg",
     alt: "Request a Quote",
     title: "Request a Quote",
     button: "/build",
-    description: "Fill out our form to get a quote for your project",
+    description:
+      "Already have an idea in mind? Request a quote today to get started!",
   },
 ];
 
