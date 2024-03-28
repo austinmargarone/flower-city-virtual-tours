@@ -90,7 +90,7 @@ const MobileNav = () => {
                 <li>
                   <Link href="/services/web-development">
                     <SheetClose asChild>
-                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                      <button className="dropdown-item w-[80%] justify-start flex rounded-lg ml-[.5rem]">
                         Web Development
                       </button>
                     </SheetClose>
@@ -100,7 +100,7 @@ const MobileNav = () => {
                 <li>
                   <Link href="/services/virtual-tours">
                     <SheetClose asChild>
-                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                      <button className="dropdown-item w-[80%] justify-start flex rounded-lg ml-[.5rem]">
                         Virtual Tours
                       </button>
                     </SheetClose>
@@ -109,7 +109,7 @@ const MobileNav = () => {
                 <li>
                   <SheetClose asChild>
                     <Link href="/services/photography">
-                      <button className="dropdown-item w-[50%] justify-start flex rounded-lg ml-[.5rem]">
+                      <button className="dropdown-item w-[80%] justify-start flex rounded-lg ml-[.5rem]">
                         Photography
                       </button>
                     </Link>
