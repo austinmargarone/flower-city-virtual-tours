@@ -1,8 +1,18 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { Photo } from '@/types/photo';
 import { connectToDB } from '../../utils/mongodb';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function fetchPhotos(): Promise<Photo[]> {
   const db = await connectToDB();
   const photos = await db.collection('photos').find().toArray();
-  res.json(photos);
+  
+  const transformedPhotos = photos.map(doc => ({
+    _id: doc._id.toString(), 
+    url: doc.url,
+    title: doc.title,
+    description: doc.description,
+  }));
+
+  return transformedPhotos;
 }
+
+export default fetchPhotos;
