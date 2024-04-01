@@ -81,14 +81,8 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
-              {/* <Link href="/pricing">
-                <li>Pricing</li>
-              </Link> */}
               <Link href="/about">
                 <li>About</li>
-              </Link>
-              <Link href="/blog">
-                <li>Blog</li>
               </Link>
               <Link href="/calendly">
                 <button className="navbar-button items-center flex">

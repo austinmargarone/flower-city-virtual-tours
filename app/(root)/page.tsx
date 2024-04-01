@@ -5,8 +5,8 @@ import VirtualTour from "@/components/home/VirtualTour";
 import HomeText from "../../components/home/HomeText";
 import Contact from "../../components/home/Contact";
 import WebDeveloper from "@/components/home/WebDeveloper";
-import Photography from "@/components/home/Photography";
 import ServiceCards from "@/components/services/cards/ServiceCards";
+import Seo from "@/components/home/Seo";
 
 export default function Home() {
   return (
@@ -24,10 +24,10 @@ export default function Home() {
           <WebDeveloper />
         </div>
         <div>
-          <VirtualTour />
+          <Seo />
         </div>
         <div>
-          <Photography />
+          <VirtualTour />
         </div>
         <div className="flex-col justify-center pb-[1.25rem] lg:pb-[2.5rem]">
           <h2 className="h2 pb-[1.25rem] justify-center flex  text-white">
