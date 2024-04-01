@@ -65,25 +65,25 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/services/seo">
+                        <button className="dropdown-button flex justify-start">
+                          SEO Optimization
+                        </button>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/services/virtual-tours">
                         <button className="dropdown-button flex justify-start">
                           Virtual Tours
                         </button>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/services/photography">
-                        <button className="dropdown-button flex justify-start">
-                          Photography
-                        </button>
-                      </Link>
-                    </li>
                   </ul>
                 )}
               </li>
-              <Link href="/pricing">
+              {/* <Link href="/pricing">
                 <li>Pricing</li>
-              </Link>
+              </Link> */}
               <Link href="/about">
                 <li>About</li>
               </Link>

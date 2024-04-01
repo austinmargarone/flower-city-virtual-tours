@@ -2,10 +2,10 @@ import { MenuLink, ServiceLink } from "@/types";
 
 
 export const menuLinks: MenuLink[] = [
-  {
-    route: "/pricing",
-    label: "Pricing",
-  },
+  // {
+  //   route: "/pricing",
+  //   label: "Pricing",
+  // },
   {
     route: "/about",
     label: "About",
@@ -27,10 +27,10 @@ export const menuLinks: MenuLink[] = [
 
 
 export const serviceLinks: ServiceLink[] = [
-  {
-    route: "/pricing",
-    label: "Pricing",
-  },
+  // {
+  //   route: "/pricing",
+  //   label: "Pricing",
+  // },
   {
     route: "/about",
     label: "About",
