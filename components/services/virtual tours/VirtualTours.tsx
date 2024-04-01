@@ -4,32 +4,44 @@ import VirtualTourCards from "./VirtualTourCards";
 const VirtualTours = () => {
   const VirtualTours = [
     {
-      // Keller Williams
-      embed: "https://my.matterport.com/show/?m=Vu8vAVvcebN",
+      // Serendipity Labs
+      embed: "https://my.matterport.com/show/?m=WvpyR9oxStU",
     },
     {
       // Aarons Alley
       embed: "https://my.matterport.com/show/?m=Yug3Wm4ZsKC",
     },
     {
+      // HDP
+      embed: "https://my.matterport.com/show/?m=MnvsFYd5SXE",
+    },
+    {
       // Guest Barn
       embed: "https://my.matterport.com/show/?m=YN4DWeXcQ2p",
     },
     {
-      // HDP
-      embed: "https://my.matterport.com/show/?m=MnvsFYd5SXE",
+      // 28 Great Oaks Lane
+      embed: "https://my.matterport.com/show/?m=qzjkH94yzsP",
+    },
+    {
+      // Keller Williams
+      embed: "https://my.matterport.com/show/?m=Vu8vAVvcebN",
     },
     {
       // DeCarolis Buffalo
       embed: "https://my.matterport.com/show/?m=dTursFxbP1u",
     },
     {
-      // Serendipity Labs
-      embed: "https://my.matterport.com/show/?m=WvpyR9oxStU",
-    },
-    {
       // MCH
       embed: "https://my.matterport.com/show/?m=MRKsLeTQbbN",
+    },
+    {
+      // Strawberry Castle
+      embed: "https://my.matterport.com/show/?m=f7ZjbwNGHrp",
+    },
+    {
+      // Strawberry Castle Garage
+      embed: "https://my.matterport.com/show/?m=KPP8WwjcLc4",
     },
     {
       // The Nest Cottage
@@ -42,18 +54,6 @@ const VirtualTours = () => {
     {
       // 609 Wild Mallard
       embed: "https://my.matterport.com/show/?m=Xjuo4yMEVqQ",
-    },
-    {
-      // 28 Great Oaks Lane
-      embed: "https://my.matterport.com/show/?m=qzjkH94yzsP",
-    },
-    {
-      // Strawberry Castle
-      embed: "https://my.matterport.com/show/?m=f7ZjbwNGHrp",
-    },
-    {
-      // Strawberry Castle Garage
-      embed: "https://my.matterport.com/show/?m=KPP8WwjcLc4",
     },
   ];
 

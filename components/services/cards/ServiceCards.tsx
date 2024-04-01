@@ -9,7 +9,7 @@ const ServiceCards = () => {
       title: "Web Development",
       button: "/services/web-development",
       description:
-        "We support businesses with websites that are fast, secure, and mobile-friendly",
+        "We support businesses with websites that are fast, secure, and mobile-friendly.",
     },
     {
       src: "./assets/icons/galleryTan.svg",
@@ -17,7 +17,7 @@ const ServiceCards = () => {
       title: "SEO Optimization",
       button: "/services/seo",
       description:
-        "We help businesses rank higher on search engines and increase their online visibility",
+        "We help businesses rank higher on search engines and increase their online visibility.",
     },
     {
       src: "./assets/icons/cube-skeletonTan.svg",
@@ -25,7 +25,7 @@ const ServiceCards = () => {
       title: "Virtual Tours",
       button: "/services/virtual-tours",
       description:
-        "Our virtual tours are perfect to showcase your property online and in 3D",
+        "Our virtual tours are perfect to showcase your property online and in 3D.",
     },
   ];
 
