@@ -17,7 +17,7 @@ const ServiceCards = () => {
       title: "SEO Optimization",
       button: "/services/seo",
       description:
-        "We help businesses rank higher on search engines and increase their online visibility.",
+        "We help businesses rank higher on search engines and increase online visibility.",
     },
     {
       src: "./assets/icons/cube-skeletonTan.svg",
