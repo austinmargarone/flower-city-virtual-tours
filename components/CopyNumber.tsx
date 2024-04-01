@@ -29,13 +29,13 @@ const CopyNumber = () => {
     <>
       <button
         onClick={() => {
-          copyText("5855015690");
+          copyText("5855015691");
           notify();
         }}
         className="w-full bg-[#B49167] shadow-lg p-[.25rem] rounded-[.17rem] text-dark-midnight"
       >
         <ToastContainer />
-        <p className="text-white">(585) 501-5690</p>
+        <p className="text-white">(585) 501-5691</p>
       </button>
     </>
   );
