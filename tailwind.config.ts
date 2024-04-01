@@ -27,8 +27,8 @@ module.exports = {
         paleblue: "#A1A5C4",
       },
       fontFamily: {
-        inter: ["var(--font-inter)"],
         josefin: ["Josefin Sans", "Arial", "sans-serif"],
+        inter: ["var(--font-inter)"],
       },
       screens: {
         xs: "400px",

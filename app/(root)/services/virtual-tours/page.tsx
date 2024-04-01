@@ -4,9 +4,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <h2 className="flex justify-center pt-[1.25rem] md:pt-[2.5rem]">
+      <h1 className="h1 flex justify-center pt-[1.25rem] md:pt-[2.5rem]">
         Virtual Tours
-      </h2>
+      </h1>
       <VirtualTours />
     </div>
   );

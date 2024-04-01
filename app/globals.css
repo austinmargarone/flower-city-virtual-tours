@@ -253,6 +253,15 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
   }
+
+  .pleft {
+    font-family: 'Josefin Sans';
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
   
 
 
