@@ -1,5 +1,36 @@
 import Build from "@/components/build/Build";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fcvt.dev"),
+  title: "FCVT | Request A Quote",
+  description:
+    "Already have a web project in mind? Request a quote today and let's get started!",
+  keywords: [
+    "Web Development",
+    "Web Design",
+    "SEO",
+    "User Experience",
+    "NextJS",
+    "React",
+    "Web Development Services",
+    "Web Developer",
+    "Web Designer",
+    "Web Development Company",
+    "Request A Quote",
+  ],
+  openGraph: {
+    images: [
+      {
+        url: `https://fcvt.dev/meta.png`,
+        width: 1200,
+        height: 630,
+        alt: "Full Stack Developer",
+      },
+    ],
+  },
+};
 
 const page = () => {
   return (
