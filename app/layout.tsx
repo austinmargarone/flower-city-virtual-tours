@@ -10,12 +10,26 @@ const JosefinSans = {
 };
 
 export const metadata: Metadata = {
-  title: "Custom Websites",
+  title: "FCVT | Custom Websites",
   description:
     "We build custom websites that improve your SEO, empower online growth, and prioritize user experience. Get started today!",
-  keywords: ["web development", "web design", "SEO", "user experience, NextJS"],
-  icons: {
-    icon: "",
+  keywords: [
+    "Web Development",
+    "Web Design",
+    "SEO",
+    "User Experience",
+    "NextJS",
+    "React",
+  ],
+  openGraph: {
+    images: [
+      {
+        url: `https://fcvt.dev/meta.png`,
+        width: 1200,
+        height: 630,
+        alt: "Full Stack Developer",
+      },
+    ],
   },
 };
 
