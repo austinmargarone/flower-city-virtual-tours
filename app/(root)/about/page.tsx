@@ -3,19 +3,32 @@ import About from "@/components/about/About";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Web Development",
+  metadataBase: new URL("https://fcvt.dev"),
+  title: "FCVT | About",
   description:
-    "Our websites are built with modern tech stacks and designed to be fast, secure, and SEO-friendly. We specialize in Next.js, React, and Tailwind CSS.",
+    "We thrive on the forefront of technology by using state of the art tech stacks that propel your business forward. Learn more about us!",
   keywords: [
     "Web Development",
-    "Next.js",
+    "Web Design",
+    "SEO",
+    "User Experience",
+    "NextJS",
     "React",
-    "JavaScript",
-    "TypeScript",
-    "Tailwind CSS",
-    "MongoDB",
-    "GraphQL",
+    "Web Development Services",
+    "Web Developer",
+    "Web Designer",
+    "Web Development Company",
   ],
+  openGraph: {
+    images: [
+      {
+        url: `https://fcvt.dev/meta.png`,
+        width: 1200,
+        height: 630,
+        alt: "Full Stack Developer",
+      },
+    ],
+  },
 };
 
 export default function Page() {
