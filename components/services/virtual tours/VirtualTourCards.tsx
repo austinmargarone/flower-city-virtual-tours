@@ -15,7 +15,7 @@ const VirtualTourCards = ({ VirtualTours }: Props) => {
         src={embed}
         allow="xr-spatial-tracking"
         allowFullScreen
-        className="w-full h-[33rem] lg:h-[42rem] max-w-[74rem] mx-auto flex border-tan border-rounded border shadow-lg rounded-lg"
+        className="w-full h-[33rem] sm:h-[35rem] md:h-[41rem] lg:h-[45rem] max-w-[77.5rem] mx-auto flex border-tan border-rounded border shadow-lg rounded-lg"
       ></iframe>
     </div>
   );
