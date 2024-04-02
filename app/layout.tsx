@@ -10,6 +10,7 @@ const JosefinSans = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fcvt.dev"),
   title: "FCVT | Custom Websites",
   description:
     "We build custom websites that improve your SEO, empower online growth, and prioritize user experience. Get started today!",
