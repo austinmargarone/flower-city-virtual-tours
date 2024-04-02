@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex items-center gap-[1.2rem] md:mt-[.33rem] w-full">
           <div className="w-[45%] button-container">
             <Link href={"/contact"}>
-              <button className="text-white shadow-lg bg-light-tan w-full p-[.25rem] rounded-[.17rem]">
+              <button className="text-white shadow-lg bg-tan w-full p-[.25rem] rounded-[.17rem]">
                 Contact
               </button>
             </Link>
@@ -35,23 +35,20 @@ const Footer = () => {
             <Link href="/">
               <li>Home</li>
             </Link>
-            <Link href="/build">
-              <li>Request A Quote</li>
+            <Link href="/about">
+              <li>About</li>
             </Link>
             <Link href="/calendly">
               <li>Consultation</li>
             </Link>
-            <Link href="/about">
-              <li>About</li>
-            </Link>
-            <Link href="/contact">
-              <li>Contact</li>
+            <Link href="/build">
+              <li>Request A Quote</li>
             </Link>
           </ul>
         </div>
-        <div className="h-0.5 border-b border-light-tan my-[.63rem]"></div>
+        <div className="h-0.5 border-b border-tan my-[.63rem]"></div>
         <div>
-          <p className="text-[#D3D3D3]">
+          <p className="text-tan">
             © Copyright Flower City Virtual Tours LLC, All rights reserved.
           </p>
         </div>

@@ -1,22 +1,43 @@
-import { MenuLink } from "@/types";
+import { MenuLink, ServiceLink } from "@/types";
 
 
 export const menuLinks: MenuLink[] = [
-  {
-    route: "/",
-    label: "Home",
-  },
   {
     route: "/about",
     label: "About",
   },
   {
-    route: "/calendly",
-    label: "Consultation",
+    route: "/contact",
+    label: "Contact",
   },
   {
     route: "/build",
-    label: "Request Quote",
+    label: "Request a Quote",
+  },
+  {
+    route: "/calendly",
+    label: "Consultation",
+  },
+
+];
+
+
+export const serviceLinks: ServiceLink[] = [
+  {
+    route: "/about",
+    label: "About",
+  },
+  {
+    route: "/contact",
+    label: "Contact",
+  },
+  {
+    route: "/build",
+    label: "Request a Quote",
+  },
+  {
+    route: "/calendly",
+    label: "Consultation",
   },
 
 ];

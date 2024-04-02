@@ -3,9 +3,8 @@
 @tailwind utilities;
  
 
-
 .hero-heading {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans';
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
@@ -15,20 +14,20 @@
   }
   
   .hero-paragraph {
-    font-family: 'Arial', sans-serif;
-    font-size: 2rem;
+    font-family: 'Josefin Sans';
+    font-size: 1.75rem;
     font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    height: 3.5rem; /* Adjust the height to match the heading */
-    white-space: nowrap; /* Prevent text wrapping */
+    height: 3.5rem; 
+    white-space: nowrap; 
   }
 
 
   .hero-button {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -100,7 +99,7 @@
   }
 
   .navbar-button {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
@@ -112,7 +111,6 @@
     display: inline-block;
     cursor: pointer;
     border-radius: 5px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -141,8 +139,43 @@
     }
   }
 
+  .dropdown-button {
+    background-color: transparent;
+    border: none;
+    padding: .25rem;
+    width: 10rem;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: start;
+    color: #B49167;
+    transition: background-color 0.3s ease;
+    border-radius: .25rem;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #B49167; 
+    color: white;
+  }
+
+
+.dropdown-item {
+  background-color: transparent;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #B49167;
+}
+
+
+
   .h1mobile {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -152,7 +185,7 @@
   }
   
   .h1 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
@@ -162,7 +195,7 @@
   }
 
   .h2mobile {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1.25rem;
     font-weight: bold;
     color: #ffffff;
@@ -172,8 +205,8 @@
   }
 
   .h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Josefin Sans';
+    font-size: 1.75rem;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
@@ -182,7 +215,7 @@
   }
 
   .h3mobile {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
@@ -192,7 +225,7 @@
   }
 
   .h3 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1.25rem;
     font-weight: bold;
     color: #ffffff;
@@ -202,7 +235,7 @@
   } 
   
   .pmobile {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 0.75rem;
     font-weight: bold;
     color: #ffffff;
@@ -212,11 +245,29 @@
   }
 
   .p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans';
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
+  .pleft {
+    font-family: 'Josefin Sans';
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
+  .pbold {
+    font-family: 'Josefin Sans';
+    font-size: 1rem;
+    font-weight: 1000;
+    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
   }
@@ -242,7 +293,7 @@
 .label {
   display: inline-block;
   color: #B49167;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans';
   font-size: 1rem;
   font-weight: bold;
   width: 85px; 
@@ -253,7 +304,7 @@
 .toplabel {
   display: inline-block;
   color: #B49167;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans';
   font-size: 1rem;
   font-weight: bold;
   text-align: center; 
@@ -262,7 +313,7 @@
 }
 
 .contactbutton {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans';
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
@@ -302,7 +353,7 @@
 .sliderlabel {
   display: inline-block;
   color: #B49167;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans';
   font-size: 1rem;
   font-weight: bold;
 }
