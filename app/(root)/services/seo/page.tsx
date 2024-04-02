@@ -1,6 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fcvt.dev"),
+  title: "FCVT | SEO Optimization",
+  description:
+    "Improve your website's visibility and search engine rankings with our comprehensive SEO optimization services. Contact us today!",
+  keywords: [
+    "Web Development",
+    "Web Design",
+    "Web Development Company",
+    "SEO",
+    "Search Engine Optimization",
+    "SEO Services",
+    "SEO Optimization",
+  ],
+  openGraph: {
+    images: [
+      {
+        url: `https://fcvt.dev/meta.png`,
+        width: 1200,
+        height: 630,
+        alt: "Full Stack Developer",
+      },
+    ],
+  },
+};
+
 const Page = () => {
   return (
     <div className="py-[1.25rem] md:py-[2.5rem] px-[1rem]">
