@@ -36,14 +36,6 @@ const VirtualTours = () => {
       embed: "https://my.matterport.com/show/?m=MRKsLeTQbbN",
     },
     {
-      // Strawberry Castle
-      embed: "https://my.matterport.com/show/?m=f7ZjbwNGHrp",
-    },
-    {
-      // Strawberry Castle Garage
-      embed: "https://my.matterport.com/show/?m=KPP8WwjcLc4",
-    },
-    {
       // The Nest Cottage
       embed: "https://my.matterport.com/show/?m=zN2vzBPQ6kP",
     },
