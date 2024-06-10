@@ -15,7 +15,7 @@ import { Hamburger, Nav } from "./svg";
 const NavContent = () => {
   const pathname = usePathname();
   return (
-    <section className="flex h-full flex-col gap-6 pt-6 bg-[#0D101E]">
+    <section className="flex h-full flex-col gap-6 pt-6 bg-[#101415]">
       {menuLinks.map((item) => {
         const isActive =
           (pathname.includes(item.route) && item.route.length > 1) ||
@@ -28,7 +28,7 @@ const NavContent = () => {
                 isActive
                   ? "primary-gradient text-white rounded-lg bg-[#B49167]"
                   : "text-white"
-              } gap-4 flex items-center justify-start bg-[#0D101E] p-4`}
+              } gap-4 flex items-center justify-start bg-[#101415] p-4`}
             >
               <p className={`${isActive ? "base-bold" : "base-medium"}`}>
                 {item.label}
@@ -60,7 +60,7 @@ const MobileNav = () => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent side="right" className="bg-[#0D101E] border-[#B49167]">
+        <SheetContent side="right" className="bg-[#101415] border-[#B49167]">
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/companyLogo.png"

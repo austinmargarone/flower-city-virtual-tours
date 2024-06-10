@@ -140,7 +140,7 @@ const Build = () => {
       draggable: true,
       progress: undefined,
       style: {
-        backgroundColor: "#0D101E",
+        backgroundColor: "#101415",
         color: "#B49167",
         borderRadius: "10px",
         border: "2px solid #B49167",

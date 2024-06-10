@@ -5,7 +5,7 @@ import CopyNumber from "./CopyNumber";
 
 const Footer = () => {
   return (
-    <div className="lg:items-center flex flex-col lg:flex-row py-[1.5rem] lg:py-[2.5rem] gap-[1rem] border-t-[1.5px] border-t-[#B49167] bg-dark-midnight lg:px-[3rem] shadow-lg">
+    <div className="lg:items-center flex flex-col lg:flex-row py-[1.5rem] lg:py-[2.5rem] gap-[1rem] border-t-[1.5px] border-t-[#B49167] bg-[#101415] lg:px-[3rem] shadow-lg">
       <div className="flex flex-col gap-[.63rem] xl:pl-[3.6rem] mx-auto">
         <Link href="https://flowercityvirtualtours.com" target="_blank">
           <Image

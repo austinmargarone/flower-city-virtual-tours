@@ -43,7 +43,7 @@ export default function Page() {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-[#0D101E] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg">
+      <div className="bg-[#101415] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg">
         <h1 className="h1">Contact Us</h1>
         <div className="flex justify-center py-[1.25rem] sm:py-[2.5rem]">
           <Contact />

@@ -40,7 +40,7 @@ export default function Page() {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-[#0D101E] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg max-w-[800px] flex mx-auto">
+      <div className="bg-[#101415] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg max-w-[800px] flex mx-auto">
         <About />
       </div>
     </section>

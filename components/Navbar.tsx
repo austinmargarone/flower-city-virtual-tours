@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-dark-midnight border-b-[#B49167] border-b shadow-lg">
+      <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-[#101415] border-b-[#B49167] border-b shadow-lg">
         <Link href="/">
           <div className="flex flex-col">
             <div
@@ -56,7 +56,7 @@ const Navbar = () => {
                   </span>
                 </span>
                 {isServicesDropdownOpen && (
-                  <ul className="w-[12rem] absolute top-full left-0 bg-[#0D101E] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
+                  <ul className="w-[12rem] absolute top-full left-0 bg-[#101415] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
                     <li>
                       <Link href="/services/web-development">
                         <button className="dropdown-button flex justify-start">
