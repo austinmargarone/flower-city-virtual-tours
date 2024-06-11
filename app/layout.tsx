@@ -1,4 +1,3 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -41,18 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${JosefinSans.variable}`}>
-        <ClerkProvider
-          appearance={{
-            elements: {
-              formButtonPrimary: "primary-gradient",
-              footerActionLink: "primary-text-gradient hover:text-primary-500",
-            },
-          }}
-        >
-          {children}
-        </ClerkProvider>
-      </body>
+      <body className={`${JosefinSans.variable}`}>{children}</body>
     </html>
   );
 }
