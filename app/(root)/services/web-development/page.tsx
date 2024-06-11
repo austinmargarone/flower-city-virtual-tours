@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://fcvt.dev"),
   title: "FCVT | Web Development",
   description:
-    "We develop full stack web appliations that are custom to your needs. Contact us today to learn more!",
+    "We develop full stack web applications that are custom to your needs. Contact us today to learn more!",
   keywords: [
     "Web Development",
     "Web Design",
