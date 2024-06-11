@@ -1,23 +1,23 @@
 "use client";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
-import { Nav } from "./svg";
+// import { Nav } from "./svg";
 
 const Navbar = () => {
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  // const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  };
+  // const toggleServicesDropdown = () => {
+  //   setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  // };
 
   return (
     <header>
       <nav className="justify-between flex items-center z-50 w-full gap-5 p-6 sm:px-12 bg-[#101415] border-b-[#B49167] border-b shadow-lg">
         <Link href="/">
-          <div className="flex flex-col">
+          <div className="flex items-center">
             <div
               className="
               font-bold
@@ -32,14 +32,17 @@ const Navbar = () => {
               width={400}
               height={100}
               alt="Flower City Virtual Tours LLC"
-              className="w-[200px] md:w-[250px] lg:w-[300px]"
+              className="w-[250px] lg:w-[300px]"
             />
+            <span className="ml-[2rem] hidden sm:flex">
+              <p className="text-[#B49167]">Web Development Division</p>
+            </span>
           </div>
         </Link>
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-[1rem] text-white font-bold items-center">
-              <li
+              {/* <li
                 className="relative"
                 onMouseEnter={toggleServicesDropdown}
                 onMouseLeave={toggleServicesDropdown}
@@ -80,13 +83,19 @@ const Navbar = () => {
                     </li>
                   </ul>
                 )}
-              </li>
+              </li> */}
+              <Link href="/">
+                <li>Home</li>
+              </Link>
               <Link href="/about">
                 <li>About</li>
               </Link>
               <Link href="/calendly">
+                <li>Consultation</li>
+              </Link>
+              <Link href="https://flowercityvirtualtours.com/" target="blank">
                 <button className="navbar-button items-center flex">
-                  <li>Consultation</li>
+                  <li>Visit Parent Site</li>
                 </button>
               </Link>
             </ul>
