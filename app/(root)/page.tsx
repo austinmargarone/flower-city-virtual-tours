@@ -1,5 +1,3 @@
-// import { UserButton } from "@clerk/nextjs";
-
 import Hero from "@/components/home/Hero";
 import VirtualTour from "@/components/home/VirtualTour";
 import HomeText from "../../components/home/HomeText";
@@ -11,7 +9,6 @@ import Seo from "@/components/home/Seo";
 export default function Home() {
   return (
     <div>
-      {/* <UserButton afterSignOutUrl="/" /> */}
       <section>
         <Hero />
       </section>

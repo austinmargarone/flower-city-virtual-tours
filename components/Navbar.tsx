@@ -2,7 +2,6 @@
 // import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SignedIn, UserButton } from "@clerk/nextjs";
 import MobileNav from "./MobileNav";
 // import { Nav } from "./svg";
 
@@ -100,19 +99,6 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <SignedIn>
-            <UserButton
-              afterSignOutUrl="/"
-              appearance={{
-                elements: {
-                  avatarBox: "h-10 w-10",
-                },
-                variables: {
-                  colorPrimary: "#ff7000",
-                },
-              }}
-            />
-          </SignedIn>
           <MobileNav />
         </div>
       </nav>
