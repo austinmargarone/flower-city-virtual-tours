@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Sheet,
   SheetClose,
@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import { Hamburger, Nav } from "./svg";
+import { Hamburger } from "./svg";
 
 const NavContent = () => {
   const pathname = usePathname();
@@ -42,11 +42,11 @@ const NavContent = () => {
 };
 
 const MobileNav = () => {
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  // const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  };
+  // const toggleServicesDropdown = () => {
+  //   setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  // };
 
   return (
     <div className="lg:hidden">
@@ -70,7 +70,10 @@ const MobileNav = () => {
               className="w-[250px]"
             />
           </Link>
-          <div className="mt-[2.5rem]">
+          <span className="ml-[3rem] flex flex-col">
+            <p className="text-[#B49167]">Web Development Division</p>
+          </span>
+          {/* <div className="mt-[2.5rem]">
             <button
               className="text-[#B49167] gap-2 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4"
               onClick={toggleServicesDropdown}
@@ -116,7 +119,7 @@ const MobileNav = () => {
                 </li>
               </ul>
             )}
-          </div>
+          </div> */}
 
           <div>
             <SheetClose asChild>
