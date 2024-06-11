@@ -1,4 +1,3 @@
-import React from "react";
 import SmallServiceCards from "./SmallServiceCards";
 
 const ServiceCards = () => {
@@ -17,7 +16,7 @@ const ServiceCards = () => {
       title: "Web Development",
       button: "/services/web-development",
       description:
-        "We support businesses with websites that are fast, secure, and mobile-friendly.",
+        "We develop websites that are fast, secure, and optimized for all screen sizes.",
     },
     {
       src: "./assets/icons/galleryTan.svg",
@@ -25,7 +24,7 @@ const ServiceCards = () => {
       title: "SEO Optimization",
       button: "/services/seo",
       description:
-        "We help businesses rank higher on search engines and increase online visibility.",
+        "We elevate your online presence by boosting search engine rankings and enhancing visibility.",
     },
   ];
 

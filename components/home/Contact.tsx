@@ -1,4 +1,3 @@
-import React from "react";
 import ContactCard from "./ContactCard";
 
 const ContactData = [
@@ -8,7 +7,7 @@ const ContactData = [
     title: "Contact Form",
     button: "/contact",
     description:
-      "Our contact form can be filled out anytime for any questions you may have.",
+      "Our contact form is available 24/7 for any questions you may have.",
   },
   {
     src: "./assets/icons/PhoneTan.svg",
@@ -16,7 +15,7 @@ const ContactData = [
     title: "Schedule Consultation",
     button: "/calendly",
     description:
-      "Schedule a consultation for a time that works best for you to discuss your project.",
+      "Schedule a consultation at your convenience to discuss your project.",
   },
   {
     src: "./assets/icons/QuoteTan.svg",
