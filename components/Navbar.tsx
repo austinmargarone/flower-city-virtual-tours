@@ -3,14 +3,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import MobileNav from "./MobileNav";
-// import { Nav } from "./svg";
+import { Nav } from "./svg";
+import { useState } from "react";
 
 const Navbar = () => {
-  // const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  // const toggleServicesDropdown = () => {
-  //   setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  // };
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
 
   return (
     <header>
@@ -41,7 +42,13 @@ const Navbar = () => {
         <div className="flex items-center gap-[1.25rem] lg:gap-[3rem]">
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-[1rem] text-white font-bold items-center">
-              {/* <li
+              <Link href="/">
+                <li>Home</li>
+              </Link>
+              <Link href="/about">
+                <li>About</li>
+              </Link>
+              <li
                 className="relative"
                 onMouseEnter={toggleServicesDropdown}
                 onMouseLeave={toggleServicesDropdown}
@@ -60,6 +67,13 @@ const Navbar = () => {
                 {isServicesDropdownOpen && (
                   <ul className="w-[12rem] absolute top-full left-0 bg-[#101415] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
                     <li>
+                      <Link href="/services/web-design">
+                        <button className="dropdown-button flex justify-start">
+                          Web Design
+                        </button>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/services/web-development">
                         <button className="dropdown-button flex justify-start">
                           Web Development
@@ -73,22 +87,9 @@ const Navbar = () => {
                         </button>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/services/virtual-tours">
-                        <button className="dropdown-button flex justify-start">
-                          Virtual Tours
-                        </button>
-                      </Link>
-                    </li>
                   </ul>
                 )}
-              </li> */}
-              <Link href="/">
-                <li>Home</li>
-              </Link>
-              <Link href="/about">
-                <li>About</li>
-              </Link>
+              </li>
               <Link href="/calendly">
                 <li>Consultation</li>
               </Link>

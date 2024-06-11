@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Sheet,
   SheetClose,
@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { menuLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import { Hamburger } from "./svg";
+import { Hamburger, Nav } from "./svg";
 
 const NavContent = () => {
   const pathname = usePathname();
@@ -42,11 +42,11 @@ const NavContent = () => {
 };
 
 const MobileNav = () => {
-  // const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  // const toggleServicesDropdown = () => {
-  //   setIsServicesDropdownOpen(!isServicesDropdownOpen);
-  // };
+  const toggleServicesDropdown = () => {
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
 
   return (
     <div className="lg:hidden">
@@ -73,7 +73,7 @@ const MobileNav = () => {
           <span className="ml-[3rem] flex flex-col">
             <p className="text-[#B49167]">Web Development Division</p>
           </span>
-          {/* <div className="mt-[2.5rem]">
+          <div className="mt-[2.5rem]">
             <button
               className="text-[#B49167] gap-2 w-full rounded-lg flex items-center justify-start border border-[#B49167] p-4"
               onClick={toggleServicesDropdown}
@@ -90,6 +90,15 @@ const MobileNav = () => {
             </button>
             {isServicesDropdownOpen && (
               <ul className="mt-2">
+                <li>
+                  <Link href="/services/web-design">
+                    <SheetClose asChild>
+                      <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
+                        Web Design
+                      </button>
+                    </SheetClose>
+                  </Link>
+                </li>
                 <li>
                   <Link href="/services/web-development">
                     <SheetClose asChild>
@@ -108,18 +117,9 @@ const MobileNav = () => {
                     </Link>
                   </SheetClose>
                 </li>
-                <li>
-                  <Link href="/services/virtual-tours">
-                    <SheetClose asChild>
-                      <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
-                        Virtual Tours
-                      </button>
-                    </SheetClose>
-                  </Link>
-                </li>
               </ul>
             )}
-          </div> */}
+          </div>
 
           <div>
             <SheetClose asChild>
