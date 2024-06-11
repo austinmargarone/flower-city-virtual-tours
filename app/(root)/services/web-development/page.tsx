@@ -38,84 +38,66 @@ const page = () => {
       <h1 className="h1 flex justify-center">Web Development</h1>
       <div>
         <div className="flex justify-center mt-[1rem]">
-          <p className="p text-center flex max-w-[48rem]">
-            Our web development services are designed to help you create a
-            website that is not only visually appealing but also functional and
-            user-friendly. We offer a range of services to help you build a
-            website that meets your needs and the needs of your customers. From
-            custom web design to e-commerce solutions, we can help you create a
-            website that will help you grow your business and reach your goals.
+          <p className="p text-center max-w-[48rem] mx-auto">
+            Elevate your online presence with our comprehensive web development
+            services. Whether you're a business seeking tailored solutions or an
+            individual looking to enhance your online presence, we're here to
+            help. From contract projects to serving our own clients, we deliver
+            high-quality websites that exceed expectations.
           </p>
         </div>
         <div className="px-[1rem] pleft">
-          <h2 className="h2 text-center mt-8">
-            Our Web Development Services Cover:
-          </h2>
+          <h2 className="h2 text-center mt-8">Our Approach:</h2>
           <ul className="list-disc max-w-[48rem] mx-auto text-white">
             <li>
-              <strong className="pbold">Custom Web Design:</strong> Creating
-              unique and tailored website designs that reflect your brand
-              identity and meet your specific requirements.
+              <strong className="pbold">Design Process:</strong> We work closely
+              with clients, often starting with wireframes and prototypes
+              created in Figma, to ensure the design meets their vision and
+              objectives.
             </li>
             <li>
-              <strong className="pbold">Responsive Web Design:</strong> Ensuring
-              that websites are optimized for viewing on various devices,
-              including desktops, laptops, tablets, and smartphones, providing a
-              seamless user experience across different screen sizes.
+              <strong className="pbold">Project Management:</strong> We follow
+              agile methodologies, breaking down projects into sprints to
+              deliver iterative results and maintain flexibility throughout the
+              development process.
             </li>
             <li>
-              <strong className="pbold">
-                Custom Web Application Development:
-              </strong>{" "}
-              Creating web-based applications to streamline business processes,
-              manage data, or provide unique functionalities tailored to
-              clients' needs.
+              <strong className="pbold">Web3 Integration:</strong> Leveraging
+              Web3 technology, including blockchain and decentralized
+              applications, we empower businesses to explore new possibilities
+              for trust, transparency, and innovation in their online platforms.
             </li>
             <li>
-              <strong className="pbold">
-                Content Management System (CMS) Development:
-              </strong>{" "}
-              Building websites using popular CMS platforms like WordPress and
-              Sanity, enabling easy content management and updates for clients
-              without requiring technical expertise.
+              <strong className="pbold">Communication:</strong> Clear and
+              transparent communication is key. We keep clients informed at
+              every stage of the project, providing regular updates and seeking
+              feedback to ensure alignment with their goals.
             </li>
             <li>
-              <strong className="pbold">
-                Website Maintenance and Support:
-              </strong>{" "}
-              Providing ongoing maintenance services, including updates,
-              backups, security checks, and troubleshooting, to ensure website
-              reliability and performance optimization.
+              <strong className="pbold">Customer Service:</strong> Our dedicated
+              team is committed to providing exceptional customer service,
+              addressing any concerns or queries promptly and ensuring a smooth
+              and enjoyable experience for our clients.
             </li>
             <li>
-              <strong className="pbold">
-                Hosting and Domain Registration:
-              </strong>{" "}
-              Offering hosting and domain registration services to help clients
-              establish their online presence and ensure website accessibility
-              and security.
-            </li>
-            <li>
-              <strong className="pbold">UI/UX Design:</strong> Designing
-              intuitive and visually appealing user interfaces to enhance user
-              experience and engagement on websites and applications, focusing
-              on usability and accessibility principles.
-            </li>
-            <li>
-              <strong className="pbold">
-                Database Design and Integration:
-              </strong>{" "}
-              Designing and implementing databases to store, manage, and
-              retrieve data efficiently, ensuring data security, integrity, and
-              scalability for web applications.
-            </li>
-            <li>
-              <strong className="pbold"> E-commerce Solutions:</strong>{" "}
-              Developing online stores with features like product listings,
-              shopping carts, payment gateways, and inventory management to
-              facilitate online transactions and sales.
+              <strong className="pbold">Timely Deadlines:</strong> We understand
+              the importance of meeting deadlines. Our team works diligently to
+              deliver projects on time, without compromising on quality.
             </li>
           </ul>
+          <h2 className="h2 text-center mt-8">Our Tech Stacks:</h2>
+          <ul className="list-disc max-w-[48rem] mx-auto text-white">
+            <li>Frontend: Next.js, React.js, Vue.js</li>
+            <li>Backend: Node.js, Express.js</li>
+            <li>Database: MongoDB, MySQL, PostgreSQL</li>
+            <li>Web3: Web3.js, Ether.js, Foundry</li>
+            <li>Additional Tools: Redux, GraphQL, Sanity, Tailwind CSS</li>
+          </ul>
+          <p className="p text-center mt-8 max-w-[48rem] mx-auto">
+            Ready to discuss your project requirements? Contact us today to
+            schedule a consultation and explore how we can collaborate to
+            achieve your goals.
+          </p>
         </div>
       </div>
     </div>

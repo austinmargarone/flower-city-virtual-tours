@@ -4,9 +4,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | Web Development",
+  title: "FCVT | Web Design",
   description:
-    "We develop full stack web appliations that are custom to your needs. Contact us today to learn more!",
+    "We design visually stunning and user-friendly websites that align with your brand identity and engage your audience effectively. Contact us today!",
   keywords: [
     "Web Development",
     "Web Design",
