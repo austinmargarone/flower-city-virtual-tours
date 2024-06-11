@@ -4,6 +4,14 @@ import SmallServiceCards from "./SmallServiceCards";
 const ServiceCards = () => {
   const serviceData = [
     {
+      src: "./assets/icons/cube-skeletonTan.svg",
+      alt: "Web Design",
+      title: "Web Design",
+      button: "/services/web-design",
+      description:
+        "We walk you through the design process to create a website that fits your brand.",
+    },
+    {
       src: "./assets/icons/window-codeTan.svg",
       alt: "Web Development",
       title: "Web Development",
@@ -18,14 +26,6 @@ const ServiceCards = () => {
       button: "/services/seo",
       description:
         "We help businesses rank higher on search engines and increase online visibility.",
-    },
-    {
-      src: "./assets/icons/cube-skeletonTan.svg",
-      alt: "Virtual Tours",
-      title: "Virtual Tours",
-      button: "/services/virtual-tours",
-      description:
-        "Our virtual tours are perfect to showcase your property online and in 3D.",
     },
   ];
 

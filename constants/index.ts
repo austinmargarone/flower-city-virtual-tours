@@ -1,7 +1,10 @@
 import { MenuLink, ServiceLink } from "@/types";
 
-
 export const menuLinks: MenuLink[] = [
+  {
+    route: "",
+    label: "Home",
+  },
   {
     route: "/about",
     label: "About",
@@ -18,9 +21,11 @@ export const menuLinks: MenuLink[] = [
     route: "/calendly",
     label: "Consultation",
   },
-
+  {
+    route: "https://flowercityvirtualtours.com/",
+    label: "Parent Website",
+  },
 ];
-
 
 export const serviceLinks: ServiceLink[] = [
   {
@@ -39,6 +44,4 @@ export const serviceLinks: ServiceLink[] = [
     route: "/calendly",
     label: "Consultation",
   },
-
 ];
-
