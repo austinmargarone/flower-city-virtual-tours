@@ -36,16 +36,17 @@ const page = () => {
   return (
     <div className="py-[1.25rem] md:py-[2.5rem] px-[1rem]">
       <h1 className="h1 flex justify-center">Web Development</h1>
+      <div className="flex justify-center mt-[1rem]">
+        <p className="p text-center max-w-[48rem] mx-auto">
+          Elevate your online presence with our comprehensive web development
+          services. Whether you're a business seeking tailored solutions or an
+          individual looking to enhance your online presence, we're here to
+          help. From contract projects to serving our own clients, we deliver
+          high-quality websites that exceed expectations.
+        </p>
+      </div>
+
       <div>
-        <div className="flex justify-center mt-[1rem]">
-          <p className="p text-center max-w-[48rem] mx-auto">
-            Elevate your online presence with our comprehensive web development
-            services. Whether you're a business seeking tailored solutions or an
-            individual looking to enhance your online presence, we're here to
-            help. From contract projects to serving our own clients, we deliver
-            high-quality websites that exceed expectations.
-          </p>
-        </div>
         <div className="px-[1rem] pleft">
           <h2 className="h2 text-center mt-8">Our Approach:</h2>
           <ul className="list-disc max-w-[48rem] mx-auto text-white">

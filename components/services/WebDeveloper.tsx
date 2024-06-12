@@ -1,14 +1,8 @@
-import Link from "next/link";
 import React from "react";
 
 const WebDeveloper = () => {
   return (
     <div className="w-full">
-      <Link href={"/services/web-development"}>
-        <h2 className="h2 justify-center flex py-[1rem] text-white hover:animate-pulse">
-          Web Development
-        </h2>
-      </Link>
       <div className="w-full h-fit max-w-[77.5rem] mx-auto flex border-tan border-rounded border shadow-lg rounded-lg bg-[#040219]">
         <div className="m-auto xs:flex hidden w-full h-full">
           <video

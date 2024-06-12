@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import Seo from "@/components/services/Seo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -49,6 +50,7 @@ const Page = () => {
   return (
     <div className="py-[1.25rem] md:py-[2.5rem] px-[1rem]">
       <h1 className="h1 flex justify-center">SEO Optimization Services</h1>
+
       <div>
         <div className="flex justify-center mt-[1rem]">
           <p className="p text-center max-w-[48rem] mx-auto">
@@ -61,6 +63,9 @@ const Page = () => {
             attract more visitors, increase conversions, and grow your online
             presence.
           </p>
+        </div>
+        <div className="mt-8">
+          <Seo />
         </div>
         <div className="px-[1rem] pleft">
           <h2 className="h2 text-center mt-8">Our SEO Services Cover:</h2>
