@@ -4,10 +4,6 @@ import VirtualTourCards from "./VirtualTourCards";
 const VirtualTours = () => {
   const VirtualTours = [
     {
-      // Serendipity Labs
-      embed: "https://my.matterport.com/show/?m=WvpyR9oxStU",
-    },
-    {
       // Aarons Alley
       embed: "https://my.matterport.com/show/?m=Yug3Wm4ZsKC",
     },

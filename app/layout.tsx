@@ -1,6 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const JosefinSans = {
   subsets: ["latin"],
@@ -40,7 +42,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${JosefinSans.variable}`}>{children}</body>
+      <body className={`${JosefinSans.variable}`}>
+        <main className="relative bg-[#101415] text-white">
+          <Navbar />
+          <section>
+            <div>{children}</div>
+            <Footer />
+          </section>
+        </main>
+      </body>
     </html>
   );
 }
