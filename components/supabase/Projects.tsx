@@ -33,7 +33,7 @@ const Test = () => {
         {projects.map((project: any) => (
           <div key={project.id}>
             <Link href={project.link} target={"_blank"} className="mx-auto">
-              <div className="bg-tan mx-auto flex w-[18rem] shrink-0 flex-col rounded-[.62725rem] bg-blue1 pb-[.32rem] pt-[2.83rem] hover:shadow-lg xs:w-[21.5rem] ss:w-[25rem] sm:h-[20.8rem] sm:w-[34.375rem] sm:pt-[4.25rem]">
+              <div className="bg-tan mx-auto flex w-[17rem] shrink-0 flex-col rounded-[.62725rem] bg-blue1 pb-[.32rem] pt-[2.83rem] hover:shadow-lg xs:w-[21.5rem] ss:w-[25rem] sm:h-[20.8rem] sm:w-[34.375rem] sm:pt-[4.25rem]">
                 <div className="mx-auto flex sm:hidden">
                   <div>
                     <Image
