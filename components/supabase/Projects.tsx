@@ -28,12 +28,14 @@ const Test = () => {
 
   return (
     <div className="mx-auto">
-      <h2 className="h2">Featured Web Applications</h2>
+      <h2 className="h2 text-center text-2xl font-bold my-4">
+        Featured Web Applications
+      </h2>
       <ul className="mt-[2.5rem] flex flex-col lg:flex-row gap-[2rem] lg:gap-[3rem] mx-auto justify-center flex-wrap">
         {projects.map((project: any) => (
           <div key={project.id}>
             <Link href={project.link} target={"_blank"} className="mx-auto">
-              <div className="bg-tan mx-auto flex w-[17rem] shrink-0 flex-col rounded-[.62725rem] bg-blue1 pb-[.32rem] pt-[2.83rem] hover:shadow-lg xs:w-[21.5rem] ss:w-[25rem] sm:h-[20.8rem] sm:w-[34.375rem] sm:pt-[4.25rem]">
+              <div className="bg-tan mx-auto flex w-auto min-w-[17rem] max-w-[20rem] shrink-0 flex-col rounded-[.62725rem] bg-blue1 pb-[.32rem] pt-[2.83rem] hover:shadow-lg xs:w-[21.5rem] ss:w-[25rem] sm:h-[20.8rem] sm:w-[34.375rem] sm:pt-[4.25rem]">
                 <div className="mx-auto flex sm:hidden">
                   <div>
                     <Image
@@ -57,7 +59,7 @@ const Test = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[20rem] mx-auto flex pl-[1.25rem] pt-[1.22rem] sm:pl-[3.6rem] sm:pt-[1.95rem] xs:w-[21.5rem] ss:w-[25rem] sm:w-[34.375rem]">
+              <div className="w-auto min-w-[17rem] max-w-[20rem] mx-auto flex pl-[1.25rem] pt-[1.22rem] sm:pl-[3.6rem] sm:pt-[1.95rem] xs:w-[21.5rem] ss:w-[25rem] sm:w-[34.375rem]">
                 <div className="flex-col">
                   <h4 className="pbold flex text-white">{project.title}</h4>
                   <p className="p flex text-white">{project.description}</p>
