@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${JosefinSans.variable}`}>
-        <main className="relative bg-[#101415]">
+        <main className="relative bg-[#101415] text-white">
           <Navbar />
           <section>
             <div>{children}</div>
