@@ -5,6 +5,7 @@ import Contact from "../components/home/Contact";
 import WebDeveloper from "@/components/home/WebDeveloper";
 import ServiceCards from "@/components/services/cards/ServiceCards";
 import Seo from "@/components/home/Seo";
+import Projects from "@/components/supabase/Projects";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         <div>
           <WebDeveloper />
         </div>
+        {/* <div>
+          <Projects />
+        </div> */}
         <div>
           <Seo />
         </div>
