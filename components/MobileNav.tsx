@@ -60,7 +60,10 @@ const MobileNav = () => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent side="right" className="bg-[#101415] border-[#B49167]">
+        <SheetContent
+          side="right"
+          className="bg-[#101415] border-[#B49167] max-h-screen overflow-y-auto"
+        >
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/companyLogo.png"
