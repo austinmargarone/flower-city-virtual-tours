@@ -1,24 +1,25 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 
+const quotes = [
+  "Engage your audience",
+  "Boost your brand",
+  "Drive conversions",
+  "are tailored to your needs",
+  "Optimize your digital presence",
+  "Get more traffic",
+  "Deliver experiences",
+  "Grow your business",
+  "Increase revenue",
+  "Generate leads",
+  "Convert more customers",
+  "Improve your SEO",
+  "empower online growth",
+  "prioritize user experience",
+];
+
 const Hero = () => {
   const [text, setText] = useState("");
-  const quotes = [
-    "Engage your audience",
-    "Boost your brand",
-    "Drive conversions",
-    "are tailored to your needs",
-    "Optimize your digital presence",
-    "Get more traffic",
-    "Deliver experiences",
-    "Grow your business",
-    "Increase revenue",
-    "Generate leads",
-    "Convert more customers",
-    "Improve your SEO",
-    "empower online growth",
-    "prioritize user experience",
-  ];
   const [quoteIndex, setQuoteIndex] = useState(0);
 
   const scrollToRef = useRef<HTMLDivElement>(null);
