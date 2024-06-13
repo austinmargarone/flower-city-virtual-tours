@@ -74,7 +74,7 @@ const MobileNav = () => {
             />
           </Link>
           <span className="ml-[3rem] flex flex-col">
-            <p className="text-[#B49167]">Web Development Division</p>
+            <p className="text-[#B49167]">Web Solutions Division</p>
           </span>
           <div className="mt-[2.5rem]">
             <button
