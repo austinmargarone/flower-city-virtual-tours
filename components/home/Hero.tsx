@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useEffect, useState, useRef } from "react";
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -21,6 +20,8 @@ const Hero = () => {
     "prioritize user experience ",
   ];
   const [quoteIndex, setQuoteIndex] = useState(0);
+
+  const scrollToRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -55,23 +56,34 @@ const Hero = () => {
     }, 50); // Adjust deleting speed here
   };
 
+  const handleScroll = () => {
+    if (scrollToRef.current) {
+      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section
-      className="mx-auto flex justify-center items-center h-screen w-full"
-      style={{
-        backgroundImage: "url('/background1.jpg')",
-        backgroundSize: "cover",
-        overflow: "hidden",
-      }}
-    >
-      <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left flex-wrap">
-        <h1 className="hero-heading">We build custom websites that</h1>
-        <p className="hero-paragraph">{text}</p>
-        <Link href="/calendly">
-          <button className="hero-button shadow-lg">Get started</button>
-        </Link>
-      </div>
-    </section>
+    <>
+      <section
+        className="mx-auto flex justify-center items-center h-screen w-full"
+        style={{
+          backgroundImage: "url('/background1.jpg')",
+          backgroundSize: "cover",
+          overflow: "hidden",
+        }}
+      >
+        <div className="py-[2.5rem] px-[1rem] sm:px-[2rem] text-center md:text-left flex-wrap">
+          <h1 className="hero-heading">We build custom websites that</h1>
+          <p className="hero-paragraph">{text}</p>
+          <button className="hero-button shadow-lg" onClick={handleScroll}>
+            Get started
+          </button>
+        </div>
+      </section>
+      <section ref={scrollToRef} className="target-section">
+        {/* The content you want to scroll to */}
+      </section>
+    </>
   );
 };
 
