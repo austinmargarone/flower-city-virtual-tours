@@ -3,7 +3,7 @@ import VirtualTour from "@/components/home/VirtualTour";
 import HomeText from "../components/home/HomeText";
 import Contact from "../components/home/Contact";
 import ServiceCards from "@/components/services/cards/ServiceCards";
-import Projects from "@/components/supabase/Projects";
+// import Projects from "@/components/supabase/Projects";
 import WebDeveloper from "@/components/services/WebDeveloper";
 
 export default function Home() {
@@ -20,9 +20,9 @@ export default function Home() {
         <div>
           <WebDeveloper />
         </div>
-        <div>
+        {/* <div>
           <Projects />
-        </div>
+        </div> */}
         <div>
           <VirtualTour />
         </div>
