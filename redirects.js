@@ -31,13 +31,16 @@ const industryPages = [
 
 module.exports = [
   // Services
-  { source: '/services', destination: '/#services', permanent: true },
   { source: '/web-development', destination: '/services/web-development', permanent: true },
   { source: '/virtual-tours', destination: '/services/virtual-tours', permanent: true },
   { source: '/floor-plans', destination: '/services/virtual-tours', permanent: true },
   { source: '/our-technology', destination: '/services/virtual-tours', permanent: true },
   { source: '/aerial-drone', destination: '/services/drone', permanent: true },
   { source: '/photography', destination: '/services/photography', permanent: true },
+
+  // Old separate design + SEO pages are now sections of Web Development
+  { source: '/services/web-design', destination: '/services/web-development#design', permanent: true },
+  { source: '/services/seo', destination: '/services/web-development#seo', permanent: true },
 
   // Company
   { source: '/about-us', destination: '/about', permanent: true },

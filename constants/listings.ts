@@ -1705,6 +1705,7 @@ export const listings: Listing[] = [
     "title": "605 Wild Mallard Trail",
     "kind": "Cape Cod with wraparound porch",
     "location": "Webster, NY",
+    "tour": "1A8zFLesAh3",
     "photos": [
       {
         "src": "/listings/605-wild-mallard-trail/01.jpg",

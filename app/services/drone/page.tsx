@@ -43,7 +43,7 @@ const uses = [
 const Page = () => {
   return (
     <div className="pb-[1rem]">
-      <PageHeader eyebrow="Services" title="Aerial Drone Photography & Video">
+      <PageHeader eyebrow="Media" title="Aerial Drone Photography & Video">
         High-definition aerial photos and video of homes, businesses and job sites. A view
         from above shows off a property in a way ground-level photos can&apos;t.
       </PageHeader>

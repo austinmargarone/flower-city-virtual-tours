@@ -5,7 +5,7 @@ import Image from "next/image";
 import MobileNav from "./MobileNav";
 import { Nav } from "./svg";
 import { useState } from "react";
-import { serviceMenu } from "@/constants";
+import { serviceGroups } from "@/constants";
 
 const Navbar = () => {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -55,7 +55,7 @@ const Navbar = () => {
                 onMouseLeave={toggleServicesDropdown}
               >
                 <span className="flex items-center gap-1">
-                  Our Services
+                  <Link href="/services">Our Services</Link>
                   <span>
                     <Nav
                       src={"./assets/icons/close.svg"}
@@ -66,17 +66,34 @@ const Navbar = () => {
                   </span>
                 </span>
                 {isServicesDropdownOpen && (
-                  <ul className="w-[14rem] absolute top-full left-0 bg-[#101415] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
-                    {serviceMenu.map((item) => (
-                      <li key={item.route}>
-                        <Link href={item.route}>
-                          <button className="dropdown-button flex justify-start w-full">
-                            {item.label}
-                          </button>
-                        </Link>
-                      </li>
+                  <div className="w-[17rem] absolute top-full left-0 bg-[#101415] shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
+                    {serviceGroups.map((group) => (
+                      <div key={group.title} className="mb-2 last:mb-0">
+                        <p className="px-1 pb-1 text-xs uppercase tracking-[0.15em] text-paleblue">
+                          {group.title}
+                        </p>
+                        <ul>
+                          {group.items.map((item) => (
+                            <li key={item.route}>
+                              <Link href={item.route}>
+                                <button className="dropdown-button flex justify-start w-full text-left">
+                                  {item.label}
+                                </button>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
-                  </ul>
+                    <div className="mt-2 border-t border-tan/30 pt-2">
+                      <Link href="/services">
+                        <button className="dropdown-button flex justify-start w-full">All services</button>
+                      </Link>
+                      <Link href="/industries">
+                        <button className="dropdown-button flex justify-start w-full">Industries we serve</button>
+                      </Link>
+                    </div>
+                  </div>
                 )}
               </li>
               <Link href="/work">

@@ -7,7 +7,7 @@ import { formatPrice, singleServices, sizeTiers } from "@/constants/pricing";
 import { pageMeta } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Rochester Real Estate & Commercial Photography",
+  title: "Rochester Real Estate Photography | Residential & Commercial",
   description:
     "Professional listing, rental and commercial photography in Rochester, NY. Bright, true-to-life photos that pair with a Matterport 3D tour.",
   path: "/services/photography",
@@ -28,7 +28,7 @@ const photography = singleServices.find((s) => s.name === "Photography")!;
 const Page = () => {
   return (
     <div className="pb-[1rem]">
-      <PageHeader eyebrow="Services" title="Photography">
+      <PageHeader eyebrow="Media" title="Real Estate Photography">
         Bright, true-to-life photos of homes, rentals and commercial spaces. Pair them with a
         3D tour and drone shots and your listing or website has everything a buyer, guest or
         customer wants to see.

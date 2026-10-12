@@ -38,7 +38,7 @@ const floorPlanPrice = singleServices.find((s) => s.name === "Schematic Floor Pl
 const page = () => {
   return (
     <div className="pb-[1rem]">
-      <PageHeader eyebrow="Services" title="Matterport 3D Virtual Tours">
+      <PageHeader eyebrow="Media" title="Matterport 3D Virtual Tours">
         Let customers walk through your space from anywhere, 24/7. We scan your building with a
         Matterport camera and turn it into an interactive 3D tour you can put on your website,
         Google listing or social media.

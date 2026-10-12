@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
-import { menuLinks, serviceMenu } from "@/constants";
+import { menuLinks, serviceGroups } from "@/constants";
 import { usePathname } from "next/navigation";
 import { Hamburger, Nav } from "./svg";
 
@@ -92,19 +92,35 @@ const MobileNav = () => {
               </span>
             </button>
             {isServicesDropdownOpen && (
-              <ul className="mt-2">
-                {serviceMenu.map((item) => (
-                  <li key={item.route}>
-                    <SheetClose asChild>
-                      <Link href={item.route}>
-                        <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
-                          {item.label}
-                        </button>
-                      </Link>
-                    </SheetClose>
-                  </li>
+              <div className="mt-2 space-y-3">
+                {serviceGroups.map((group) => (
+                  <div key={group.title}>
+                    <p className="ml-[.5rem] text-xs uppercase tracking-[0.15em] text-paleblue">
+                      {group.title}
+                    </p>
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item.route}>
+                          <SheetClose asChild>
+                            <Link href={item.route}>
+                              <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem] text-left">
+                                {item.label}
+                              </button>
+                            </Link>
+                          </SheetClose>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+                <SheetClose asChild>
+                  <Link href="/industries">
+                    <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
+                      Industries we serve
+                    </button>
+                  </Link>
+                </SheetClose>
+              </div>
             )}
           </div>
 
