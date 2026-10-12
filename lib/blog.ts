@@ -5,6 +5,9 @@ import { marked, type Tokens } from "marked";
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
 
+// Used as the cover for any post that doesn't set its own coverImage
+export const DEFAULT_COVER = "/blog-images/2022/01/001-1-1024x683.jpg";
+
 export type PostMeta = {
   title: string;
   slug: string;
@@ -44,6 +47,7 @@ function readPost(file: string): Post {
     ...meta,
     date: String(meta.date),
     slug: meta.slug || file.replace(/\.md$/, ""),
+    coverImage: meta.coverImage || DEFAULT_COVER,
     content,
   };
 }

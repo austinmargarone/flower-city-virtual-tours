@@ -3,7 +3,7 @@ title: Seabreeze Amusement Park
 slug: seabreeze-amusement-park
 date: '2022-11-24'
 description: Discover Seabreeze Amusement Park part of our Discover Roc Series in our blog post.
-coverImage: /blog-images/2022/08/image-3.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 - Top 25

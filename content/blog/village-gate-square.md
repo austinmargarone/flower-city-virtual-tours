@@ -3,7 +3,7 @@ title: Village Gate Square
 slug: village-gate-square
 date: '2022-12-29'
 description: Discover Village Gate Square in our blog post part of the Discover ROC series.
-coverImage: /blog-images/2022/08/image.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 - Top 25

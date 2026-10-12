@@ -3,7 +3,7 @@ title: Artisan Works
 slug: artisan-works
 date: '2022-12-13'
 description: Discover Artisan Works in our blog post part of the Discover ROC Series.
-coverImage: /blog-images/2022/08/image-4.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 - Top 25

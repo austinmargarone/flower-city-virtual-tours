@@ -3,7 +3,7 @@ title: Irondequoit Beer Company
 slug: irondequoit-beer-company
 date: '2022-11-09'
 description: Discover the Irondequoit Beer Company in our blog post, part of the Discover ROC Series.
-coverImage: /blog-images/2022/08/image-2.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 - Top 25

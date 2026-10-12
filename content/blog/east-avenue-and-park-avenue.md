@@ -3,7 +3,7 @@ title: East Avenue and Park Avenue
 slug: east-avenue-and-park-avenue
 date: '2022-12-21'
 description: Discover East Avenue and Park Avenue in our blog post part of the Discover ROC series.
-coverImage: /blog-images/2022/08/image-5.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 - Top 25

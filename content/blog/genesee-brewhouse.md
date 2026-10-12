@@ -3,7 +3,7 @@ title: Genesee Brewhouse
 slug: genesee-brewhouse
 date: '2022-10-28'
 description: Discover the Genesee Brewhouse a staple of Rochester, NY in our new blog post.
-coverImage: /blog-images/2022/08/image-1.png
+coverImage: /blog-images/2022/01/001-1-1024x683.jpg
 categories:
 - Discover ROC Series
 legacyUrl: /blog/discover-roc-series/genesee-brewhouse/
