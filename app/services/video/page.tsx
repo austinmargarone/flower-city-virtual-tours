@@ -1,5 +1,7 @@
 import Link from "next/link";
 import PageHeader from "@/components/shared/PageHeader";
+import VideoPlayer from "@/components/shared/VideoPlayer";
+import { listings } from "@/constants/listings";
 import CallToAction from "@/components/shared/CallToAction";
 import { formatPrice, singleServices, sizeTiers } from "@/constants/pricing";
 import { pageMeta } from "@/lib/site";
@@ -30,6 +32,8 @@ const uses = [
   },
 ];
 
+const sample = listings.find((l) => l.slug === "443-crossfield-road")!;
+
 const video = singleServices.find((s) => s.name === "Videography")!;
 
 const Page = () => {
@@ -42,6 +46,17 @@ const Page = () => {
       </PageHeader>
 
       <div className="mx-auto mt-10 max-w-[64rem] space-y-12 px-[1rem]">
+        <section>
+          <VideoPlayer {...sample.video!} />
+          <p className="mt-3 text-lightblue">
+            Drone fly-through and walkthrough of{" "}
+            <Link href={`/listings/${sample.slug}`} className="text-tan underline">
+              {sample.title}
+            </Link>
+            , from an aerial of the neighborhood straight through the front door.
+          </p>
+        </section>
+
         <section>
           <h2 className="h2 text-left">What it&apos;s for</h2>
           <ul className="mt-4 grid gap-4 ss:grid-cols-2">

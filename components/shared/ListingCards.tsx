@@ -31,6 +31,7 @@ const ListingCards = ({ exclude, limit }: Props) => {
                 {l.photos.length} photos
                 {l.aerials.length > 0 && ` · ${l.aerials.length} aerials`}
                 {l.tour && " · 3D tour"}
+                {l.video && " · Video"}
               </p>
             </div>
           </Link>

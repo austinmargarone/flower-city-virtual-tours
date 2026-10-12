@@ -11,11 +11,106 @@ export type Listing = {
   /** Matterport model id */
   tour?: string;
   caseStudy?: string;
+  /** Video walkthrough: mp4 + cover frame */
+  video?: { src: string; poster: string; title: string };
   photos: ListingPhoto[];
   aerials: ListingPhoto[];
 };
 
 export const listings: Listing[] = [
+  {
+    "slug": "443-crossfield-road",
+    "title": "443 Crossfield Road",
+    "kind": "Cape Cod",
+    "video": {
+      "src": "/listings/443-crossfield-road/walkthrough.mp4",
+      "poster": "/listings/443-crossfield-road/walkthrough-poster.jpg",
+      "title": "443 Crossfield Road drone fly-through video walkthrough"
+    },
+    "photos": [
+      {
+        "src": "/listings/443-crossfield-road/01.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/02.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/03.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/04.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/05.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/06.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/07.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/08.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/09.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/10.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/11.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/12.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/13.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/14.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/15.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/16.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/17.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/18.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/19.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/443-crossfield-road/20.jpg",
+        "thumb": "/listings/443-crossfield-road/thumb/20.jpg"
+      }
+    ],
+    "aerials": []
+  },
   {
     "slug": "257-stonefield-lane",
     "title": "257 Stonefield Lane",

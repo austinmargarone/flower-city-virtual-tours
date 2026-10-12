@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Gallery from "@/components/shared/Gallery";
 import TourEmbed from "@/components/shared/TourEmbed";
+import VideoPlayer from "@/components/shared/VideoPlayer";
 import ListingCards from "@/components/shared/ListingCards";
 import CallToAction from "@/components/shared/CallToAction";
 import { listings } from "@/constants/listings";
@@ -20,7 +21,7 @@ export function generateMetadata({ params }: Props) {
   if (!l) return {};
   return pageMeta({
     title: `${l.title} | Listing Photography`,
-    description: `${l.photos.length} professional listing photos${l.aerials.length ? `, ${l.aerials.length} drone aerials` : ""}${l.tour ? " and a Matterport 3D tour" : ""} of ${l.title}, a ${l.kind.toLowerCase()}${l.location ? ` in ${l.location}` : ""}.`,
+    description: `${l.photos.length} professional listing photos${l.aerials.length ? `, ${l.aerials.length} drone aerials` : ""}${l.tour ? ", a Matterport 3D tour" : ""}${l.video ? ", a video walkthrough" : ""} of ${l.title}, a ${l.kind.toLowerCase()}${l.location ? ` in ${l.location}` : ""}.`,
     path: `/listings/${l.slug}`,
     image: l.photos[0].src,
   });
@@ -60,6 +61,11 @@ const Page = ({ params }: Props) => {
               Matterport 3D tour
             </li>
           )}
+          {l.video && (
+            <li className="rounded-full border border-tan/50 px-3 py-0.5 text-sm text-lightblue">
+              Video walkthrough
+            </li>
+          )}
         </ul>
         {l.caseStudy && (
           <p className="mt-4">
@@ -67,6 +73,13 @@ const Page = ({ params }: Props) => {
               Read the case study
             </Link>
           </p>
+        )}
+
+        {l.video && (
+          <section className="mt-10">
+            <h2 className="h2 mb-4 text-left">Video Walkthrough</h2>
+            <VideoPlayer {...l.video} />
+          </section>
         )}
 
         {l.tour && (

@@ -2,6 +2,8 @@ import Link from "next/link";
 import { BadgeCheck, ShieldCheck } from "lucide-react";
 import Gallery, { type GalleryImage } from "@/components/shared/Gallery";
 import PageHeader from "@/components/shared/PageHeader";
+import VideoPlayer from "@/components/shared/VideoPlayer";
+import { listings } from "@/constants/listings";
 import CallToAction from "@/components/shared/CallToAction";
 import { dronePricing, formatPrice } from "@/constants/pricing";
 import { pageMeta } from "@/lib/site";
@@ -30,6 +32,8 @@ const aerials: GalleryImage[] = [
   { src: "/gallery/drone/property-pool-lot.jpg", alt: "Aerial of a home and pool surrounded by trees" },
   { src: "/gallery/drone/city-neighborhood.jpg", alt: "Aerial of a tree-lined city neighborhood" },
 ];
+
+const flyThrough = listings.find((l) => l.slug === "443-crossfield-road")!;
 
 const uses = [
   { title: "Real estate listings", text: "Show the whole property, the lot lines and what's around it." },
@@ -65,6 +69,15 @@ const Page = () => {
             </div>
           </li>
         </ul>
+
+        <section>
+          <h2 className="h2 mb-1 text-left">Drone fly-through</h2>
+          <p className="mb-4 text-lightblue">
+            From above the neighborhood, down to the house and in through the front door, all
+            in one continuous shot.
+          </p>
+          <VideoPlayer {...flyThrough.video!} />
+        </section>
 
         <section>
           <h2 className="h2 mb-1 text-left">Recent aerial work</h2>
