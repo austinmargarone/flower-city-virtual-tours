@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="lg:items-center flex flex-col lg:flex-row py-[1.5rem] lg:py-[2.5rem] gap-[1rem] border-t-[1.5px] border-t-[#B49167] bg-[#101415] lg:px-[3rem] shadow-lg">
       <div className="flex flex-col gap-[.63rem] xl:pl-[3.6rem] mx-auto">
-        <Link href="https://flowercityvirtualtours.com" target="_blank">
+        <Link href="/">
           <Image
             src="/companyLogo.png"
             width={400}
@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="lg:flex flex-col lg:w-[60%] hidden">
         <div className="">
-          <ul className="flex gap-[1rem] text-white font-bold">
+          <ul className="flex flex-wrap gap-[1rem] text-white font-bold">
             <Link href="/">
               <li>Home</li>
             </Link>
@@ -40,6 +40,21 @@ const Footer = () => {
             </Link>
             <Link href="/calendly">
               <li>Consultation</li>
+            </Link>
+            <Link href="/work">
+              <li>Our Work</li>
+            </Link>
+            <Link href="/pricing">
+              <li>Pricing</li>
+            </Link>
+            <Link href="/industries">
+              <li>Industries</li>
+            </Link>
+            <Link href="/faq">
+              <li>FAQ</li>
+            </Link>
+            <Link href="/privacy-policy">
+              <li>Privacy</li>
             </Link>
             <Link href="/build">
               <li>Request A Quote</li>
@@ -52,7 +67,7 @@ const Footer = () => {
         <div className="h-0.5 border-b border-tan my-[.63rem]"></div>
         <div>
           <p className="text-tan">
-            © Copyright Flower City Virtual Tours LLC, All rights reserved.
+            © {new Date().getFullYear()} Flower City Virtual Tours LLC · Rochester, NY · All rights reserved.
           </p>
         </div>
       </div>

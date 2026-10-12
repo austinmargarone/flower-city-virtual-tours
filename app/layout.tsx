@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
 const JosefinSans = {
   subsets: ["latin"],
@@ -11,27 +12,15 @@ const JosefinSans = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | Custom Websites",
+  metadataBase: new URL(SITE_URL),
+  title: "Flower City Virtual Tours | Rochester Web Design, 3D Tours & Drone",
   description:
-    "We build custom websites that improve your SEO, empower online growth, and prioritize user experience. Get started today!",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "SEO",
-    "User Experience",
-    "NextJS",
-    "React",
-  ],
+    "Custom websites, Matterport 3D virtual tours, photography and drone services for Rochester, NY businesses.",
   openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
+    siteName: "Flower City Virtual Tours",
+    locale: "en_US",
+    type: "website",
+    images: [OG_IMAGE],
   },
 };
 

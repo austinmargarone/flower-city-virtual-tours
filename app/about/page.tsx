@@ -1,46 +1,24 @@
+import { pageMeta } from "@/lib/site";
 import About from "@/components/about/About";
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | About",
+export const metadata = pageMeta({
+  title: "About Us",
   description:
-    "We thrive on the forefront of technology by using state of the art tech stacks that propel your business forward. Learn more about us!",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "SEO",
-    "User Experience",
-    "NextJS",
-    "React",
-    "Web Development Services",
-    "Web Developer",
-    "Web Designer",
-    "Web Development Company",
-  ],
-  openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
-  },
-};
+    "Flower City Virtual Tours is a Rochester, NY studio building websites, Matterport 3D tours, photography and drone media for local businesses.",
+  path: "/about",
+});
 
 export default function Page() {
   return (
     <section
-      className="mx-auto flex h-screen flex-col justify-center p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem]"
+      className="mx-auto flex min-h-screen flex-col justify-center p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem]"
       style={{
         backgroundImage: "url('/background3.jpg')",
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-[#101415] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg max-w-[800px] flex mx-auto">
+      <div className="bg-[#101415] p-[1rem] xs:p-[2rem] ss:p-[2.5rem] md:px-[3rem] border-[#B49167] shadow-lg border-[1.5px] rounded-lg max-w-[900px] flex mx-auto my-[2rem]">
         <About />
       </div>
     </section>

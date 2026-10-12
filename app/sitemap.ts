@@ -1,0 +1,56 @@
+import type { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog";
+import { caseStudies } from "@/constants/work";
+import { listings } from "@/constants/listings";
+import { SITE_URL } from "@/lib/site";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+  const pages = [
+    "",
+    "/about",
+    "/work",
+    "/pricing",
+    "/faq",
+    "/industries",
+    "/services/web-development",
+    "/services/virtual-tours",
+    "/services/photography",
+    "/services/drone",
+    "/services/video",
+    "/services",
+    "/blog",
+    "/contact",
+    "/build",
+    "/calendly",
+    "/privacy-policy",
+  ].map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: path === "" ? 1 : path.startsWith("/services") ? 0.9 : 0.7,
+  }));
+
+  const work = caseStudies.map((c) => ({
+    url: `${SITE_URL}/work/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.7,
+  }));
+
+  const posts = getAllPosts().map((p) => ({
+    url: `${SITE_URL}/blog/${p.slug}`,
+    lastModified: new Date(`${p.date}T12:00:00`),
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  const listingPages = listings.map((l) => ({
+    url: `${SITE_URL}/listings/${l.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+
+  return [...pages, ...work, ...listingPages, ...posts];
+}

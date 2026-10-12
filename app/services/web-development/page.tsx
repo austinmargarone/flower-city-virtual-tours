@@ -1,108 +1,157 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import { Metadata } from "next";
+import Link from "next/link";
+import { Code2, Palette, Search, type LucideIcon } from "lucide-react";
+import PageHeader from "@/components/shared/PageHeader";
+import CallToAction from "@/components/shared/CallToAction";
+import WebDeveloper from "@/components/services/WebDeveloper";
+import { formatPrice, webIncludes, webPricing } from "@/constants/pricing";
+import { pageMeta } from "@/lib/site";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | Web Development",
+export const metadata = pageMeta({
+  title: "Rochester Web Design, Development & SEO",
   description:
-    "We develop full stack web applications that are custom to your needs. Contact us today to learn more!",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "SEO",
-    "User Experience",
-    "NextJS",
-    "React",
-    "Web Development Services",
-    "Web Developer",
-    "Web Designer",
-    "Web Development Company",
-    "Web Applications",
-  ],
-  openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
-  },
+    "Custom website design, development and local SEO for Rochester, NY businesses. Fast, mobile-friendly sites built to bring in customers.",
+  path: "/services/web-development",
+});
+
+type Pillar = {
+  id: string;
+  icon: LucideIcon;
+  title: string;
+  intro: string;
+  items: { name: string; text: string }[];
 };
 
-const page = () => {
+const pillars: Pillar[] = [
+  {
+    id: "design",
+    icon: Palette,
+    title: "Design",
+    intro:
+      "We walk you through the design process, often starting with wireframes and prototypes in Figma, so you see your site before it's built.",
+    items: [
+      { name: "Custom web design", text: "A unique site that reflects your brand, not a recycled template." },
+      { name: "Responsive design", text: "Looks and works great on phones, tablets and desktops." },
+      { name: "UI/UX design", text: "Clear, easy navigation that guides visitors to call, book or buy." },
+      { name: "Website redesign", text: "Modernize an outdated site's look, speed and usability." },
+      { name: "Brand identity", text: "Logos, colors and typography that tie your site and brand together." },
+      { name: "Landing pages", text: "Focused pages built to convert for a campaign, product or service." },
+    ],
+  },
+  {
+    id: "development",
+    icon: Code2,
+    title: "Development",
+    intro:
+      "We build with the same modern tools large companies use, so your site is fast, secure and easy to grow.",
+    items: [
+      { name: "Fast & secure", text: "Modern frameworks, SSL included, and pages that load quickly." },
+      { name: "E-commerce", text: "Online stores with product listings, carts and secure checkout." },
+      { name: "Content you can edit", text: "Optional content management so you can update pages yourself." },
+      { name: "Your media built in", text: "Your 3D tours, photos and drone video embedded right in the site." },
+      { name: "Agile process", text: "Work delivered in stages with regular updates and your feedback." },
+      { name: "On-time delivery", text: "Clear timelines, and we hit them without cutting corners." },
+    ],
+  },
+  {
+    id: "seo",
+    icon: Search,
+    title: "SEO",
+    intro:
+      "A great site only works if people find it. We optimize for the Rochester customers already searching for what you do.",
+    items: [
+      { name: "Local SEO", text: "Google Business Profile optimization, local citations and reviews." },
+      { name: "Keyword research", text: "Target the searches that actually bring in customers." },
+      { name: "On-page SEO", text: "Titles, descriptions, headings and content tuned for search." },
+      { name: "Technical SEO", text: "Site speed, mobile-friendliness, URL structure and schema markup." },
+      { name: "SEO audits", text: "Find what's holding an existing site back and fix it." },
+      { name: "Reporting", text: "Track traffic, rankings and leads with Google Analytics and Search Console." },
+    ],
+  },
+];
+
+const stack = [
+  { label: "Frontend", value: "Next.js, React, Vue.js, Tailwind CSS" },
+  { label: "Backend", value: "Node.js, Express.js" },
+  { label: "Databases", value: "MongoDB, MySQL, PostgreSQL" },
+  { label: "Content", value: "Sanity, Markdown, GraphQL" },
+];
+
+const Page = () => {
   return (
-    <div className="py-[1.25rem] md:py-[2.5rem] px-[1rem]">
-      <h1 className="h1 flex justify-center">Web Development</h1>
-      <div className="flex justify-center mt-[1rem]">
-        <p className="p text-center max-w-[48rem] mx-auto">
-          Elevate your online presence with our comprehensive web development
-          services. Whether you're a business seeking tailored solutions or an
-          individual looking to enhance your online presence, we're here to
-          help. From contract projects to serving our own clients, we deliver
-          high-quality websites that exceed expectations.
-        </p>
+    <div className="pb-[1rem]">
+      <PageHeader eyebrow="Web Development" title="Web Design, Development & SEO">
+        Everything your business needs online, from one Rochester team: a custom design, a fast
+        and secure build, and the SEO to get it found.
+      </PageHeader>
+
+      <nav aria-label="On this page" className="mt-6 flex justify-center gap-3 px-[1rem]">
+        {pillars.map((p) => (
+          <a
+            key={p.id}
+            href={`#${p.id}`}
+            className="rounded-full border border-tan px-4 py-1 font-bold text-tan transition hover:bg-tan hover:text-white"
+          >
+            {p.title}
+          </a>
+        ))}
+      </nav>
+
+      <div className="mx-auto mt-10 max-w-[77.5rem] space-y-16 px-[1rem]">
+        <WebDeveloper />
+
+        {pillars.map(({ id, icon: Icon, title, intro, items }) => (
+          <section key={id} id={id} className="scroll-mt-24">
+            <div className="flex items-center gap-3">
+              <Icon className="size-10 text-tan" strokeWidth={1.25} aria-hidden="true" />
+              <h2 className="h2 text-left">{title}</h2>
+            </div>
+            <p className="mt-2 max-w-[48rem] text-lg text-lightblue">{intro}</p>
+            <ul className="mt-6 grid gap-4 ss:grid-cols-2 md:grid-cols-3">
+              {items.map((it) => (
+                <li key={it.name} className="rounded-lg border border-tan/40 bg-indigo p-5">
+                  <p className="font-bold text-white">{it.name}</p>
+                  <p className="mt-1 text-lightblue">{it.text}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+
+        <section className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-lg border border-tan/50 bg-indigo p-6">
+            <h2 className="h2 text-left">Pricing</h2>
+            <ul className="mt-4 space-y-3">
+              {webPricing.map((w) => (
+                <li key={w.name} className="flex items-baseline justify-between gap-4 border-b border-tan/20 pb-3">
+                  <span className="text-white">{w.name}</span>
+                  <span className="text-lg font-bold text-tan">from {formatPrice(w.from)}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-lightblue">
+              <span className="font-bold text-white">Includes:</span> {webIncludes.join(", ")}.{" "}
+              <Link href="/pricing" className="font-bold text-tan underline">
+                See all pricing
+              </Link>
+            </p>
+          </div>
+          <div className="rounded-lg border border-tan/50 p-6">
+            <h2 className="h2 text-left">Our tech stack</h2>
+            <dl className="mt-4 space-y-2">
+              {stack.map((s) => (
+                <div key={s.label}>
+                  <dt className="text-sm font-bold uppercase tracking-wider text-tan">{s.label}</dt>
+                  <dd className="text-white">{s.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
       </div>
 
-      <div>
-        <div className="px-[1rem] pleft">
-          <h2 className="h2 text-center mt-8">Our Approach:</h2>
-          <ul className="list-disc max-w-[48rem] mx-auto text-white">
-            <li>
-              <strong className="pbold">Design Process:</strong> We work closely
-              with clients, often starting with wireframes and prototypes
-              created in Figma, to ensure the design meets their vision and
-              objectives.
-            </li>
-            <li>
-              <strong className="pbold">Project Management:</strong> We follow
-              agile methodologies, breaking down projects into sprints to
-              deliver iterative results and maintain flexibility throughout the
-              development process.
-            </li>
-            <li>
-              <strong className="pbold">Web3 Integration:</strong> Leveraging
-              Web3 technology, including blockchain and decentralized
-              applications, we empower businesses to explore new possibilities
-              for trust, transparency, and innovation in their online platforms.
-            </li>
-            <li>
-              <strong className="pbold">Communication:</strong> Clear and
-              transparent communication is key. We keep clients informed at
-              every stage of the project, providing regular updates and seeking
-              feedback to ensure alignment with their goals.
-            </li>
-            <li>
-              <strong className="pbold">Customer Service:</strong> Our dedicated
-              team is committed to providing exceptional customer service,
-              addressing any concerns or queries promptly and ensuring a smooth
-              and enjoyable experience for our clients.
-            </li>
-            <li>
-              <strong className="pbold">Timely Deadlines:</strong> We understand
-              the importance of meeting deadlines. Our team works diligently to
-              deliver projects on time, without compromising on quality.
-            </li>
-          </ul>
-          <h2 className="h2 text-center mt-8">Our Tech Stacks:</h2>
-          <ul className="list-disc max-w-[48rem] mx-auto text-white">
-            <li>Frontend: Next.js, React.js, Vue.js</li>
-            <li>Backend: Node.js, Express.js</li>
-            <li>Database: MongoDB, MySQL, PostgreSQL</li>
-            <li>Web3: Web3.js, Ether.js, Foundry</li>
-            <li>Additional Tools: Redux, GraphQL, Sanity, Tailwind CSS</li>
-          </ul>
-          <p className="p text-center mt-8 max-w-[48rem] mx-auto">
-            Ready to discuss your project requirements? Contact us today to
-            schedule a consultation and explore how we can collaborate to
-            achieve your goals.
-          </p>
-        </div>
-      </div>
+      <CallToAction title="Let's build your website" />
     </div>
   );
 };
 
-export default page;
+export default Page;

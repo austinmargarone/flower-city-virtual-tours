@@ -3,10 +3,8 @@
 //   const legacyRedirects = require('./redirects');
 //   module.exports = { async redirects() { return legacyRedirects; } };
 //
-// Pages marked NEW below don't exist on fcvt.dev yet and need to be built before cutover:
-//   /work (+ /work/decarolis-truck-rental, /work/aarons-alley, /work/257-stonefield-lane),
-//   /pricing, /faq, /industries, /services/drone, /services/photography
-// Blog posts keep their exact /blog/<slug> paths (ported to Next.js), so they need no redirects.
+// Every destination below is a real page on this site.
+// Blog posts keep their exact /blog/<slug> paths, so they need no redirects.
 
 const industryPages = [
   'apartment-complexes',
@@ -33,26 +31,29 @@ const industryPages = [
 
 module.exports = [
   // Services
-  { source: '/services', destination: '/#services', permanent: true },
   { source: '/web-development', destination: '/services/web-development', permanent: true },
   { source: '/virtual-tours', destination: '/services/virtual-tours', permanent: true },
   { source: '/floor-plans', destination: '/services/virtual-tours', permanent: true },
   { source: '/our-technology', destination: '/services/virtual-tours', permanent: true },
-  { source: '/aerial-drone', destination: '/services/drone', permanent: true }, // NEW
-  { source: '/photography', destination: '/services/photography', permanent: true }, // NEW
+  { source: '/aerial-drone', destination: '/services/drone', permanent: true },
+  { source: '/photography', destination: '/services/photography', permanent: true },
+
+  // Old separate design + SEO pages are now sections of Web Development
+  { source: '/services/web-design', destination: '/services/web-development#design', permanent: true },
+  { source: '/services/seo', destination: '/services/web-development#seo', permanent: true },
 
   // Company
   { source: '/about-us', destination: '/about', permanent: true },
   { source: '/our-process', destination: '/about', permanent: true },
   { source: '/contact-us', destination: '/contact', permanent: true },
   { source: '/request-a-3d-matterport-appointment', destination: '/calendly', permanent: true },
-  { source: '/our-results', destination: '/work', permanent: true }, // NEW
+  { source: '/our-results', destination: '/work', permanent: true },
   // /pricing keeps the same path — build the page, no redirect needed (a self-redirect would loop)
-  { source: '/faqs', destination: '/faq', permanent: true }, // NEW
+  { source: '/faqs', destination: '/faq', permanent: true },
   { source: '/news', destination: '/blog', permanent: true },
 
   // Industries (19 thin pages consolidated into one)
-  { source: '/industries-served', destination: '/industries', permanent: true }, // NEW
+  { source: '/industries-served', destination: '/industries', permanent: true },
   ...industryPages.map((slug) => ({
     source: `/${slug}`,
     destination: '/industries',
@@ -70,14 +71,17 @@ module.exports = [
   { source: '/blog/discover-roc-series', destination: '/blog', permanent: true },
 
   // Old portfolio / service "posts"
-  { source: '/services/matterport-virtual-tours/decarolis-truck-rental', destination: '/work/decarolis-truck-rental', permanent: true }, // NEW
-  { source: '/services/matterport-virtual-tours/aarons-alley', destination: '/work/aarons-alley', permanent: true }, // NEW
+  { source: '/services/matterport-virtual-tours/decarolis-truck-rental', destination: '/work/decarolis-truck-rental', permanent: true },
+  { source: '/services/matterport-virtual-tours/aarons-alley', destination: '/work/aarons-alley', permanent: true },
   { source: '/services/matterport-virtual-tours/:path*', destination: '/services/virtual-tours', permanent: true },
   { source: '/services/listing-photography/:path*', destination: '/services/photography', permanent: true },
   { source: '/services/web-development/web-development-services', destination: '/services/web-development', permanent: true },
-  { source: '/portfolio/257-stonefield-lane', destination: '/work/257-stonefield-lane', permanent: true }, // NEW
-  { source: '/portfolio/:path*', destination: '/work', permanent: true },
+  { source: '/portfolio/257-stonefield-lane', destination: '/listings/257-stonefield-lane', permanent: true },
+  { source: '/portfolio/:path*', destination: '/services/photography', permanent: true },
   { source: '/our-results-2', destination: '/work', permanent: true },
+
+  // The listings grid lives on the Photography page
+  { source: '/listings', destination: '/services/photography', permanent: true },
 
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },

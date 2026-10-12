@@ -1,38 +1,15 @@
+import { pageMeta } from "@/lib/site";
 import Contact from "@/components/contact/Contact";
 
 // https://www.freepik.com/free-photo/hex-background-networking_66468510.htm#query=background%20hex&position=28&from_view=search&track=ais&uuid=d724eaa8-ec27-4d35-848c-53b1091d2be5 Image by pikisuperstar
 
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | Contact Us",
+export const metadata = pageMeta({
+  title: "Contact Us",
   description:
-    "Contact us today to get started on your web project! We build custom websites that improve your SEO, empower online growth, and prioritize user experience.",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "SEO",
-    "User Experience",
-    "NextJS",
-    "React",
-    "Web Development Services",
-    "Web Developer",
-    "Web Designer",
-    "Web Development Company",
-    "Contact",
-  ],
-  openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
-  },
-};
+    "Questions about a website, virtual tour or drone shoot? Send Flower City Virtual Tours a message. Based in Rochester, NY.",
+  path: "/contact",
+});
 
 export default function Page() {
   return (
