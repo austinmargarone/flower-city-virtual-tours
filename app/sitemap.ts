@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { caseStudies } from "@/constants/work";
+import { listings } from "@/constants/listings";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -23,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/build",
     "/calendly",
     "/privacy-policy",
+    "/listings",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
@@ -44,5 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...pages, ...work, ...posts];
+  const listingPages = listings.map((l) => ({
+    url: `${SITE_URL}/listings/${l.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+
+  return [...pages, ...work, ...listingPages, ...posts];
 }

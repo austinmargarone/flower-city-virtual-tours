@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
-export type GalleryImage = { src: string; alt: string };
+/** thumb: optional pre-sized grid image. When given, images are served as-is (no Vercel image optimization). */
+export type GalleryImage = { src: string; alt: string; thumb?: string };
 
 type Props = { images: GalleryImage[] };
 
@@ -41,8 +42,10 @@ const Gallery = ({ images }: Props) => {
               aria-label={`View larger: ${img.alt}`}
             >
               <Image
-                src={img.src}
+                src={img.thumb ?? img.src}
                 alt={img.alt}
+                unoptimized={Boolean(img.thumb)}
+                loading="lazy"
                 width={800}
                 height={533}
                 sizes="(max-width: 580px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -64,6 +67,7 @@ const Gallery = ({ images }: Props) => {
           <Image
             src={images[open].src}
             alt={images[open].alt}
+            unoptimized={Boolean(images[open].thumb)}
             width={1600}
             height={1067}
             sizes="100vw"

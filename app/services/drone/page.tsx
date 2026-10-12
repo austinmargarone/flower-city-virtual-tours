@@ -67,7 +67,14 @@ const Page = () => {
         </ul>
 
         <section>
-          <h2 className="h2 mb-4 text-left">Recent aerial work</h2>
+          <h2 className="h2 mb-1 text-left">Recent aerial work</h2>
+          <p className="mb-4 text-lightblue">
+            See a full set of aerials alongside the listing photos at{" "}
+            <Link href="/listings/257-stonefield-lane" className="text-tan underline">
+              257 Stonefield Lane
+            </Link>
+            .
+          </p>
           <Gallery images={aerials} />
         </section>
 

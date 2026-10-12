@@ -64,6 +64,7 @@ export const serviceMenu: { route: string; label: string }[] = [
   { route: "/services/seo", label: "SEO Optimization" },
   { route: "/services/virtual-tours", label: "3D Virtual Tours" },
   { route: "/services/photography", label: "Photography" },
+  { route: "/listings", label: "Listing Portfolio" },
   { route: "/services/drone", label: "Aerial Drone" },
   { route: "/industries", label: "Industries We Serve" },
 ];
