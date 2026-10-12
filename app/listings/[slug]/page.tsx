@@ -36,7 +36,7 @@ const Page = ({ params }: Props) => {
   return (
     <div className="px-[1rem] pt-[2rem] md:pt-[3rem]">
       <div className="mx-auto max-w-[77.5rem]">
-        <Link href="/listings" className="text-sm font-bold text-tan hover:underline">
+        <Link href="/services/photography" className="text-sm font-bold text-tan hover:underline">
           ← All listings
         </Link>
         <h1 className="mt-4 text-[2rem] font-bold leading-tight text-white md:text-[2.75rem]">

@@ -1487,389 +1487,392 @@ export const listings: Listing[] = [
     "aerials": []
   },
   {
-    "slug": "cherry-kitchen-cape",
-    "title": "Cape with Cherry Kitchen",
+    "slug": "609-wild-mallard-trail",
+    "title": "609 Wild Mallard Trail",
     "kind": "Cape-style home",
+    "location": "Webster, NY",
+    "tour": "Xjuo4yMEVqQ",
     "photos": [
       {
-        "src": "/listings/cherry-kitchen-cape/01.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/01.jpg"
+        "src": "/listings/609-wild-mallard-trail/01.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/01.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/02.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/02.jpg"
+        "src": "/listings/609-wild-mallard-trail/02.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/02.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/03.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/03.jpg"
+        "src": "/listings/609-wild-mallard-trail/03.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/03.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/04.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/04.jpg"
+        "src": "/listings/609-wild-mallard-trail/04.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/04.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/05.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/05.jpg"
+        "src": "/listings/609-wild-mallard-trail/05.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/05.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/06.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/06.jpg"
+        "src": "/listings/609-wild-mallard-trail/06.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/06.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/07.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/07.jpg"
+        "src": "/listings/609-wild-mallard-trail/07.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/07.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/08.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/08.jpg"
+        "src": "/listings/609-wild-mallard-trail/08.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/08.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/09.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/09.jpg"
+        "src": "/listings/609-wild-mallard-trail/09.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/09.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/10.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/10.jpg"
+        "src": "/listings/609-wild-mallard-trail/10.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/10.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/11.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/11.jpg"
+        "src": "/listings/609-wild-mallard-trail/11.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/11.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/12.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/12.jpg"
+        "src": "/listings/609-wild-mallard-trail/12.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/12.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/13.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/13.jpg"
+        "src": "/listings/609-wild-mallard-trail/13.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/13.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/14.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/14.jpg"
+        "src": "/listings/609-wild-mallard-trail/14.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/14.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/15.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/15.jpg"
+        "src": "/listings/609-wild-mallard-trail/15.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/15.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/16.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/16.jpg"
+        "src": "/listings/609-wild-mallard-trail/16.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/16.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/17.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/17.jpg"
+        "src": "/listings/609-wild-mallard-trail/17.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/17.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/18.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/18.jpg"
+        "src": "/listings/609-wild-mallard-trail/18.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/18.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/19.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/19.jpg"
+        "src": "/listings/609-wild-mallard-trail/19.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/19.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/20.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/20.jpg"
+        "src": "/listings/609-wild-mallard-trail/20.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/20.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/21.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/21.jpg"
+        "src": "/listings/609-wild-mallard-trail/21.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/21.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/22.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/22.jpg"
+        "src": "/listings/609-wild-mallard-trail/22.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/22.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/23.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/23.jpg"
+        "src": "/listings/609-wild-mallard-trail/23.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/23.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/24.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/24.jpg"
+        "src": "/listings/609-wild-mallard-trail/24.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/24.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/25.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/25.jpg"
+        "src": "/listings/609-wild-mallard-trail/25.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/25.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/26.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/26.jpg"
+        "src": "/listings/609-wild-mallard-trail/26.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/26.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/27.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/27.jpg"
+        "src": "/listings/609-wild-mallard-trail/27.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/27.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/28.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/28.jpg"
+        "src": "/listings/609-wild-mallard-trail/28.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/28.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/29.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/29.jpg"
+        "src": "/listings/609-wild-mallard-trail/29.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/29.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/30.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/30.jpg"
+        "src": "/listings/609-wild-mallard-trail/30.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/30.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/31.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/31.jpg"
+        "src": "/listings/609-wild-mallard-trail/31.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/31.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/32.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/32.jpg"
+        "src": "/listings/609-wild-mallard-trail/32.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/32.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/33.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/33.jpg"
+        "src": "/listings/609-wild-mallard-trail/33.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/33.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/34.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/34.jpg"
+        "src": "/listings/609-wild-mallard-trail/34.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/34.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/35.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/35.jpg"
+        "src": "/listings/609-wild-mallard-trail/35.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/35.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/36.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/36.jpg"
+        "src": "/listings/609-wild-mallard-trail/36.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/36.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/37.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/37.jpg"
+        "src": "/listings/609-wild-mallard-trail/37.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/37.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/38.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/38.jpg"
+        "src": "/listings/609-wild-mallard-trail/38.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/38.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/39.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/39.jpg"
+        "src": "/listings/609-wild-mallard-trail/39.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/39.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/40.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/40.jpg"
+        "src": "/listings/609-wild-mallard-trail/40.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/40.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/41.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/41.jpg"
+        "src": "/listings/609-wild-mallard-trail/41.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/41.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/42.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/42.jpg"
+        "src": "/listings/609-wild-mallard-trail/42.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/42.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/43.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/43.jpg"
+        "src": "/listings/609-wild-mallard-trail/43.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/43.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/44.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/44.jpg"
+        "src": "/listings/609-wild-mallard-trail/44.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/44.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/45.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/45.jpg"
+        "src": "/listings/609-wild-mallard-trail/45.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/45.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/46.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/46.jpg"
+        "src": "/listings/609-wild-mallard-trail/46.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/46.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/47.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/47.jpg"
+        "src": "/listings/609-wild-mallard-trail/47.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/47.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/48.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/48.jpg"
+        "src": "/listings/609-wild-mallard-trail/48.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/48.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/49.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/49.jpg"
+        "src": "/listings/609-wild-mallard-trail/49.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/49.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/50.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/50.jpg"
+        "src": "/listings/609-wild-mallard-trail/50.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/50.jpg"
       },
       {
-        "src": "/listings/cherry-kitchen-cape/51.jpg",
-        "thumb": "/listings/cherry-kitchen-cape/thumb/51.jpg"
+        "src": "/listings/609-wild-mallard-trail/51.jpg",
+        "thumb": "/listings/609-wild-mallard-trail/thumb/51.jpg"
       }
     ],
     "aerials": []
   },
   {
-    "slug": "snowy-cape-cod",
-    "title": "Cape Cod Estate",
+    "slug": "605-wild-mallard-trail",
+    "title": "605 Wild Mallard Trail",
     "kind": "Cape Cod with wraparound porch",
+    "location": "Webster, NY",
     "photos": [
       {
-        "src": "/listings/snowy-cape-cod/01.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/01.jpg"
+        "src": "/listings/605-wild-mallard-trail/01.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/01.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/02.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/02.jpg"
+        "src": "/listings/605-wild-mallard-trail/02.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/02.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/03.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/03.jpg"
+        "src": "/listings/605-wild-mallard-trail/03.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/03.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/04.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/04.jpg"
+        "src": "/listings/605-wild-mallard-trail/04.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/04.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/05.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/05.jpg"
+        "src": "/listings/605-wild-mallard-trail/05.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/05.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/06.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/06.jpg"
+        "src": "/listings/605-wild-mallard-trail/06.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/06.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/07.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/07.jpg"
+        "src": "/listings/605-wild-mallard-trail/07.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/07.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/08.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/08.jpg"
+        "src": "/listings/605-wild-mallard-trail/08.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/08.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/09.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/09.jpg"
+        "src": "/listings/605-wild-mallard-trail/09.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/09.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/10.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/10.jpg"
+        "src": "/listings/605-wild-mallard-trail/10.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/10.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/11.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/11.jpg"
+        "src": "/listings/605-wild-mallard-trail/11.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/11.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/12.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/12.jpg"
+        "src": "/listings/605-wild-mallard-trail/12.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/12.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/13.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/13.jpg"
+        "src": "/listings/605-wild-mallard-trail/13.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/13.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/14.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/14.jpg"
+        "src": "/listings/605-wild-mallard-trail/14.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/14.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/15.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/15.jpg"
+        "src": "/listings/605-wild-mallard-trail/15.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/15.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/16.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/16.jpg"
+        "src": "/listings/605-wild-mallard-trail/16.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/16.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/17.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/17.jpg"
+        "src": "/listings/605-wild-mallard-trail/17.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/17.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/18.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/18.jpg"
+        "src": "/listings/605-wild-mallard-trail/18.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/18.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/19.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/19.jpg"
+        "src": "/listings/605-wild-mallard-trail/19.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/19.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/20.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/20.jpg"
+        "src": "/listings/605-wild-mallard-trail/20.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/20.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/21.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/21.jpg"
+        "src": "/listings/605-wild-mallard-trail/21.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/21.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/22.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/22.jpg"
+        "src": "/listings/605-wild-mallard-trail/22.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/22.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/23.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/23.jpg"
+        "src": "/listings/605-wild-mallard-trail/23.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/23.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/24.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/24.jpg"
+        "src": "/listings/605-wild-mallard-trail/24.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/24.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/25.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/25.jpg"
+        "src": "/listings/605-wild-mallard-trail/25.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/25.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/26.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/26.jpg"
+        "src": "/listings/605-wild-mallard-trail/26.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/26.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/27.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/27.jpg"
+        "src": "/listings/605-wild-mallard-trail/27.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/27.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/28.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/28.jpg"
+        "src": "/listings/605-wild-mallard-trail/28.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/28.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/29.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/29.jpg"
+        "src": "/listings/605-wild-mallard-trail/29.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/29.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/30.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/30.jpg"
+        "src": "/listings/605-wild-mallard-trail/30.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/30.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/31.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/31.jpg"
+        "src": "/listings/605-wild-mallard-trail/31.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/31.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/32.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/32.jpg"
+        "src": "/listings/605-wild-mallard-trail/32.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/32.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/33.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/33.jpg"
+        "src": "/listings/605-wild-mallard-trail/33.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/33.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/34.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/34.jpg"
+        "src": "/listings/605-wild-mallard-trail/34.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/34.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/35.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/35.jpg"
+        "src": "/listings/605-wild-mallard-trail/35.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/35.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/36.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/36.jpg"
+        "src": "/listings/605-wild-mallard-trail/36.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/36.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/37.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/37.jpg"
+        "src": "/listings/605-wild-mallard-trail/37.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/37.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/38.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/38.jpg"
+        "src": "/listings/605-wild-mallard-trail/38.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/38.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/39.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/39.jpg"
+        "src": "/listings/605-wild-mallard-trail/39.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/39.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/40.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/40.jpg"
+        "src": "/listings/605-wild-mallard-trail/40.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/40.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/41.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/41.jpg"
+        "src": "/listings/605-wild-mallard-trail/41.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/41.jpg"
       },
       {
-        "src": "/listings/snowy-cape-cod/42.jpg",
-        "thumb": "/listings/snowy-cape-cod/thumb/42.jpg"
+        "src": "/listings/605-wild-mallard-trail/42.jpg",
+        "thumb": "/listings/605-wild-mallard-trail/thumb/42.jpg"
       }
     ],
     "aerials": []

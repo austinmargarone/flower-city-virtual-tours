@@ -71,11 +71,14 @@ module.exports = [
   { source: '/services/matterport-virtual-tours/decarolis-truck-rental', destination: '/work/decarolis-truck-rental', permanent: true },
   { source: '/services/matterport-virtual-tours/aarons-alley', destination: '/work/aarons-alley', permanent: true },
   { source: '/services/matterport-virtual-tours/:path*', destination: '/services/virtual-tours', permanent: true },
-  { source: '/services/listing-photography/:path*', destination: '/listings', permanent: true },
+  { source: '/services/listing-photography/:path*', destination: '/services/photography', permanent: true },
   { source: '/services/web-development/web-development-services', destination: '/services/web-development', permanent: true },
   { source: '/portfolio/257-stonefield-lane', destination: '/listings/257-stonefield-lane', permanent: true },
-  { source: '/portfolio/:path*', destination: '/listings', permanent: true },
+  { source: '/portfolio/:path*', destination: '/services/photography', permanent: true },
   { source: '/our-results-2', destination: '/work', permanent: true },
+
+  // The listings grid lives on the Photography page
+  { source: '/listings', destination: '/services/photography', permanent: true },
 
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },

@@ -35,7 +35,7 @@ const Page = () => {
       </PageHeader>
 
       <div className="mx-auto mt-10 max-w-[77.5rem] space-y-14 px-[1rem]">
-        <section>
+        <section id="listings">
           <h2 className="h2 mb-1 text-left">Recent Listings</h2>
           <p className="mb-4 text-lightblue">
             Every shoot below is shown as a complete listing. Click a property to see all of its
