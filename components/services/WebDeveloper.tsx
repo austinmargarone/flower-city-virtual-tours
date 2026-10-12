@@ -11,9 +11,11 @@ const WebDeveloper = () => {
             loop
             muted
             autoPlay
+            playsInline
+            preload="metadata"
             className="w-full h-full rounded-lg"
           >
-            <source src="./WebDevIntro.mp4" type="video/mp4" />
+            <source src="/WebDevIntro.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -21,11 +23,14 @@ const WebDeveloper = () => {
           <video
             width={300}
             height={900}
+            loop
             muted
             autoPlay
+            playsInline
+            preload="metadata"
             className="w-fit h-full mx-auto flex rounded-lg"
           >
-            <source src="./WebDevIntroMobile.mp4" type="video/mp4" />
+            <source src="/WebDevIntroMobile.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

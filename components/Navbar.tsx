@@ -57,12 +57,7 @@ const Navbar = () => {
                 <span className="flex items-center gap-1">
                   <Link href="/services">Our Services</Link>
                   <span>
-                    <Nav
-                      src={"./assets/icons/close.svg"}
-                      alt={"Dropdown"}
-                      width={15}
-                      height={15}
-                    />
+                    <Nav aria-hidden="true" width={15} height={15} />
                   </span>
                 </span>
                 {isServicesDropdownOpen && (

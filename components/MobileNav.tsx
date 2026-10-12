@@ -53,10 +53,10 @@ const MobileNav = () => {
       <Sheet>
         <SheetTrigger asChild>
           <Hamburger
-            src="/assets/icons/hamburger.svg"
+            aria-label="Open menu"
+            role="button"
             width={36}
             height={36}
-            alt="Menu"
             className="cursor-pointer"
           />
         </SheetTrigger>
@@ -83,12 +83,7 @@ const MobileNav = () => {
             >
               Services
               <span>
-                <Nav
-                  src={"./assets/icons/close.svg"}
-                  alt={"Dropdown"}
-                  width={15}
-                  height={15}
-                />
+                <Nav aria-hidden="true" width={15} height={15} />
               </span>
             </button>
             {isServicesDropdownOpen && (
