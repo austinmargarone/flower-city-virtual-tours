@@ -1,36 +1,13 @@
+import { pageMeta } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | Web Design",
+export const metadata = pageMeta({
+  title: "Rochester Web Design",
   description:
-    "We design visually stunning and user-friendly websites that align with your brand identity and engage your audience effectively. Contact us today!",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "SEO",
-    "User Experience",
-    "NextJS",
-    "React",
-    "Web Development Services",
-    "Web Developer",
-    "Web Designer",
-    "Web Development Company",
-    "Web Applications",
-  ],
-  openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
-  },
-};
+    "Custom website design for Rochester, NY businesses. We walk you through the design process to create a site that fits your brand.",
+  path: "/services/web-design",
+});
 
 const page = () => {
   return (

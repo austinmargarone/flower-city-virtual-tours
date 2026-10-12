@@ -1,50 +1,14 @@
+import { pageMeta } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 import Seo from "@/components/services/Seo";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://fcvt.dev"),
-  title: "FCVT | SEO Optimization Services",
+export const metadata = pageMeta({
+  title: "Rochester SEO Services",
   description:
-    "Improve your website's visibility and search engine rankings with our comprehensive SEO optimization services. Contact us today!",
-  keywords: [
-    "Web Development",
-    "Web Design",
-    "Web Development Company",
-    "SEO",
-    "Search Engine Optimization",
-    "SEO Services",
-    "SEO Optimization",
-    "SEO agency",
-    "SEO company",
-    "Website optimization",
-    "Improve website ranking",
-    "Organic search traffic",
-    "Keyword research",
-    "On-page optimization",
-    "Technical SEO",
-    "Content optimization",
-    "Link building services",
-    "Local SEO",
-    "SEO audit",
-    "Competitor analysis",
-    "Website performance monitoring",
-    "SEO consulting",
-    "Algorithm updates",
-    "Social media integration",
-  ],
-  openGraph: {
-    images: [
-      {
-        url: `https://fcvt.dev/meta.png`,
-        width: 1200,
-        height: 630,
-        alt: "Full Stack Developer",
-      },
-    ],
-  },
-};
+    "Local SEO for Rochester, NY businesses: keyword research, on-page and technical SEO, and Google Business Profile optimization.",
+  path: "/services/seo",
+});
 
 const Page = () => {
   return (

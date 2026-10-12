@@ -5,6 +5,7 @@ import Image from "next/image";
 import MobileNav from "./MobileNav";
 import { Nav } from "./svg";
 import { useState } from "react";
+import { serviceMenu } from "@/constants";
 
 const Navbar = () => {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -34,8 +35,8 @@ const Navbar = () => {
               alt="Flower City Virtual Tours LLC"
               className="w-[250px] lg:w-[300px]"
             />
-            <span className="ml-[2rem] hidden sm:flex">
-              <p className="text-[#B49167]">Web Development Division</p>
+            <span className="ml-[2rem] hidden xl:flex">
+              <p className="text-[#B49167]">Websites · 3D Tours · Drone</p>
             </span>
           </div>
         </Link>
@@ -65,40 +66,31 @@ const Navbar = () => {
                   </span>
                 </span>
                 {isServicesDropdownOpen && (
-                  <ul className="w-[12rem] absolute top-full left-0 bg-[#101415] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
-                    <li>
-                      <Link href="/services/web-design">
-                        <button className="dropdown-button flex justify-start">
-                          Web Design
-                        </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/web-development">
-                        <button className="dropdown-button flex justify-start">
-                          Web Development
-                        </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/services/seo">
-                        <button className="dropdown-button flex justify-start">
-                          SEO Optimization
-                        </button>
-                      </Link>
-                    </li>
+                  <ul className="w-[14rem] absolute top-full left-0 bg-[#101415] text-black shadow-lg py-[.75rem] px-[.75rem] rounded border border-[#B49167]">
+                    {serviceMenu.map((item) => (
+                      <li key={item.route}>
+                        <Link href={item.route}>
+                          <button className="dropdown-button flex justify-start w-full">
+                            {item.label}
+                          </button>
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 )}
               </li>
+              <Link href="/work">
+                <li>Our Work</li>
+              </Link>
+              <Link href="/pricing">
+                <li>Pricing</li>
+              </Link>
               <Link href="/blog">
                 <li>Blog</li>
               </Link>
               <Link href="/calendly">
-                <li>Consultation</li>
-              </Link>
-              <Link href="https://flowercityvirtualtours.com/" target="blank">
                 <button className="navbar-button items-center flex">
-                  <li>Visit Parent Site</li>
+                  <li>Free Consultation</li>
                 </button>
               </Link>
             </ul>

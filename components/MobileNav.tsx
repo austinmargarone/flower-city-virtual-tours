@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
-import { menuLinks } from "@/constants";
+import { menuLinks, serviceMenu } from "@/constants";
 import { usePathname } from "next/navigation";
 import { Hamburger, Nav } from "./svg";
 
@@ -74,7 +74,7 @@ const MobileNav = () => {
             />
           </Link>
           <span className="ml-[3rem] flex flex-col">
-            <p className="text-[#B49167]">Web Solutions Division</p>
+            <p className="text-[#B49167]">Websites · 3D Tours · Drone</p>
           </span>
           <div className="mt-[2.5rem]">
             <button
@@ -93,33 +93,17 @@ const MobileNav = () => {
             </button>
             {isServicesDropdownOpen && (
               <ul className="mt-2">
-                <li>
-                  <Link href="/services/web-design">
+                {serviceMenu.map((item) => (
+                  <li key={item.route}>
                     <SheetClose asChild>
-                      <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
-                        Web Design
-                      </button>
+                      <Link href={item.route}>
+                        <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
+                          {item.label}
+                        </button>
+                      </Link>
                     </SheetClose>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/web-development">
-                    <SheetClose asChild>
-                      <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
-                        Web Development
-                      </button>
-                    </SheetClose>
-                  </Link>
-                </li>
-                <li>
-                  <SheetClose asChild>
-                    <Link href="/services/seo">
-                      <button className="dropdown-item justify-start flex rounded-lg ml-[.5rem]">
-                        SEO Optimization
-                      </button>
-                    </Link>
-                  </SheetClose>
-                </li>
+                  </li>
+                ))}
               </ul>
             )}
           </div>
