@@ -44,6 +44,9 @@ const Footer = () => {
             <Link href="/build">
               <li>Request A Quote</li>
             </Link>
+            <Link href="/blog">
+              <li>Blog</li>
+            </Link>
           </ul>
         </div>
         <div className="h-0.5 border-b border-tan my-[.63rem]"></div>
