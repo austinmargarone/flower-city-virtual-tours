@@ -103,7 +103,7 @@ const Page = ({ params }: Props) => {
 
         <section className="mt-16">
           <h2 className="h2 mb-4 text-left">More listings</h2>
-          <ListingCards exclude={l.slug} limit={3} />
+          <ListingCards exclude={l.slug} limit={3} category={l.category} />
         </section>
       </div>
       <CallToAction title="Want your listing to look like this?" />

@@ -1,8 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Gallery from "@/components/shared/Gallery";
 import TourEmbed from "@/components/shared/TourEmbed";
+import TourSwitcher from "@/components/shared/TourSwitcher";
+import CaseStudyCover from "@/components/shared/CaseStudyCover";
 import CallToAction from "@/components/shared/CallToAction";
 import { caseStudies } from "@/constants/work";
 import { pageMeta } from "@/lib/site";
@@ -43,15 +44,7 @@ const Page = ({ params }: Props) => {
         <p className="mt-1 text-paleblue">{c.location}</p>
         <p className="mt-4 text-xl leading-relaxed text-lightblue">{c.summary}</p>
 
-        <Image
-          src={c.cover}
-          alt={c.coverAlt}
-          width={1600}
-          height={1000}
-          sizes="(max-width: 1024px) 100vw, 60rem"
-          priority
-          className="mt-8 w-full rounded-lg border border-tan bg-black object-cover shadow-lg"
-        />
+        <CaseStudyCover study={c} sizes="(max-width: 1024px) 100vw, 60rem" priority className="mt-8 rounded-lg border border-tan shadow-lg" />
 
         <div className="mt-10 grid gap-10 md:grid-cols-[1fr_16rem]">
           <div className="blog-prose">
@@ -90,15 +83,18 @@ const Page = ({ params }: Props) => {
 
         {c.tours && c.tours.length > 0 && (
           <section className="mt-12">
-            <h2 className="h2 text-left">Take the tour</h2>
+            <h2 className="h2 text-left">{c.tours.length > 1 ? "Take the tours" : "Take the tour"}</h2>
             <p className="mb-4 mt-2 text-lightblue">
               Click and drag to look around, or use the dollhouse button to see the whole space.
             </p>
-            <div className="space-y-6">
-              {c.tours.map((t) => (
-                <TourEmbed key={t.id} id={t.id} title={t.title} />
-              ))}
-            </div>
+            {c.tours.length > 1 ? (
+              <TourSwitcher
+                pickerLabel={`${c.tours.length} tours`}
+                tours={c.tours.map((t) => ({ id: t.id, label: t.label ?? t.title, title: t.title }))}
+              />
+            ) : (
+              <TourEmbed id={c.tours[0].id} title={c.tours[0].title} />
+            )}
           </section>
         )}
 

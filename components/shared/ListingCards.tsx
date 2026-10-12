@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { listings } from "@/constants/listings";
+import { listings, type Listing } from "@/constants/listings";
 
-type Props = { exclude?: string; limit?: number };
+type Props = { exclude?: string; limit?: number; category?: Listing["category"] };
 
 /** Grid of listing cards (cover photo, address, photo count). */
-const ListingCards = ({ exclude, limit }: Props) => {
-  const items = listings.filter((l) => l.slug !== exclude).slice(0, limit);
+const ListingCards = ({ exclude, limit, category }: Props) => {
+  const items = listings
+    .filter((l) => l.slug !== exclude && (!category || l.category === category))
+    .slice(0, limit);
   return (
     <ul className="grid grid-cols-1 gap-5 ss:grid-cols-2 md:grid-cols-3">
       {items.map((l) => (

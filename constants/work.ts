@@ -6,18 +6,87 @@ export type CaseStudy = {
   category: string;
   location: string;
   summary: string;
-  cover: string;
-  coverAlt: string;
+  /** Optional: without a cover, cards show a branded tile instead */
+  cover?: string;
+  coverAlt?: string;
   services: string[];
   /** Paragraphs of the write-up */
   story: string[];
   results?: string[];
-  tours?: { id: string; title: string }[];
+  /** label is the short name shown on the tour picker when there's more than one */
+  tours?: { id: string; title: string; label?: string }[];
   gallery?: GalleryImage[];
   testimonial?: { quote: string; name: string };
 };
 
 export const caseStudies: CaseStudy[] = [
+  {
+    slug: "elderwood",
+    client: "Elderwood",
+    category: "3D Virtual Tours · Senior Living",
+    location: "Upstate New York",
+    summary:
+      "Matterport tours of six senior living communities, so families can walk through each facility before they ever visit.",
+    cover: "/work/elderwood/greece.jpg",
+    coverAlt: "Front entrance of the Elderwood community in Greece, NY",
+    services: ["Matterport 3D tours", "Exterior photography", "Multi-site capture"],
+    story: [
+      "Choosing a senior living community is a big decision, and families often have to compare options from a distance. Elderwood operates senior living communities across upstate New York.",
+      "We captured six Elderwood communities in 3D: Greece, Fairport, Vestal, Bassett Park, St. Gregory Court and Colonie, along with a front exterior photo of each. Families can now walk the halls, see the common areas and get a feel for each community from anywhere.",
+    ],
+    results: [
+      "6 senior living communities captured",
+      "A 3D tour and front photo for every location",
+      "Families can compare communities from anywhere",
+    ],
+    tours: [
+      { id: "bYjEEyzdEQZ", label: "Greece", title: "Elderwood at Greece" },
+      { id: "52czBbvKy8F", label: "Fairport", title: "Elderwood at Fairport" },
+      { id: "u42ZEV7EF4D", label: "Vestal", title: "Elderwood at Vestal" },
+      { id: "XmrdR93jD91", label: "Bassett Park", title: "Elderwood at Bassett Park" },
+      { id: "HwyfVWWpxmE", label: "St. Gregory Court", title: "Elderwood at St. Gregory Court" },
+      { id: "eKbSJHFnUeM", label: "Colonie", title: "Elderwood at Colonie" },
+    ],
+    gallery: [
+      { src: "/work/elderwood/greece.jpg", alt: "Elderwood at Greece, front entrance" },
+      { src: "/work/elderwood/fairport.jpg", alt: "Elderwood at Fairport, front entrance" },
+      { src: "/work/elderwood/vestal.jpg", alt: "Elderwood at Vestal, front entrance" },
+      { src: "/work/elderwood/bassett-park.jpg", alt: "Elderwood at Bassett Park, front entrance" },
+      { src: "/work/elderwood/st-gregory-court.jpg", alt: "Elderwood at St. Gregory Court, front entrance" },
+      { src: "/work/elderwood/colonie.jpg", alt: "Elderwood at Colonie, front entrance" },
+    ],
+  },
+  {
+    slug: "monroe-community-hospital",
+    client: "Monroe Community Hospital",
+    category: "3D Virtual Tours · Healthcare",
+    location: "Rochester, NY",
+    summary:
+      "Ten departments captured in 3D, from therapy gyms and pediatrics to resident rooms, the salon and the gift shop.",
+    services: ["Matterport 3D tours", "Department-by-department capture"],
+    story: [
+      "A hospital is hard to picture from a brochure, and every department looks different.",
+      "We captured ten areas as individual Matterport tours: the gift shop, occupational therapy, physical therapy, the vent unit, pediatrics, a dining room, the new laundry room, the hair salon, the game room and a resident room.",
+      "Because each area is its own tour, the hospital can share exactly the space someone needs to see, whether that's a therapy gym for a new patient or a resident room for a family.",
+    ],
+    results: [
+      "10 departments and spaces captured",
+      "Each area shareable on its own link",
+      "Families and new patients can preview spaces remotely",
+    ],
+    tours: [
+      { id: "MRKsLeTQbbN", label: "Physical Therapy", title: "Monroe Community Hospital: Physical Therapy" },
+      { id: "V3kjsMcw58s", label: "Occupational Therapy", title: "Monroe Community Hospital: Occupational Therapy" },
+      { id: "8WUas8EyJsd", label: "Pediatrics", title: "Monroe Community Hospital: Pediatrics" },
+      { id: "dBf4c5HPVEs", label: "Vent Unit", title: "Monroe Community Hospital: Vent Unit" },
+      { id: "cG27YBG2oow", label: "Resident Room", title: "Monroe Community Hospital: Resident Room" },
+      { id: "1nTrv5NKJq5", label: "Dining Room", title: "Monroe Community Hospital: FA5E Dining Room" },
+      { id: "wiBH9Lxk98h", label: "Game Room", title: "Monroe Community Hospital: Game Room" },
+      { id: "cJ9ogoYpZRn", label: "Hair Salon", title: "Monroe Community Hospital: FR1C Hair Salon" },
+      { id: "o44R4QyrzXx", label: "Laundry Room", title: "Monroe Community Hospital: New Laundry Room" },
+      { id: "FKrBNbz9X9b", label: "Gift Shop", title: "Monroe Community Hospital: Gift Shop" },
+    ],
+  },
   {
     slug: "decarolis-truck-rental",
     client: "DeCarolis Truck Rental",

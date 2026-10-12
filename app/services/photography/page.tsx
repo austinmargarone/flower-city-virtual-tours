@@ -36,7 +36,7 @@ const Page = () => {
 
       <div className="mx-auto mt-10 max-w-[77.5rem] space-y-14 px-[1rem]">
         <section id="listings">
-          <h2 className="h2 mb-1 text-left">Recent Listings</h2>
+          <h2 className="h2 mb-1 text-left">Residential Listings</h2>
           <p className="mb-4 text-lightblue">
             Every shoot below is shown as a complete listing. Click a property to see all of its
             photos, plus{" "}
@@ -45,11 +45,20 @@ const Page = () => {
             </Link>{" "}
             and 3D tours where we captured them.
           </p>
-          <ListingCards />
+          <ListingCards category="residential" />
+        </section>
+
+        <section id="commercial">
+          <h2 className="h2 mb-1 text-left">Commercial Listings</h2>
+          <p className="mb-4 text-lightblue">
+            Office buildings, apartment buildings and investment properties, with aerials that show
+            the whole lot, parking and neighborhood.
+          </p>
+          <ListingCards category="commercial" />
         </section>
 
         <section>
-          <h2 className="h2 mb-4 text-left">Commercial Spaces</h2>
+          <h2 className="h2 mb-4 text-left">More Commercial Interiors</h2>
           <Gallery images={commercial} />
         </section>
 

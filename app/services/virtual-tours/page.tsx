@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/shared/PageHeader";
-import TourEmbed from "@/components/shared/TourEmbed";
+import TourSwitcher from "@/components/shared/TourSwitcher";
 import CallToAction from "@/components/shared/CallToAction";
 import { formatPrice, singleServices, sizeTiers, tourHosting } from "@/constants/pricing";
 import { pageMeta } from "@/lib/site";
@@ -15,12 +15,14 @@ export const metadata = pageMeta({
 });
 
 const tours = [
+  { id: "bYjEEyzdEQZ", label: "Senior living", title: "Elderwood at Greece", href: "/work/elderwood" },
+  { id: "MRKsLeTQbbN", label: "Healthcare", title: "Monroe Community Hospital, Physical Therapy", href: "/work/monroe-community-hospital" },
   { id: "Yug3Wm4ZsKC", label: "Retail", title: "Aaron's Alley, a Rochester retail shop", href: "/work/aarons-alley" },
   { id: "Vu8vAVvcebN", label: "Office", title: "Keller Williams office" },
   { id: "dTursFxbP1u", label: "Commercial", title: "DeCarolis Truck Rental, Buffalo branch", href: "/work/decarolis-truck-rental" },
   { id: "MnvsFYd5SXE", label: "Warehouse", title: "Warehouse space" },
-  { id: "YN4DWeXcQ2p", label: "Short-term rental", title: "Vineyard guest barn", href: "/work/vineyard-guest-barn" },
-  { id: "qzjkH94yzsP", label: "Residential", title: "Single-family home" },
+  { id: "UFpAPNqqYGc", label: "Short-term rental", title: "The Nest Cottage", href: "/listings/the-nest-cottage" },
+  { id: "S7v82M2yiE1", label: "Residential", title: "443 Crossfield Road", href: "/listings/443-crossfield-road" },
 ];
 
 const features = [
@@ -48,28 +50,25 @@ const page = () => {
         <section>
           <h2 className="h2 text-left">Explore our tours</h2>
           <p className="mb-6 mt-2 text-lightblue">
-            Click and drag to look around. Use the dollhouse button in the corner of each tour
-            to see the whole building.
+            Pick an industry to load its tour. Click and drag to look around, and use the
+            dollhouse button in the corner to see the whole building.
           </p>
-          <div className="grid gap-8 md:grid-cols-2">
-            {tours.map((t) => (
-              <div key={t.id}>
-                <p className="mb-2 text-sm font-bold uppercase tracking-wider text-tan">{t.label}</p>
-                <TourEmbed id={t.id} title={t.title} />
-                <p className="mt-2 text-white">
-                  {t.title}
-                  {t.href && (
-                    <>
-                      {" · "}
-                      <Link href={t.href} className="text-tan underline">
-                        case study
-                      </Link>
-                    </>
-                  )}
-                </p>
-              </div>
-            ))}
-          </div>
+          <TourSwitcher
+            pickerLabel="Pick an industry"
+            tours={tours.map((t) => ({
+              id: t.id,
+              label: t.label,
+              title: t.title,
+              note: t.href ? (
+                <>
+                  {" · "}
+                  <Link href={t.href} className="text-tan underline">
+                    {t.href.startsWith("/work") ? "case study" : "see the listing"}
+                  </Link>
+                </>
+              ) : null,
+            }))}
+          />
         </section>
 
         <section>

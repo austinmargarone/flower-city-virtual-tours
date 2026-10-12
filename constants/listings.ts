@@ -5,6 +5,7 @@ export type ListingPhoto = { src: string; thumb: string };
 
 export type Listing = {
   slug: string;
+  category: "residential" | "commercial";
   title: string;
   kind: string;
   location?: string;
@@ -20,8 +21,10 @@ export type Listing = {
 export const listings: Listing[] = [
   {
     "slug": "443-crossfield-road",
+    "category": "residential",
     "title": "443 Crossfield Road",
     "kind": "Cape Cod",
+    "tour": "S7v82M2yiE1",
     "video": {
       "src": "/listings/443-crossfield-road/walkthrough.mp4",
       "poster": "/listings/443-crossfield-road/walkthrough-poster.jpg",
@@ -112,7 +115,467 @@ export const listings: Listing[] = [
     "aerials": []
   },
   {
+    "slug": "the-nest-cottage",
+    "category": "residential",
+    "title": "The Nest Cottage",
+    "kind": "Lakeside cottage rental",
+    "tour": "UFpAPNqqYGc",
+    "photos": [
+      {
+        "src": "/listings/the-nest-cottage/01.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/02.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/03.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/04.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/05.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/06.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/07.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/08.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/09.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/10.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/11.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/12.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/13.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/14.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/15.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/16.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/17.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/18.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/19.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/20.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/21.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/22.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/23.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/24.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/25.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/25.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/26.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/26.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/27.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/27.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/28.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/28.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/29.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/29.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/30.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/30.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/31.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/31.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/32.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/32.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/33.jpg",
+        "thumb": "/listings/the-nest-cottage/thumb/33.jpg"
+      }
+    ],
+    "aerials": [
+      {
+        "src": "/listings/the-nest-cottage/aerial-01.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-02.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-03.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-04.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-05.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-06.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/06.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-07.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/07.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-08.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/08.jpg"
+      },
+      {
+        "src": "/listings/the-nest-cottage/aerial-09.jpg",
+        "thumb": "/listings/the-nest-cottage/aerial-thumb/09.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "18-harvard-street",
+    "category": "commercial",
+    "title": "18 Harvard Street",
+    "kind": "Office building",
+    "photos": [
+      {
+        "src": "/listings/18-harvard-street/01.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/02.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/03.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/04.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/05.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/06.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/07.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/08.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/09.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/10.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/11.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/12.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/13.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/14.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/15.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/16.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/17.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/18.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/19.jpg",
+        "thumb": "/listings/18-harvard-street/thumb/19.jpg"
+      }
+    ],
+    "aerials": [
+      {
+        "src": "/listings/18-harvard-street/aerial-01.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-02.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-03.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-04.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-05.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-06.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/06.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-07.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/07.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-08.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/08.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-09.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/09.jpg"
+      },
+      {
+        "src": "/listings/18-harvard-street/aerial-10.jpg",
+        "thumb": "/listings/18-harvard-street/aerial-thumb/10.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "504-brooks-ave",
+    "category": "commercial",
+    "title": "504 Brooks Ave",
+    "kind": "Apartment building",
+    "photos": [
+      {
+        "src": "/listings/504-brooks-ave/01.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/02.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/03.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/04.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/05.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/06.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/07.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/08.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/09.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/10.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/11.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/12.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/13.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/14.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/15.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/16.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/17.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/18.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/19.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/20.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/21.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/22.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/23.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/24.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/25.jpg",
+        "thumb": "/listings/504-brooks-ave/thumb/25.jpg"
+      }
+    ],
+    "aerials": [
+      {
+        "src": "/listings/504-brooks-ave/aerial-01.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-02.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-03.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-04.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-05.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-06.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/06.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-07.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/07.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-08.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/08.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-09.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/09.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-10.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/10.jpg"
+      },
+      {
+        "src": "/listings/504-brooks-ave/aerial-11.jpg",
+        "thumb": "/listings/504-brooks-ave/aerial-thumb/11.jpg"
+      }
+    ]
+  },
+  {
     "slug": "257-stonefield-lane",
+    "category": "residential",
     "title": "257 Stonefield Lane",
     "kind": "Colonial with in-ground pool",
     "location": "Farmington, NY",
@@ -400,6 +863,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "633-autumn-breeze-lane",
+    "category": "residential",
     "title": "633 Autumn Breeze Lane",
     "kind": "New-construction colonial",
     "photos": [
@@ -520,6 +984,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "145-georgian-court-road",
+    "category": "residential",
     "title": "145 Georgian Court Road",
     "kind": "Split-level",
     "photos": [
@@ -680,6 +1145,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "27-devonwood-lane",
+    "category": "residential",
     "title": "27 Devonwood Lane",
     "kind": "Two-story colonial",
     "photos": [
@@ -828,6 +1294,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "388-castle-street",
+    "category": "residential",
     "title": "388 Castle Street",
     "kind": "Craftsman bungalow",
     "photos": [
@@ -960,6 +1427,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "71-cornhill-place",
+    "category": "residential",
     "title": "71 Cornhill Place #71",
     "kind": "Townhouse",
     "location": "Rochester, NY",
@@ -1081,6 +1549,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "6782-colyer-crossing",
+    "category": "residential",
     "title": "6782 Colyer Crossing",
     "kind": "Craftsman-style colonial",
     "photos": [
@@ -1233,6 +1702,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "3300-state-route",
+    "category": "residential",
     "title": "3300 State Route",
     "kind": "Townhouse",
     "photos": [
@@ -1321,6 +1791,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "2548-lower-lake-road",
+    "category": "residential",
     "title": "2548 Lower Lake Road",
     "kind": "Lakefront home with pool",
     "photos": [
@@ -1405,6 +1876,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "vineyard-guest-barn",
+    "category": "residential",
     "title": "Vineyard Guest Barn",
     "kind": "Short-term rental",
     "tour": "YN4DWeXcQ2p",
@@ -1483,6 +1955,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "city-victorian",
+    "category": "residential",
     "title": "City Victorian",
     "kind": "Two-story Victorian",
     "photos": [
@@ -1583,6 +2056,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "609-wild-mallard-trail",
+    "category": "residential",
     "title": "609 Wild Mallard Trail",
     "kind": "Cape-style home",
     "location": "Webster, NY",
@@ -1797,6 +2271,7 @@ export const listings: Listing[] = [
   },
   {
     "slug": "605-wild-mallard-trail",
+    "category": "residential",
     "title": "605 Wild Mallard Trail",
     "kind": "Cape Cod with wraparound porch",
     "location": "Webster, NY",

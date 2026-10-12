@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import CaseStudyCover from "@/components/shared/CaseStudyCover";
 import PageHeader from "@/components/shared/PageHeader";
 import Testimonials from "@/components/shared/Testimonials";
 import CallToAction from "@/components/shared/CallToAction";
@@ -28,14 +28,7 @@ const Page = () => {
               href={`/work/${c.slug}`}
               className="flex h-full flex-col overflow-hidden rounded-lg border border-tan/50 bg-indigo shadow-lg transition hover:-translate-y-0.5 hover:border-tan"
             >
-              <Image
-                src={c.cover}
-                alt={c.coverAlt}
-                width={800}
-                height={500}
-                sizes="(max-width: 580px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="aspect-[16/10] w-full bg-black object-cover"
-              />
+              <CaseStudyCover study={c} sizes="(max-width: 580px) 100vw, (max-width: 1024px) 50vw, 33vw" />
               <div className="flex flex-1 flex-col p-5">
                 <p className="text-sm font-bold uppercase tracking-wider text-tan">{c.category}</p>
                 <h2 className="mt-1 text-xl font-bold text-white">{c.client}</h2>
