@@ -33,7 +33,7 @@ export default function Home() {
         <div>
           <VirtualTour />
         </div>
-        <Testimonials />
+        <Testimonials limit={4} />
         <div className="flex-col justify-center">
           <h2 className="h2 flex justify-center pb-[1.25rem] text-white">Contact Us</h2>
           <Contact />

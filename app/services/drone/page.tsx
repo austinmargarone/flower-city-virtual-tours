@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BadgeCheck, ShieldCheck } from "lucide-react";
+import Gallery, { type GalleryImage } from "@/components/shared/Gallery";
 import PageHeader from "@/components/shared/PageHeader";
 import CallToAction from "@/components/shared/CallToAction";
 import { dronePricing, formatPrice } from "@/constants/pricing";
@@ -10,7 +11,25 @@ export const metadata = pageMeta({
   description:
     "FAA Part 107 certified, fully insured drone photography and video in Rochester, NY for real estate, construction, commercial properties and events.",
   path: "/services/drone",
+  image: "/gallery/drone/lake-shoreline.jpg",
 });
+
+const aerials: GalleryImage[] = [
+  { src: "/gallery/drone/estate-front.jpg", alt: "Aerial view of a two-story home on a large wooded lot" },
+  { src: "/gallery/drone/lake-shoreline.jpg", alt: "Aerial view of a lakeside neighborhood and shoreline" },
+  { src: "/gallery/drone/backyard-pool.jpg", alt: "Aerial view of a backyard with in-ground pool and patio" },
+  { src: "/gallery/drone/neighborhood-overview.jpg", alt: "Wide aerial of a wooded residential neighborhood" },
+  { src: "/gallery/drone/lakeside-community.jpg", alt: "Aerial of a residential community near the lake" },
+  { src: "/gallery/drone/estate-angle.jpg", alt: "Aerial of a home and long driveway" },
+  { src: "/gallery/drone/pool-patio.jpg", alt: "Overhead view of a pool and patio" },
+  { src: "/gallery/drone/countryside.jpg", alt: "Aerial of homes along a country road" },
+  { src: "/gallery/drone/development-wide.jpg", alt: "Wide aerial of a growing housing development" },
+  { src: "/gallery/drone/new-construction.jpg", alt: "Aerial of new-construction homes" },
+  { src: "/gallery/drone/building-lots.jpg", alt: "Aerial of open building lots behind new homes" },
+  { src: "/gallery/drone/subdivision.jpg", alt: "Aerial of a subdivision with cul-de-sacs" },
+  { src: "/gallery/drone/property-pool-lot.jpg", alt: "Aerial of a home and pool surrounded by trees" },
+  { src: "/gallery/drone/city-neighborhood.jpg", alt: "Aerial of a tree-lined city neighborhood" },
+];
 
 const uses = [
   { title: "Real estate listings", text: "Show the whole property, the lot lines and what's around it." },
@@ -29,7 +48,7 @@ const Page = () => {
         from above shows off a property in a way ground-level photos can&apos;t.
       </PageHeader>
 
-      <div className="mx-auto mt-10 max-w-[60rem] space-y-12 px-[1rem]">
+      <div className="mx-auto mt-10 max-w-[77.5rem] space-y-12 px-[1rem]">
         <ul className="grid gap-4 ss:grid-cols-2">
           <li className="flex items-start gap-3 rounded-lg border border-tan bg-indigo p-5">
             <BadgeCheck className="size-8 shrink-0 text-tan" aria-hidden="true" />
@@ -46,6 +65,11 @@ const Page = () => {
             </div>
           </li>
         </ul>
+
+        <section>
+          <h2 className="h2 mb-4 text-left">Recent aerial work</h2>
+          <Gallery images={aerials} />
+        </section>
 
         <section>
           <h2 className="h2 text-left">What we fly for</h2>

@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/build",
     "/calendly",
+    "/privacy-policy",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,

@@ -6,6 +6,17 @@ const points = [
   { title: "Certified", text: "Matterport 3D capture and an FAA Part 107 licensed, fully insured drone pilot." },
 ];
 
+// From the old "Our Process" page
+const process = [
+  { step: "Book", text: "Schedule an appointment by phone, email or online." },
+  {
+    step: "Prep & scan",
+    text: "We arrive, make sure the space looks the way you want it seen, then move quickly through it, setting up the camera at viewpoints across the floor plan as it builds a 3D model.",
+  },
+  { step: "Review", text: "We check the finished tour and make any final touches." },
+  { step: "Share", text: "You get a link to publish and share your 3D tour anywhere." },
+];
+
 const About = () => {
   return (
     <article className="flex flex-col justify-center">
@@ -35,6 +46,22 @@ const About = () => {
           </li>
         ))}
       </ul>
+      <section className="mx-auto mt-10 max-w-[46rem]">
+        <h2 className="h2">How a tour shoot works</h2>
+        <ol className="mt-4 space-y-3">
+          {process.map((p, i) => (
+            <li key={p.step} className="flex gap-4 rounded-lg border border-tan/40 p-4">
+              <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-tan font-bold text-white">
+                {i + 1}
+              </span>
+              <div>
+                <p className="font-bold text-white">{p.step}</p>
+                <p className="text-lightblue">{p.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
       <div className="button-container mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <Link href="/calendly">
           <button className="hero-button shadow-lg">Free consultation</button>

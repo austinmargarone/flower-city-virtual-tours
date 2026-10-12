@@ -10,22 +10,28 @@ export const metadata = pageMeta({
   description:
     "Professional listing, rental and commercial photography in Rochester, NY. Bright, true-to-life photos that pair with a Matterport 3D tour.",
   path: "/services/photography",
-  image: "/gallery/photography/lakefront-pool.jpg",
+  image: "/gallery/photography/two-story-exterior.jpg",
 });
 
 const residential: GalleryImage[] = [
+  { src: "/gallery/photography/two-story-exterior.jpg", alt: "Two-story colonial with a manicured lawn" },
+  { src: "/gallery/photography/white-kitchen.jpg", alt: "White kitchen with a navy island" },
+  { src: "/gallery/photography/great-room.jpg", alt: "Great room with a fireplace and built-ins" },
+  { src: "/gallery/photography/pool-backyard.jpg", alt: "In-ground pool and backyard" },
+  { src: "/gallery/photography/barn-lake-view.jpg", alt: "White barn-style home overlooking the lake" },
+  { src: "/gallery/photography/cherry-kitchen.jpg", alt: "Cherry kitchen with granite island" },
+  { src: "/gallery/photography/bungalow-exterior.jpg", alt: "Craftsman bungalow with a deep front porch" },
+  { src: "/gallery/photography/open-kitchen.jpg", alt: "Open kitchen and dining area" },
+  { src: "/gallery/photography/primary-bedroom.jpg", alt: "Primary bedroom with natural light" },
+  { src: "/gallery/photography/deck-lake-view.jpg", alt: "Deck with a lake view" },
+  { src: "/gallery/photography/townhouse-living-room.jpg", alt: "Townhouse living room with fireplace" },
+  { src: "/gallery/photography/double-vanity.jpg", alt: "Bathroom with double vanity" },
+  { src: "/gallery/photography/colonial-exterior.jpg", alt: "Gray colonial with a three-car garage" },
+  { src: "/gallery/photography/kitchen-island.jpg", alt: "Kitchen with island seating" },
+  { src: "/gallery/photography/new-build-exterior.jpg", alt: "New-construction home exterior" },
+  { src: "/gallery/photography/back-deck.jpg", alt: "Back deck overlooking open fields" },
   { src: "/gallery/photography/lakefront-pool.jpg", alt: "Lakefront home with an in-ground pool" },
-  { src: "/gallery/photography/lakefront-dock.jpg", alt: "Lawn leading down to a private dock on the lake" },
-  { src: "/gallery/photography/lakefront-front.jpg", alt: "Front of a two-story home with a wide lawn" },
-  { src: "/gallery/photography/lakefront-kitchen.jpg", alt: "Open kitchen with breakfast bar" },
-  { src: "/gallery/photography/lakefront-family-room.jpg", alt: "Family room with brick fireplace and lake view" },
-  { src: "/gallery/photography/lakefront-sunroom.jpg", alt: "Sunroom with skylights and pool view" },
-  { src: "/gallery/photography/lakefront-bay-window.jpg", alt: "Bay window overlooking the lake" },
-  { src: "/gallery/photography/lakefront-deck.jpg", alt: "Back deck with hot tub" },
-  { src: "/gallery/photography/cape-cod-exterior.jpg", alt: "Cape Cod style home with stone walls" },
-  { src: "/gallery/photography/cape-cod-kitchen.jpg", alt: "Kitchen with butcher block island" },
-  { src: "/gallery/photography/cape-cod-living-room.jpg", alt: "Living room with fireplace and built-in shelves" },
-  { src: "/gallery/photography/lakefront-kitchen-bar.jpg", alt: "Kitchen bar seating" },
+  { src: "/gallery/photography/lakefront-dock.jpg", alt: "Lawn leading down to a private dock" },
 ];
 
 const rental: GalleryImage[] = [
@@ -59,7 +65,14 @@ const Page = () => {
 
       <div className="mx-auto mt-10 max-w-[77.5rem] space-y-14 px-[1rem]">
         <section>
-          <h2 className="h2 mb-4 text-left">Homes &amp; Listings</h2>
+          <h2 className="h2 mb-1 text-left">Homes &amp; Listings</h2>
+          <p className="mb-4 text-lightblue">
+            Add{" "}
+            <Link href="/services/drone" className="text-tan underline">
+              aerial drone shots
+            </Link>{" "}
+            to show the whole property and its surroundings.
+          </p>
           <Gallery images={residential} />
         </section>
 
