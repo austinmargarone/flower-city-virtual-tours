@@ -1,4 +1,5 @@
-// Prices carried over from the old flowercityvirtualtours.com pricing page.
+// Media prices carried over from the old flowercityvirtualtours.com pricing page.
+// Website prices raised Oct 2026 to sit below typical agency rates but above bargain freelancers.
 // Edit here and every page that shows a price updates.
 
 export const sizeTiers = ["Under 2,000 sq ft", "2,000–3,000 sq ft", "3,000–4,000 sq ft", "Over 4,000 sq ft"];
@@ -26,8 +27,8 @@ export const dronePricing = [
 ];
 
 export const webPricing = [
-  { name: "Landing page", from: 600, description: "A single, focused page for a service, event or small business." },
-  { name: "Multi-page website", from: 900, description: "A full site with the pages your business needs." },
+  { name: "Landing page", from: 1500, description: "A single, focused page for a service, event or small business." },
+  { name: "Multi-page website", from: 3000, description: "A full site with the pages your business needs." },
 ];
 
 export const webIncludes = [
