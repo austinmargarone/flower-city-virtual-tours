@@ -18,6 +18,10 @@ export const menuLinks: MenuLink[] = [
     label: "Request a Quote",
   },
   {
+    route: "/blog",
+    label: "Blog",
+  },
+  {
     route: "/calendly",
     label: "Consultation",
   },

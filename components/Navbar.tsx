@@ -90,6 +90,9 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
+              <Link href="/blog">
+                <li>Blog</li>
+              </Link>
               <Link href="/calendly">
                 <li>Consultation</li>
               </Link>
