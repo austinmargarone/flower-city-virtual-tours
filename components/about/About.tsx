@@ -17,6 +17,10 @@ const process = [
   { step: "Share", text: "You get a link to publish and share your 3D tour anywhere." },
 ];
 
+// Same size and style as the homepage hero buttons.
+const buttonBase =
+  "inline-flex h-12 w-[17.5rem] max-w-full items-center justify-center whitespace-nowrap rounded px-5 text-base font-bold uppercase tracking-[1.5px] shadow-lg transition";
+
 const About = () => {
   return (
     <article className="flex flex-col justify-center">
@@ -63,11 +67,14 @@ const About = () => {
         </ol>
       </section>
       <div className="button-container mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <Link href="/calendly">
-          <button className="hero-button shadow-lg">Free consultation</button>
+        <Link href="/calendly" className={`${buttonBase} bg-tan text-white hover:brightness-110`}>
+          Free Consultation
         </Link>
-        <Link href="/work" className="font-bold text-tan hover:underline">
-          See our work →
+        <Link
+          href="/work"
+          className={`${buttonBase} border-2 border-tan bg-midnight/40 text-white hover:bg-tan/20`}
+        >
+          See Our Work
         </Link>
       </div>
     </article>
