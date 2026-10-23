@@ -22,7 +22,7 @@ const BrowserFrame = ({ site }: { site: WebsiteProject }) => {
             width={1440}
             height={900}
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="aspect-[16/10] w-full object-cover object-top"
+            className={`aspect-[16/10] w-full object-cover ${site.screenshotPosition ?? "object-top"}`}
           />
         ) : (
           <div className="flex aspect-[16/10] w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-charcoal via-indigo to-midnight text-center">

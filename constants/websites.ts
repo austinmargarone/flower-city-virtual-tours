@@ -9,6 +9,8 @@ export type WebsiteProject = {
   summary: string;
   features: string[];
   screenshot?: string;
+  /** Tailwind object-position class when the screenshot is wider than the 16:10 frame */
+  screenshotPosition?: string;
   mobileScreenshot?: string;
   testimonial?: { quote: string; name: string };
 };
@@ -37,5 +39,7 @@ export const websites: WebsiteProject[] = [
     summary:
       "A website for a Rochester real estate brokerage, with a sold-listing portfolio, property management page, blog and contact form.",
     features: ["Listing portfolio", "Property management page", "Blog", "Contact form", "Interactive map"],
+    screenshot: "/websites/empower-realty.jpg",
+    screenshotPosition: "object-left-top",
   },
 ];

@@ -2666,6 +2666,885 @@ export const listings: Listing[] = [
     "aerials": []
   },
   {
+    "slug": "2161-edwards-road",
+    "category": "residential",
+    "title": "2161 Edwards Road",
+    "kind": "Farmhouse on acreage",
+    "location": "Waterloo, NY",
+    "photos": [
+      {
+        "src": "/listings/2161-edwards-road/01.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/02.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/03.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/04.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/05.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/06.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/07.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/08.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/09.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/10.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/11.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/12.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/13.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/14.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/15.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/16.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/17.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/18.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/19.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/20.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/21.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/22.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/23.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/24.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/25.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/25.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/26.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/26.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/27.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/27.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/28.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/28.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/29.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/29.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/30.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/30.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/31.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/31.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/32.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/32.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/33.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/33.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/34.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/34.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/35.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/35.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/36.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/36.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/37.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/37.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/38.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/38.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/39.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/39.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/40.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/40.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/41.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/41.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/42.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/42.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/43.jpg",
+        "thumb": "/listings/2161-edwards-road/thumb/43.jpg"
+      }
+    ],
+    "aerials": []
+  },
+  {
+    "slug": "7-sherrill-street",
+    "category": "residential",
+    "title": "7 Sherrill Street",
+    "kind": "Victorian home",
+    "location": "Geneva, NY",
+    "photos": [
+      {
+        "src": "/listings/7-sherrill-street/01.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/02.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/03.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/04.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/05.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/06.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/07.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/08.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/09.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/10.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/11.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/12.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/13.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/14.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/15.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/16.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/17.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/18.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/19.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/20.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/21.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/22.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/23.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/24.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/25.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/25.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/26.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/26.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/27.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/27.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/28.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/28.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/29.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/29.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/30.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/30.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/31.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/31.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/32.jpg",
+        "thumb": "/listings/7-sherrill-street/thumb/32.jpg"
+      }
+    ],
+    "aerials": [
+      {
+        "src": "/listings/7-sherrill-street/aerial-01.jpg",
+        "thumb": "/listings/7-sherrill-street/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/aerial-02.jpg",
+        "thumb": "/listings/7-sherrill-street/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/aerial-03.jpg",
+        "thumb": "/listings/7-sherrill-street/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/aerial-04.jpg",
+        "thumb": "/listings/7-sherrill-street/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/7-sherrill-street/aerial-05.jpg",
+        "thumb": "/listings/7-sherrill-street/aerial-thumb/05.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "10-sweet-acres-drive",
+    "category": "residential",
+    "title": "10 Sweet Acres Drive",
+    "kind": "Colonial",
+    "location": "Rochester, NY",
+    "photos": [
+      {
+        "src": "/listings/10-sweet-acres-drive/01.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/02.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/03.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/04.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/05.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/06.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/07.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/08.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/09.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/10.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/11.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/12.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/13.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/14.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/15.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/16.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/17.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/18.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/19.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/20.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/21.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/10-sweet-acres-drive/22.jpg",
+        "thumb": "/listings/10-sweet-acres-drive/thumb/22.jpg"
+      }
+    ],
+    "aerials": []
+  },
+  {
+    "slug": "14-sweet-acres-drive",
+    "category": "residential",
+    "title": "14 Sweet Acres Drive",
+    "kind": "Colonial with pool",
+    "location": "Rochester, NY",
+    "photos": [
+      {
+        "src": "/listings/14-sweet-acres-drive/01.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/02.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/03.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/04.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/05.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/06.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/07.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/08.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/09.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/10.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/11.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/12.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/13.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/14.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/15.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/16.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/17.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/18.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/19.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/20.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/21.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/22.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/23.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/24.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/25.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/25.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/26.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/26.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/27.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/27.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/28.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/28.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/29.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/29.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/30.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/30.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/31.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/31.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/32.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/32.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/33.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/33.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/34.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/34.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/35.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/35.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/36.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/36.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/37.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/37.jpg"
+      },
+      {
+        "src": "/listings/14-sweet-acres-drive/38.jpg",
+        "thumb": "/listings/14-sweet-acres-drive/thumb/38.jpg"
+      }
+    ],
+    "aerials": []
+  },
+  {
+    "slug": "23-staglen-drive",
+    "category": "residential",
+    "title": "23 Staglen Drive",
+    "kind": "Raised ranch",
+    "location": "Henrietta, NY",
+    "photos": [
+      {
+        "src": "/listings/23-staglen-drive/01.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/02.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/03.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/04.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/05.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/06.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/07.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/08.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/09.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/10.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/10.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/11.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/11.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/12.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/12.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/13.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/13.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/14.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/14.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/15.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/15.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/16.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/16.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/17.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/17.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/18.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/18.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/19.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/19.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/20.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/20.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/21.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/21.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/22.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/22.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/23.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/23.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/24.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/24.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/25.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/25.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/26.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/26.jpg"
+      },
+      {
+        "src": "/listings/23-staglen-drive/27.jpg",
+        "thumb": "/listings/23-staglen-drive/thumb/27.jpg"
+      }
+    ],
+    "aerials": []
+  },
+  {
+    "slug": "12-goldenhill-lane",
+    "category": "residential",
+    "title": "12 Goldenhill Lane",
+    "kind": "Single-family home",
+    "location": "Brockport, NY",
+    "photos": [
+      {
+        "src": "/listings/12-goldenhill-lane/01.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/02.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/03.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/04.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/05.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/06.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/07.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/08.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/09.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/09.jpg"
+      },
+      {
+        "src": "/listings/12-goldenhill-lane/10.jpg",
+        "thumb": "/listings/12-goldenhill-lane/thumb/10.jpg"
+      }
+    ],
+    "aerials": []
+  },
+  {
+    "slug": "waterloo-drone",
+    "category": "residential",
+    "title": "Waterloo Countryside",
+    "kind": "Rural property aerials",
+    "location": "Waterloo, NY",
+    "photos": [],
+    "aerials": [
+      {
+        "src": "/listings/waterloo-drone/aerial-01.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-02.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-03.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-04.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-05.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-06.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/06.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-07.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/07.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-08.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/08.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-09.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/09.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-10.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/10.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-11.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/11.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-12.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/12.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-13.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/13.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-14.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/14.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-15.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/15.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-16.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/16.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-17.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/17.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-18.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/18.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-19.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/19.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-20.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/20.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-21.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/21.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-22.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/22.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-23.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/23.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-24.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/24.jpg"
+      },
+      {
+        "src": "/listings/waterloo-drone/aerial-25.jpg",
+        "thumb": "/listings/waterloo-drone/aerial-thumb/25.jpg"
+      }
+    ]
+  },
+  {
     "slug": "18-harvard-street",
     "category": "commercial",
     "title": "18 Harvard Street",
@@ -3155,6 +4034,65 @@ export const listings: Listing[] = [
       {
         "src": "/listings/219-lyons-road/aerial-25.jpg",
         "thumb": "/listings/219-lyons-road/aerial-thumb/25.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "39-genesee-street",
+    "category": "commercial",
+    "title": "39 Genesee Street",
+    "kind": "Brick building",
+    "location": "Geneva, NY",
+    "photos": [
+      {
+        "src": "/listings/39-genesee-street/01.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/01.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/02.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/02.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/03.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/03.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/04.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/04.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/05.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/05.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/06.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/06.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/07.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/07.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/08.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/08.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/09.jpg",
+        "thumb": "/listings/39-genesee-street/thumb/09.jpg"
+      }
+    ],
+    "aerials": [
+      {
+        "src": "/listings/39-genesee-street/aerial-01.jpg",
+        "thumb": "/listings/39-genesee-street/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/aerial-02.jpg",
+        "thumb": "/listings/39-genesee-street/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/39-genesee-street/aerial-03.jpg",
+        "thumb": "/listings/39-genesee-street/aerial-thumb/03.jpg"
       }
     ]
   },
@@ -3733,6 +4671,7 @@ export const listings: Listing[] = [
     "category": "residential",
     "title": "27 Devonwood Lane",
     "kind": "Two-story colonial",
+    "location": "Pittsford, NY",
     "photos": [
       {
         "src": "/listings/27-devonwood-lane/01.jpg",
