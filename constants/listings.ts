@@ -4494,7 +4494,33 @@ export const listings: Listing[] = [
         "thumb": "/listings/633-autumn-breeze-lane/thumb/28.jpg"
       }
     ],
-    "aerials": []
+    "aerials": [
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-01.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-02.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-03.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-04.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-05.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/633-autumn-breeze-lane/aerial-06.jpg",
+        "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/06.jpg"
+      }
+    ],
+    "location": "Ontario, NY"
   },
   {
     "slug": "145-georgian-court-road",
@@ -5390,85 +5416,6 @@ export const listings: Listing[] = [
     "aerials": []
   },
   {
-    "slug": "vineyard-guest-barn",
-    "category": "residential",
-    "title": "Vineyard Guest Barn",
-    "kind": "Short-term rental",
-    "tour": "YN4DWeXcQ2p",
-    "caseStudy": "/work/vineyard-guest-barn",
-    "photos": [
-      {
-        "src": "/listings/vineyard-guest-barn/01.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/01.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/02.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/02.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/03.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/03.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/04.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/04.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/05.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/05.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/06.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/06.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/07.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/07.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/08.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/08.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/09.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/09.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/10.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/10.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/11.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/11.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/12.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/12.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/13.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/13.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/14.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/14.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/15.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/15.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/16.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/16.jpg"
-      },
-      {
-        "src": "/listings/vineyard-guest-barn/17.jpg",
-        "thumb": "/listings/vineyard-guest-barn/thumb/17.jpg"
-      }
-    ],
-    "aerials": []
-  },
-  {
     "slug": "city-victorian",
     "category": "residential",
     "title": "City Victorian",
@@ -5962,36 +5909,5 @@ export const listings: Listing[] = [
       }
     ],
     "aerials": []
-  }
-];
-
-export const aerialPortfolio: ListingPhoto[] = [
-  {
-    "src": "/listings/aerial-portfolio/01.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/01.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/02.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/02.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/03.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/03.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/04.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/04.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/05.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/05.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/06.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/06.jpg"
-  },
-  {
-    "src": "/listings/aerial-portfolio/07.jpg",
-    "thumb": "/listings/aerial-portfolio/thumb/07.jpg"
   }
 ];

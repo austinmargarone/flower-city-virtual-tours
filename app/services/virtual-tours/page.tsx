@@ -21,6 +21,7 @@ const tours = [
   { id: "Vu8vAVvcebN", label: "Office", title: "Keller Williams office" },
   { id: "dTursFxbP1u", label: "Commercial", title: "DeCarolis Truck Rental, Buffalo branch", href: "/work/decarolis-truck-rental" },
   { id: "MnvsFYd5SXE", label: "Warehouse", title: "DeCarolis Truck Rental, Heavy Duty Parts", href: "/work/decarolis-truck-rental" },
+  { id: "csDCFB2Tqo2", label: "Vacation rental", title: "VacationFLX, Flat Iron Two", href: "/work/vacationflx" },
   { id: "UFpAPNqqYGc", label: "Short-term rental", title: "The Nest Cottage", href: "/listings/the-nest-cottage" },
   { id: "S7v82M2yiE1", label: "Residential", title: "443 Crossfield Road", href: "/listings/443-crossfield-road" },
 ];

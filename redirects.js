@@ -26,7 +26,6 @@ const industryPages = [
   'theaters',
   'everything-else',
   'hotels-short-term-rentals',
-  'vacationflx',
 ];
 
 module.exports = [
@@ -85,6 +84,10 @@ module.exports = [
 
   // Waterloo drone shots were merged into their property's listing
   { source: '/listings/waterloo-drone', destination: '/listings/2161-edwards-road', permanent: true },
+
+  // Vineyard Guest Barn is shown as a client case study rather than a listing
+  { source: '/listings/vineyard-guest-barn', destination: '/work/vineyard-guest-barn', permanent: true },
+  { source: '/vacationflx', destination: '/work/vacationflx', permanent: true },
 
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },
