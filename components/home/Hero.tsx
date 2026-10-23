@@ -17,7 +17,7 @@ const services = ["Websites", "3D Virtual Tours", "Photography", "Drone"];
 
 // Both buttons share one size so they line up; only the fill differs.
 const buttonBase =
-  "inline-flex h-12 w-[15rem] items-center justify-center rounded px-6 text-base font-bold uppercase tracking-[2px] shadow-lg transition";
+  "inline-flex h-12 w-[17.5rem] max-w-full items-center justify-center whitespace-nowrap rounded px-5 text-base font-bold uppercase tracking-[1.5px] shadow-lg transition";
 
 const Hero = () => {
   const [quoteIndex, setQuoteIndex] = useState(0);
