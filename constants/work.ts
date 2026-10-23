@@ -138,7 +138,9 @@ export const caseStudies: CaseStudy[] = [
     category: "3D Virtual Tours · Coworking",
     location: "Rochester, NY",
     summary:
-      "A 3D tour of a coworking space, so prospective members can see the offices, meeting rooms and lounges before they book a visit.",
+      "A 3D tour of a downtown Rochester coworking space, so prospective members can see the offices, meeting rooms and lounges before they book a visit.",
+    cover: "/work/serendipity-labs/cover.jpg",
+    coverAlt: "Private office at Serendipity Labs with floor-to-ceiling windows over downtown Rochester",
     services: ["Matterport 3D tour", "Dollhouse view", "Floor plan"],
     story: [
       "Serendipity Labs runs flexible coworking spaces with private offices, meeting rooms and shared lounges. For a coworking space, the space itself is the product, so members want to see it before they commit.",
@@ -152,6 +154,8 @@ export const caseStudies: CaseStudy[] = [
     category: "3D Virtual Tours · Real Estate Office",
     location: "Brighton, NY",
     summary: "A 3D tour of Keller Williams' large Brighton office, captured from end to end.",
+    cover: "/work/keller-williams/cover.jpg",
+    coverAlt: "Reception desk and lobby at the Keller Williams Greater Rochester office",
     services: ["Matterport 3D tour", "Dollhouse view", "Large-space capture"],
     story: [
       "Keller Williams' Brighton office is a large space with agent workspaces, conference rooms and common areas. They wanted a tour that captured all of it accurately.",
@@ -170,12 +174,30 @@ export const caseStudies: CaseStudy[] = [
     category: "3D Virtual Tours · Real Estate Office",
     location: "Greece, NY",
     summary: "A 3D tour of Howard Hanna's Greece office for recruiting and client-facing marketing.",
+    cover: "/work/howard-hanna/cover.jpg",
+    coverAlt: "Front desk and open office at Howard Hanna in Greece, NY",
     services: ["Matterport 3D tour", "Dollhouse view"],
     story: [
       "A brokerage office is where agents work and clients sit down to make big decisions. Howard Hanna wanted a way to show off their Greece office online.",
       "We captured the office in 3D, so prospective agents and clients can walk through it from anywhere and know what to expect before they come in.",
     ],
     tours: [{ id: "Evhwmxboxo4", title: "Howard Hanna, Greece office" }],
+  },
+  {
+    slug: "i-square",
+    client: "I-Square",
+    category: "3D Virtual Tours · Mixed-Use",
+    location: "Irondequoit, NY",
+    summary:
+      "A 3D tour of I-Square's mixed-use building, from the skylit atrium and its living plant wall to the offices upstairs.",
+    cover: "/work/i-square/cover.jpg",
+    coverAlt: "Skylit atrium at I-Square with a multi-level living plant wall and open staircase",
+    services: ["Matterport 3D tour", "Dollhouse view", "Multi-level capture"],
+    story: [
+      "I-Square is a mixed-use building in Irondequoit with shops, restaurants, event space and offices. Its open atrium, skylights and living plant wall are hard to appreciate in a flat photo.",
+      "We captured the building in 3D across multiple levels, so future tenants and event planners can move through the atrium, up the stairs and into the spaces they're considering, all from their computer or phone.",
+    ],
+    tours: [{ id: "SAC2K8kV8BR", title: "I-Square" }],
   },
   {
     slug: "vacationflx",
