@@ -10,7 +10,7 @@ const points = [
 const process = [
   { step: "Book", text: "Schedule an appointment by phone, email or online." },
   {
-    step: "Prep & scan",
+    step: "Prep & Scan",
     text: "We arrive, make sure the space looks the way you want it seen, then move quickly through it, setting up the camera at viewpoints across the floor plan as it builds a 3D model.",
   },
   { step: "Review", text: "We check the finished tour and make any final touches." },
@@ -34,8 +34,8 @@ const About = () => {
           visiting.
         </p>
         <p>
-          Flower City Virtual Tours is run by Austin Margarone. When you work with us, you work
-          directly with the person building your site and running the camera.
+          When you work with us, you work directly with the person building your site and
+          running the camera.
         </p>
       </div>
       <ul className="mx-auto mt-8 grid max-w-[46rem] gap-4 sm:grid-cols-3">
@@ -47,7 +47,7 @@ const About = () => {
         ))}
       </ul>
       <section className="mx-auto mt-10 max-w-[46rem]">
-        <h2 className="h2">How a tour shoot works</h2>
+        <h2 className="h2">How a Tour Shoot Works</h2>
         <ol className="mt-4 space-y-3">
           {process.map((p, i) => (
             <li key={p.step} className="flex gap-4 rounded-lg border border-tan/40 p-4">
