@@ -83,6 +83,9 @@ module.exports = [
   // The listings grid lives on the Photography page
   { source: '/listings', destination: '/services/photography', permanent: true },
 
+  // Waterloo drone shots were merged into their property's listing
+  { source: '/listings/waterloo-drone', destination: '/listings/2161-edwards-road', permanent: true },
+
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },
   { source: '/feed', destination: '/blog', permanent: true },

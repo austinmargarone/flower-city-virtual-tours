@@ -2845,7 +2845,108 @@ export const listings: Listing[] = [
         "thumb": "/listings/2161-edwards-road/thumb/43.jpg"
       }
     ],
-    "aerials": []
+    "aerials": [
+      {
+        "src": "/listings/2161-edwards-road/aerial-01.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/01.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-02.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/02.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-03.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/03.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-04.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/04.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-05.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/05.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-06.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/06.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-07.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/07.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-08.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/08.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-09.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/09.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-10.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/10.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-11.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/11.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-12.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/12.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-13.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/13.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-14.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/14.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-15.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/15.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-16.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/16.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-17.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/17.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-18.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/18.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-19.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/19.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-20.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/20.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-21.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/21.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-22.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/22.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-23.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/23.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-24.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/24.jpg"
+      },
+      {
+        "src": "/listings/2161-edwards-road/aerial-25.jpg",
+        "thumb": "/listings/2161-edwards-road/aerial-thumb/25.jpg"
+      }
+    ]
   },
   {
     "slug": "7-sherrill-street",
@@ -3435,116 +3536,6 @@ export const listings: Listing[] = [
     "aerials": []
   },
   {
-    "slug": "waterloo-drone",
-    "category": "residential",
-    "title": "Waterloo Countryside",
-    "kind": "Rural property aerials",
-    "location": "Waterloo, NY",
-    "photos": [],
-    "aerials": [
-      {
-        "src": "/listings/waterloo-drone/aerial-01.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/01.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-02.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/02.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-03.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/03.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-04.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/04.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-05.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/05.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-06.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/06.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-07.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/07.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-08.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/08.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-09.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/09.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-10.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/10.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-11.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/11.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-12.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/12.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-13.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/13.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-14.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/14.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-15.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/15.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-16.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/16.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-17.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/17.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-18.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/18.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-19.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/19.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-20.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/20.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-21.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/21.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-22.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/22.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-23.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/23.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-24.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/24.jpg"
-      },
-      {
-        "src": "/listings/waterloo-drone/aerial-25.jpg",
-        "thumb": "/listings/waterloo-drone/aerial-thumb/25.jpg"
-      }
-    ]
-  },
-  {
     "slug": "18-harvard-street",
     "category": "commercial",
     "title": "18 Harvard Street",
@@ -4041,7 +4032,7 @@ export const listings: Listing[] = [
     "slug": "39-genesee-street",
     "category": "commercial",
     "title": "39 Genesee Street",
-    "kind": "Brick building",
+    "kind": "Commercial building",
     "location": "Geneva, NY",
     "photos": [
       {

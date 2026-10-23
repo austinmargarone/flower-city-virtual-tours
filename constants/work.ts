@@ -68,6 +68,8 @@ export const caseStudies: CaseStudy[] = [
     location: "Rochester, NY",
     summary:
       "Ten departments captured in 3D, from therapy gyms and pediatrics to resident rooms, the salon and the gift shop.",
+    cover: "/work/monroe-community-hospital/gift-shop-dollhouse.jpg",
+    coverAlt: "3D dollhouse view of the Monroe Community Hospital gift shop",
     services: ["Matterport 3D tours", "Department-by-department capture"],
     story: [
       "A hospital is hard to picture from a brochure, and every department looks different.",
@@ -112,7 +114,12 @@ export const caseStudies: CaseStudy[] = [
       "Branches across upstate NY viewable from one link each",
       "Buyers could evaluate facilities remotely",
     ],
-    tours: [{ id: "dTursFxbP1u", title: "DeCarolis Truck Rental, Buffalo branch" }],
+    tours: [
+      { id: "dTursFxbP1u", label: "Buffalo Branch", title: "DeCarolis Truck Rental: Buffalo Branch" },
+      { id: "3FZKNeR6cU9", label: "Power Shop", title: "DeCarolis Truck Rental: Power Shop" },
+      { id: "i8szzXfq4U2", label: "Trailer Shop", title: "DeCarolis Truck Rental: Trailer Shop" },
+      { id: "MnvsFYd5SXE", label: "Heavy Duty Parts", title: "DeCarolis Truck Rental: Heavy Duty Parts" },
+    ],
     gallery: [
       { src: "/work/decarolis/office.jpg", alt: "DeCarolis office building, dollhouse view" },
       { src: "/work/decarolis/buffalo.jpg", alt: "DeCarolis Buffalo shop, dollhouse view" },
@@ -121,7 +128,6 @@ export const caseStudies: CaseStudy[] = [
       { src: "/work/decarolis/geneva.jpg", alt: "DeCarolis Geneva shop, dollhouse view" },
       { src: "/work/decarolis/henrietta.jpg", alt: "DeCarolis Henrietta branch, dollhouse view" },
       { src: "/work/decarolis/power-shop.jpg", alt: "DeCarolis power shop, dollhouse view" },
-      { src: "/work/decarolis/garden.jpg", alt: "DeCarolis shop location, dollhouse view" },
     ],
   },
   {
