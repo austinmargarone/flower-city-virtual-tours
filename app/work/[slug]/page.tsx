@@ -44,7 +44,8 @@ const Page = ({ params }: Props) => {
         <p className="mt-1 text-paleblue">{c.location}</p>
         <p className="mt-4 text-xl leading-relaxed text-lightblue">{c.summary}</p>
 
-        <CaseStudyCover study={c} sizes="(max-width: 1024px) 100vw, 60rem" priority className="mt-8 rounded-lg border border-tan shadow-lg" />
+        {/* No photo? The tour below is the visual, so skip the placeholder tile. */}
+        {c.cover && <CaseStudyCover study={c} sizes="(max-width: 1024px) 100vw, 60rem" priority className="mt-8 rounded-lg border border-tan shadow-lg" />}
 
         <div className="mt-10 grid gap-10 md:grid-cols-[1fr_16rem]">
           <div className="blog-prose">

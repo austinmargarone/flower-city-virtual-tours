@@ -133,6 +133,51 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
+    slug: "serendipity-labs",
+    client: "Serendipity Labs",
+    category: "3D Virtual Tours · Coworking",
+    location: "Rochester, NY",
+    summary:
+      "A 3D tour of a coworking space, so prospective members can see the offices, meeting rooms and lounges before they book a visit.",
+    services: ["Matterport 3D tour", "Dollhouse view", "Floor plan"],
+    story: [
+      "Serendipity Labs runs flexible coworking spaces with private offices, meeting rooms and shared lounges. For a coworking space, the space itself is the product, so members want to see it before they commit.",
+      "We captured the full workspace in 3D. Prospective members can walk from the lobby to the private offices and conference rooms, and use the dollhouse view to understand the layout of the whole floor.",
+    ],
+    tours: [{ id: "WvpyR9oxStU", title: "Serendipity Labs coworking office" }],
+  },
+  {
+    slug: "keller-williams",
+    client: "Keller Williams",
+    category: "3D Virtual Tours · Real Estate Office",
+    location: "Brighton, NY",
+    summary: "A 3D tour of Keller Williams' large Brighton office, captured from end to end.",
+    services: ["Matterport 3D tour", "Dollhouse view", "Large-space capture"],
+    story: [
+      "Keller Williams' Brighton office is a large space with agent workspaces, conference rooms and common areas. They wanted a tour that captured all of it accurately.",
+      "We scanned the entire office in 3D, so agents they're recruiting and clients can walk through the space from anywhere and get a real sense of its size and layout.",
+    ],
+    tours: [{ id: "Vu8vAVvcebN", title: "Keller Williams, Brighton office" }],
+    testimonial: {
+      quote:
+        "We were extremely pleased with how it came out! He was professional and thorough and captured our large office perfectly.",
+      name: "Ellen M., Keller Williams",
+    },
+  },
+  {
+    slug: "howard-hanna",
+    client: "Howard Hanna",
+    category: "3D Virtual Tours · Real Estate Office",
+    location: "Greece, NY",
+    summary: "A 3D tour of Howard Hanna's Greece office for recruiting and client-facing marketing.",
+    services: ["Matterport 3D tour", "Dollhouse view"],
+    story: [
+      "A brokerage office is where agents work and clients sit down to make big decisions. Howard Hanna wanted a way to show off their Greece office online.",
+      "We captured the office in 3D, so prospective agents and clients can walk through it from anywhere and know what to expect before they come in.",
+    ],
+    tours: [{ id: "Evhwmxboxo4", title: "Howard Hanna, Greece office" }],
+  },
+  {
     slug: "vacationflx",
     client: "VacationFLX",
     category: "3D Tours + Photography · Short-Term Rentals",

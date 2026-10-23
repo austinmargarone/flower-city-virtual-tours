@@ -13,7 +13,9 @@ const VirtualTour = () => {
       <TourEmbed id="WvpyR9oxStU" title="Serendipity Labs coworking office, 3D tour" />
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
         <p className="text-white">
-          <span className="font-bold">Serendipity Labs</span>
+          <Link href="/work/serendipity-labs" className="font-bold hover:underline">
+            Serendipity Labs
+          </Link>
           <span className="text-paleblue"> · Coworking office · Commercial</span>
         </p>
         <Link href="/services/virtual-tours" className="font-bold text-tan hover:underline">

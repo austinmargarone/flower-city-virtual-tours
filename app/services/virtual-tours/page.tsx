@@ -19,9 +19,9 @@ type TourExample = { id: string; label: string; title: string; href?: string };
 const commercialTours: TourExample[] = [
   { id: "bYjEEyzdEQZ", label: "Elderwood", title: "Elderwood at Greece · Senior living", href: "/work/elderwood" },
   { id: "MRKsLeTQbbN", label: "Monroe Community Hospital", title: "Monroe Community Hospital, Physical Therapy · Healthcare", href: "/work/monroe-community-hospital" },
-  { id: "WvpyR9oxStU", label: "Serendipity Labs", title: "Serendipity Labs · Coworking office" },
-  { id: "Evhwmxboxo4", label: "Howard Hanna", title: "Howard Hanna, Greece office · Real estate office" },
-  { id: "Vu8vAVvcebN", label: "Keller Williams", title: "Keller Williams, Brighton office · Real estate office" },
+  { id: "WvpyR9oxStU", label: "Serendipity Labs", title: "Serendipity Labs · Coworking office", href: "/work/serendipity-labs" },
+  { id: "Evhwmxboxo4", label: "Howard Hanna", title: "Howard Hanna, Greece office · Real estate office", href: "/work/howard-hanna" },
+  { id: "Vu8vAVvcebN", label: "Keller Williams", title: "Keller Williams, Brighton office · Real estate office", href: "/work/keller-williams" },
   { id: "SAC2K8kV8BR", label: "I-Square", title: "I-Square · Commercial" },
   { id: "Yug3Wm4ZsKC", label: "Aaron's Alley", title: "Aaron's Alley · Retail", href: "/work/aarons-alley" },
   { id: "dTursFxbP1u", label: "DeCarolis", title: "DeCarolis Truck Rental, Buffalo Branch · Commercial", href: "/work/decarolis-truck-rental" },
