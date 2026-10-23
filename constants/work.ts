@@ -186,18 +186,19 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "i-square",
     client: "I-Square",
-    category: "3D Virtual Tours · Mixed-Use",
+    category: "3D Virtual Tours · Dining & Events",
     location: "Irondequoit, NY",
     summary:
-      "A 3D tour of I-Square's mixed-use building, from the skylit atrium and its living plant wall to the offices upstairs.",
+      "A 3D tour of Irondequoit's community destination, from the skylit atrium and living plant wall to the restaurants and event space.",
     cover: "/work/i-square/cover.jpg",
     coverAlt: "Skylit atrium at I-Square with a multi-level living plant wall and open staircase",
     services: ["Matterport 3D tour", "Dollhouse view", "Multi-level capture"],
     story: [
-      "I-Square is a mixed-use building in Irondequoit with shops, restaurants, event space and offices. Its open atrium, skylights and living plant wall are hard to appreciate in a flat photo.",
-      "We captured the building in 3D across multiple levels, so future tenants and event planners can move through the atrium, up the stairs and into the spaces they're considering, all from their computer or phone.",
+      "I-Square is a community destination in Irondequoit, built with sustainable design in mind. It's home to a handful of restaurants, a coffee shop and bar, and an indoor event venue for groups of 10 to 100, with an outdoor stage for seasonal entertainment.",
+      "Its open atrium, skylights and living plant wall are hard to appreciate in a flat photo. We captured the building in 3D across multiple levels, so diners and event planners can walk through the space and see the venue before they book.",
     ],
     tours: [{ id: "SAC2K8kV8BR", title: "I-Square" }],
+    website: { label: "i-square.us", url: "https://i-square.us/" },
   },
   {
     slug: "vacationflx",

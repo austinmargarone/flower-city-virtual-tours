@@ -22,7 +22,7 @@ const commercialTours: TourExample[] = [
   { id: "WvpyR9oxStU", label: "Serendipity Labs", title: "Serendipity Labs · Coworking office", href: "/work/serendipity-labs" },
   { id: "Evhwmxboxo4", label: "Howard Hanna", title: "Howard Hanna, Greece office · Real estate office", href: "/work/howard-hanna" },
   { id: "Vu8vAVvcebN", label: "Keller Williams", title: "Keller Williams, Brighton office · Real estate office", href: "/work/keller-williams" },
-  { id: "SAC2K8kV8BR", label: "I-Square", title: "I-Square · Mixed-use", href: "/work/i-square" },
+  { id: "SAC2K8kV8BR", label: "I-Square", title: "I-Square · Dining & events", href: "/work/i-square" },
   { id: "Yug3Wm4ZsKC", label: "Aaron's Alley", title: "Aaron's Alley · Retail", href: "/work/aarons-alley" },
   { id: "dTursFxbP1u", label: "DeCarolis", title: "DeCarolis Truck Rental, Buffalo Branch · Commercial", href: "/work/decarolis-truck-rental" },
   { id: "MnvsFYd5SXE", label: "Warehouse", title: "DeCarolis Truck Rental, Heavy Duty Parts · Warehouse", href: "/work/decarolis-truck-rental" },
