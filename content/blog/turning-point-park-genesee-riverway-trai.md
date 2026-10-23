@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/turning-point-park-genesee-riverway-trai/
 ---
 
-[![](/blog-images/2022/03/image-489x1024.jpeg)](https://www.cityofrochester.gov/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=8589961203&libID=8589961190)
+[![Turning Point Park/Genesee Riverway Trail, Rochester NY, photo 1](/blog-images/2022/03/image-489x1024.jpeg)](https://www.cityofrochester.gov/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=8589961203&libID=8589961190)
 
 ## Genesee Riverway Trail
 
@@ -51,9 +51,9 @@ The **Genesee Riverway Trail** (GRT) is an off-road 24-mile scenic multi-use t
 
 Located in the Charlotte neighborhood near Lake Ontario on Rochester's northwest side, **Turning Point Park** covers 275 wooded acres along the banks of the Genesee River. Hiking and biking trails will help you discover the park's distinct areas, from the wooded oak forest called "Bullock's Woods" to the cattail lined shores of the river. Enjoy the nature watching and beautiful river views from its trails.
 
-![](/blog-images/2022/03/image-1-682x1024.jpeg)
+![Turning Point Park/Genesee Riverway Trail, Rochester NY, photo 2](/blog-images/2022/03/image-1-682x1024.jpeg)
 
-![](/blog-images/2022/03/image-2-683x1024-1.jpg)
+![Turning Point Park/Genesee Riverway Trail, Rochester NY, photo 3](/blog-images/2022/03/image-2-683x1024-1.jpg)
 
 ### Fun Facts
 
@@ -71,7 +71,7 @@ Located in the Charlotte neighborhood near Lake Ontario on Rochester's northwest
 
 -Turning Point Park also features a gorgeous Rain Garden, an eco-friendly way to use natural vegetation as sediment filters. When it rains or snows, flowing sediments and pollutants from the nearby parking lot are captured by the garden's vegetation. The water-loving plants act as filters and clean the runoff before it reaches the river. The rain garden is stocked with a wide variety of hardy plants that aid in the process, from ostrich fern and filipendula to coneflower and New England aster.
 
-![](blob:http://flowercityvirtualtours.com/7dc1bdd1-3ade-4caf-900a-14750182fd52)
+![Turning Point Park/Genesee Riverway Trail, Rochester NY, photo 4](blob:http://flowercityvirtualtours.com/7dc1bdd1-3ade-4caf-900a-14750182fd52)
 
 **Download the [Genesee Riverway and Trail Guide](https://www.cityofrochester.gov/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=8589961203&libID=8589961190) (pdf).** When viewing this page on your smartphone you can use the “What’s Nearby” button to locate a trailhead near you.
 

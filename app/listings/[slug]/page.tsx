@@ -5,7 +5,7 @@ import TourEmbed from "@/components/shared/TourEmbed";
 import VideoPlayer from "@/components/shared/VideoPlayer";
 import ListingCards from "@/components/shared/ListingCards";
 import CallToAction from "@/components/shared/CallToAction";
-import { listings } from "@/constants/listings";
+import { coverOf, listings } from "@/constants/listings";
 import { pageMeta } from "@/lib/site";
 
 type Props = { params: { slug: string } };
@@ -21,9 +21,9 @@ export function generateMetadata({ params }: Props) {
   if (!l) return {};
   return pageMeta({
     title: `${l.title} | Listing Photography`,
-    description: `${l.photos.length} professional listing photos${l.aerials.length ? `, ${l.aerials.length} drone aerials` : ""}${l.tour ? ", a Matterport 3D tour" : ""}${l.video ? ", a video walkthrough" : ""} of ${l.title}, a ${l.kind.toLowerCase()}${l.location ? ` in ${l.location}` : ""}.`,
+    description: `${[l.photos.length && `${l.photos.length} professional photos`, l.aerials.length && `${l.aerials.length} drone aerials`, l.tour && "a Matterport 3D tour", l.video && "a video"].filter(Boolean).join(", ")} of ${l.title}, a ${l.kind.toLowerCase()}${l.location ? ` in ${l.location}` : ""}.`,
     path: `/listings/${l.slug}`,
-    image: l.photos[0].src,
+    image: coverOf(l).src,
   });
 }
 
@@ -48,9 +48,11 @@ const Page = ({ params }: Props) => {
           {l.location ? ` · ${l.location}` : ""}
         </p>
         <ul className="mt-4 flex flex-wrap gap-2">
-          <li className="rounded-full border border-tan/50 px-3 py-0.5 text-sm text-lightblue">
-            {l.photos.length} listing photos
-          </li>
+          {l.photos.length > 0 && (
+            <li className="rounded-full border border-tan/50 px-3 py-0.5 text-sm text-lightblue">
+              {l.photos.length} listing photos
+            </li>
+          )}
           {l.aerials.length > 0 && (
             <li className="rounded-full border border-tan/50 px-3 py-0.5 text-sm text-lightblue">
               {l.aerials.length} drone aerials
@@ -77,7 +79,7 @@ const Page = ({ params }: Props) => {
 
         {l.video && (
           <section className="mt-10">
-            <h2 className="h2 mb-4 text-left">Video Walkthrough</h2>
+            <h2 className="h2 mb-4 text-left">{l.photos.length ? "Video Walkthrough" : "Drone Video"}</h2>
             <VideoPlayer {...l.video} />
           </section>
         )}
@@ -89,10 +91,12 @@ const Page = ({ params }: Props) => {
           </section>
         )}
 
-        <section className="mt-10">
-          <h2 className="h2 mb-4 text-left">Photos</h2>
-          <Gallery images={photos} />
-        </section>
+        {photos.length > 0 && (
+          <section className="mt-10">
+            <h2 className="h2 mb-4 text-left">Photos</h2>
+            <Gallery images={photos} />
+          </section>
+        )}
 
         {aerials.length > 0 && (
           <section className="mt-12">

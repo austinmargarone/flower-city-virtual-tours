@@ -60,4 +60,4 @@ Certified Life Guards are on staff. For more information on the [History of Seab
 
 Old-fashioned Summer fun is found at [Seabreeze Amusement Park](https://seabreeze.com/). Ride the Jack Rabbit and see what a wooden roller coaster sounds and feels like
 
-[![](/blog-images/2022/08/image-3.png)](/request-a-3d-matterport-appointment/)
+[![Seabreeze Amusement Park, Rochester NY, photo 1](/blog-images/2022/08/image-3.png)](/contact)

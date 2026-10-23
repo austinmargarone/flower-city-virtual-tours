@@ -26,7 +26,6 @@ const industryPages = [
   'theaters',
   'everything-else',
   'hotels-short-term-rentals',
-  'vacationflx',
 ];
 
 module.exports = [
@@ -46,7 +45,10 @@ module.exports = [
   { source: '/about-us', destination: '/about', permanent: true },
   { source: '/our-process', destination: '/about', permanent: true },
   { source: '/contact-us', destination: '/contact', permanent: true },
-  { source: '/request-a-3d-matterport-appointment', destination: '/calendly', permanent: true },
+  { source: '/build', destination: '/contact', permanent: true },
+  { source: '/consultation', destination: '/contact', permanent: true },
+  { source: '/calendly', destination: '/contact', permanent: true },
+  { source: '/request-a-3d-matterport-appointment', destination: '/contact', permanent: true },
   { source: '/our-results', destination: '/work', permanent: true },
   // /pricing keeps the same path — build the page, no redirect needed (a self-redirect would loop)
   { source: '/faqs', destination: '/faq', permanent: true },
@@ -61,9 +63,9 @@ module.exports = [
   })),
 
   // Dead WooCommerce pages
-  { source: '/shop', destination: '/build', permanent: true },
-  { source: '/cart', destination: '/build', permanent: true },
-  { source: '/checkout', destination: '/build', permanent: true },
+  { source: '/shop', destination: '/contact', permanent: true },
+  { source: '/cart', destination: '/contact', permanent: true },
+  { source: '/checkout', destination: '/contact', permanent: true },
   { source: '/my-account', destination: '/contact', permanent: true },
 
   // Blog posts that were also live with the category in the URL
@@ -82,6 +84,14 @@ module.exports = [
 
   // The listings grid lives on the Photography page
   { source: '/listings', destination: '/services/photography', permanent: true },
+
+  // Waterloo drone shots were merged into their property's listing
+  { source: '/listings/waterloo-drone', destination: '/listings/2161-edwards-road', permanent: true },
+
+  // Vineyard Guest Barn is shown as a client case study rather than a listing
+  { source: '/listings/vineyard-guest-barn', destination: '/work/vacationflx', permanent: true },
+  { source: '/work/vineyard-guest-barn', destination: '/work/vacationflx', permanent: true },
+  { source: '/vacationflx', destination: '/work/vacationflx', permanent: true },
 
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },

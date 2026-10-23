@@ -13,6 +13,12 @@ const quotes = [
   "Grow your business",
 ];
 
+const services = ["Websites", "3D Virtual Tours", "Photography", "Drone"];
+
+// Both buttons share one size so they line up; only the fill differs.
+const buttonBase =
+  "inline-flex h-12 w-[17.5rem] max-w-full items-center justify-center whitespace-nowrap rounded px-5 text-base font-bold uppercase tracking-[1.5px] shadow-lg transition";
+
 const Hero = () => {
   const [quoteIndex, setQuoteIndex] = useState(0);
 
@@ -25,7 +31,7 @@ const Hero = () => {
 
   return (
     <section
-      className="mx-auto flex min-h-[85vh] w-full items-center justify-center"
+      className="mx-auto flex min-h-screen w-full items-center justify-center supports-[height:100svh]:min-h-[100svh]"
       style={{
         backgroundImage:
           "linear-gradient(rgba(16,20,21,0.55), rgba(16,20,21,0.55)), url('/background1.jpg')",
@@ -34,25 +40,36 @@ const Hero = () => {
       }}
     >
       <div className="max-w-[60rem] px-[1rem] py-[2.5rem] text-center sm:px-[2rem]">
-        <p className="font-bold uppercase tracking-[0.2em] text-tan">Rochester, NY</p>
-        <h1 className="hero-heading mt-2">
-          Websites, 3D Tours &amp; Drone for Rochester Businesses
-        </h1>
+        <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 font-bold uppercase tracking-[0.18em] text-tan sm:gap-x-3">
+          {services.map((s, i) => (
+            <li key={s} className="flex items-center gap-3">
+              {/* dots only on wider screens, where the list stays on one line */}
+              {i > 0 && (
+                <span aria-hidden="true" className="hidden sm:inline">
+                  ·
+                </span>
+              )}
+              {s}
+            </li>
+          ))}
+        </ul>
+        <h1 className="hero-heading mt-3">Bringing Your Business &amp; Property Online</h1>
         <p className="mx-auto mt-4 max-w-[44rem] text-lg text-lightblue md:text-xl">
-          One local team for your website, Matterport virtual tour, photography and aerial
-          footage, so your business looks as good online as it does in person.
+          Custom websites and immersive media built to work together, so customers can find you,
+          explore your space and reach out before they ever walk through the door.
         </p>
         <p className="hero-paragraph mt-4" aria-live="polite">
           {quotes[quoteIndex]}
         </p>
         <div className="button-container mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link href="/calendly">
-            <button className="hero-button shadow-lg">Free consultation</button>
+          <Link href="/contact" className={`${buttonBase} bg-tan text-white hover:brightness-110`}>
+            Free consultation
           </Link>
-          <Link href="/work">
-            <button className="rounded border-2 border-tan px-5 py-2 text-lg font-bold uppercase tracking-[2px] text-white">
-              See our work
-            </button>
+          <Link
+            href="/work"
+            className={`${buttonBase} border-2 border-tan bg-midnight/40 text-white hover:bg-tan/20`}
+          >
+            See our work
           </Link>
         </div>
       </div>

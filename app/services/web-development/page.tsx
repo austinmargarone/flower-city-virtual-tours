@@ -2,14 +2,13 @@ import Link from "next/link";
 import { Code2, Palette, Search, type LucideIcon } from "lucide-react";
 import PageHeader from "@/components/shared/PageHeader";
 import CallToAction from "@/components/shared/CallToAction";
-import WebDeveloper from "@/components/services/WebDeveloper";
 import { formatPrice, webIncludes, webPricing } from "@/constants/pricing";
 import { pageMeta } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Rochester Web Design, Development & SEO",
+  title: "Web Design, Development & SEO",
   description:
-    "Custom website design, development and local SEO for Rochester, NY businesses. Fast, mobile-friendly sites built to bring in customers.",
+    "Custom website design, development and SEO for businesses anywhere in the U.S. Fast, mobile-friendly sites built to bring in customers.",
   path: "/services/web-development",
 });
 
@@ -57,7 +56,7 @@ const pillars: Pillar[] = [
     icon: Search,
     title: "SEO",
     intro:
-      "A great site only works if people find it. We optimize for the Rochester customers already searching for what you do.",
+      "A great site only works if people find it. We optimize for the customers already searching for what you do, locally or nationwide.",
     items: [
       { name: "Local SEO", text: "Google Business Profile optimization, local citations and reviews." },
       { name: "Keyword research", text: "Target the searches that actually bring in customers." },
@@ -80,7 +79,7 @@ const Page = () => {
   return (
     <div className="pb-[1rem]">
       <PageHeader eyebrow="Web Development" title="Web Design, Development & SEO">
-        Everything your business needs online, from one Rochester team: a custom design, a fast
+        Everything your business needs online, from one team: a custom design, a fast
         and secure build, and the SEO to get it found.
       </PageHeader>
 
@@ -97,8 +96,6 @@ const Page = () => {
       </nav>
 
       <div className="mx-auto mt-10 max-w-[77.5rem] space-y-16 px-[1rem]">
-        <WebDeveloper />
-
         {pillars.map(({ id, icon: Icon, title, intro, items }) => (
           <section key={id} id={id} className="scroll-mt-24">
             <div className="flex items-center gap-3">

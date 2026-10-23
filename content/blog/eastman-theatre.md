@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/eastman-theatre/
 ---
 
-![](/blog-images/2022/06/023-1024x1536-1-683x1024.jpg)
+![Eastman Theatre, Rochester NY, photo 1](/blog-images/2022/06/023-1024x1536-1-683x1024.jpg)
 
 Eastman Theatre: The 2,260-seat theatre with state of art acoustics optimized for symphonic, popular and chamber music performances. The Principal Performance venue for the Rochester Philharmonic Orchestra and the Eastman School of Music.
 
@@ -40,7 +40,7 @@ Box Office Hours: Monday-Friday 9:30am-2:30pm Contact: (585) 274-3000c [Box Offi
 
 ## Eastman Theatre Facts
 
-![](/blog-images/2022/06/024-683x1024.jpg)
+![Eastman Theatre, Rochester NY, photo 2](/blog-images/2022/06/024-683x1024.jpg)
 
 Opened on September 4, 1922.
 
@@ -70,4 +70,4 @@ Information can be found on the history of the Eastman Theatre at [Documentary H
 
 In Conclusion: If you have the opportunity to see a performance at the Eastman Theater you must. It is such an incredible venue to see and experience. You will be amazed by the beauty of the extraordinary architectural gem. Check it out!
 
-[![](/blog-images/2022/06/image-1.png)](/request-a-3d-matterport-appointment/)
+[![Eastman Theatre, Rochester NY, photo 3](/blog-images/2022/06/image-1.png)](/contact)

@@ -14,16 +14,49 @@ export const metadata = pageMeta({
   image: "/gallery/virtual-tours/dollhouse-office.jpg",
 });
 
-const tours = [
-  { id: "bYjEEyzdEQZ", label: "Senior living", title: "Elderwood at Greece", href: "/work/elderwood" },
-  { id: "MRKsLeTQbbN", label: "Healthcare", title: "Monroe Community Hospital, Physical Therapy", href: "/work/monroe-community-hospital" },
-  { id: "Yug3Wm4ZsKC", label: "Retail", title: "Aaron's Alley, a Rochester retail shop", href: "/work/aarons-alley" },
-  { id: "Vu8vAVvcebN", label: "Office", title: "Keller Williams office" },
-  { id: "dTursFxbP1u", label: "Commercial", title: "DeCarolis Truck Rental, Buffalo branch", href: "/work/decarolis-truck-rental" },
-  { id: "MnvsFYd5SXE", label: "Warehouse", title: "Warehouse space" },
-  { id: "UFpAPNqqYGc", label: "Short-term rental", title: "The Nest Cottage", href: "/listings/the-nest-cottage" },
-  { id: "S7v82M2yiE1", label: "Residential", title: "443 Crossfield Road", href: "/listings/443-crossfield-road" },
+type TourExample = { id: string; label: string; title: string; href?: string };
+
+const commercialTours: TourExample[] = [
+  { id: "bYjEEyzdEQZ", label: "Elderwood", title: "Elderwood at Greece · Senior living", href: "/work/elderwood" },
+  { id: "MRKsLeTQbbN", label: "Monroe Community Hospital", title: "Monroe Community Hospital, Physical Therapy · Healthcare", href: "/work/monroe-community-hospital" },
+  { id: "WvpyR9oxStU", label: "Serendipity Labs", title: "Serendipity Labs · Coworking office", href: "/work/serendipity-labs" },
+  { id: "Evhwmxboxo4", label: "Howard Hanna", title: "Howard Hanna, Greece office · Real estate office", href: "/work/howard-hanna" },
+  { id: "Vu8vAVvcebN", label: "Keller Williams", title: "Keller Williams, Brighton office · Real estate office", href: "/work/keller-williams" },
+  { id: "SAC2K8kV8BR", label: "I-Square", title: "I-Square · Dining & events", href: "/work/i-square" },
+  { id: "Yug3Wm4ZsKC", label: "Aaron's Alley", title: "Aaron's Alley · Retail", href: "/work/aarons-alley" },
+  { id: "dTursFxbP1u", label: "DeCarolis", title: "DeCarolis Truck Rental, Buffalo Branch · Commercial", href: "/work/decarolis-truck-rental" },
+  { id: "MnvsFYd5SXE", label: "Warehouse", title: "DeCarolis Truck Rental, Heavy Duty Parts · Warehouse", href: "/work/decarolis-truck-rental" },
 ];
+
+const residentialTours: TourExample[] = [
+  { id: "S7v82M2yiE1", label: "443 Crossfield Rd", title: "443 Crossfield Road", href: "/listings/443-crossfield-road" },
+  { id: "jYkEMR4LA93", label: "633 Autumn Breeze Ln", title: "633 Autumn Breeze Lane · Ontario, NY", href: "/listings/633-autumn-breeze-lane" },
+  { id: "uA35cjnNPw3", label: "109 Brush Creek Dr", title: "109 Brush Creek Drive · Rochester, NY", href: "/listings/109-brush-creek-drive" },
+  { id: "fT6v5zy5tKE", label: "71 Cornhill Pl", title: "71 Cornhill Place · Rochester, NY", href: "/listings/71-cornhill-place" },
+  { id: "BHXMrHxz9id", label: "257 Stonefield Ln", title: "257 Stonefield Lane · Farmington, NY", href: "/listings/257-stonefield-lane" },
+  { id: "XMRW7cy92WV", label: "145 Georgian Court Rd", title: "145 Georgian Court Road", href: "/listings/145-georgian-court-road" },
+  { id: "rv4E15UCcsv", label: "6782 Colyer Crossing", title: "6782 Colyer Crossing", href: "/listings/6782-colyer-crossing" },
+  { id: "P67YGAfH8tR", label: "7700 Pine Tree Dr", title: "7700 Pine Tree Drive" },
+  { id: "qzjkH94yzsP", label: "28 Great Oaks Ln", title: "28 Great Oaks Lane" },
+  { id: "UFpAPNqqYGc", label: "The Nest Cottage", title: "The Nest Cottage · Short-term rental", href: "/listings/the-nest-cottage" },
+  { id: "YN4DWeXcQ2p", label: "Vineyard Guest Barn", title: "Vineyard Guest Barn · VacationFLX rental", href: "/work/vacationflx" },
+  { id: "csDCFB2Tqo2", label: "Flat Iron", title: "Flat Iron Two · VacationFLX rental", href: "/work/vacationflx" },
+];
+
+const toSwitcher = (list: TourExample[]) =>
+  list.map((t) => ({
+    id: t.id,
+    label: t.label,
+    title: t.title,
+    note: t.href ? (
+      <>
+        {" · "}
+        <Link href={t.href} className="text-tan underline">
+          {t.href.startsWith("/work") ? "case study" : "see the listing"}
+        </Link>
+      </>
+    ) : null,
+  }));
 
 const features = [
   { title: "Dollhouse view", text: "See the entire space at once as a 3D model, then click into any room." },
@@ -48,27 +81,20 @@ const page = () => {
 
       <div className="mx-auto mt-10 max-w-[77.5rem] space-y-16 px-[1rem]">
         <section>
-          <h2 className="h2 text-left">Explore our tours</h2>
+          <h2 className="h2 text-left">Commercial tours</h2>
           <p className="mb-6 mt-2 text-lightblue">
-            Pick an industry to load its tour. Click and drag to look around, and use the
-            dollhouse button in the corner to see the whole building.
+            Pick a tour to load it. Click and drag to look around, and use the dollhouse button in
+            the corner to see the whole building.
           </p>
-          <TourSwitcher
-            pickerLabel="Pick an industry"
-            tours={tours.map((t) => ({
-              id: t.id,
-              label: t.label,
-              title: t.title,
-              note: t.href ? (
-                <>
-                  {" · "}
-                  <Link href={t.href} className="text-tan underline">
-                    {t.href.startsWith("/work") ? "case study" : "see the listing"}
-                  </Link>
-                </>
-              ) : null,
-            }))}
-          />
+          <TourSwitcher pickerLabel={`${commercialTours.length} commercial tours`} tours={toSwitcher(commercialTours)} />
+        </section>
+
+        <section>
+          <h2 className="h2 text-left">Homes &amp; rentals</h2>
+          <p className="mb-6 mt-2 text-lightblue">
+            Listings and short-term rentals, many with full photo shoots alongside the tour.
+          </p>
+          <TourSwitcher pickerLabel={`${residentialTours.length} residential tours`} tours={toSwitcher(residentialTours)} />
         </section>
 
         <section>

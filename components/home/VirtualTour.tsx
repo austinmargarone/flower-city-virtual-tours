@@ -1,33 +1,28 @@
 import Link from "next/link";
-import React from "react";
+import TourEmbed from "@/components/shared/TourEmbed";
 
+/** Homepage 3D tour example: Serendipity Labs, a commercial coworking space. */
 const VirtualTour = () => {
   return (
-    <div className="w-full">
-      <h2 className="h2 justify-center flex py-[1rem] text-white">
-        Virtual Tours
-      </h2>
-      <div className="flex justify-center mb-[1rem]">
-        <p className="p text-center flex max-w-[48rem]">
-          We leverage advanced Matterport cameras to meticulously capture and
-          craft immersive virtual tours, allowing your audience to explore
-          spaces with unparalleled detail and realism.
+    <section className="mx-auto w-full max-w-[77.5rem]">
+      <h2 className="h2 flex justify-center py-[1rem] text-white">Step Inside a 3D Tour</h2>
+      <p className="mx-auto mb-6 max-w-[48rem] text-center text-lg leading-relaxed text-lightblue">
+        Click and drag to look around, or use the dollhouse button to see the whole floor. This
+        is how your customers can explore your space before they ever visit.
+      </p>
+      <TourEmbed id="WvpyR9oxStU" title="Serendipity Labs coworking office, 3D tour" />
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+        <p className="text-white">
+          <Link href="/work/serendipity-labs" className="font-bold hover:underline">
+            Serendipity Labs
+          </Link>
+          <span className="text-paleblue"> · Coworking office · Commercial</span>
         </p>
-      </div>
-      <div className="button-container h-[25%] mb-8">
-        <Link href={"services/virtual-tours"}>
-          <button className="text-white p button-container shadow-lg bg-tan w-[10rem] p-[.25rem] rounded-[.17rem] mx-auto flex mb-[1rem] hover:text-black hover:font-bold">
-            <p className="mx-auto flex">Learn More</p>
-          </button>
+        <Link href="/services/virtual-tours" className="font-bold text-tan hover:underline">
+          See more 3D tours →
         </Link>
       </div>
-      <iframe
-        className="w-full h-[33rem] sm:h-[35rem] md:h-[41rem] lg:h-[45rem] max-w-[77.5rem] mx-auto flex border-tan border-rounded border shadow-lg rounded-lg"
-        src="https://my.matterport.com/show/?m=WvpyR9oxStU"
-        allow="xr-spatial-tracking"
-        allowFullScreen
-      ></iframe>
-    </div>
+    </section>
   );
 };
 

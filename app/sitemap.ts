@@ -21,9 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services",
     "/blog",
     "/contact",
-    "/build",
-    "/calendly",
     "/privacy-policy",
+    "/reviews",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,

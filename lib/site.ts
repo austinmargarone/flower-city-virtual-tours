@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-// Change SITE_URL to https://flowercityvirtualtours.com when that domain is pointed at Vercel.
-export const SITE_URL = "https://fcvt.dev";
+// Primary domain. fcvt.dev redirects here (set in Vercel → Domains).
+export const SITE_URL = "https://flowercityvirtualtours.com";
 export const BUSINESS_NAME = "Flower City Virtual Tours";
 export const PHONE = "(585) 501-5691";
 export const PHONE_HREF = "tel:+15855015691";
@@ -9,7 +9,7 @@ export const OG_IMAGE = {
   url: `${SITE_URL}/meta.png`,
   width: 1200,
   height: 630,
-  alt: "Flower City Virtual Tours: websites, 3D virtual tours and drone in Rochester, NY",
+  alt: "Flower City Virtual Tours: websites, 3D virtual tours, photography and drone",
 };
 
 type PageMetaInput = {
@@ -21,7 +21,9 @@ type PageMetaInput = {
 
 /** Consistent title, description, canonical URL and social preview for every page. */
 export function pageMeta({ title, description, path, image }: PageMetaInput): Metadata {
-  const fullTitle = `${title} | ${BUSINESS_NAME}`;
+  // Google shows ~60 characters; drop the brand suffix rather than cut off a long title.
+  const withBrand = `${title} | ${BUSINESS_NAME}`;
+  const fullTitle = withBrand.length <= 62 ? withBrand : title;
   return {
     title: fullTitle,
     description,
@@ -52,7 +54,8 @@ export const localBusinessJsonLd = {
     addressRegion: "NY",
     addressCountry: "US",
   },
-  areaServed: ["Rochester, NY", "Monroe County, NY", "Upstate New York"],
+  // Websites are delivered remotely nationwide; on-site media covers Rochester and upstate NY.
+  areaServed: ["United States", "Rochester, NY", "Upstate New York"],
   sameAs: ["https://www.instagram.com/flowercityvirtualtours/"],
   knowsAbout: [
     "Web design",

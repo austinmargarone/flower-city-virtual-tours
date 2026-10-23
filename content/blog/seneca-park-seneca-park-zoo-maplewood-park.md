@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/seneca-park-seneca-park-zoo-maplewood-park/
 ---
 
-![](/blog-images/2022/06/027-1-1024x1536-1-683x1024.jpg)
+![Seneca Park, Rochester NY, photo 1](/blog-images/2022/06/027-1-1024x1536-1-683x1024.jpg)
 
 Seneca Park Facts: This three-mile preserve of forested river forge, was renamed Seneca “stone” to recognize its Native American heritage as well as the deeply cut stone.
 
@@ -18,7 +18,7 @@ Another of Frederick Law Olmstead’s works of living art, the park includes Tro
 
 ## Managed by Monroe County.
 
-![](/blog-images/2022/06/028-1-1024x1536-1-683x1024.jpg)
+![Seneca Park, Rochester NY, photo 2](/blog-images/2022/06/028-1-1024x1536-1-683x1024.jpg)
 
 Located: 2222 St. Paul Street Rochester, NY 14621
 
@@ -38,7 +38,7 @@ The Trailside Café opens in Spring 2022.
 
 ## Conservation
 
-![](/blog-images/2022/06/026-1-1024x1536-1-683x1024.jpg)
+![Seneca Park, Rochester NY, photo 3](/blog-images/2022/06/026-1-1024x1536-1-683x1024.jpg)
 
 Committed to sustainability and conservation, with water recapture, solar panels and other features that reduce the Zoo’s carbon footprint.
 
@@ -79,4 +79,4 @@ The Genesee Riverway Trail is a 24-mile long, scenic, multi-use trail. Download 
 
 There is so much to explore at Seneca Park, Seneca Park Zoo and Maplewood Park. It is a must to see the next time you come to Rochester, NY. especially in the Fall.
 
-[![](/blog-images/2022/06/image-5.png)](/request-a-3d-matterport-appointment/)
+[![Seneca Park, Rochester NY, photo 4](/blog-images/2022/06/image-5.png)](/contact)

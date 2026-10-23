@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/the-national-susan-b-anthony-museum-house/
 ---
 
-![](/blog-images/2022/06/DSC_0080-1024x1536-1-683x1024.jpg)
+![The National Susan B. Anthony Museum & House, Rochester NY, photo 1](/blog-images/2022/06/DSC_0080-1024x1536-1-683x1024.jpg)
 
 In Rochester, NY you can tour the home of the legendary American civil rights leader.
 
@@ -38,4 +38,4 @@ Consult the website to see announcements for Special Events at the Museum.
 
 American civil rights leader, Susan B. Anthony carefully curated her public image. Visit the National Susan B. Anthony Museum & House when you visit Rochester, NY to get a glimpse of the past and inspiration for the future.
 
-[![](/blog-images/2022/06/image-8.png)](/request-a-3d-matterport-appointment/)
+[![The National Susan B. Anthony Museum & House, Rochester NY, photo 2](/blog-images/2022/06/image-8.png)](/contact)

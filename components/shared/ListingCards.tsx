@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listings, type Listing } from "@/constants/listings";
+import { coverOf, listings, type Listing } from "@/constants/listings";
 
 type Props = { exclude?: string; limit?: number; category?: Listing["category"] };
 
@@ -18,7 +18,7 @@ const ListingCards = ({ exclude, limit, category }: Props) => {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={l.photos[0].thumb}
+              src={coverOf(l).thumb}
               alt={`${l.title}, ${l.kind}`}
               loading="lazy"
               className="aspect-[3/2] w-full object-cover"
@@ -30,8 +30,12 @@ const ListingCards = ({ exclude, limit, category }: Props) => {
                 {l.location ? ` · ${l.location}` : ""}
               </p>
               <p className="mt-2 text-sm font-bold text-tan">
-                {l.photos.length} photos
-                {l.aerials.length > 0 && ` · ${l.aerials.length} aerials`}
+                {[
+                  l.photos.length > 0 && `${l.photos.length} photos`,
+                  l.aerials.length > 0 && `${l.aerials.length} aerials`,
+                ]
+                  .filter(Boolean)
+                  .join(" · ")}
                 {l.tour && " · 3D tour"}
                 {l.video && " · Video"}
               </p>

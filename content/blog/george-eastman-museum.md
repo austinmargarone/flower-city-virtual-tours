@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/george-eastman-museum/
 ---
 
-![](/blog-images/2022/06/022-1536x1024-1-1024x683.jpg)
+![George Eastman Museum, Rochester NY, photo 1](/blog-images/2022/06/022-1536x1024-1-1024x683.jpg)
 
 The George Eastman Museum Mansion and Gardens Eastman Museum provide a glimpse into the life of one of the greatest American innovators and entertainers in the first decades of the twentieth century. George Eastman was an entrepreneur, a philanthropist, and the pioneer of popular photography and motion picture film.
 
@@ -78,4 +78,4 @@ In Conclusion:
 
 The Eastman Museum Mansion and Garden is a must-see for anyone who has an interest in history, architecture, photography, garden and interior design, or just a love of houses and gardens in general. Events are hosted throughout the year.
 
-[![](/blog-images/2022/06/image-3.png)](/request-a-3d-matterport-appointment/)
+[![George Eastman Museum, Rochester NY, photo 2](/blog-images/2022/06/image-3.png)](/contact)

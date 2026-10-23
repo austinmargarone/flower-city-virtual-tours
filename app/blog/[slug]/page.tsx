@@ -15,7 +15,11 @@ export function generateMetadata({ params }: Props): Metadata {
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: post.seoTitle || `${post.title} | Rochester, NY | Flower City Virtual Tours`,
+    // Longest version that fits in Google's ~60-character title space
+    title:
+      [`${post.title} | Rochester, NY | Flower City Virtual Tours`, `${post.title} | Rochester, NY`].find(
+        (t) => t.length <= 62
+      ) ?? post.title,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -62,9 +66,9 @@ const Page = ({ params }: Props) => {
             Need a website, 3D tour or drone footage for your Rochester business?
           </h2>
           <div className="button-container mt-4">
-            <Link href="/calendly">
+            <Link href="/contact">
               <button className="rounded bg-tan px-6 py-2 font-bold text-white shadow-lg">
-                Book a free consultation
+                Get a free consultation
               </button>
             </Link>
           </div>

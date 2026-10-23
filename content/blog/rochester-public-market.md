@@ -9,7 +9,7 @@ categories:
 legacyUrl: /blog/rochester-public-market/
 ---
 
-![](/blog-images/2022/04/image-1-1024x682.jpeg)
+![Rochester Public Market, Rochester NY, photo 1](/blog-images/2022/04/image-1-1024x682.jpeg)
 
 ## FAST FACTS
 
@@ -39,16 +39,16 @@ An open-air Market Trolley circulates around the grounds and to/from parking lot
 
 The Market Token Program for SNAP ‘Food Stamp’ benefit recipients and a 40% bonus via the New York State Fresh Connect Program
 
-![](/blog-images/2022/04/image-682x1024.jpeg)
+![Rochester Public Market, Rochester NY, photo 2](/blog-images/2022/04/image-682x1024.jpeg)
 
 ## SPECIAL EVENTS
 
 The market hosts [Special Events](https://www.cityofrochester.gov/marketevents/) throughout the year like community Garage Sales, Flower City Days, Food Truck Rodeos, Bands on the Bricks, Gospel Jubilee, Artists Row, Halloween at the Market, Holidays at the Market
 
-![](/blog-images/2022/04/image-5-682x1024.jpeg)
+![Rochester Public Market, Rochester NY, photo 3](/blog-images/2022/04/image-5-682x1024.jpeg)
 
-![](/blog-images/2022/04/image-2-1024x682.jpeg)
+![Rochester Public Market, Rochester NY, photo 4](/blog-images/2022/04/image-2-1024x682.jpeg)
 
-![](/blog-images/2022/04/image-4-1024x682.jpeg)
+![Rochester Public Market, Rochester NY, photo 5](/blog-images/2022/04/image-4-1024x682.jpeg)
 
-[![This image has an empty alt attribute; its file name is Original-on-Transparent-1024x120.png](/blog-images/2022/04/Original-on-Transparent-1024x120.png)](/request-a-3d-matterport-appointment/)
+[![This image has an empty alt attribute; its file name is Original-on-Transparent-1024x120.png](/blog-images/2022/04/Original-on-Transparent-1024x120.png)](/contact)

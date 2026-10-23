@@ -12,7 +12,7 @@ const schema = z.object({
   contactname: z.string().max(100).nonempty("Name is required"),
   phone: z
     .string()
-    .min(10, "Must contain atleast 10 didgets")
+    .min(10, "Must contain at least 10 digits")
     .max(50)
     .nonempty("Phone Number is required"),
   email: z
@@ -91,7 +91,7 @@ const Contact = () => {
             type="text"
             id="name"
             {...register("contactname")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded text-midnight"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -107,7 +107,7 @@ const Contact = () => {
             type="text"
             id="phone"
             {...register("phone")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded text-midnight"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -123,7 +123,7 @@ const Contact = () => {
             type="email"
             id="email"
             {...register("email")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem]"
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] h-[2.25rem] rounded text-midnight"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">
@@ -138,7 +138,7 @@ const Contact = () => {
           <textarea
             id="message"
             {...register("message")}
-            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] "
+            className="w-[12rem] xs:w-[15rem] ss:w-[18rem] sm:w-[20rem] md:w-[22.5rem] lg:w-[25rem] pl-[.25rem] min-h-[7rem] rounded py-1 text-midnight"
           />
         </div>
         <div className="ml-[80px] text-[#B49167]">

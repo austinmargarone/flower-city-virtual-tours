@@ -14,10 +14,6 @@ export const menuLinks: MenuLink[] = [
     label: "Contact",
   },
   {
-    route: "/build",
-    label: "Request a Quote",
-  },
-  {
     route: "/work",
     label: "Our Work",
   },
@@ -33,10 +29,6 @@ export const menuLinks: MenuLink[] = [
     route: "/blog",
     label: "Blog",
   },
-  {
-    route: "/calendly",
-    label: "Consultation",
-  },
 ];
 
 export const serviceLinks: ServiceLink[] = [
@@ -47,14 +39,6 @@ export const serviceLinks: ServiceLink[] = [
   {
     route: "/contact",
     label: "Contact",
-  },
-  {
-    route: "/build",
-    label: "Request a Quote",
-  },
-  {
-    route: "/calendly",
-    label: "Consultation",
   },
 ];
 

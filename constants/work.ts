@@ -17,6 +17,8 @@ export type CaseStudy = {
   tours?: { id: string; title: string; label?: string }[];
   gallery?: GalleryImage[];
   testimonial?: { quote: string; name: string };
+  /** The client's own website, when it isn't one we built */
+  website?: { label: string; url: string; note?: string };
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -39,6 +41,11 @@ export const caseStudies: CaseStudy[] = [
       "A 3D tour and front photo for every location",
       "Families can compare communities from anywhere",
     ],
+    testimonial: {
+      quote:
+        "From start to finish, their team was professional, highly communicative, and committed to delivering an outstanding product on a very tight timeline. The final product exceeded our expectations.",
+      name: "Lynn B., Elderwood",
+    },
     tours: [
       { id: "bYjEEyzdEQZ", label: "Greece", title: "Elderwood at Greece" },
       { id: "52czBbvKy8F", label: "Fairport", title: "Elderwood at Fairport" },
@@ -63,6 +70,8 @@ export const caseStudies: CaseStudy[] = [
     location: "Rochester, NY",
     summary:
       "Ten departments captured in 3D, from therapy gyms and pediatrics to resident rooms, the salon and the gift shop.",
+    cover: "/work/monroe-community-hospital/gift-shop-dollhouse.jpg",
+    coverAlt: "3D dollhouse view of the Monroe Community Hospital gift shop",
     services: ["Matterport 3D tours", "Department-by-department capture"],
     story: [
       "A hospital is hard to picture from a brochure, and every department looks different.",
@@ -107,7 +116,12 @@ export const caseStudies: CaseStudy[] = [
       "Branches across upstate NY viewable from one link each",
       "Buyers could evaluate facilities remotely",
     ],
-    tours: [{ id: "dTursFxbP1u", title: "DeCarolis Truck Rental, Buffalo branch" }],
+    tours: [
+      { id: "dTursFxbP1u", label: "Buffalo Branch", title: "DeCarolis Truck Rental: Buffalo Branch" },
+      { id: "3FZKNeR6cU9", label: "Power Shop", title: "DeCarolis Truck Rental: Power Shop" },
+      { id: "i8szzXfq4U2", label: "Trailer Shop", title: "DeCarolis Truck Rental: Trailer Shop" },
+      { id: "MnvsFYd5SXE", label: "Heavy Duty Parts", title: "DeCarolis Truck Rental: Heavy Duty Parts" },
+    ],
     gallery: [
       { src: "/work/decarolis/office.jpg", alt: "DeCarolis office building, dollhouse view" },
       { src: "/work/decarolis/buffalo.jpg", alt: "DeCarolis Buffalo shop, dollhouse view" },
@@ -116,8 +130,123 @@ export const caseStudies: CaseStudy[] = [
       { src: "/work/decarolis/geneva.jpg", alt: "DeCarolis Geneva shop, dollhouse view" },
       { src: "/work/decarolis/henrietta.jpg", alt: "DeCarolis Henrietta branch, dollhouse view" },
       { src: "/work/decarolis/power-shop.jpg", alt: "DeCarolis power shop, dollhouse view" },
-      { src: "/work/decarolis/garden.jpg", alt: "DeCarolis shop location, dollhouse view" },
     ],
+  },
+  {
+    slug: "serendipity-labs",
+    client: "Serendipity Labs",
+    category: "3D Virtual Tours · Coworking",
+    location: "Rochester, NY",
+    summary:
+      "A 3D tour of a downtown Rochester coworking space, so prospective members can see the offices, meeting rooms and lounges before they book a visit.",
+    cover: "/work/serendipity-labs/cover.jpg",
+    coverAlt: "Private office at Serendipity Labs with floor-to-ceiling windows over downtown Rochester",
+    services: ["Matterport 3D tour", "Dollhouse view", "Floor plan"],
+    story: [
+      "Serendipity Labs runs flexible coworking spaces with private offices, meeting rooms and shared lounges. For a coworking space, the space itself is the product, so members want to see it before they commit.",
+      "We captured the full workspace in 3D. Prospective members can walk from the lobby to the private offices and conference rooms, and use the dollhouse view to understand the layout of the whole floor.",
+    ],
+    tours: [{ id: "WvpyR9oxStU", title: "Serendipity Labs coworking office" }],
+  },
+  {
+    slug: "keller-williams",
+    client: "Keller Williams",
+    category: "3D Virtual Tours · Real Estate Office",
+    location: "Brighton, NY",
+    summary: "A 3D tour of Keller Williams' large Brighton office, captured from end to end.",
+    cover: "/work/keller-williams/cover.jpg",
+    coverAlt: "Reception desk and lobby at the Keller Williams Greater Rochester office",
+    services: ["Matterport 3D tour", "Dollhouse view", "Large-space capture"],
+    story: [
+      "Keller Williams' Brighton office is a large space with agent workspaces, conference rooms and common areas. They wanted a tour that captured all of it accurately.",
+      "We scanned the entire office in 3D, so agents they're recruiting and clients can walk through the space from anywhere and get a real sense of its size and layout.",
+    ],
+    tours: [{ id: "Vu8vAVvcebN", title: "Keller Williams, Brighton office" }],
+    testimonial: {
+      quote:
+        "We were extremely pleased with how it came out! He was professional and thorough and captured our large office perfectly.",
+      name: "Ellen M., Keller Williams",
+    },
+  },
+  {
+    slug: "howard-hanna",
+    client: "Howard Hanna",
+    category: "3D Virtual Tours · Real Estate Office",
+    location: "Greece, NY",
+    summary: "A 3D tour of Howard Hanna's Greece office for recruiting and client-facing marketing.",
+    cover: "/work/howard-hanna/cover.jpg",
+    coverAlt: "Front desk and open office at Howard Hanna in Greece, NY",
+    services: ["Matterport 3D tour", "Dollhouse view"],
+    story: [
+      "A brokerage office is where agents work and clients sit down to make big decisions. Howard Hanna wanted a way to show off their Greece office online.",
+      "We captured the office in 3D, so prospective agents and clients can walk through it from anywhere and know what to expect before they come in.",
+    ],
+    tours: [{ id: "Evhwmxboxo4", title: "Howard Hanna, Greece office" }],
+  },
+  {
+    slug: "i-square",
+    client: "I-Square",
+    category: "3D Virtual Tours · Dining & Events",
+    location: "Irondequoit, NY",
+    summary:
+      "A 3D tour of Irondequoit's community destination, from the skylit atrium and living plant wall to the restaurants and event space.",
+    cover: "/work/i-square/cover.jpg",
+    coverAlt: "Skylit atrium at I-Square with a multi-level living plant wall and open staircase",
+    services: ["Matterport 3D tour", "Dollhouse view", "Multi-level capture"],
+    story: [
+      "I-Square is a community destination in Irondequoit, built with sustainable design in mind. It's home to a handful of restaurants, a coffee shop and bar, and an indoor event venue for groups of 10 to 100, with an outdoor stage for seasonal entertainment.",
+      "Its open atrium, skylights and living plant wall are hard to appreciate in a flat photo. We captured the building in 3D across multiple levels, so diners and event planners can walk through the space and see the venue before they book.",
+    ],
+    tours: [{ id: "SAC2K8kV8BR", title: "I-Square" }],
+    website: { label: "i-square.us", url: "https://i-square.us/" },
+  },
+  {
+    slug: "vacationflx",
+    client: "VacationFLX",
+    category: "3D Tours + Photography · Short-Term Rentals",
+    location: "Upstate New York",
+    summary:
+      "3D tours and photography for a short-term rental company's properties, including the Vineyard Guest Barn and four Flat Iron units.",
+    cover: "/listings/vineyard-guest-barn/01.jpg",
+    coverAlt: "The Vineyard Guest Barn, a VacationFLX short-term rental",
+    services: ["Matterport 3D tours", "Listing photography", "Dollhouse views", "Multi-property capture"],
+    website: { label: "vacationflx.com", url: "https://vacationflx.com/", note: "Website by VacationFLX; much of the media is ours." },
+    story: [
+      "VacationFLX owns and manages short-term rentals and was looking for a way to showcase its properties online. Guests book with their eyes, so every rental needed to look its best before anyone arrived.",
+      "We created much of the media for their properties. At the Vineyard Guest Barn, a renovated barn with exposed timber beams and a big open kitchen, we photographed every room and captured the whole space as a Matterport tour. We also captured four Flat Iron units as separate tours, so guests can explore the exact space they're booking.",
+    ],
+    results: ["5 rental tours captured in 3D", "Full listing photo set for the Vineyard Guest Barn", "A shareable tour link for every unit"],
+    tours: [
+      { id: "YN4DWeXcQ2p", label: "Vineyard Guest Barn", title: "VacationFLX: Vineyard Guest Barn" },
+      { id: "xnkukuhrtaL", label: "Flat Iron One", title: "VacationFLX: Flat Iron One" },
+      { id: "csDCFB2Tqo2", label: "Flat Iron Two", title: "VacationFLX: Flat Iron Two" },
+      { id: "tdrEuWSvZuL", label: "Flat Iron Three", title: "VacationFLX: Flat Iron Three" },
+      { id: "4h3KMw1GDh1", label: "Flat Iron Four", title: "VacationFLX: Flat Iron Four" },
+    ],
+    gallery: [
+      { src: "/listings/vineyard-guest-barn/01.jpg", thumb: "/listings/vineyard-guest-barn/thumb/01.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 1" },
+      { src: "/listings/vineyard-guest-barn/02.jpg", thumb: "/listings/vineyard-guest-barn/thumb/02.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 2" },
+      { src: "/listings/vineyard-guest-barn/03.jpg", thumb: "/listings/vineyard-guest-barn/thumb/03.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 3" },
+      { src: "/listings/vineyard-guest-barn/04.jpg", thumb: "/listings/vineyard-guest-barn/thumb/04.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 4" },
+      { src: "/listings/vineyard-guest-barn/05.jpg", thumb: "/listings/vineyard-guest-barn/thumb/05.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 5" },
+      { src: "/listings/vineyard-guest-barn/06.jpg", thumb: "/listings/vineyard-guest-barn/thumb/06.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 6" },
+      { src: "/listings/vineyard-guest-barn/07.jpg", thumb: "/listings/vineyard-guest-barn/thumb/07.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 7" },
+      { src: "/listings/vineyard-guest-barn/08.jpg", thumb: "/listings/vineyard-guest-barn/thumb/08.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 8" },
+      { src: "/listings/vineyard-guest-barn/09.jpg", thumb: "/listings/vineyard-guest-barn/thumb/09.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 9" },
+      { src: "/listings/vineyard-guest-barn/10.jpg", thumb: "/listings/vineyard-guest-barn/thumb/10.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 10" },
+      { src: "/listings/vineyard-guest-barn/11.jpg", thumb: "/listings/vineyard-guest-barn/thumb/11.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 11" },
+      { src: "/listings/vineyard-guest-barn/12.jpg", thumb: "/listings/vineyard-guest-barn/thumb/12.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 12" },
+      { src: "/listings/vineyard-guest-barn/13.jpg", thumb: "/listings/vineyard-guest-barn/thumb/13.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 13" },
+      { src: "/listings/vineyard-guest-barn/14.jpg", thumb: "/listings/vineyard-guest-barn/thumb/14.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 14" },
+      { src: "/listings/vineyard-guest-barn/15.jpg", thumb: "/listings/vineyard-guest-barn/thumb/15.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 15" },
+      { src: "/listings/vineyard-guest-barn/16.jpg", thumb: "/listings/vineyard-guest-barn/thumb/16.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 16" },
+      { src: "/listings/vineyard-guest-barn/17.jpg", thumb: "/listings/vineyard-guest-barn/thumb/17.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 17" },
+    ],
+    testimonial: {
+      quote:
+        "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties!",
+      name: "Lisa N., VacationFLX",
+    },
   },
   {
     slug: "aarons-alley",
@@ -141,43 +270,36 @@ export const caseStudies: CaseStudy[] = [
       name: "Elyssa R., Aaron's Alley",
     },
   },
-  {
-    slug: "vineyard-guest-barn",
-    client: "Vineyard Guest Barn",
-    category: "Photography + 3D Tour · Short-Term Rental",
-    location: "Upstate New York",
-    summary:
-      "Listing photos and a Matterport tour that show off a renovated guest barn to rental guests.",
-    cover: "/gallery/photography/barn-great-room.jpg",
-    coverAlt: "Great room of a renovated barn with exposed beams and a long kitchen island",
-    services: ["Listing photography", "Matterport 3D tour"],
-    story: [
-      "Short-term rental guests book with their eyes. This renovated barn has exposed timber beams, a big open kitchen and several bedrooms, and the listing needed to show all of it.",
-      "We photographed the space room by room with bright, true-to-life images and captured the full space as a Matterport tour so guests can walk through before they book.",
-    ],
-    tours: [{ id: "YN4DWeXcQ2p", title: "Vineyard Guest Barn 3D tour" }],
-    gallery: [
-      { src: "/gallery/photography/barn-great-room.jpg", alt: "Barn great room and kitchen" },
-      { src: "/gallery/photography/barn-living-room.jpg", alt: "Barn living room with leather sofas" },
-      { src: "/gallery/photography/barn-kitchen.jpg", alt: "Barn kitchen island" },
-      { src: "/gallery/photography/barn-long-table.jpg", alt: "Long dining table under barn beams" },
-      { src: "/gallery/photography/barn-loft.jpg", alt: "Barn loft with chandelier" },
-      { src: "/gallery/photography/barn-bedroom.jpg", alt: "Barn bedroom with fireplace" },
-    ],
-  },
 ];
 
-// Full reviews from the old "Our Results" page.
+// Client reviews, as posted on Google. Newest and most relevant first.
+export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=flower+city+virtual+tours";
+
 export const testimonials = [
   {
     quote:
-      "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties! He was always prompt to respond, polite & courteous. We would highly recommend Flower City Virtual Tours!",
-    name: "Lisa N., Vacation FLX",
+      "We had an excellent experience working with Flower City Virtual Tours on a project involving six of our assisted living facilities throughout New York State. From start to finish, their team was professional, highly communicative, and committed to delivering an outstanding product on a very tight timeline. We especially appreciated the consistent communication throughout the project. It kept me informed, provided reassurance at every stage, and gave me confidence that we had chosen the right partner for our virtual tour initiative. The final product exceeded our expectations, and we were very pleased with the quality and professionalism of their work. I would highly recommend Flower City Virtual Tours to any organization looking to showcase its facilities through high-quality virtual tours. We would absolutely work with them again!",
+    name: "Lynn B., Elderwood",
+  },
+  {
+    quote:
+      "Austin created a website for my business and also a google business page which has helped me get more clients, would highly recommend and will definitely use in the future.",
+    name: "Jeremy F., Fullmers Grind",
   },
   {
     quote:
       "Flower City Virtual Tours helped to showcase our facilities to potential customers. The virtual tour is the next best thing to seeing a building in person, but in some ways it's better because you can see more detail. Prospective clients can view your business' capabilities through the Matterport technology. I confidently recommend Flower City Virtual Tours.",
     name: "Mark W.",
+  },
+  {
+    quote:
+      "I had a fantastic experience with Austin at Flower City Virtual Tours! He is highly professional, has an incredible eye for detail, and really knows how to make listings shine. If you want to impress potential buyers with your online presence, I highly recommend choosing Flower City!",
+    name: "Elena C.",
+  },
+  {
+    quote:
+      "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties! He was always prompt to respond, polite & courteous. We would highly recommend Flower City Virtual Tours!",
+    name: "Lisa N., VacationFLX",
   },
   {
     quote:
@@ -191,6 +313,11 @@ export const testimonials = [
   },
   {
     quote:
+      "Very professional and able to answer all of my questions regarding the Matterport process. Austin, of Flower City Virtual Tours, captured my space perfectly and was very meticulous making sure it was exactly what I wanted. I would highly recommend this company!",
+    name: "Jackie B.",
+  },
+  {
+    quote:
       "Austin, of Flower City Virtual Tours, was extremely professional, prompt, and detail oriented when I hired him to create multiple 3-D Matterport tours for the properties I was going to be listing for sale. He was very knowledgeable about what he was doing and provided a high level of service. I couldn't have asked for more. I will definitely be using him in the future, and would highly recommend him to anyone considering his services!",
     name: "Anthony S.",
   },
@@ -198,10 +325,5 @@ export const testimonials = [
     quote:
       "I have used Flower City for both a matterport tour and listing photos, in both cases the results have exceeded mine and my clients expectations! I will be using them again!",
     name: "John M.",
-  },
-  {
-    quote:
-      "Austin @Flower City Virtual Tours did a wonderful job on the photos and matterport of our home. We will definitely use FCVT again in the future. I highly recommend the services they offer. Austin was both professional and courteous.",
-    name: "Trisha M.",
   },
 ];

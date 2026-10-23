@@ -61,4 +61,4 @@ For more information concerning: Tours & Tastings, Restaurant & Bar Menus, Whatâ
 
 The Brewhouse is a favorite spot for locals to go and to bring their out-of-town guests. Between the Heritage, Cream Ale, and Specialty Beers there is a Genny for just about everyone. Everyone 21 and older that is. Drink responsibly.
 
-[![](/blog-images/2022/08/image-1.png)](/request-a-3d-matterport-appointment/)
+[![Genesee Brewhouse, Rochester NY, photo 1](/blog-images/2022/08/image-1.png)](/contact)

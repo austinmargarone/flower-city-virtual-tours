@@ -50,4 +50,4 @@ MacKenzie-Childs is at 235 Park Ave. A collector's dream. Be sure to stop in and
 
 If you are ever in Rochester, New York be certain to take the time to explore these neighborhood areas. They have so much to offer. You can spend a day exploring all that there is to do and see. You will be glad you came.
 
-[![](/blog-images/2022/08/image-5.png)](/request-a-3d-matterport-appointment/)
+[![East Avenue and Park Avenue, Rochester NY, photo 1](/blog-images/2022/08/image-5.png)](/contact)

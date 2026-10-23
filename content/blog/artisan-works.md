@@ -72,4 +72,4 @@ Did you know that [ARTISANworks](https://artisanworks.net/) offers a lease-to-ow
 
 ARTISANworks is a unique experience. While in Rochester be sure to check it out. You just might find that a piece of art is just the thing to brighten up that bare wall at home.
 
-[![](/blog-images/2022/08/image-4.png)](/request-a-3d-matterport-appointment/)
+[![Artisan Works, Rochester NY, photo 1](/blog-images/2022/08/image-4.png)](/contact)

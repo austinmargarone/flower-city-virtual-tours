@@ -27,7 +27,7 @@ const CaseStudyCover = ({ study, sizes, priority, className = "" }: Props) => {
       <p className="px-4 text-lg font-bold text-white">{study.client}</p>
       {study.tours && (
         <p className="text-sm font-bold uppercase tracking-wider text-tan">
-          {study.tours.length} 3D tours
+          {study.tours.length === 1 ? "3D tour" : `${study.tours.length} 3D tours`}
         </p>
       )}
     </div>

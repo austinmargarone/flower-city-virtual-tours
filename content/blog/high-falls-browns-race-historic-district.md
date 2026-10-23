@@ -10,11 +10,11 @@ categories:
 legacyUrl: /blog/high-falls-browns-race-historic-district/
 ---
 
-![](/blog-images/2022/01/001-HIGH-FALLS-683x1024.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 1](/blog-images/2022/01/001-HIGH-FALLS-683x1024.jpg)
 
-![](/blog-images/2022/01/DSC_0159-1024x682.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 2](/blog-images/2022/01/DSC_0159-1024x682.jpg)
 
-![](/blog-images/2022/01/002-HIGH-FALLS-683x1024.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 3](/blog-images/2022/01/002-HIGH-FALLS-683x1024.jpg)
 
 ## The Falls on the Genesee River
 
@@ -76,19 +76,19 @@ Be sure to check it out as well.
 
 Here are some of the photos we took when we were exploring.
 
-![](/blog-images/2022/01/003-HIGH-FALLS-1024x683.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 4](/blog-images/2022/01/003-HIGH-FALLS-1024x683.jpg)
 
-![](/blog-images/2022/01/004-HIGH-FALLS-683x1024.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 5](/blog-images/2022/01/004-HIGH-FALLS-683x1024.jpg)
 
-![](/blog-images/2022/01/005-HIGH-FALLS.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 6](/blog-images/2022/01/005-HIGH-FALLS.jpg)
 
-![](/blog-images/2022/01/006-HIGH-FALLS-1024x683.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 7](/blog-images/2022/01/006-HIGH-FALLS-1024x683.jpg)
 
 ## Pont de Rennes Pedestrian Bridge
 
-![](/blog-images/2022/01/007-HIGH-FALLS-1024x683.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 8](/blog-images/2022/01/007-HIGH-FALLS-1024x683.jpg)
 
-![](/blog-images/2022/01/008-HIGH-FALLS-1024x683.jpg)
+![High Falls Brown's Race Historic District, Rochester NY, photo 9](/blog-images/2022/01/008-HIGH-FALLS-1024x683.jpg)
 
 **RESOURCES LINKS:**
 

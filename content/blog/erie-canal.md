@@ -15,39 +15,39 @@ Today the Erie Canal is a popular site for recreation all year-long. The towpath
 
 The Erie Canal is a 200-year-old modern engineering marvel that extends from Albany to Buffalo. It runs right through Rochester. You will find beautiful villages and hamlets alongside the canal. We traveled to Palmyra, Macedon, Fairport, Bushnell's Basin, Pittsford, Brighton, Greece, Spencerport, and Brockport. Each of these stops offers a unique experience.
 
-![](/blog-images/2022/01/Macedon-1-1024x683.jpg)
+!['#1 Erie Canal', Rochester NY, photo 1](/blog-images/2022/01/Macedon-1-1024x683.jpg)
 
 *Macedon*
 
-![](/blog-images/2022/01/Palmyra-1-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 2](/blog-images/2022/01/Palmyra-1-683x1024.jpg)
 
 *Palmyra*
 
-![](/blog-images/2022/01/Fairport-1-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 3](/blog-images/2022/01/Fairport-1-683x1024.jpg)
 
 *Fairport*
 
-![](/blog-images/2022/01/Bushnells-Basin-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 4](/blog-images/2022/01/Bushnells-Basin-683x1024.jpg)
 
 *Bushnell's Basin*
 
-![](/blog-images/2022/01/Pittsford-1-1024x683.jpg)
+!['#1 Erie Canal', Rochester NY, photo 5](/blog-images/2022/01/Pittsford-1-1024x683.jpg)
 
 *Pittsford*
 
-![](/blog-images/2022/01/Brighton-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 6](/blog-images/2022/01/Brighton-683x1024.jpg)
 
 *Brighton*
 
-![](/blog-images/2022/01/20220104_211747527_iOS-1536x1152-1-1024x768.jpg)
+!['#1 Erie Canal', Rochester NY, photo 7](/blog-images/2022/01/20220104_211747527_iOS-1536x1152-1-1024x768.jpg)
 
 *Greece*
 
-![](/blog-images/2022/01/Spencerport-1-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 8](/blog-images/2022/01/Spencerport-1-683x1024.jpg)
 
 *Spencerport*
 
-![](/blog-images/2022/01/Brockport-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 9](/blog-images/2022/01/Brockport-683x1024.jpg)
 
 *Brockport*
 
@@ -58,7 +58,7 @@ The Erie Canal is a 200-year-old modern engineering marvel that extends from Alb
 Tour Boat Cruises are a great way to experience the canal. You can go on a Colonial Belle Tour Boat Cruise from Fairport:
 400 Packett's Landing. For more details: www.colonialbelle.com or call (585)223-9470.
 
-![](/blog-images/2022/01/Fairport-2-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 10](/blog-images/2022/01/Fairport-2-683x1024.jpg)
 
 *Fairport*
 
@@ -80,7 +80,7 @@ Tickets are available online at: www.jazz90.1.org
 
 Cruises include: A light meal onboard, cash bar, live entertainment, and a cruise aboard the Colonial Bell.
 
-![](/blog-images/2022/01/Fairport-3-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 11](/blog-images/2022/01/Fairport-3-683x1024.jpg)
 
 *Fairport*
 
@@ -88,7 +88,7 @@ Cruises include: A light meal onboard, cash bar, live entertainment, and a cruis
 
 From Pittsford: 12 Schoen Place you will find the Sam Patch Canal Tours. Check out: www.sampatch.org or call (585)662-5748 to make a reservation. If you tow a boat, there are nearly 80 public boat ramps along the NYS Canal System.
 
-![](/blog-images/2022/01/Pittsford-2-1024x683.jpg)
+!['#1 Erie Canal', Rochester NY, photo 12](/blog-images/2022/01/Pittsford-2-1024x683.jpg)
 
 *Pittsford*
 
@@ -107,7 +107,7 @@ Perinton Park provides direct access to the Erie Canal and the Canalway Trail, i
 
 Fairport Village Market is home to a variety of retail shops, restaurants, and a library.
 
-![](/blog-images/2022/01/Fairport-4-683x1024.jpg)
+!['#1 Erie Canal', Rochester NY, photo 13](/blog-images/2022/01/Fairport-4-683x1024.jpg)
 
 ### Eat & Drink
 
@@ -143,7 +143,7 @@ Skip's Meat Market
 
 Pittsford also has a variety of shopping experiences within the Historic Village and along Schoen Place all walkable from the canal.
 
-![](/blog-images/2022/01/Pittsford-3-1-1024x683.jpg)
+!['#1 Erie Canal', Rochester NY, photo 14](/blog-images/2022/01/Pittsford-3-1-1024x683.jpg)
 
 ### Eat & Drink
 
@@ -169,7 +169,7 @@ Via Girasole Wine Bar
 
 ## Other Parks to Explore along the Canal in Rochester
 
-![](/blog-images/2022/01/Spencerport-2-1024x683.jpg)
+!['#1 Erie Canal', Rochester NY, photo 15](/blog-images/2022/01/Spencerport-2-1024x683.jpg)
 
 Carpenter Park, Pittsford
 
