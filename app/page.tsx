@@ -10,7 +10,7 @@ import { localBusinessJsonLd, pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Websites, 3D Virtual Tours, Photography & Drone",
   description:
-    "Bringing your business and real estate online with custom websites, Matterport 3D virtual tours, photography and FAA-certified drone, built to work together.",
+    "Bringing your business and property online with custom websites, Matterport 3D virtual tours, photography and FAA-certified drone, built to work together.",
   path: "/",
 });
 

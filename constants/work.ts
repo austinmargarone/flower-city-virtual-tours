@@ -39,6 +39,11 @@ export const caseStudies: CaseStudy[] = [
       "A 3D tour and front photo for every location",
       "Families can compare communities from anywhere",
     ],
+    testimonial: {
+      quote:
+        "From start to finish, their team was professional, highly communicative, and committed to delivering an outstanding product on a very tight timeline. The final product exceeded our expectations.",
+      name: "Lynn B., Elderwood",
+    },
     tours: [
       { id: "bYjEEyzdEQZ", label: "Greece", title: "Elderwood at Greece" },
       { id: "52czBbvKy8F", label: "Fairport", title: "Elderwood at Fairport" },
@@ -167,17 +172,34 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-// Full reviews from the old "Our Results" page.
+// Client reviews, as posted on Google. Newest and most relevant first.
+export const GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=flower+city+virtual+tours";
+
 export const testimonials = [
   {
     quote:
-      "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties! He was always prompt to respond, polite & courteous. We would highly recommend Flower City Virtual Tours!",
-    name: "Lisa N., Vacation FLX",
+      "We had an excellent experience working with Flower City Virtual Tours on a project involving six of our assisted living facilities throughout New York State. From start to finish, their team was professional, highly communicative, and committed to delivering an outstanding product on a very tight timeline. We especially appreciated the consistent communication throughout the project. It kept me informed, provided reassurance at every stage, and gave me confidence that we had chosen the right partner for our virtual tour initiative. The final product exceeded our expectations, and we were very pleased with the quality and professionalism of their work. I would highly recommend Flower City Virtual Tours to any organization looking to showcase its facilities through high-quality virtual tours. We would absolutely work with them again!",
+    name: "Lynn B., Elderwood",
+  },
+  {
+    quote:
+      "Austin created a website for my business and also a google business page which has helped me get more clients, would highly recommend and will definitely use in the future.",
+    name: "Jeremy F., Fullmer's Grind",
   },
   {
     quote:
       "Flower City Virtual Tours helped to showcase our facilities to potential customers. The virtual tour is the next best thing to seeing a building in person, but in some ways it's better because you can see more detail. Prospective clients can view your business' capabilities through the Matterport technology. I confidently recommend Flower City Virtual Tours.",
     name: "Mark W.",
+  },
+  {
+    quote:
+      "I had a fantastic experience with Austin at Flower City Virtual Tours! He is highly professional, has an incredible eye for detail, and really knows how to make listings shine. If you want to impress potential buyers with your online presence, I highly recommend choosing Flower City!",
+    name: "Elena C.",
+  },
+  {
+    quote:
+      "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties! He was always prompt to respond, polite & courteous. We would highly recommend Flower City Virtual Tours!",
+    name: "Lisa N., Vacation FLX",
   },
   {
     quote:
@@ -191,6 +213,11 @@ export const testimonials = [
   },
   {
     quote:
+      "Very professional and able to answer all of my questions regarding the Matterport process. Austin, of Flower City Virtual Tours, captured my space perfectly and was very meticulous making sure it was exactly what I wanted. I would highly recommend this company!",
+    name: "Jackie B.",
+  },
+  {
+    quote:
       "Austin, of Flower City Virtual Tours, was extremely professional, prompt, and detail oriented when I hired him to create multiple 3-D Matterport tours for the properties I was going to be listing for sale. He was very knowledgeable about what he was doing and provided a high level of service. I couldn't have asked for more. I will definitely be using him in the future, and would highly recommend him to anyone considering his services!",
     name: "Anthony S.",
   },
@@ -198,10 +225,5 @@ export const testimonials = [
     quote:
       "I have used Flower City for both a matterport tour and listing photos, in both cases the results have exceeded mine and my clients expectations! I will be using them again!",
     name: "John M.",
-  },
-  {
-    quote:
-      "Austin @Flower City Virtual Tours did a wonderful job on the photos and matterport of our home. We will definitely use FCVT again in the future. I highly recommend the services they offer. Austin was both professional and courteous.",
-    name: "Trisha M.",
   },
 ];

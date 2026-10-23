@@ -48,7 +48,7 @@ const Hero = () => {
             </li>
           ))}
         </ul>
-        <h1 className="hero-heading mt-3">Bringing Your Business &amp; Real Estate Online</h1>
+        <h1 className="hero-heading mt-3">Bringing Your Business &amp; Property Online</h1>
         <p className="mx-auto mt-4 max-w-[44rem] text-lg text-lightblue md:text-xl">
           Custom websites and immersive media built to work together, so customers can find you,
           explore your space and reach out before they ever walk through the door.
