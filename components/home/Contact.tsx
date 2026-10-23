@@ -1,3 +1,4 @@
+import { PHONE, PHONE_HREF } from "@/lib/site";
 import ContactCard from "./ContactCard";
 
 const ContactData = [
@@ -6,24 +7,14 @@ const ContactData = [
     alt: "Contact Form",
     title: "Contact Form",
     button: "/contact",
-    description:
-      "Our contact form is available 24/7 for any questions you may have.",
+    description: "Send us a message any time and we'll get back to you within one business day.",
   },
   {
     src: "/assets/icons/PhoneTan.svg",
-    alt: "Schedule Consultation",
-    title: "Schedule Consultation",
-    button: "/calendly",
-    description:
-      "Schedule a consultation at your convenience to discuss your project.",
-  },
-  {
-    src: "/assets/icons/QuoteTan.svg",
-    alt: "Request a Quote",
-    title: "Request a Quote",
-    button: "/build",
-    description:
-      "Already have an idea in mind? Request a quote today to get started!",
+    alt: "Call or Text",
+    title: "Call or Text",
+    button: PHONE_HREF,
+    description: `Rather talk it through? Reach us at ${PHONE.replace("-", "\u2011")}.`,
   },
 ];
 

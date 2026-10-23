@@ -14,10 +14,6 @@ export const menuLinks: MenuLink[] = [
     route: "/contact",
     label: "Contact",
   },
-  {
-    route: "/build",
-    label: "Build",
-  },
 
 ];
 

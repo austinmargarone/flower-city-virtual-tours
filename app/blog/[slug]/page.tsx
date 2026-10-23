@@ -62,9 +62,9 @@ const Page = ({ params }: Props) => {
             Need a website, 3D tour or drone footage for your Rochester business?
           </h2>
           <div className="button-container mt-4">
-            <Link href="/calendly">
+            <Link href="/contact">
               <button className="rounded bg-tan px-6 py-2 font-bold text-white shadow-lg">
-                Book a free consultation
+                Get a free consultation
               </button>
             </Link>
           </div>

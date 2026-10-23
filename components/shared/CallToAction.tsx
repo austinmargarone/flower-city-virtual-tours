@@ -16,14 +16,9 @@ const CallToAction = ({
         <h2 className="h2">{title}</h2>
         <p className="mx-auto mt-3 max-w-[40rem] text-lightblue">{text}</p>
         <div className="button-container mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link href="/calendly">
+          <Link href="/contact">
             <button className="rounded bg-tan px-6 py-2 font-bold text-white shadow-lg">
-              Book a free consultation
-            </button>
-          </Link>
-          <Link href="/build">
-            <button className="rounded border border-tan px-6 py-2 font-bold text-tan">
-              Request a quote
+              Get a free consultation
             </button>
           </Link>
         </div>

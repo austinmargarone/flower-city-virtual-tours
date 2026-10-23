@@ -62,7 +62,7 @@ const Hero = () => {
           {quotes[quoteIndex]}
         </p>
         <div className="button-container mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link href="/calendly" className={`${buttonBase} bg-tan text-white hover:brightness-110`}>
+          <Link href="/contact" className={`${buttonBase} bg-tan text-white hover:brightness-110`}>
             Free consultation
           </Link>
           <Link

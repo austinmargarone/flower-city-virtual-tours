@@ -100,7 +100,7 @@ const Navbar = () => {
               <Link href="/blog">
                 <li>Blog</li>
               </Link>
-              <Link href="/calendly">
+              <Link href="/contact">
                 <button className="navbar-button items-center flex">
                   <li>Free Consultation</li>
                 </button>
