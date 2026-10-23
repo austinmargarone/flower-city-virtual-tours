@@ -4,9 +4,7 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://flowercityvirtualtours.com";
 export const BUSINESS_NAME = "Flower City Virtual Tours";
 export const PHONE = "(585) 501-5691";
-export const PHONE_HREF = "tel:+15855015691"; // desk line: calls only, no texts
-export const EMAIL = "sales@flowercityvirtualtours.com";
-export const EMAIL_HREF = `mailto:${EMAIL}`;
+export const PHONE_HREF = "tel:+15855015691";
 export const OG_IMAGE = {
   url: `${SITE_URL}/meta.png`,
   width: 1200,
@@ -47,7 +45,6 @@ export const localBusinessJsonLd = {
   legalName: "Flower City Virtual Tours LLC",
   url: SITE_URL,
   telephone: "+1-585-501-5691",
-  email: EMAIL,
   image: `${SITE_URL}/companyLogo.png`,
   address: {
     "@type": "PostalAddress",

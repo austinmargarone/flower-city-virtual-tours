@@ -107,7 +107,7 @@ const Page = () => {
   return (
     <div className="pb-[1rem]">
       <PageHeader eyebrow="FAQ" title="Frequently Asked Questions">
-        Don&apos;t see your question? Give us a call, email sales@flowercityvirtualtours.com or send a message.
+        Don&apos;t see your question? Give us a call or send a message.
       </PageHeader>
       <div className="mx-auto mt-10 max-w-[48rem] space-y-12 px-[1rem]">
         <Section title="Websites" items={websites} />

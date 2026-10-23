@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EMAIL, EMAIL_HREF, PHONE, PHONE_HREF } from "@/lib/site";
+import { PHONE, PHONE_HREF } from "@/lib/site";
 
 type Props = {
   title?: string;
@@ -27,10 +27,7 @@ const CallToAction = ({
           <a href={PHONE_HREF} className="text-tan underline underline-offset-2">
             {PHONE}
           </a>{" "}
-          or email{" "}
-          <a href={EMAIL_HREF} className="break-all text-tan underline underline-offset-2">
-            {EMAIL}
-          </a>
+          and leave a voicemail
         </p>
       </div>
     </section>
