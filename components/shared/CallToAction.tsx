@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PHONE, PHONE_HREF } from "@/lib/site";
+import { EMAIL, EMAIL_HREF, PHONE, PHONE_HREF } from "@/lib/site";
 
 type Props = {
   title?: string;
@@ -26,6 +26,10 @@ const CallToAction = ({
           Or call{" "}
           <a href={PHONE_HREF} className="text-tan underline underline-offset-2">
             {PHONE}
+          </a>{" "}
+          or email{" "}
+          <a href={EMAIL_HREF} className="break-all text-tan underline underline-offset-2">
+            {EMAIL}
           </a>
         </p>
       </div>
