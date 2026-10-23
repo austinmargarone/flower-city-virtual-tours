@@ -40,10 +40,15 @@ const Hero = () => {
       }}
     >
       <div className="max-w-[60rem] px-[1rem] py-[2.5rem] text-center sm:px-[2rem]">
-        <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-bold uppercase tracking-[0.18em] text-tan">
+        <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 font-bold uppercase tracking-[0.18em] text-tan sm:gap-x-3">
           {services.map((s, i) => (
             <li key={s} className="flex items-center gap-3">
-              {i > 0 && <span aria-hidden="true">·</span>}
+              {/* dots only on wider screens, where the list stays on one line */}
+              {i > 0 && (
+                <span aria-hidden="true" className="hidden sm:inline">
+                  ·
+                </span>
+              )}
               {s}
             </li>
           ))}

@@ -5,12 +5,6 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { OG_IMAGE, SITE_URL } from "@/lib/site";
 
-const JosefinSans = {
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-JosefinSans",
-};
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Flower City Virtual Tours | Websites, 3D Virtual Tours, Photography & Drone",
@@ -31,7 +25,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${JosefinSans.variable}`}>
+      <head>
+        {/* Josefin Sans for headings; loaded at runtime so builds don't depend on Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Root layout wraps every page, so this loads site-wide (the rule targets the old pages/ router) */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
+        />
+      </head>
+      <body>
         <main className="relative bg-[#101415] text-white">
           <Navbar />
           <section>

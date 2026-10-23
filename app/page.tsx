@@ -3,6 +3,8 @@ import VirtualTour from "@/components/home/VirtualTour";
 import HomeText from "@/components/home/HomeText";
 import Contact from "@/components/home/Contact";
 import FeaturedWork from "@/components/home/FeaturedWork";
+import RecentShoots from "@/components/home/RecentShoots";
+import WebsiteShowcase from "@/components/home/WebsiteShowcase";
 import ServiceCards from "@/components/services/cards/ServiceCards";
 import Testimonials from "@/components/shared/Testimonials";
 import { localBusinessJsonLd, pageMeta } from "@/lib/site";
@@ -26,6 +28,8 @@ export default function Home() {
           <ServiceCards />
         </div>
         <FeaturedWork />
+        <WebsiteShowcase />
+        <RecentShoots />
         <div>
           <VirtualTour />
         </div>

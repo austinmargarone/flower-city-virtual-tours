@@ -12,10 +12,10 @@ const Testimonials = ({ limit, heading = "What Clients Say" }: Props) => {
   return (
     <section className="mx-auto w-full max-w-[77.5rem]">
       {heading && <h2 className="h2 flex justify-center py-[1rem]">{heading}</h2>}
-      <ul className="grid grid-cols-1 gap-[1.25rem] ss:grid-cols-2">
+      <ul className="columns-1 gap-[1.25rem] ss:columns-2">
         {items.map((t) => (
-          <li key={t.name}>
-            <figure className="h-full rounded-lg border border-tan/50 bg-indigo p-6 shadow-lg">
+          <li key={t.name} className="mb-[1.25rem] break-inside-avoid">
+            <figure className="rounded-lg border border-tan/50 bg-indigo p-6 shadow-lg">
               <blockquote className="leading-relaxed text-white">“{t.quote}”</blockquote>
               <figcaption className="mt-3 font-bold text-tan">{t.name}</figcaption>
             </figure>

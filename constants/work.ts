@@ -184,7 +184,7 @@ export const testimonials = [
   {
     quote:
       "Austin created a website for my business and also a google business page which has helped me get more clients, would highly recommend and will definitely use in the future.",
-    name: "Jeremy F., Fullmer's Grind",
+    name: "Jeremy F., Fullmers Grind",
   },
   {
     quote:
