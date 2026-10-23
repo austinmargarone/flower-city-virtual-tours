@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const points = [
   { title: "Anywhere", text: "Websites built remotely for clients nationwide; on-site shoots across upstate New York." },
-  { title: "One team", text: "Website, 3D tour, photos and drone from one person who knows your project." },
+  { title: "One team", text: "Website, 3D tour, photos and drone, all from one studio." },
   { title: "Certified", text: "Matterport 3D capture and an FAA Part 107 licensed, fully insured drone pilot." },
 ];
 
@@ -21,6 +21,15 @@ const process = [
 const buttonBase =
   "inline-flex h-12 w-[17.5rem] max-w-full items-center justify-center whitespace-nowrap rounded px-5 text-base font-bold uppercase tracking-[1.5px] shadow-lg transition";
 
+const stats = [
+  { value: "2020", label: "In business since" },
+  { value: "40+", label: "3D tours" },
+  { value: "40+", label: "Photo shoots" },
+  { value: "Part 107", label: "Licensed drone pilot" },
+];
+
+const clients = ["Elderwood", "Monroe Community Hospital", "DeCarolis Truck Rental", "Keller Williams", "Howard Hanna"];
+
 const About = () => {
   return (
     <article className="flex flex-col justify-center">
@@ -38,9 +47,27 @@ const About = () => {
           visiting.
         </p>
         <p>
-          When you work with us, you work directly with the person building your site and
-          running the camera.
+          Our clients range from senior living and healthcare campuses to truck rental branches,
+          retailers, short-term rentals and real estate agents.
         </p>
+      </div>
+      <dl className="mx-auto mt-8 grid w-full max-w-[46rem] grid-cols-2 gap-4 sm:grid-cols-4">
+        {stats.map((s) => (
+          <div key={s.label} className="rounded-lg bg-indigo/60 p-4 text-center">
+            <dd className="text-2xl font-bold text-white">{s.value}</dd>
+            <dt className="mt-1 text-sm text-paleblue">{s.label}</dt>
+          </div>
+        ))}
+      </dl>
+      <div className="mx-auto mt-6 max-w-[46rem] text-center">
+        <p className="text-sm font-bold uppercase tracking-wider text-tan">Trusted by</p>
+        <ul className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1 text-white">
+          {clients.map((c) => (
+            <li key={c} className="whitespace-nowrap">
+              {c}
+            </li>
+          ))}
+        </ul>
       </div>
       <ul className="mx-auto mt-8 grid max-w-[46rem] gap-4 sm:grid-cols-3">
         {points.map((p) => (
