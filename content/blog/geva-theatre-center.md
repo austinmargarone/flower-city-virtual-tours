@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/geva-theatre-center/
 ---
 
-![](/blog-images/2022/06/025-1024x1536-1-683x1024.jpg)
+![Geva Theatre Center, Rochester NY, photo 1](/blog-images/2022/06/025-1024x1536-1-683x1024.jpg)
 
 Geva Theatre Center: World-Class Regional Theatre in Rochester, NY. that is up close and personal.
 
@@ -58,4 +58,4 @@ The Geva Kitchen offers a light menu including sliders, flatbread, pizza, soups,
 
 If you are in Rochester, NY you should check out the Geva Theatre Center.
 
-[![](/blog-images/2022/06/image-4.png)](/request-a-3d-matterport-appointment/)
+[![Geva Theatre Center, Rochester NY, photo 2](/blog-images/2022/06/image-4.png)](/contact)

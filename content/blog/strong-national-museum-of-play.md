@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/strong-national-museum-of-play/
 ---
 
-![](/blog-images/2022/06/019-1536x1024-1-1024x683.jpg)
+![Strong National Museum of Play <next, Rochester NY, photo 1](/blog-images/2022/06/019-1536x1024-1-1024x683.jpg)
 
 There is so much to see and do at The Strong National Museum of Play. Upstate New York’s largest cultural attraction. All ages will enjoy the hands-on, dynamic, interactive exhibit spaces.
 
@@ -58,4 +58,4 @@ If you cannot visit the museum there are online exhibits you can explore on the 
 
 We hope that you get a chance to explore The Strong National Museum of Play the next time that you visit Rochester, NY. If you are lucky enough to live in the Rochester Area; I am sure you have been. If not be sure to add it to your Bucket List. We would love to hear what you enjoy the most at the Museum.
 
-[![](/blog-images/2022/06/image.png)](/request-a-3d-matterport-appointment/)
+[![Strong National Museum of Play <next, Rochester NY, photo 2](/blog-images/2022/06/image.png)](/contact)

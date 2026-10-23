@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/memorial-art-gallerynotaneighborhood-of-the-arts/
 ---
 
-![](/blog-images/2022/04/Capture-1024x684.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 1](/blog-images/2022/04/Capture-1024x684.jpg)
 
 ## Memorial Art Gallery
 
@@ -23,20 +23,20 @@ At the world-class gallery there is an extensive collection of permanent art, th
 Sculpture Park and current exhibitions for visitors to enjoy.
 [Click here for information on the current exhibitions.](https://mag.rochester.edu/)
 
-![](/blog-images/2022/04/Capture3.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 2](/blog-images/2022/04/Capture3.jpg)
 
-![](/blog-images/2022/04/Capture-1.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 3](/blog-images/2022/04/Capture-1.jpg)
 
-![](/blog-images/2022/04/Capture4.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 4](/blog-images/2022/04/Capture4.jpg)
 
-![](/blog-images/2022/04/Capture1-1.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 5](/blog-images/2022/04/Capture1-1.jpg)
 
 ## NOTA
 
 The neighborhood of the Arts
 NOTA is a dynamic area that has plenty of restaurants, bars, shops and galleries. Be sure to walk around and enjoy the area when you visit.
 
-![](/blog-images/2022/04/Capture2.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 6](/blog-images/2022/04/Capture2.jpg)
 
 ### Restaurants @NOTA/University Ave Area
 
@@ -110,6 +110,6 @@ NOTA is a dynamic area that has plenty of restaurants, bars, shops and galleries
 - Tryon Park
 - Winfield Gril
 
-![](/blog-images/2022/04/Capture5.jpg)
+![Memorial Art Gallery<br>NOTA<br>Neighborhood of the Arts, Rochester NY, photo 7](/blog-images/2022/04/Capture5.jpg)
 
-[![This image has an empty alt attribute; its file name is Original-on-Transparent-1024x120.png](/blog-images/2022/04/Original-on-Transparent-1024x120.png)](/request-a-3d-matterport-appointment/)
+[![This image has an empty alt attribute; its file name is Original-on-Transparent-1024x120.png](/blog-images/2022/04/Original-on-Transparent-1024x120.png)](/contact)

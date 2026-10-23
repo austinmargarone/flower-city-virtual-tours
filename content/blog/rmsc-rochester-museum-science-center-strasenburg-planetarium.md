@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/rmsc-rochester-museum-science-center-strasenburg-planetarium/
 ---
 
-![](/blog-images/2022/06/020-1536x1024-1-1024x683.jpg)
+![RMSC, Rochester NY, photo 1](/blog-images/2022/06/020-1536x1024-1-1024x683.jpg)
 
 FCVT-Flower City Virtual Tour continues the Discover ROC Series TOP #25 Places to See in Rochester, NY #11-RMSC-Rochester Museum and Science Center and Strasenburgh Planetarium
 
@@ -72,7 +72,7 @@ LASER SHOWS: Pink Floyd Laser The Beatles in Laser Light Led Zeppelin Laser 90s 
 
 ## Strasenburgh Planetarium Fun Facts
 
-![](/blog-images/2022/06/021-1536x1024-1-1024x683.jpg)
+![RMSC, Rochester NY, photo 2](/blog-images/2022/06/021-1536x1024-1-1024x683.jpg)
 
 Open since 1968.
 
@@ -92,4 +92,4 @@ The Visit ROCHESTER 6/7/22 article RMSC Strasenburgh Planetarium Opens Two New E
 
 We hope that you get the chance to explore the RMSC and the Strasenburgh Planetarium on your next visit to Rochester. We are certain that you will enjoy them both.
 
-[![](/blog-images/2022/06/image-2.png)](/request-a-3d-matterport-appointment/)
+[![RMSC, Rochester NY, photo 3](/blog-images/2022/06/image-2.png)](/contact)

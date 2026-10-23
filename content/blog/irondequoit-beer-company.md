@@ -54,4 +54,4 @@ Check out the: merchandise, mug club, and gift cards online.
 
 This gem is a local favorite. It’s a fun spot to hang out with friends and enjoy a bite and a brew.
 
-[![](/blog-images/2022/08/image-2.png)](/request-a-3d-matterport-appointment/)
+[![Irondequoit Beer Company, Rochester NY, photo 1](/blog-images/2022/08/image-2.png)](/contact)

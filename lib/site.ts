@@ -21,7 +21,9 @@ type PageMetaInput = {
 
 /** Consistent title, description, canonical URL and social preview for every page. */
 export function pageMeta({ title, description, path, image }: PageMetaInput): Metadata {
-  const fullTitle = `${title} | ${BUSINESS_NAME}`;
+  // Google shows ~60 characters; drop the brand suffix rather than cut off a long title.
+  const withBrand = `${title} | ${BUSINESS_NAME}`;
+  const fullTitle = withBrand.length <= 62 ? withBrand : title;
   return {
     title: fullTitle,
     description,

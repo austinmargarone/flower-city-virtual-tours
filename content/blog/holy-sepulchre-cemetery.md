@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/holy-sepulchre-cemetery/
 ---
 
-![](/blog-images/2022/06/030-1024x1536-1-683x1024.jpg)
+![Holy Sepulchre Cemetery, Rochester NY, photo 1](/blog-images/2022/06/030-1024x1536-1-683x1024.jpg)
 
 A Catholic Cemetery in Rochester, NY that has both natural beauty and historic architecture.
 
@@ -44,4 +44,4 @@ The Veteran’s Section offers burial for loved ones and their spouses who have 
 
 When visiting Rochester, NY those seeking true peaceful reflection would enjoy a walk through the Holy Sepulchre Cemetery is remarkable.
 
-[![](/blog-images/2022/06/image-7.png)](/request-a-3d-matterport-appointment/)
+[![Holy Sepulchre Cemetery, Rochester NY, photo 2](/blog-images/2022/06/image-7.png)](/contact)

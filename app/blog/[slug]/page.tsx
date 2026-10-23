@@ -15,7 +15,11 @@ export function generateMetadata({ params }: Props): Metadata {
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: post.seoTitle || `${post.title} | Rochester, NY | Flower City Virtual Tours`,
+    // Longest version that fits in Google's ~60-character title space
+    title:
+      [`${post.title} | Rochester, NY | Flower City Virtual Tours`, `${post.title} | Rochester, NY`].find(
+        (t) => t.length <= 62
+      ) ?? post.title,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {

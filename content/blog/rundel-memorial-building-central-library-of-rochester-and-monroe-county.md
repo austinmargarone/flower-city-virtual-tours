@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/rundel-memorial-building-central-library-of-rochester-and-monroe-county/
 ---
 
-![](/blog-images/2022/06/031-1024x1536-1-683x1024.jpg)
+![Rundel Memorial Building, Rochester NY, photo 1](/blog-images/2022/06/031-1024x1536-1-683x1024.jpg)
 
 Located: 115 South Avenue Rochester, NY 14604
 
@@ -38,4 +38,4 @@ See the [website](https://roccitylibrary.org/location/central/) to discover the 
 The Rundel Memorial Library is believed to be haunted by alleged paranormal activities for more on this see the Campus Times article by Melanie Earle Titled: Supernatural Suspicion in the Stacks at Rundel Library
 [Supernatural suspicion in the stacks of Rundel library - Campus Times](http://www.campustimes.org/2020/10/25/supernatural-suspicion-in-the-stacks-of-rundel-library/)
 
-[![](/blog-images/2022/06/image-9.png)](/request-a-3d-matterport-appointment/)
+[![Rundel Memorial Building, Rochester NY, photo 2](/blog-images/2022/06/image-9.png)](/contact)

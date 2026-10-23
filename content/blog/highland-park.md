@@ -10,7 +10,7 @@ categories:
 legacyUrl: /blog/highland-park/
 ---
 
-![](/blog-images/2022/02/DSC_0280-1.jpg)
+![Highland Park, Rochester NY, photo 1](/blog-images/2022/02/DSC_0280-1.jpg)
 
 ## Frederick Law Olmsted
 
@@ -30,17 +30,17 @@ You can come and enjoy: live music, craft and food vendors, and see and smell th
 
 The Magnolia trees, the Rhododendrons & Azalea bushes, the tulips beds and the pansy bed are also extraordinary sights to see.
 
-![](/blog-images/2022/02/DSC_0279-2.jpg)
+![Highland Park, Rochester NY, photo 2](/blog-images/2022/02/DSC_0279-2.jpg)
 
 ## Lamberton Conservatory
 
 Be sure to pop into the Lamberton Conservatory which has a beautiful collection of plants open all year when you go.
 
-![](/blog-images/2022/02/DSC_0257-3-1024x682.jpg)
+![Highland Park, Rochester NY, photo 3](/blog-images/2022/02/DSC_0257-3-1024x682.jpg)
 
 *Lamberton Conservatory*
 
-![](/blog-images/2022/02/DSC_0256-2-1024x682.jpg)
+![Highland Park, Rochester NY, photo 4](/blog-images/2022/02/DSC_0256-2-1024x682.jpg)
 
 *Lamberton Conservatory*
 
@@ -59,4 +59,4 @@ The Rochester Birding Association website:
 
 The site above has details on the latest bird sightings and a terrific guide to birding opportunities.
 
-![](/blog-images/2022/02/DSC_0261-2-1024x682.jpg)
+![Highland Park, Rochester NY, photo 5](/blog-images/2022/02/DSC_0261-2-1024x682.jpg)

@@ -56,4 +56,4 @@ Lots of great **Restaurants** are available at the Village Gate.
 
 The Village Gate Square and the Village Gate offers a destination for you to explore some amazing restaurants and art in one location. Be sure to give yourself enough time to explore all that this area has to offer. The Artist Open Studio Monthly Event on the 2nd Saturday is a great way to meet some local talent.
 
-[![](/blog-images/2022/08/image.png)](/request-a-3d-matterport-appointment/)
+[![Village Gate Square, Rochester NY, photo 1](/blog-images/2022/08/image.png)](/contact)
