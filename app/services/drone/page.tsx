@@ -82,9 +82,17 @@ const Page = () => {
         <section>
           <h2 className="h2 mb-1 text-left">Recent aerial work</h2>
           <p className="mb-4 text-lightblue">
-            See a full set of aerials alongside the listing photos at{" "}
+            See full aerial sets for a home at{" "}
             <Link href="/listings/257-stonefield-lane" className="text-tan underline">
               257 Stonefield Lane
+            </Link>
+            , a{" "}
+            <Link href="/listings/212-carter-road" className="text-tan underline">
+              solar farm
+            </Link>{" "}
+            and an{" "}
+            <Link href="/listings/219-lyons-road" className="text-tan underline">
+              industrial property
             </Link>
             .
           </p>

@@ -40,11 +40,13 @@ const industries: Industry[] = [
   {
     icon: Factory,
     title: "Industrial & Construction",
-    types: ["Warehouses", "Industrial complexes", "Construction sites", "Outdoor spaces"],
+    types: ["Warehouses", "Industrial complexes", "Construction sites", "Solar & energy sites", "Outdoor spaces"],
     text: "Large facilities are hard to show in photos. 3D tours and dollhouse views let buyers, tenants and partners understand the whole layout, and drone footage documents sites from above.",
     examples: [
       { label: "DeCarolis Truck Rental", href: "/work/decarolis-truck-rental" },
       { label: "504 Brooks Ave apartments", href: "/listings/504-brooks-ave" },
+      { label: "212 Carter Road solar farm", href: "/listings/212-carter-road" },
+      { label: "219 Lyons Road industrial site", href: "/listings/219-lyons-road" },
     ],
   },
   {

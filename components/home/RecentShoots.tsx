@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listings } from "@/constants/listings";
+import { coverOf, listings } from "@/constants/listings";
 
 // Three shoots picked to show range: a home with video + tour, a rental, and a commercial building.
 const FEATURED = ["443-crossfield-road", "the-nest-cottage", "504-brooks-ave"];
@@ -23,7 +23,7 @@ const RecentShoots = () => {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={l.photos[0].thumb}
+                  src={coverOf(l).thumb}
                   alt={`${l.title}, ${l.kind}`}
                   loading="lazy"
                   className="aspect-[3/2] w-full object-cover"
