@@ -1088,6 +1088,7 @@ export const listings: Listing[] = [
     "title": "109 Brush Creek Drive",
     "kind": "Two-story home",
     "location": "Rochester, NY",
+    "tour": "uA35cjnNPw3",
     "photos": [
       {
         "src": "/listings/109-brush-creek-drive/01.jpg",
@@ -4380,6 +4381,8 @@ export const listings: Listing[] = [
     "category": "residential",
     "title": "633 Autumn Breeze Lane",
     "kind": "New-construction colonial",
+    "location": "Ontario, NY",
+    "tour": "jYkEMR4LA93",
     "photos": [
       {
         "src": "/listings/633-autumn-breeze-lane/01.jpg",
@@ -4519,14 +4522,14 @@ export const listings: Listing[] = [
         "src": "/listings/633-autumn-breeze-lane/aerial-06.jpg",
         "thumb": "/listings/633-autumn-breeze-lane/aerial-thumb/06.jpg"
       }
-    ],
-    "location": "Ontario, NY"
+    ]
   },
   {
     "slug": "145-georgian-court-road",
     "category": "residential",
     "title": "145 Georgian Court Road",
     "kind": "Split-level",
+    "tour": "XMRW7cy92WV",
     "photos": [
       {
         "src": "/listings/145-georgian-court-road/01.jpg",
@@ -4972,6 +4975,7 @@ export const listings: Listing[] = [
     "title": "71 Cornhill Place #71",
     "kind": "Townhouse",
     "location": "Rochester, NY",
+    "tour": "fT6v5zy5tKE",
     "photos": [
       {
         "src": "/listings/71-cornhill-place/01.jpg",
@@ -5093,6 +5097,7 @@ export const listings: Listing[] = [
     "category": "residential",
     "title": "6782 Colyer Crossing",
     "kind": "Craftsman-style colonial",
+    "tour": "rv4E15UCcsv",
     "photos": [
       {
         "src": "/listings/6782-colyer-crossing/01.jpg",

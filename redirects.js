@@ -86,7 +86,8 @@ module.exports = [
   { source: '/listings/waterloo-drone', destination: '/listings/2161-edwards-road', permanent: true },
 
   // Vineyard Guest Barn is shown as a client case study rather than a listing
-  { source: '/listings/vineyard-guest-barn', destination: '/work/vineyard-guest-barn', permanent: true },
+  { source: '/listings/vineyard-guest-barn', destination: '/work/vacationflx', permanent: true },
+  { source: '/work/vineyard-guest-barn', destination: '/work/vacationflx', permanent: true },
   { source: '/vacationflx', destination: '/work/vacationflx', permanent: true },
 
   // WordPress system URLs

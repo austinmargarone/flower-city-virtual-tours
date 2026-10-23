@@ -59,6 +59,20 @@ const Page = ({ params }: Props) => {
                 <li key={s}>{s}</li>
               ))}
             </ul>
+            {c.website && (
+              <>
+                <h2 className="mt-5 font-bold uppercase tracking-wider text-tan">Client website</h2>
+                <a
+                  href={c.website.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block font-bold text-white underline underline-offset-2"
+                >
+                  {c.website.label}
+                </a>
+                {c.website.note && <p className="mt-1 text-sm text-paleblue">{c.website.note}</p>}
+              </>
+            )}
             {c.results && (
               <>
                 <h2 className="mt-5 font-bold uppercase tracking-wider text-tan">Results</h2>

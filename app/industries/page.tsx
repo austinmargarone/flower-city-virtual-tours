@@ -55,7 +55,7 @@ const industries: Industry[] = [
     types: ["Hotels & short-term rentals", "Event venues", "Restaurants & bars", "Country clubs", "Theaters"],
     text: "Guests book with their eyes. Photos and a walk-through tour show off your space, and a tour on your website or Google listing helps people picture their stay or event.",
     examples: [
-      { label: "Vineyard Guest Barn", href: "/work/vineyard-guest-barn" },
+      { label: "VacationFLX rentals", href: "/work/vacationflx" },
       { label: "The Nest Cottage", href: "/listings/the-nest-cottage" },
     ],
   },

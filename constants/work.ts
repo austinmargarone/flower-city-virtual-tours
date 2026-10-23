@@ -17,6 +17,8 @@ export type CaseStudy = {
   tours?: { id: string; title: string; label?: string }[];
   gallery?: GalleryImage[];
   testimonial?: { quote: string; name: string };
+  /** The client's own website, when it isn't one we built */
+  website?: { label: string; url: string; note?: string };
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -133,27 +135,48 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "vacationflx",
     client: "VacationFLX",
-    category: "3D Virtual Tours · Vacation Rentals",
+    category: "3D Tours + Photography · Short-Term Rentals",
     location: "Upstate New York",
     summary:
-      "Matterport tours of four Flat Iron vacation rentals, so guests can walk through each unit before they book.",
-    cover: "/work/vacationflx/flat-iron-dollhouse.jpg",
-    coverAlt: "3D dollhouse view of a Flat Iron vacation rental",
-    services: ["Matterport 3D tours", "Dollhouse views", "Multi-unit capture"],
+      "3D tours and photography for a short-term rental company's properties, including the Vineyard Guest Barn and four Flat Iron units.",
+    cover: "/listings/vineyard-guest-barn/01.jpg",
+    coverAlt: "The Vineyard Guest Barn, a VacationFLX short-term rental",
+    services: ["Matterport 3D tours", "Listing photography", "Dollhouse views", "Multi-property capture"],
+    website: { label: "vacationflx.com", url: "https://vacationflx.com/", note: "Website by VacationFLX; much of the media is ours." },
     story: [
-      "VacationFLX manages vacation rentals and was looking for a way to showcase its properties online.",
-      "We captured four Flat Iron rentals as individual Matterport tours. Each unit has its own link, so guests can explore the exact space they're booking, room by room or from the dollhouse view.",
+      "VacationFLX owns and manages short-term rentals and was looking for a way to showcase its properties online. Guests book with their eyes, so every rental needed to look its best before anyone arrived.",
+      "We created much of the media for their properties. At the Vineyard Guest Barn, a renovated barn with exposed timber beams and a big open kitchen, we photographed every room and captured the whole space as a Matterport tour. We also captured four Flat Iron units as separate tours, so guests can explore the exact space they're booking.",
     ],
-    results: ["4 rental units captured in 3D", "A shareable tour link for every unit"],
+    results: ["5 rental tours captured in 3D", "Full listing photo set for the Vineyard Guest Barn", "A shareable tour link for every unit"],
     tours: [
+      { id: "YN4DWeXcQ2p", label: "Vineyard Guest Barn", title: "VacationFLX: Vineyard Guest Barn" },
       { id: "xnkukuhrtaL", label: "Flat Iron One", title: "VacationFLX: Flat Iron One" },
       { id: "csDCFB2Tqo2", label: "Flat Iron Two", title: "VacationFLX: Flat Iron Two" },
       { id: "tdrEuWSvZuL", label: "Flat Iron Three", title: "VacationFLX: Flat Iron Three" },
       { id: "4h3KMw1GDh1", label: "Flat Iron Four", title: "VacationFLX: Flat Iron Four" },
     ],
+    gallery: [
+      { src: "/listings/vineyard-guest-barn/01.jpg", thumb: "/listings/vineyard-guest-barn/thumb/01.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 1" },
+      { src: "/listings/vineyard-guest-barn/02.jpg", thumb: "/listings/vineyard-guest-barn/thumb/02.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 2" },
+      { src: "/listings/vineyard-guest-barn/03.jpg", thumb: "/listings/vineyard-guest-barn/thumb/03.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 3" },
+      { src: "/listings/vineyard-guest-barn/04.jpg", thumb: "/listings/vineyard-guest-barn/thumb/04.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 4" },
+      { src: "/listings/vineyard-guest-barn/05.jpg", thumb: "/listings/vineyard-guest-barn/thumb/05.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 5" },
+      { src: "/listings/vineyard-guest-barn/06.jpg", thumb: "/listings/vineyard-guest-barn/thumb/06.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 6" },
+      { src: "/listings/vineyard-guest-barn/07.jpg", thumb: "/listings/vineyard-guest-barn/thumb/07.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 7" },
+      { src: "/listings/vineyard-guest-barn/08.jpg", thumb: "/listings/vineyard-guest-barn/thumb/08.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 8" },
+      { src: "/listings/vineyard-guest-barn/09.jpg", thumb: "/listings/vineyard-guest-barn/thumb/09.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 9" },
+      { src: "/listings/vineyard-guest-barn/10.jpg", thumb: "/listings/vineyard-guest-barn/thumb/10.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 10" },
+      { src: "/listings/vineyard-guest-barn/11.jpg", thumb: "/listings/vineyard-guest-barn/thumb/11.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 11" },
+      { src: "/listings/vineyard-guest-barn/12.jpg", thumb: "/listings/vineyard-guest-barn/thumb/12.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 12" },
+      { src: "/listings/vineyard-guest-barn/13.jpg", thumb: "/listings/vineyard-guest-barn/thumb/13.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 13" },
+      { src: "/listings/vineyard-guest-barn/14.jpg", thumb: "/listings/vineyard-guest-barn/thumb/14.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 14" },
+      { src: "/listings/vineyard-guest-barn/15.jpg", thumb: "/listings/vineyard-guest-barn/thumb/15.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 15" },
+      { src: "/listings/vineyard-guest-barn/16.jpg", thumb: "/listings/vineyard-guest-barn/thumb/16.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 16" },
+      { src: "/listings/vineyard-guest-barn/17.jpg", thumb: "/listings/vineyard-guest-barn/thumb/17.jpg", alt: "Vineyard Guest Barn (VacationFLX), photo 17" },
+    ],
     testimonial: {
       quote:
-        "Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties! He was always prompt to respond, polite & courteous.",
+        "At Vacation FLX we were looking for a way to showcase our vacation rentals. Austin, at Flower City Virtual Tours did an exceptional job showcasing our properties!",
       name: "Lisa N., VacationFLX",
     },
   },
@@ -178,41 +201,6 @@ export const caseStudies: CaseStudy[] = [
         "Not only were they incredible at helping me understand my idea, they helped me formulate it into something I couldn't even imagine. Incredibly patient, professional and helpful, to say the least.",
       name: "Elyssa R., Aaron's Alley",
     },
-  },
-  {
-    slug: "vineyard-guest-barn",
-    client: "Vineyard Guest Barn",
-    category: "Photography + 3D Tour · Short-Term Rental",
-    location: "Upstate New York",
-    summary:
-      "Listing photos and a Matterport tour that show off a renovated guest barn to rental guests.",
-    cover: "/listings/vineyard-guest-barn/01.jpg",
-    coverAlt: "Great room of a renovated barn with exposed beams and a long kitchen island",
-    services: ["Listing photography", "Matterport 3D tour"],
-    story: [
-      "Short-term rental guests book with their eyes. This renovated barn has exposed timber beams, a big open kitchen and several bedrooms, and the listing needed to show all of it.",
-      "We photographed the space room by room with bright, true-to-life images and captured the full space as a Matterport tour so guests can walk through before they book.",
-    ],
-    tours: [{ id: "YN4DWeXcQ2p", title: "Vineyard Guest Barn 3D tour" }],
-    gallery: [
-      { src: "/listings/vineyard-guest-barn/01.jpg", thumb: "/listings/vineyard-guest-barn/thumb/01.jpg", alt: "Vineyard Guest Barn, photo 1" },
-      { src: "/listings/vineyard-guest-barn/02.jpg", thumb: "/listings/vineyard-guest-barn/thumb/02.jpg", alt: "Vineyard Guest Barn, photo 2" },
-      { src: "/listings/vineyard-guest-barn/03.jpg", thumb: "/listings/vineyard-guest-barn/thumb/03.jpg", alt: "Vineyard Guest Barn, photo 3" },
-      { src: "/listings/vineyard-guest-barn/04.jpg", thumb: "/listings/vineyard-guest-barn/thumb/04.jpg", alt: "Vineyard Guest Barn, photo 4" },
-      { src: "/listings/vineyard-guest-barn/05.jpg", thumb: "/listings/vineyard-guest-barn/thumb/05.jpg", alt: "Vineyard Guest Barn, photo 5" },
-      { src: "/listings/vineyard-guest-barn/06.jpg", thumb: "/listings/vineyard-guest-barn/thumb/06.jpg", alt: "Vineyard Guest Barn, photo 6" },
-      { src: "/listings/vineyard-guest-barn/07.jpg", thumb: "/listings/vineyard-guest-barn/thumb/07.jpg", alt: "Vineyard Guest Barn, photo 7" },
-      { src: "/listings/vineyard-guest-barn/08.jpg", thumb: "/listings/vineyard-guest-barn/thumb/08.jpg", alt: "Vineyard Guest Barn, photo 8" },
-      { src: "/listings/vineyard-guest-barn/09.jpg", thumb: "/listings/vineyard-guest-barn/thumb/09.jpg", alt: "Vineyard Guest Barn, photo 9" },
-      { src: "/listings/vineyard-guest-barn/10.jpg", thumb: "/listings/vineyard-guest-barn/thumb/10.jpg", alt: "Vineyard Guest Barn, photo 10" },
-      { src: "/listings/vineyard-guest-barn/11.jpg", thumb: "/listings/vineyard-guest-barn/thumb/11.jpg", alt: "Vineyard Guest Barn, photo 11" },
-      { src: "/listings/vineyard-guest-barn/12.jpg", thumb: "/listings/vineyard-guest-barn/thumb/12.jpg", alt: "Vineyard Guest Barn, photo 12" },
-      { src: "/listings/vineyard-guest-barn/13.jpg", thumb: "/listings/vineyard-guest-barn/thumb/13.jpg", alt: "Vineyard Guest Barn, photo 13" },
-      { src: "/listings/vineyard-guest-barn/14.jpg", thumb: "/listings/vineyard-guest-barn/thumb/14.jpg", alt: "Vineyard Guest Barn, photo 14" },
-      { src: "/listings/vineyard-guest-barn/15.jpg", thumb: "/listings/vineyard-guest-barn/thumb/15.jpg", alt: "Vineyard Guest Barn, photo 15" },
-      { src: "/listings/vineyard-guest-barn/16.jpg", thumb: "/listings/vineyard-guest-barn/thumb/16.jpg", alt: "Vineyard Guest Barn, photo 16" },
-      { src: "/listings/vineyard-guest-barn/17.jpg", thumb: "/listings/vineyard-guest-barn/thumb/17.jpg", alt: "Vineyard Guest Barn, photo 17" },
-    ],
   },
 ];
 
