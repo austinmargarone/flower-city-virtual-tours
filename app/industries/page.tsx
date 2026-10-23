@@ -5,7 +5,7 @@ import CallToAction from "@/components/shared/CallToAction";
 import { pageMeta } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Industries We Serve in Rochester, NY",
+  title: "Industries We Serve",
   description:
     "Websites, 3D virtual tours, photography and drone for Rochester businesses: retail, offices, hospitality, rentals, industrial, construction, real estate and more.",
   path: "/industries",

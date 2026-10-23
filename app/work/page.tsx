@@ -7,7 +7,7 @@ import { caseStudies } from "@/constants/work";
 import { pageMeta } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Our Work | Rochester Virtual Tours, Photography & Websites",
+  title: "Our Work | Virtual Tours, Photography & Websites",
   description:
     "Case studies from Rochester and upstate New York: commercial 3D virtual tours, retail Walk & Shop tours, rental photography and custom websites.",
   path: "/work",
@@ -42,7 +42,7 @@ const Page = () => {
       </ul>
 
       <div className="mt-14 px-[1rem]">
-        <Testimonials />
+        <Testimonials limit={4} />
       </div>
 
       <CallToAction title="Want results like these?" />

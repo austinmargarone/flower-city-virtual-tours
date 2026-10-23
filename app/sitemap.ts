@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/build",
     "/calendly",
     "/privacy-policy",
+    "/reviews",
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,

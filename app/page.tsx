@@ -4,14 +4,13 @@ import HomeText from "@/components/home/HomeText";
 import Contact from "@/components/home/Contact";
 import FeaturedWork from "@/components/home/FeaturedWork";
 import ServiceCards from "@/components/services/cards/ServiceCards";
-import WebDeveloper from "@/components/services/WebDeveloper";
 import Testimonials from "@/components/shared/Testimonials";
 import { localBusinessJsonLd, pageMeta } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Rochester Web Design, 3D Virtual Tours & Drone",
+  title: "Websites, 3D Virtual Tours, Photography & Drone",
   description:
-    "Custom websites, Matterport 3D virtual tours, photography and FAA-certified drone services for Rochester, NY businesses. One local team for your whole online presence.",
+    "Bringing your business and real estate online with custom websites, Matterport 3D virtual tours, photography and FAA-certified drone, built to work together.",
   path: "/",
 });
 
@@ -27,9 +26,6 @@ export default function Home() {
           <ServiceCards />
         </div>
         <FeaturedWork />
-        <div>
-          <WebDeveloper />
-        </div>
         <div>
           <VirtualTour />
         </div>

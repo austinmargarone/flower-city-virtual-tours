@@ -26,8 +26,8 @@ const websites: QA[] = [
     a: "Yes. That's what makes us different. We can build your website and capture the tour, photos and aerial footage that go on it, so everything is designed to work together.",
   },
   {
-    q: "Do you only work with businesses in Rochester?",
-    a: "We're based in Rochester and work throughout upstate New York. Websites can be built for businesses anywhere. A travel fee applies to on-site shoots outside Monroe County.",
+    q: "Do you work with businesses outside Rochester?",
+    a: "Yes. Websites are built and managed remotely for businesses anywhere in the U.S. On-site work like 3D tours, photography and drone covers Rochester and upstate New York, with a travel fee outside Monroe County.",
   },
 ];
 

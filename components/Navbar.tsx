@@ -36,7 +36,7 @@ const Navbar = () => {
               className="w-[250px] lg:w-[300px]"
             />
             <span className="ml-[2rem] hidden xl:flex">
-              <p className="text-[#B49167]">Websites · 3D Tours · Drone</p>
+              <p className="text-[#B49167]">Websites · 3D Tours · Photography · Drone</p>
             </span>
           </div>
         </Link>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const points = [
-  { title: "Local", text: "Based in Rochester since 2020, working with businesses across upstate New York." },
+  { title: "Anywhere", text: "Websites built remotely for clients nationwide; on-site shoots across upstate New York." },
   { title: "One team", text: "Website, 3D tour, photos and drone from one person who knows your project." },
   { title: "Certified", text: "Matterport 3D capture and an FAA Part 107 licensed, fully insured drone pilot." },
 ];

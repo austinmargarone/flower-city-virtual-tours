@@ -13,9 +13,9 @@ const JosefinSans = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Flower City Virtual Tours | Rochester Web Design, 3D Tours & Drone",
+  title: "Flower City Virtual Tours | Websites, 3D Virtual Tours, Photography & Drone",
   description:
-    "Custom websites, Matterport 3D virtual tours, photography and drone services for Rochester, NY businesses.",
+    "Bringing your business and real estate online with custom websites, Matterport 3D virtual tours, photography and drone.",
   openGraph: {
     siteName: "Flower City Virtual Tours",
     locale: "en_US",

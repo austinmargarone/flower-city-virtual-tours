@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Services | Web Development & Media",
   description:
-    "Web design, development and SEO, plus real estate photography, Matterport 3D tours, drone and video walkthroughs for Rochester, NY businesses.",
+    "Web design, development and SEO, plus real estate photography, Matterport 3D tours, drone and video walkthroughs for businesses and real estate.",
   path: "/services",
 });
 
