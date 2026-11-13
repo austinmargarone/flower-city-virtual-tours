@@ -95,6 +95,18 @@ module.exports = [
 
   // WordPress system URLs
   { source: '/wp-sitemap.xml', destination: '/sitemap.xml', permanent: true },
+  { source: '/sitemap_index.xml', destination: '/sitemap.xml', permanent: true },
+  { source: '/:type(post|page|category|portfolio)-sitemap:n(\\d*).xml', destination: '/sitemap.xml', permanent: true },
   { source: '/feed', destination: '/blog', permanent: true },
+  { source: '/feed/:path*', destination: '/blog', permanent: true },
+  { source: '/comments/feed', destination: '/blog', permanent: true },
+  { source: '/blog/feed', destination: '/blog', permanent: true },
   { source: '/category/:slug*', destination: '/blog', permanent: true },
+  { source: '/tag/:slug*', destination: '/blog', permanent: true },
+  { source: '/author/:slug*', destination: '/blog', permanent: true },
+  { source: '/blog/page/:n(\\d+)', destination: '/blog', permanent: true },
+  { source: '/page/:n(\\d+)', destination: '/', permanent: true },
+
+  // Old Supabase test page (removed)
+  { source: '/projects', destination: '/work', permanent: true },
 ];
